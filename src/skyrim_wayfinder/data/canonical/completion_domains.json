@@ -1,0 +1,10 @@
+[
+  {"id":"main_questlines","display_name":"Main Questlines","description":"Primary game and expansion main questlines.","sort_order":10,"theme_key":"main_questlines"},
+  {"id":"factions_major","display_name":"Factions & Major Questlines","description":"Major faction and branching questlines.","sort_order":20,"theme_key":"factions_major"},
+  {"id":"artifacts_collectibles","display_name":"Artifacts & Collectibles","description":"Curated artifact and collectible completion ledgers.","sort_order":30,"theme_key":"artifacts_collectibles"},
+  {"id":"shouts","display_name":"Shouts","description":"Words of Power organized by shout.","sort_order":40,"theme_key":"shouts"},
+  {"id":"unique_spells_powers","display_name":"Unique Spells & Powers","description":"Unique non-purchasable spells and powers.","sort_order":50,"theme_key":"unique_spells_powers"},
+  {"id":"holds_homes","display_name":"Holds & Homes","description":"Thane, property-right, home, and homestead progression.","sort_order":60,"theme_key":"holds_homes"},
+  {"id":"side_quests","display_name":"Side Quests","description":"Standalone regional side quests.","sort_order":70,"theme_key":"side_quests"},
+  {"id":"preparation","display_name":"Preparation","description":"Items and conditions to set aside for later work.","sort_order":80,"theme_key":"preparation"}
+]

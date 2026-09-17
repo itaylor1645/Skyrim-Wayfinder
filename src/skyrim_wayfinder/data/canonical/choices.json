@@ -1,0 +1,6 @@
+[
+  {"id":"dark_brotherhood_path","title":"Dark Brotherhood path","source_url":"https://en.uesp.net/wiki/Skyrim:With_Friends_Like_These...","options":[
+    {"id":"join","label":"Join the Dark Brotherhood","excludes_options":["destroy"]},
+    {"id":"destroy","label":"Destroy the Dark Brotherhood","excludes_options":["join"]}
+  ]}
+]

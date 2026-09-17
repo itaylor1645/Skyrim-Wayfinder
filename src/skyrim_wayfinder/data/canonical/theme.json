@@ -1,0 +1,10 @@
+{
+  "main_questlines":{"label":"Main Quest","color":"#c49a46","icon":"◆"},
+  "factions_major":{"label":"Faction / Major Questline","color":"#6387a8","icon":"⚔"},
+  "artifacts_collectibles":{"label":"Artifact / Collectible","color":"#5f9366","icon":"◇"},
+  "shouts":{"label":"Shout","color":"#4c9a8a","icon":"◈"},
+  "unique_spells_powers":{"label":"Unique Spell / Power","color":"#8b72b6","icon":"✦"},
+  "holds_homes":{"label":"Hold / Home","color":"#9a6f4c","icon":"⌂"},
+  "side_quests":{"label":"Side Quest","color":"#806aa3","icon":"●"},
+  "preparation":{"label":"Preparation","color":"#777f89","icon":"▣"}
+}

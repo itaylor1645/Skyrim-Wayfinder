@@ -1,0 +1,15 @@
+[
+  {"id":"skyrim_main_quest","domain_id":"main_questlines","display_name":"Skyrim Main Quest","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:Main_Quest"},
+  {"id":"college_winterhold","domain_id":"factions_major","display_name":"College of Winterhold","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:College_of_Winterhold_Quests"},
+  {"id":"dark_brotherhood","domain_id":"factions_major","display_name":"Dark Brotherhood","sort_order":20,"source_url":"https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"},
+  {"id":"dragon_claws","domain_id":"artifacts_collectibles","display_name":"Dragon Claws","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:Golden_Claw"},
+  {"id":"dragon_priest_masks","domain_id":"artifacts_collectibles","display_name":"Dragon Priest Masks","sort_order":20,"source_url":"https://en.uesp.net/wiki/Skyrim:Dragon_Priest_Masks"},
+  {"id":"unique_artifacts","domain_id":"artifacts_collectibles","display_name":"Unique Artifacts","description":"Provisional curated collection; boundaries will be reviewed before bulk population.","sort_order":30},
+  {"id":"daedric_artifacts","domain_id":"artifacts_collectibles","display_name":"Daedric Artifacts","sort_order":40},
+  {"id":"unrelenting_force","domain_id":"shouts","display_name":"Unrelenting Force","sort_order":10},
+  {"id":"storm_call","domain_id":"shouts","display_name":"Storm Call","sort_order":20},
+  {"id":"hold_whiterun","domain_id":"holds_homes","display_name":"Whiterun","sort_order":10},
+  {"id":"hold_rift","domain_id":"holds_homes","display_name":"The Rift","sort_order":20},
+  {"id":"skyrim_side_quests","domain_id":"side_quests","display_name":"Skyrim Side Quests","sort_order":10},
+  {"id":"set_aside","domain_id":"preparation","display_name":"Set Aside","sort_order":10}
+]
