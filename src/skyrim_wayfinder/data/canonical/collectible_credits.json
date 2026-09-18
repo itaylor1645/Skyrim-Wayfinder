@@ -1,0 +1,164 @@
+[
+  {
+    "id": "credit_dragon_priest_mask_hevnoraak",
+    "task_id": "mask_hevnoraak",
+    "collectible_id": "dragon_priest_mask_hevnoraak",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_krosis",
+    "task_id": "mask_krosis",
+    "collectible_id": "dragon_priest_mask_krosis",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_morokei",
+    "task_id": "mask_morokei",
+    "collectible_id": "dragon_priest_mask_morokei",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_nahkriin",
+    "task_id": "mask_nahkriin",
+    "collectible_id": "dragon_priest_mask_nahkriin",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_otar",
+    "task_id": "mask_otar",
+    "collectible_id": "dragon_priest_mask_otar",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_rahgot",
+    "task_id": "mask_rahgot",
+    "collectible_id": "dragon_priest_mask_rahgot",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_vokun",
+    "task_id": "mask_vokun",
+    "collectible_id": "dragon_priest_mask_vokun",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_volsung",
+    "task_id": "mask_volsung",
+    "collectible_id": "dragon_priest_mask_volsung",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_wooden",
+    "task_id": "mask_wooden",
+    "collectible_id": "dragon_priest_mask_wooden",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_konahrik",
+    "task_id": "mask_konahrik",
+    "collectible_id": "dragon_priest_mask_konahrik",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_ahzidal",
+    "task_id": "mask_ahzidal",
+    "collectible_id": "dragon_priest_mask_ahzidal",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_dukaan",
+    "task_id": "mask_dukaan",
+    "collectible_id": "dragon_priest_mask_dukaan",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_zahkriisos",
+    "task_id": "mask_zahkriisos",
+    "collectible_id": "dragon_priest_mask_zahkriisos",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_priest_mask_miraak",
+    "task_id": "mask_miraak",
+    "collectible_id": "dragon_priest_mask_miraak",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_coral_1",
+    "task_id": "claw_coral_buy_winterhold",
+    "collectible_id": "dragon_claw_coral",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_coral_2",
+    "task_id": "claw_coral_yngol_barrow",
+    "collectible_id": "dragon_claw_coral",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_diamond_1",
+    "task_id": "claw_diamond_skuldafn",
+    "collectible_id": "dragon_claw_diamond",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_ebony_1",
+    "task_id": "claw_ebony_korvanjund",
+    "collectible_id": "dragon_claw_ebony",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_emerald_1",
+    "task_id": "claw_emerald_reachwater",
+    "collectible_id": "dragon_claw_emerald",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_glass_1",
+    "task_id": "claw_glass_forelhost",
+    "collectible_id": "dragon_claw_glass",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_golden_1",
+    "task_id": "collectible_golden_claw_recover",
+    "collectible_id": "dragon_claw_golden",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_iron_1",
+    "task_id": "claw_iron_valthume",
+    "collectible_id": "dragon_claw_iron",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_ivory_1",
+    "task_id": "claw_ivory_folgunthur",
+    "collectible_id": "dragon_claw_ivory",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_ruby_1",
+    "task_id": "claw_ruby_dead_mens_respite",
+    "collectible_id": "dragon_claw_ruby",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_sapphire_1",
+    "task_id": "claw_sapphire_ivarstead",
+    "collectible_id": "dragon_claw_sapphire",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_amethyst_1",
+    "task_id": "claw_amethyst_left_vahloks_tomb",
+    "collectible_id": "dragon_claw_amethyst",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_dragon_claw_amethyst_2",
+    "task_id": "claw_amethyst_right_vahloks_tomb",
+    "collectible_id": "dragon_claw_amethyst",
+    "credit_count": 1
+  }
+]

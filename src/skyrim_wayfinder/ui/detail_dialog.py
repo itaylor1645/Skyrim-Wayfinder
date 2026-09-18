@@ -6,6 +6,7 @@ from PySide6.QtWidgets import (
     QDialog,
     QFrame,
     QHBoxLayout,
+    QInputDialog,
     QLabel,
     QMessageBox,
     QPushButton,
@@ -15,7 +16,7 @@ from PySide6.QtWidgets import (
 )
 
 from skyrim_wayfinder.domain import TaskEvaluation, TaskStatus
-from skyrim_wayfinder.services import ChoiceConfirmationRequired, WayfinderService
+from skyrim_wayfinder.services import ChoiceConfirmationRequired, TaskOutcomeRequired, WayfinderService
 from .theme import domain_badges_html, tinted_card_style
 
 
@@ -125,6 +126,20 @@ class DetailDialog(QDialog):
             reason.setObjectName("warning" if evaluation.status is TaskStatus.LOCKED else "muted")
             reason.setWordWrap(True)
             layout.addWidget(reason)
+        for condition_id in task.access_condition_ids:
+            condition = self.service.content.access_conditions[condition_id]
+            satisfied = self.service.state.is_access_condition_satisfied(condition_id)
+            access = QHBoxLayout()
+            note = QLabel(f"Access condition: {condition.label}\n{condition.description}")
+            note.setWordWrap(True)
+            access.addWidget(note, 1)
+            button = QPushButton("Reset access" if satisfied else "Mark access satisfied")
+            button.clicked.connect(
+                lambda _checked=False, item=condition_id, value=not satisfied:
+                self._set_access(item, value)
+            )
+            access.addWidget(button)
+            layout.addLayout(access)
         if task.review_note:
             note = QLabel(f"Dataset note: {task.review_note}")
             note.setObjectName("muted")
@@ -148,7 +163,40 @@ class DetailDialog(QDialog):
         correction.activated.connect(lambda index, task_id=task.id, combo=correction: self._correct(task_id, combo, index))
         buttons.addWidget(correction)
         layout.addLayout(buttons)
+        if not self.is_location:
+            for membership in self.service.memberships_for_task(task.id):
+                story = self.service.content.stories[membership.story_id]
+                if not story.resolution_choice_id:
+                    continue
+                choice = self.service.content.choices[story.resolution_choice_id]
+                resolution = QHBoxLayout()
+                for option in choice.options.values():
+                    if not option.manual_resolution:
+                        continue
+                    button = QPushButton(f"Resolve as {option.label}")
+                    button.clicked.connect(
+                        lambda _checked=False, choice_id=choice.id, option_id=option.id:
+                        self._resolve_choice(choice_id, option_id)
+                    )
+                    resolution.addWidget(button)
+                if self.service.state.get_choice(choice.id):
+                    reset = QPushButton("Reset resolution")
+                    reset.clicked.connect(
+                        lambda _checked=False, choice_id=choice.id: self._resolve_choice(choice_id, None)
+                    )
+                    resolution.addWidget(reset)
+                layout.addLayout(resolution)
         return panel
+
+    def _resolve_choice(self, choice_id: str, option_id: str | None) -> None:
+        self.service.set_manual_choice(choice_id, option_id)
+        self.state_changed.emit()
+        self._render()
+
+    def _set_access(self, condition_id: str, satisfied: bool) -> None:
+        self.service.set_access_condition(condition_id, satisfied)
+        self.state_changed.emit()
+        self._render()
 
     def _correct(self, task_id: str, combo: QComboBox, index: int) -> None:
         combo.setCurrentIndex(0)
@@ -165,6 +213,17 @@ class DetailDialog(QDialog):
     def _change(self, task_id: str, status: TaskStatus | None) -> None:
         try:
             self.service.set_task_state(task_id, status)
+        except TaskOutcomeRequired as required:
+            options = list(required.task.outcome_options.items())
+            labels = [label for _option_id, label in options]
+            label, accepted = QInputDialog.getItem(
+                self, "Record observed Skyrim outcome",
+                "What happened in Skyrim?", labels, 0, False,
+            )
+            if not accepted:
+                return
+            outcome_id = options[labels.index(label)][0]
+            self.service.set_task_state(task_id, status, outcome_id=outcome_id)
         except ChoiceConfirmationRequired as choice:
             opposing = "\n".join(f"• {title}" for title in choice.excluded_titles)
             answer = QMessageBox.warning(

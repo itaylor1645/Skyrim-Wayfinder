@@ -2,5 +2,14 @@
   {"id":"dark_brotherhood_path","title":"Dark Brotherhood path","source_url":"https://en.uesp.net/wiki/Skyrim:With_Friends_Like_These...","options":[
     {"id":"join","label":"Join the Dark Brotherhood","excludes_options":["destroy"]},
     {"id":"destroy","label":"Destroy the Dark Brotherhood","excludes_options":["join"]}
+  ]},
+  {"id":"mq_fallen_adviser","title":"The Fallen adviser route","source_url":"https://en.uesp.net/wiki/Skyrim:The_Fallen","options":[
+    {"id":"paarthurnax","label":"Consult Paarthurnax","excludes_options":["arngeir","esbern"]},
+    {"id":"arngeir","label":"Consult Arngeir","excludes_options":["paarthurnax","esbern"]},
+    {"id":"esbern","label":"Consult Esbern","excludes_options":["paarthurnax","arngeir"]}
+  ]},
+  {"id":"paarthurnax_resolution","title":"Paarthurnax resolution","source_url":"https://en.uesp.net/wiki/Skyrim:Paarthurnax_(quest)","options":[
+    {"id":"killed","label":"Killed","excludes_options":["spared"]},
+    {"id":"spared","label":"Spared","excludes_options":["killed"],"manual_resolution":true}
   ]}
 ]

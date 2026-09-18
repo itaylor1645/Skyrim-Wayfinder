@@ -1,32 +1,687 @@
 [
-  {"id":"mq_unbound","collection_id":"skyrim_main_quest","display_name":"Unbound","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:Unbound"},
-  {"id":"mq_before_storm","collection_id":"skyrim_main_quest","display_name":"Before the Storm","sort_order":20,"source_url":"https://en.uesp.net/wiki/Skyrim:Before_the_Storm"},
-  {"id":"mq_bleak_falls","collection_id":"skyrim_main_quest","display_name":"Bleak Falls Barrow","sort_order":30,"source_url":"https://en.uesp.net/wiki/Skyrim:Bleak_Falls_Barrow_(quest)"},
-  {"id":"mq_dragon_rising","collection_id":"skyrim_main_quest","display_name":"Dragon Rising","sort_order":40,"source_url":"https://en.uesp.net/wiki/Skyrim:Dragon_Rising"},
-  {"id":"mq_way_voice","collection_id":"skyrim_main_quest","display_name":"The Way of the Voice","sort_order":50,"source_url":"https://en.uesp.net/wiki/Skyrim:The_Way_of_the_Voice"},
-  {"id":"mq_the_fallen","collection_id":"skyrim_main_quest","display_name":"The Fallen","sort_order":60,"source_url":"https://en.uesp.net/wiki/Skyrim:The_Fallen"},
-  {"id":"mq_world_eater_eyrie","collection_id":"skyrim_main_quest","display_name":"The World-Eater's Eyrie","sort_order":70,"source_url":"https://en.uesp.net/wiki/Skyrim:The_World-Eater%27s_Eyrie"},
-  {"id":"college_first_lessons","collection_id":"college_winterhold","display_name":"First Lessons","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:First_Lessons"},
-  {"id":"college_under_saarthal","collection_id":"college_winterhold","display_name":"Under Saarthal","sort_order":20,"source_url":"https://en.uesp.net/wiki/Skyrim:Under_Saarthal"},
-  {"id":"college_hitting_books","collection_id":"college_winterhold","display_name":"Hitting the Books","sort_order":30,"source_url":"https://en.uesp.net/wiki/Skyrim:Hitting_the_Books"},
-  {"id":"college_good_intentions","collection_id":"college_winterhold","display_name":"Good Intentions","sort_order":40,"source_url":"https://en.uesp.net/wiki/Skyrim:Good_Intentions"},
-  {"id":"college_revealing_unseen","collection_id":"college_winterhold","display_name":"Revealing the Unseen","sort_order":50,"source_url":"https://en.uesp.net/wiki/Skyrim:Revealing_the_Unseen"},
-  {"id":"college_containment","collection_id":"college_winterhold","display_name":"Containment","sort_order":60,"source_url":"https://en.uesp.net/wiki/Skyrim:Containment"},
-  {"id":"college_staff_magnus","collection_id":"college_winterhold","display_name":"The Staff of Magnus","sort_order":70,"source_url":"https://en.uesp.net/wiki/Skyrim:The_Staff_of_Magnus"},
-  {"id":"db_innocence_lost","collection_id":"dark_brotherhood","display_name":"Innocence Lost","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:Innocence_Lost"},
-  {"id":"db_with_friends","collection_id":"dark_brotherhood","display_name":"With Friends Like These...","sort_order":20,"source_url":"https://en.uesp.net/wiki/Skyrim:With_Friends_Like_These..."},
-  {"id":"db_destroy","collection_id":"dark_brotherhood","display_name":"Destroy the Dark Brotherhood!","sort_order":30,"source_url":"https://en.uesp.net/wiki/Skyrim:Destroy_the_Dark_Brotherhood!"},
-  {"id":"claw_golden","collection_id":"dragon_claws","display_name":"Golden Claw","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:The_Golden_Claw"},
-  {"id":"mask_labyrinthian","collection_id":"dragon_priest_masks","display_name":"Labyrinthian Expedition","sort_order":10},
-  {"id":"mask_skuldafn","collection_id":"dragon_priest_masks","display_name":"Skuldafn Expedition","sort_order":20},
-  {"id":"artifact_staff_magnus","collection_id":"unique_artifacts","display_name":"The Staff of Magnus","sort_order":10},
-  {"id":"artifact_break_dawn","collection_id":"daedric_artifacts","display_name":"The Break of Dawn","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:The_Break_of_Dawn"},
-  {"id":"shout_unrelenting_bleak_falls","collection_id":"unrelenting_force","display_name":"Bleak Falls Barrow","sort_order":10},
-  {"id":"shout_storm_skuldafn","collection_id":"storm_call","display_name":"Skuldafn","sort_order":10},
-  {"id":"hold_whiterun_thane","collection_id":"hold_whiterun","display_name":"Thane of Whiterun","sort_order":10},
-  {"id":"hold_whiterun_breezehome","collection_id":"hold_whiterun","display_name":"Breezehome","sort_order":20},
-  {"id":"hold_rift_thane","collection_id":"hold_rift","display_name":"Thane Requirements","sort_order":10},
-  {"id":"side_golden_claw","collection_id":"skyrim_side_quests","display_name":"The Golden Claw","sort_order":10},
-  {"id":"side_stoking_flames","collection_id":"skyrim_side_quests","display_name":"Stoking the Flames","sort_order":20,"source_url":"https://en.uesp.net/wiki/Skyrim:Stoking_the_Flames"},
-  {"id":"prep_stoking_flames","collection_id":"set_aside","display_name":"Stoking the Flames","sort_order":10}
+  {
+    "id": "mq_unbound",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Unbound",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Unbound"
+  },
+  {
+    "id": "mq_before_storm",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Before the Storm",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Before_the_Storm"
+  },
+  {
+    "id": "mq_bleak_falls",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Bleak Falls Barrow",
+    "sort_order": 30,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Bleak_Falls_Barrow_(quest)"
+  },
+  {
+    "id": "mq_dragon_rising",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Dragon Rising",
+    "sort_order": 40,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Rising"
+  },
+  {
+    "id": "mq_way_voice",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "The Way of the Voice",
+    "sort_order": 50,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Way_of_the_Voice"
+  },
+  {
+    "id": "mq_horn_jurgen",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "The Horn of Jurgen Windcaller",
+    "sort_order": 60,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Horn_of_Jurgen_Windcaller"
+  },
+  {
+    "id": "mq_blade_dark",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "A Blade in the Dark",
+    "sort_order": 70,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Blade_in_the_Dark"
+  },
+  {
+    "id": "mq_diplomatic_immunity",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Diplomatic Immunity",
+    "sort_order": 80,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Diplomatic_Immunity"
+  },
+  {
+    "id": "mq_cornered_rat",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "A Cornered Rat",
+    "sort_order": 90,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Cornered_Rat"
+  },
+  {
+    "id": "mq_alduins_wall",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Alduin's Wall",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alduin%27s_Wall"
+  },
+  {
+    "id": "mq_throat_world",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "The Throat of the World",
+    "sort_order": 110,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Throat_of_the_World"
+  },
+  {
+    "id": "mq_elder_knowledge",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Elder Knowledge",
+    "sort_order": 120,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elder_Knowledge"
+  },
+  {
+    "id": "mq_alduins_bane",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Alduin's Bane",
+    "sort_order": 130,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alduin%27s_Bane"
+  },
+  {
+    "id": "mq_the_fallen",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "The Fallen",
+    "sort_order": 140,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Fallen"
+  },
+  {
+    "id": "mq_season_unending",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Season Unending",
+    "sort_order": 150,
+    "classification": "CONDITIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Season_Unending"
+  },
+  {
+    "id": "mq_paarthurnax",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Paarthurnax",
+    "sort_order": 160,
+    "classification": "OPTIONAL",
+    "resolution_choice_id": "paarthurnax_resolution",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Paarthurnax_(quest)"
+  },
+  {
+    "id": "mq_world_eater_eyrie",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "The World-Eater's Eyrie",
+    "sort_order": 170,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_World-Eater%27s_Eyrie"
+  },
+  {
+    "id": "mq_sovngarde",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Sovngarde",
+    "sort_order": 180,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Sovngarde_(quest)"
+  },
+  {
+    "id": "mq_dragonslayer",
+    "collection_id": "skyrim_main_quest",
+    "display_name": "Dragonslayer",
+    "sort_order": 190,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragonslayer"
+  },
+  {
+    "id": "college_first_lessons",
+    "collection_id": "college_winterhold",
+    "display_name": "First Lessons",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:First_Lessons"
+  },
+  {
+    "id": "college_under_saarthal",
+    "collection_id": "college_winterhold",
+    "display_name": "Under Saarthal",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Under_Saarthal"
+  },
+  {
+    "id": "college_hitting_books",
+    "collection_id": "college_winterhold",
+    "display_name": "Hitting the Books",
+    "sort_order": 30,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hitting_the_Books"
+  },
+  {
+    "id": "college_good_intentions",
+    "collection_id": "college_winterhold",
+    "display_name": "Good Intentions",
+    "sort_order": 40,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Good_Intentions"
+  },
+  {
+    "id": "college_revealing_unseen",
+    "collection_id": "college_winterhold",
+    "display_name": "Revealing the Unseen",
+    "sort_order": 50,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Revealing_the_Unseen"
+  },
+  {
+    "id": "college_containment",
+    "collection_id": "college_winterhold",
+    "display_name": "Containment",
+    "sort_order": 60,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Containment"
+  },
+  {
+    "id": "college_staff_magnus",
+    "collection_id": "college_winterhold",
+    "display_name": "The Staff of Magnus",
+    "sort_order": 70,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Staff_of_Magnus"
+  },
+  {
+    "id": "db_innocence_lost",
+    "collection_id": "dark_brotherhood",
+    "display_name": "Innocence Lost",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Innocence_Lost"
+  },
+  {
+    "id": "db_with_friends",
+    "collection_id": "dark_brotherhood",
+    "display_name": "With Friends Like These...",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:With_Friends_Like_These..."
+  },
+  {
+    "id": "db_destroy",
+    "collection_id": "dark_brotherhood",
+    "display_name": "Destroy the Dark Brotherhood!",
+    "sort_order": 30,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Destroy_the_Dark_Brotherhood!"
+  },
+  {
+    "id": "claw_golden",
+    "collection_id": "dragon_claws",
+    "display_name": "Golden Claw",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Golden_Claw"
+  },
+  {
+    "id": "claw_diamond",
+    "collection_id": "dragon_claws",
+    "display_name": "Diamond Claw",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Diamond_Claw"
+  },
+  {
+    "id": "mask_labyrinthian",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Labyrinthian Expedition",
+    "sort_order": 10
+  },
+  {
+    "id": "mask_skuldafn",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Skuldafn Expedition",
+    "sort_order": 20
+  },
+  {
+    "id": "artifact_staff_magnus",
+    "collection_id": "unique_artifacts",
+    "display_name": "The Staff of Magnus",
+    "sort_order": 10
+  },
+  {
+    "id": "artifact_break_dawn",
+    "collection_id": "daedric_artifacts",
+    "display_name": "The Break of Dawn",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Break_of_Dawn"
+  },
+  {
+    "id": "shout_unrelenting_bleak_falls",
+    "collection_id": "unrelenting_force",
+    "display_name": "Bleak Falls Barrow",
+    "sort_order": 10
+  },
+  {
+    "id": "shout_unrelenting_greybeards",
+    "collection_id": "unrelenting_force",
+    "display_name": "Greybeard Training",
+    "sort_order": 20
+  },
+  {
+    "id": "shout_whirlwind_greybeards",
+    "collection_id": "whirlwind_sprint",
+    "display_name": "Greybeard Training",
+    "sort_order": 10
+  },
+  {
+    "id": "shout_ethereal_ustengrav",
+    "collection_id": "become_ethereal",
+    "display_name": "Ustengrav",
+    "sort_order": 10
+  },
+  {
+    "id": "shout_clear_skies_high_hrothgar",
+    "collection_id": "clear_skies",
+    "display_name": "High Hrothgar",
+    "sort_order": 10
+  },
+  {
+    "id": "shout_fire_breath_throat",
+    "collection_id": "fire_breath",
+    "display_name": "Throat of the World",
+    "sort_order": 10
+  },
+  {
+    "id": "shout_dragonrend_throat",
+    "collection_id": "dragonrend",
+    "display_name": "Throat of the World",
+    "sort_order": 10
+  },
+  {
+    "id": "shout_call_dragon_fallen",
+    "collection_id": "call_dragon",
+    "display_name": "The Fallen",
+    "sort_order": 10
+  },
+  {
+    "id": "shout_storm_skuldafn",
+    "collection_id": "storm_call",
+    "display_name": "Skuldafn",
+    "sort_order": 10
+  },
+  {
+    "id": "shout_call_valor_sovngarde",
+    "collection_id": "call_of_valor",
+    "display_name": "Sovngarde",
+    "sort_order": 10
+  },
+  {
+    "id": "hold_whiterun_thane",
+    "collection_id": "hold_whiterun",
+    "display_name": "Thane of Whiterun",
+    "sort_order": 10
+  },
+  {
+    "id": "hold_whiterun_breezehome",
+    "collection_id": "hold_whiterun",
+    "display_name": "Breezehome",
+    "sort_order": 20
+  },
+  {
+    "id": "hold_rift_thane",
+    "collection_id": "hold_rift",
+    "display_name": "Thane Requirements",
+    "sort_order": 10
+  },
+  {
+    "id": "side_golden_claw",
+    "collection_id": "skyrim_side_quests",
+    "display_name": "The Golden Claw",
+    "sort_order": 10
+  },
+  {
+    "id": "side_stoking_flames",
+    "collection_id": "skyrim_side_quests",
+    "display_name": "Stoking the Flames",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Stoking_the_Flames"
+  },
+  {
+    "id": "prep_stoking_flames",
+    "collection_id": "set_aside",
+    "display_name": "Stoking the Flames",
+    "sort_order": 10
+  },
+  {
+    "id": "shout_animal_allegiance_acquisitions",
+    "collection_id": "animal_allegiance",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Animal_Allegiance"
+  },
+  {
+    "id": "shout_aura_whisper_acquisitions",
+    "collection_id": "aura_whisper",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Aura_Whisper"
+  },
+  {
+    "id": "shout_become_ethereal_acquisitions",
+    "collection_id": "become_ethereal",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Become_Ethereal"
+  },
+  {
+    "id": "shout_call_dragon_acquisitions",
+    "collection_id": "call_dragon",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Call_Dragon"
+  },
+  {
+    "id": "shout_call_of_valor_acquisitions",
+    "collection_id": "call_of_valor",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Call_of_Valor"
+  },
+  {
+    "id": "shout_clear_skies_acquisitions",
+    "collection_id": "clear_skies",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Clear_Skies"
+  },
+  {
+    "id": "shout_disarm_acquisitions",
+    "collection_id": "disarm",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Disarm"
+  },
+  {
+    "id": "shout_dismay_acquisitions",
+    "collection_id": "dismay",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dismay"
+  },
+  {
+    "id": "shout_dragonrend_acquisitions",
+    "collection_id": "dragonrend",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragonrend"
+  },
+  {
+    "id": "shout_elemental_fury_acquisitions",
+    "collection_id": "elemental_fury",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elemental_Fury"
+  },
+  {
+    "id": "shout_fire_breath_acquisitions",
+    "collection_id": "fire_breath",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Fire_Breath"
+  },
+  {
+    "id": "shout_frost_breath_acquisitions",
+    "collection_id": "frost_breath",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Frost_Breath"
+  },
+  {
+    "id": "shout_ice_form_acquisitions",
+    "collection_id": "ice_form",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ice_Form"
+  },
+  {
+    "id": "shout_kynes_peace_acquisitions",
+    "collection_id": "kynes_peace",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Kyne%27s_Peace"
+  },
+  {
+    "id": "shout_marked_for_death_acquisitions",
+    "collection_id": "marked_for_death",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Marked_for_Death"
+  },
+  {
+    "id": "shout_slow_time_acquisitions",
+    "collection_id": "slow_time",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Slow_Time"
+  },
+  {
+    "id": "shout_storm_call_acquisitions",
+    "collection_id": "storm_call",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Storm_Call"
+  },
+  {
+    "id": "shout_throw_voice_acquisitions",
+    "collection_id": "throw_voice",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Throw_Voice"
+  },
+  {
+    "id": "shout_unrelenting_force_acquisitions",
+    "collection_id": "unrelenting_force",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Unrelenting_Force"
+  },
+  {
+    "id": "shout_whirlwind_sprint_acquisitions",
+    "collection_id": "whirlwind_sprint",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Whirlwind_Sprint"
+  },
+  {
+    "id": "shout_drain_vitality_acquisitions",
+    "collection_id": "drain_vitality",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Drain_Vitality"
+  },
+  {
+    "id": "shout_soul_tear_acquisitions",
+    "collection_id": "soul_tear",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Soul_Tear"
+  },
+  {
+    "id": "shout_summon_durnehviir_acquisitions",
+    "collection_id": "summon_durnehviir",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summon_Durnehviir"
+  },
+  {
+    "id": "shout_battle_fury_acquisitions",
+    "collection_id": "battle_fury",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Battle_Fury"
+  },
+  {
+    "id": "shout_bend_will_acquisitions",
+    "collection_id": "bend_will",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Bend_Will"
+  },
+  {
+    "id": "shout_cyclone_acquisitions",
+    "collection_id": "cyclone",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Cyclone"
+  },
+  {
+    "id": "shout_dragon_aspect_acquisitions",
+    "collection_id": "dragon_aspect",
+    "display_name": "Word Acquisitions",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Aspect"
+  },
+  {
+    "id": "mask_hevnoraak",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Hevnoraak",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hevnoraak"
+  },
+  {
+    "id": "mask_krosis",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Krosis",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Krosis"
+  },
+  {
+    "id": "mask_otar",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Otar",
+    "sort_order": 50,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Otar"
+  },
+  {
+    "id": "mask_rahgot",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Rahgot",
+    "sort_order": 60,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Rahgot"
+  },
+  {
+    "id": "mask_vokun",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Vokun",
+    "sort_order": 70,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Vokun"
+  },
+  {
+    "id": "mask_volsung",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Volsung",
+    "sort_order": 80,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Volsung"
+  },
+  {
+    "id": "mask_wooden",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Wooden Mask",
+    "sort_order": 90,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Wooden_Mask"
+  },
+  {
+    "id": "mask_konahrik",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Konahrik",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Konahrik"
+  },
+  {
+    "id": "mask_ahzidal",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Ahzidal",
+    "sort_order": 110,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ahzidal"
+  },
+  {
+    "id": "mask_dukaan",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Dukaan",
+    "sort_order": 120,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dukaan"
+  },
+  {
+    "id": "mask_zahkriisos",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Zahkriisos",
+    "sort_order": 130,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Zahkriisos"
+  },
+  {
+    "id": "mask_miraak",
+    "collection_id": "dragon_priest_masks",
+    "display_name": "Miraak",
+    "sort_order": 140,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Miraak"
+  },
+  {
+    "id": "claw_coral",
+    "collection_id": "dragon_claws",
+    "display_name": "Coral Dragon Claw",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Coral_Dragon_Claw"
+  },
+  {
+    "id": "claw_ebony",
+    "collection_id": "dragon_claws",
+    "display_name": "Ebony Claw",
+    "sort_order": 30,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ebony_Claw"
+  },
+  {
+    "id": "claw_emerald",
+    "collection_id": "dragon_claws",
+    "display_name": "Emerald Dragon Claw",
+    "sort_order": 40,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Emerald_Dragon_Claw"
+  },
+  {
+    "id": "claw_glass",
+    "collection_id": "dragon_claws",
+    "display_name": "Glass Claw",
+    "sort_order": 50,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glass_Claw"
+  },
+  {
+    "id": "claw_iron",
+    "collection_id": "dragon_claws",
+    "display_name": "Iron Claw",
+    "sort_order": 70,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Iron_Claw"
+  },
+  {
+    "id": "claw_ivory",
+    "collection_id": "dragon_claws",
+    "display_name": "Ivory Dragon Claw",
+    "sort_order": 80,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ivory_Dragon_Claw"
+  },
+  {
+    "id": "claw_ruby",
+    "collection_id": "dragon_claws",
+    "display_name": "Ruby Dragon Claw",
+    "sort_order": 90,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ruby_Dragon_Claw"
+  },
+  {
+    "id": "claw_sapphire",
+    "collection_id": "dragon_claws",
+    "display_name": "Sapphire Dragon Claw",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Sapphire_Dragon_Claw"
+  },
+  {
+    "id": "claw_amethyst",
+    "collection_id": "dragon_claws",
+    "display_name": "Amethyst Claw",
+    "sort_order": 110,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Amethyst_Claw"
+  },
+  {
+    "id": "prep_konahrik_readiness",
+    "collection_id": "set_aside",
+    "display_name": "Konahrik Readiness",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Bromjunaar_Sanctuary"
+  }
 ]

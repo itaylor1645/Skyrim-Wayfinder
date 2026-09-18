@@ -1,45 +1,2092 @@
 [
-  {"id":"mq_unbound_escape_helgen","title":"Escape Helgen","objective":"Escape Helgen Keep and reach Skyrim.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"helgen_keep","source_url":"https://en.uesp.net/wiki/Skyrim:Unbound"},
-  {"id":"mq_before_storm_reach_riverwood","title":"Reach Riverwood","objective":"Travel to Riverwood and speak with your companion's contact.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"riverwood","prerequisites":[{"type":"task_complete","task_id":"mq_unbound_escape_helgen"}]},
-  {"id":"mq_before_storm_go_whiterun","title":"Warn Jarl Balgruuf","objective":"Travel to Dragonsreach and warn Jarl Balgruuf about the dragon attack.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"dragonsreach","prerequisites":[{"type":"task_complete","task_id":"mq_before_storm_reach_riverwood"}]},
-  {"id":"mq_bleak_falls_accept","title":"Speak to Farengar","objective":"Speak to Farengar about recovering the Dragonstone.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"dragonsreach","prerequisites":[{"type":"task_complete","task_id":"mq_before_storm_go_whiterun"}]},
-  {"id":"mq_bleak_falls_dragonstone","title":"Recover the Dragonstone","objective":"Take the Dragonstone from the draugr guarding the word wall.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"bleak_falls_barrow","prerequisites":[{"type":"task_complete","task_id":"mq_bleak_falls_accept"}]},
-  {"id":"collectible_golden_claw_recover","title":"Recover the Golden Claw","objective":"Recover the Golden Claw from Arvel the Swift and use it to open the puzzle door.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"bleak_falls_barrow","source_url":"https://en.uesp.net/wiki/Skyrim:The_Golden_Claw"},
-  {"id":"shout_unrelenting_force_bleak_falls","title":"Learn Unrelenting Force — Force","objective":"Learn the word of power from the word wall in Bleak Falls Barrow.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"bleak_falls_barrow","source_url":"https://en.uesp.net/wiki/Skyrim:Unrelenting_Force"},
-  {"id":"mq_bleak_falls_return_dragonstone","title":"Deliver the Dragonstone","objective":"Return the Dragonstone to Farengar in Dragonsreach.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"dragonsreach","prerequisites":[{"type":"task_complete","task_id":"mq_bleak_falls_dragonstone"}]},
-  {"id":"golden_claw_return_lucan","title":"Return the Golden Claw to Lucan","objective":"Return the Golden Claw to Lucan Valerius at the Riverwood Trader.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"riverwood_trader","prerequisites":[{"type":"task_complete","task_id":"collectible_golden_claw_recover"}]},
-  {"id":"mq_dragon_rising_watchtower","title":"Defeat the Dragon at the Western Watchtower","objective":"Help Irileth defeat the dragon at the Western Watchtower.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"western_watchtower","prerequisites":[{"type":"task_complete","task_id":"mq_bleak_falls_return_dragonstone"}]},
-  {"id":"hold_whiterun_thane","title":"Report to Jarl Balgruuf and Become Thane","objective":"Return to Jarl Balgruuf after Dragon Rising to report the dragon's defeat and be named Thane.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"dragonsreach","prerequisites":[{"type":"task_complete","task_id":"mq_dragon_rising_watchtower"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Dragon_Rising"},
-  {"id":"house_breezehome_purchase","title":"Purchase Breezehome","objective":"Purchase Breezehome from the Whiterun steward for 5,000 gold.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"dragonsreach","prerequisites":[{"type":"task_complete","task_id":"hold_whiterun_thane"}]},
-  {"id":"mq_way_voice_high_hrothgar","title":"Speak to the Greybeards","objective":"Climb the Seven Thousand Steps and speak to the Greybeards at High Hrothgar.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"high_hrothgar","prerequisites":[{"type":"task_complete","task_id":"hold_whiterun_thane"}]},
-
-  {"id":"college_gain_admission","title":"Gain Admission to the College","objective":"Pass Faralda's admission requirement and enter the College of Winterhold.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"college_of_winterhold","source_url":"https://en.uesp.net/wiki/Skyrim:First_Lessons"},
-  {"id":"college_first_lessons","title":"Complete Tolfdir's First Lesson","objective":"Attend Tolfdir's lesson and demonstrate a ward spell.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"college_of_winterhold","prerequisites":[{"type":"task_complete","task_id":"college_gain_admission"}],"source_url":"https://en.uesp.net/wiki/Skyrim:First_Lessons"},
-  {"id":"college_under_saarthal","title":"Explore Saarthal with Tolfdir","objective":"Explore Saarthal and discover the Eye of Magnus.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"saarthal","prerequisites":[{"type":"task_complete","task_id":"college_first_lessons"}]},
-  {"id":"college_hitting_books","title":"Recover the Stolen Books","objective":"Recover the stolen books from Fellglow Keep.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"fellglow_keep","prerequisites":[{"type":"task_complete","task_id":"college_under_saarthal"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Hitting_the_Books"},
-  {"id":"college_good_intentions","title":"Consult the Augur of Dunlain","objective":"Report to the Arch-Mage and consult the Augur of Dunlain at the College.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"college_of_winterhold","prerequisites":[{"type":"task_complete","task_id":"college_hitting_books"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Good_Intentions"},
-  {"id":"college_revealing_unseen_mzulft","title":"Find the Staff of Magnus Lead","objective":"Explore Mzulft and use the Oculory to locate the Staff of Magnus.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"mzulft","prerequisites":[{"type":"task_complete","task_id":"college_good_intentions"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Revealing_the_Unseen"},
-  {"id":"college_revealing_unseen_report_college","title":"Report the Mzulft Discovery","objective":"Return to the College of Winterhold after locating the Staff of Magnus.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"college_of_winterhold","prerequisites":[{"type":"task_complete","task_id":"college_revealing_unseen_mzulft"}]},
-  {"id":"college_containment_defend_winterhold","title":"Defend Winterhold","objective":"Defeat the magical anomalies attacking Winterhold.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"winterhold","prerequisites":[{"type":"task_complete","task_id":"college_revealing_unseen_report_college"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Containment"},
-  {"id":"college_containment_report_college","title":"Report After Defending Winterhold","objective":"Return to the College after defeating the magical anomalies.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"college_of_winterhold","prerequisites":[{"type":"task_complete","task_id":"college_containment_defend_winterhold"}]},
-  {"id":"college_staff_magnus","title":"Recover the Staff of Magnus","objective":"Enter Labyrinthian, defeat Morokei, and recover the Staff of Magnus.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"labyrinthian","prerequisites":[{"type":"task_complete","task_id":"college_containment_report_college"}]},
-  {"id":"mask_morokei","title":"Obtain the Morokei Mask","objective":"Loot the Morokei dragon priest mask while recovering the Staff of Magnus.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"labyrinthian","prerequisites":[{"type":"task_complete","task_id":"college_containment_report_college"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Morokei_(item)"},
-
-  {"id":"prep_riften_fire_salts","title":"SET ASIDE — 10 Fire Salts","objective":"Keep 10 Fire Salts for Balimund in Riften; do not sell or consume them.","geography_type":"LOCATIONLESS","planner_behavior":"PREPARATION","preparation_for":["riften_deliver_fire_salts"],"source_url":"https://en.uesp.net/wiki/Skyrim:Stoking_the_Flames"},
-  {"id":"riften_stoking_flames_start","title":"Ask Balimund About His Forge","objective":"Speak to Balimund about the fire salts needed for his forge.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"scorched_hammer","source_url":"https://en.uesp.net/wiki/Skyrim:Stoking_the_Flames"},
-  {"id":"riften_deliver_fire_salts","title":"Deliver 10 Fire Salts to Balimund","objective":"Bring all 10 Fire Salts to Balimund at The Scorched Hammer.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"scorched_hammer","prerequisites":[{"type":"task_complete","task_id":"riften_stoking_flames_start"},{"type":"preparation_complete","task_id":"prep_riften_fire_salts","description":"Set aside all 10 Fire Salts before planning the delivery."}]},
-
-  {"id":"db_innocence_lost_speak_aventus","title":"Speak to Aventus Aretino","objective":"Speak to Aventus Aretino about Grelod the Kind.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"aretino_residence","source_url":"https://en.uesp.net/wiki/Skyrim:Innocence_Lost"},
-  {"id":"db_innocence_lost_kill_grelod","title":"Kill Grelod the Kind","objective":"Kill Grelod the Kind at Honorhall Orphanage.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"honorhall_orphanage","prerequisites":[{"type":"task_complete","task_id":"db_innocence_lost_speak_aventus"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Innocence_Lost"},
-  {"id":"db_innocence_lost_report_aventus","title":"Report Back to Aventus Aretino","objective":"Return to Aventus Aretino after killing Grelod.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"aretino_residence","prerequisites":[{"type":"task_complete","task_id":"db_innocence_lost_kill_grelod"}]},
-  {"id":"db_trigger_abduction_sleep","title":"Sleep After Completing Innocence Lost","objective":"Sleep in a bed after completing Innocence Lost to trigger the Dark Brotherhood encounter.","geography_type":"LOCATIONLESS","planner_behavior":"GLOBAL_ACTION","prerequisites":[{"type":"task_complete","task_id":"db_innocence_lost_report_aventus"}],"source_url":"https://en.uesp.net/wiki/Skyrim:With_Friends_Like_These..."},
-  {"id":"db_join_at_shack","title":"Join the Dark Brotherhood","objective":"Obey Astrid in the Abandoned Shack to continue With Friends Like These...","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"abandoned_shack","choice_id":"dark_brotherhood_path","choice_option":"join","sets_choice":true,"prerequisites":[{"type":"task_complete","task_id":"db_trigger_abduction_sleep"}]},
-  {"id":"db_destroy_at_shack","title":"Kill Astrid","objective":"Kill Astrid in the Abandoned Shack to begin Destroy the Dark Brotherhood!","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"abandoned_shack","choice_id":"dark_brotherhood_path","choice_option":"destroy","sets_choice":true,"prerequisites":[{"type":"task_complete","task_id":"db_trigger_abduction_sleep"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Destroy_the_Dark_Brotherhood!"},
-
-  {"id":"mq_the_fallen_milestone","title":"The Fallen Completed","objective":"Bookkeeping milestone for completion of The Fallen; intervening main quests are outside the MVP dataset.","geography_type":"LOCATIONLESS","planner_behavior":"MILESTONE","prerequisites":[{"type":"task_complete","task_id":"mq_way_voice_high_hrothgar"}],"source_url":"https://en.uesp.net/wiki/Skyrim:The_Fallen","review_note":"MVP bridge milestone. It is visible in Task Explorer but never recommended as work."},
-  {"id":"mq_skuldafn_reach_portal","title":"Reach the Portal to Sovngarde","objective":"Fight through Skuldafn and obtain the Dragon Priest Staff needed to open the portal.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"skuldafn","missable":true,"one_way":true,"warning_text":"Do not enter the portal until all Skuldafn objectives are complete.","prerequisites":[{"type":"task_complete","task_id":"mq_the_fallen_milestone"}]},
-  {"id":"mask_nahkriin","title":"Obtain the Nahkriin Mask","objective":"Loot Nahkriin's unique dragon priest mask before leaving Skuldafn.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"skuldafn","missable":true,"one_way":true,"warning_text":"Nahkriin cannot be revisited after leaving Skuldafn normally.","prerequisites":[{"type":"task_complete","task_id":"mq_the_fallen_milestone"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Nahkriin_(item)"},
-  {"id":"shout_storm_call_skuldafn","title":"Learn Storm Call — Storm","objective":"Learn the Storm Call word from the word wall in Skuldafn Temple.","geography_type":"PHYSICAL","planner_behavior":"REGIONAL_ACTION","location_id":"skuldafn","missable":true,"one_way":true,"warning_text":"The Skuldafn word wall cannot be revisited normally after departure.","prerequisites":[{"type":"task_complete","task_id":"mq_the_fallen_milestone"}],"source_url":"https://en.uesp.net/wiki/Skyrim:Storm_Call"},
-
-  {"id":"daedric_break_of_dawn_beacon","title":"Find Meridia's Beacon","objective":"After level 12, watch for Meridia's Beacon in a randomized dungeon chest.","geography_type":"LOCATIONLESS","planner_behavior":"OPPORTUNISTIC","prerequisites":[{"type":"minimum_level","minimum_level":12}],"source_url":"https://en.uesp.net/wiki/Skyrim:The_Break_of_Dawn"}
+  {
+    "id": "mq_unbound_escape_helgen",
+    "title": "Escape Helgen",
+    "objective": "Escape Helgen Keep and reach Skyrim.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "helgen_keep",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Unbound"
+  },
+  {
+    "id": "mq_before_storm_reach_riverwood",
+    "title": "Reach Riverwood",
+    "objective": "Travel to Riverwood and speak with your companion's contact.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "riverwood",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_unbound_escape_helgen"
+      }
+    ]
+  },
+  {
+    "id": "mq_before_storm_go_whiterun",
+    "title": "Warn Jarl Balgruuf",
+    "objective": "Travel to Dragonsreach and warn Jarl Balgruuf about the dragon attack.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_unbound_escape_helgen"
+      }
+    ]
+  },
+  {
+    "id": "mq_bleak_falls_accept",
+    "title": "Speak to Farengar",
+    "objective": "Speak to Farengar about recovering the Dragonstone.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_before_storm_go_whiterun"
+      }
+    ]
+  },
+  {
+    "id": "mq_bleak_falls_dragonstone",
+    "title": "Recover the Dragonstone",
+    "objective": "Take the Dragonstone from the draugr guarding the word wall.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "bleak_falls_barrow",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_bleak_falls_accept"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "collectible_golden_claw_recover"
+      }
+    ]
+  },
+  {
+    "id": "collectible_golden_claw_recover",
+    "title": "Recover the Golden Claw",
+    "objective": "Recover the Golden Claw from Arvel the Swift and use it to open the puzzle door.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "bleak_falls_barrow",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Golden_Claw"
+  },
+  {
+    "id": "shout_unrelenting_force_bleak_falls",
+    "title": "Learn Unrelenting Force — Force",
+    "objective": "Learn the word of power from the word wall in Bleak Falls Barrow.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "bleak_falls_barrow",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Unrelenting_Force"
+  },
+  {
+    "id": "mq_bleak_falls_return_dragonstone",
+    "title": "Deliver the Dragonstone",
+    "objective": "Return the Dragonstone to Farengar in Dragonsreach.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_bleak_falls_dragonstone"
+      }
+    ]
+  },
+  {
+    "id": "golden_claw_return_lucan",
+    "title": "Return the Golden Claw to Lucan",
+    "objective": "Return the Golden Claw to Lucan Valerius at the Riverwood Trader.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "riverwood_trader",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "collectible_golden_claw_recover"
+      }
+    ]
+  },
+  {
+    "id": "mq_dragon_rising_watchtower",
+    "title": "Defeat the Dragon at the Western Watchtower",
+    "objective": "Help Irileth defeat the dragon at the Western Watchtower.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "western_watchtower",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_bleak_falls_return_dragonstone"
+      }
+    ]
+  },
+  {
+    "id": "hold_whiterun_thane",
+    "title": "Report to Jarl Balgruuf and Become Thane",
+    "objective": "Return to Jarl Balgruuf after Dragon Rising to report the dragon's defeat and be named Thane.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_dragon_rising_watchtower"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Rising"
+  },
+  {
+    "id": "house_breezehome_purchase",
+    "title": "Purchase Breezehome",
+    "objective": "Purchase Breezehome from the Whiterun steward for 5,000 gold.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "hold_whiterun_thane"
+      }
+    ]
+  },
+  {
+    "id": "mq_way_voice_high_hrothgar",
+    "title": "Answer the Greybeards and Learn Ro",
+    "objective": "Climb to High Hrothgar, demonstrate the Voice, and receive the second word of Unrelenting Force.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "high_hrothgar",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "hold_whiterun_thane"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Way_of_the_Voice"
+  },
+  {
+    "id": "mq_way_voice_whirlwind",
+    "title": "Learn Whirlwind Sprint",
+    "objective": "Complete the Greybeards' trial and receive the first word of Whirlwind Sprint.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "high_hrothgar",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_way_voice_high_hrothgar"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Whirlwind_Sprint"
+  },
+  {
+    "id": "mq_horn_search_ustengrav",
+    "title": "Search Ustengrav for the Horn",
+    "objective": "Travel through Ustengrav and reach the resting place of the Horn of Jurgen Windcaller.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "ustengrav",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_way_voice_whirlwind"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Horn_of_Jurgen_Windcaller"
+  },
+  {
+    "id": "shout_become_ethereal_ustengrav",
+    "title": "Learn a word of Become Ethereal at Ustengrav",
+    "objective": "Learn the next unacquired word of Become Ethereal from Ustengrav's word wall.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "ustengrav",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Become_Ethereal",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_way_voice_whirlwind"
+      }
+    ]
+  },
+  {
+    "id": "mq_horn_meet_delphine",
+    "title": "Meet the Horn's Taker",
+    "objective": "Meet Delphine in the secret room at the Sleeping Giant Inn and recover the Horn.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "sleeping_giant_inn",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_horn_search_ustengrav"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Horn_of_Jurgen_Windcaller"
+  },
+  {
+    "id": "mq_horn_return_greybeards",
+    "title": "Return the Horn and Receive Dah",
+    "objective": "Return the Horn to Arngeir, receive formal recognition, and learn the final word of Unrelenting Force.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "high_hrothgar",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_horn_meet_delphine"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Horn_of_Jurgen_Windcaller"
+  },
+  {
+    "id": "mq_blade_dark_kynesgrove",
+    "title": "Defeat Sahloknir with Delphine",
+    "objective": "Travel with Delphine to Kynesgrove, defeat the resurrected dragon, and speak with her afterward.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "kynesgrove",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_horn_return_greybeards"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Blade_in_the_Dark"
+  },
+  {
+    "id": "mq_diplomatic_plan",
+    "title": "Plan the Embassy Infiltration",
+    "objective": "Meet Delphine at the Sleeping Giant Inn and agree to infiltrate the Thalmor Embassy.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "sleeping_giant_inn",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_blade_dark_kynesgrove"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Diplomatic_Immunity"
+  },
+  {
+    "id": "mq_diplomatic_malborn",
+    "title": "Give Equipment to Malborn",
+    "objective": "Meet Malborn at the Winking Skeever and choose equipment to smuggle into the embassy.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "winking_skeever",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_diplomatic_plan"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Diplomatic_Immunity"
+  },
+  {
+    "id": "mq_diplomatic_depart",
+    "title": "Meet Delphine and Depart for the Embassy",
+    "objective": "Meet Delphine near Katla's Farm, change into party clothes, and take the carriage to the embassy.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "katlas_farm",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_diplomatic_malborn"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Diplomatic_Immunity"
+  },
+  {
+    "id": "mq_diplomatic_dossier",
+    "title": "Recover the Thalmor Intelligence",
+    "objective": "Infiltrate the Thalmor Embassy and recover the dossiers identifying Esbern.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "thalmor_embassy",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_diplomatic_depart"
+      }
+    ],
+    "missable": true,
+    "warning_text": "Full embassy access is quest-gated; finish the intelligence search before escaping.",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Diplomatic_Immunity"
+  },
+  {
+    "id": "mq_diplomatic_escape",
+    "title": "Escape the Embassy",
+    "objective": "Escape the embassy through Reeking Cave with the recovered intelligence.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "reeking_cave",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_diplomatic_dossier"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Diplomatic_Immunity"
+  },
+  {
+    "id": "mq_cornered_rat_find_esbern",
+    "title": "Find Esbern in the Ratway",
+    "objective": "Search the Ratway Warrens and convince Esbern to leave his hideout.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "ratway",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_diplomatic_escape"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Cornered_Rat"
+  },
+  {
+    "id": "mq_cornered_rat_return_esbern",
+    "title": "Bring Esbern to Delphine",
+    "objective": "Escort Esbern to Delphine at the Sleeping Giant Inn.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "sleeping_giant_inn",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_cornered_rat_find_esbern"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Cornered_Rat"
+  },
+  {
+    "id": "mq_alduins_wall_karthspire",
+    "title": "Reach Sky Haven Temple through Karthspire",
+    "objective": "Travel with Esbern and Delphine through Karthspire and reach the temple entrance.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "karthspire",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_cornered_rat_return_esbern"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alduin%27s_Wall"
+  },
+  {
+    "id": "mq_alduins_wall_study",
+    "title": "Open Sky Haven Temple and Study Alduin's Wall",
+    "objective": "Open Sky Haven Temple and learn how the ancient Blades defeated Alduin.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "sky_haven_temple",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_alduins_wall_karthspire"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alduin%27s_Wall"
+  },
+  {
+    "id": "mq_throat_clear_skies",
+    "title": "Receive Clear Skies",
+    "objective": "Ask Arngeir for access to Paarthurnax and learn all three words of Clear Skies.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "high_hrothgar",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_alduins_wall_study"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Clear_Skies"
+  },
+  {
+    "id": "mq_throat_meet_paarthurnax",
+    "title": "Meet Paarthurnax and Learn Fire Breath",
+    "objective": "Use Clear Skies to reach Paarthurnax and receive a word of Fire Breath.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "throat_of_the_world",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_throat_clear_skies"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Throat_of_the_World"
+  },
+  {
+    "id": "mq_elder_consult_septimus",
+    "title": "Consult Septimus Signus",
+    "objective": "Obtain the Attunement Sphere and Blank Lexicon needed to reach the Elder Scroll.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "septimus_signus_outpost",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_throat_meet_paarthurnax"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elder_Knowledge"
+  },
+  {
+    "id": "mq_elder_descend_alftand",
+    "title": "Descend through Alftand",
+    "objective": "Traverse Alftand and use the Attunement Sphere to open the route into Blackreach.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "alftand",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_elder_consult_septimus"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elder_Knowledge"
+  },
+  {
+    "id": "mq_elder_cross_blackreach",
+    "title": "Cross Blackreach to the Tower of Mzark",
+    "objective": "Navigate Blackreach and reach the Tower of Mzark.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "blackreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_elder_descend_alftand"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elder_Knowledge"
+  },
+  {
+    "id": "mq_elder_acquire_scroll",
+    "title": "Acquire the Elder Scroll (Dragon)",
+    "objective": "Operate the Tower of Mzark mechanism and take the Dragon Elder Scroll.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "tower_of_mzark",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_elder_cross_blackreach"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elder_Knowledge"
+  },
+  {
+    "id": "mq_alduins_bane_learn_dragonrend",
+    "title": "Learn Dragonrend from the Elder Scroll",
+    "objective": "Read the Elder Scroll at the Time-Wound and learn Dragonrend from the ancient heroes.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "throat_of_the_world",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_elder_acquire_scroll"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alduin%27s_Bane"
+  },
+  {
+    "id": "mq_alduins_bane_defeat",
+    "title": "Drive Alduin from the Throat of the World",
+    "objective": "Use Dragonrend to defeat Alduin and force him to retreat.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "throat_of_the_world",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_alduins_bane_learn_dragonrend"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alduin%27s_Bane"
+  },
+  {
+    "id": "college_gain_admission",
+    "title": "Gain Admission to the College",
+    "objective": "Pass Faralda's admission requirement and enter the College of Winterhold.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "college_of_winterhold",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:First_Lessons"
+  },
+  {
+    "id": "college_first_lessons",
+    "title": "Complete Tolfdir's First Lesson",
+    "objective": "Attend Tolfdir's lesson and demonstrate a ward spell.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_gain_admission"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:First_Lessons"
+  },
+  {
+    "id": "college_under_saarthal",
+    "title": "Explore Saarthal with Tolfdir",
+    "objective": "Explore Saarthal and discover the Eye of Magnus.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "saarthal",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_first_lessons"
+      }
+    ]
+  },
+  {
+    "id": "college_hitting_books",
+    "title": "Recover the Stolen Books",
+    "objective": "Recover the stolen books from Fellglow Keep.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "fellglow_keep",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_under_saarthal"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hitting_the_Books"
+  },
+  {
+    "id": "college_good_intentions",
+    "title": "Consult the Augur of Dunlain",
+    "objective": "Report to the Arch-Mage and consult the Augur of Dunlain at the College.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_hitting_books"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Good_Intentions"
+  },
+  {
+    "id": "college_revealing_unseen_mzulft",
+    "title": "Find the Staff of Magnus Lead",
+    "objective": "Explore Mzulft and use the Oculory to locate the Staff of Magnus.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "mzulft",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_good_intentions"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Revealing_the_Unseen"
+  },
+  {
+    "id": "college_revealing_unseen_report_college",
+    "title": "Report the Mzulft Discovery",
+    "objective": "Return to the College of Winterhold after locating the Staff of Magnus.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_revealing_unseen_mzulft"
+      }
+    ]
+  },
+  {
+    "id": "college_containment_defend_winterhold",
+    "title": "Defend Winterhold",
+    "objective": "Defeat the magical anomalies attacking Winterhold.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_revealing_unseen_report_college"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Containment"
+  },
+  {
+    "id": "college_containment_report_college",
+    "title": "Report After Defending Winterhold",
+    "objective": "Return to the College after defeating the magical anomalies.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_containment_defend_winterhold"
+      }
+    ]
+  },
+  {
+    "id": "college_staff_magnus",
+    "title": "Recover the Staff of Magnus",
+    "objective": "Enter Labyrinthian, defeat Morokei, and recover the Staff of Magnus.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "labyrinthian",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_containment_report_college"
+      }
+    ]
+  },
+  {
+    "id": "mask_morokei",
+    "title": "Obtain the Morokei Mask",
+    "objective": "Loot the Morokei dragon priest mask while recovering the Staff of Magnus.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "labyrinthian",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_containment_report_college"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Morokei_(item)"
+  },
+  {
+    "id": "prep_riften_fire_salts",
+    "title": "SET ASIDE — 10 Fire Salts",
+    "objective": "Keep 10 Fire Salts for Balimund in Riften; do not sell or consume them.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "PREPARATION",
+    "preparation_for": [
+      "riften_deliver_fire_salts"
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Stoking_the_Flames"
+  },
+  {
+    "id": "riften_stoking_flames_start",
+    "title": "Ask Balimund About His Forge",
+    "objective": "Speak to Balimund about the fire salts needed for his forge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "scorched_hammer",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Stoking_the_Flames"
+  },
+  {
+    "id": "riften_deliver_fire_salts",
+    "title": "Deliver 10 Fire Salts to Balimund",
+    "objective": "Bring all 10 Fire Salts to Balimund at The Scorched Hammer.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "scorched_hammer",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "riften_stoking_flames_start"
+      },
+      {
+        "type": "preparation_complete",
+        "task_id": "prep_riften_fire_salts",
+        "description": "Set aside all 10 Fire Salts before planning the delivery."
+      }
+    ]
+  },
+  {
+    "id": "db_innocence_lost_speak_aventus",
+    "title": "Speak to Aventus Aretino",
+    "objective": "Speak to Aventus Aretino about Grelod the Kind.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "aretino_residence",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Innocence_Lost"
+  },
+  {
+    "id": "db_innocence_lost_kill_grelod",
+    "title": "Kill Grelod the Kind",
+    "objective": "Kill Grelod the Kind at Honorhall Orphanage.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "honorhall_orphanage",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "db_innocence_lost_speak_aventus"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Innocence_Lost"
+  },
+  {
+    "id": "db_innocence_lost_report_aventus",
+    "title": "Report Back to Aventus Aretino",
+    "objective": "Return to Aventus Aretino after killing Grelod.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "aretino_residence",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "db_innocence_lost_kill_grelod"
+      }
+    ]
+  },
+  {
+    "id": "db_trigger_abduction_sleep",
+    "title": "Sleep After Completing Innocence Lost",
+    "objective": "Sleep in a bed after completing Innocence Lost to trigger the Dark Brotherhood encounter.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "GLOBAL_ACTION",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "db_innocence_lost_report_aventus"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:With_Friends_Like_These..."
+  },
+  {
+    "id": "db_join_at_shack",
+    "title": "Join the Dark Brotherhood",
+    "objective": "Obey Astrid in the Abandoned Shack to continue With Friends Like These...",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "abandoned_shack",
+    "choice_id": "dark_brotherhood_path",
+    "choice_option": "join",
+    "sets_choice": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "db_trigger_abduction_sleep"
+      }
+    ]
+  },
+  {
+    "id": "db_destroy_at_shack",
+    "title": "Kill Astrid",
+    "objective": "Kill Astrid in the Abandoned Shack to begin Destroy the Dark Brotherhood!",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "abandoned_shack",
+    "choice_id": "dark_brotherhood_path",
+    "choice_option": "destroy",
+    "sets_choice": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "db_trigger_abduction_sleep"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Destroy_the_Dark_Brotherhood!"
+  },
+  {
+    "id": "mq_fallen_plan_paarthurnax",
+    "title": "Learn the Trapping Plan from Paarthurnax",
+    "objective": "Ask Paarthurnax how to locate and capture one of Alduin's allies.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "throat_of_the_world",
+    "choice_id": "mq_fallen_adviser",
+    "choice_option": "paarthurnax",
+    "sets_choice": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_alduins_bane_defeat"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Fallen"
+  },
+  {
+    "id": "mq_fallen_plan_arngeir",
+    "title": "Learn the Trapping Plan from Arngeir",
+    "objective": "Ask Arngeir how to locate and capture one of Alduin's allies.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "high_hrothgar",
+    "choice_id": "mq_fallen_adviser",
+    "choice_option": "arngeir",
+    "sets_choice": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_alduins_bane_defeat"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Fallen"
+  },
+  {
+    "id": "mq_fallen_plan_esbern",
+    "title": "Learn the Trapping Plan from Esbern",
+    "objective": "Ask Esbern how to locate and capture one of Alduin's allies.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "sky_haven_temple",
+    "choice_id": "mq_fallen_adviser",
+    "choice_option": "esbern",
+    "sets_choice": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_alduins_bane_defeat"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Fallen"
+  },
+  {
+    "id": "mq_fallen_ask_jarl",
+    "title": "Ask the Jarl to Use Dragonsreach",
+    "objective": "Ask the Jarl for permission to trap a dragon, then record whether Skyrim required a truce.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "dragonsreach",
+    "any_of_task_ids": [
+      "mq_fallen_plan_paarthurnax",
+      "mq_fallen_plan_arngeir",
+      "mq_fallen_plan_esbern"
+    ],
+    "outcome_options": {
+      "truce_required": "Truce required",
+      "truce_bypassed": "Truce bypassed by Civil War state"
+    },
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Fallen"
+  },
+  {
+    "id": "mq_season_ask_arngeir",
+    "title": "Ask Arngeir to Host the Peace Council",
+    "objective": "Ask Arngeir to host negotiations at High Hrothgar.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "high_hrothgar",
+    "applicable_outcome_task_id": "mq_fallen_ask_jarl",
+    "applicable_outcome": "truce_required",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_fallen_ask_jarl"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Season_Unending"
+  },
+  {
+    "id": "mq_season_invite_tullius",
+    "title": "Convince General Tullius to Attend",
+    "objective": "Deliver the Greybeards' summons to General Tullius at Castle Dour.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "castle_dour",
+    "applicable_outcome_task_id": "mq_fallen_ask_jarl",
+    "applicable_outcome": "truce_required",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_season_ask_arngeir"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Season_Unending"
+  },
+  {
+    "id": "mq_season_invite_ulfric",
+    "title": "Convince Ulfric Stormcloak to Attend",
+    "objective": "Deliver the Greybeards' summons to Ulfric at the Palace of the Kings.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "palace_of_the_kings",
+    "applicable_outcome_task_id": "mq_fallen_ask_jarl",
+    "applicable_outcome": "truce_required",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_season_ask_arngeir"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Season_Unending"
+  },
+  {
+    "id": "mq_season_negotiate",
+    "title": "Negotiate the Truce",
+    "objective": "Return to High Hrothgar and negotiate a temporary Civil War truce.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "high_hrothgar",
+    "applicable_outcome_task_id": "mq_fallen_ask_jarl",
+    "applicable_outcome": "truce_required",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_season_invite_tullius"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "mq_season_invite_ulfric"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Season_Unending"
+  },
+  {
+    "id": "mq_fallen_capture_odahviing",
+    "title": "Capture and Interrogate Odahviing",
+    "objective": "Prepare the trap, call Odahviing, capture him, and learn how to reach Skuldafn.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_fallen_ask_jarl"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "mq_season_negotiate",
+        "when_outcome_task_id": "mq_fallen_ask_jarl",
+        "when_outcome": "truce_required"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Fallen"
+  },
+  {
+    "id": "mq_paarthurnax_kill",
+    "title": "Kill Paarthurnax",
+    "objective": "If you accept the Blades' demand, kill Paarthurnax at the Throat of the World.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "throat_of_the_world",
+    "choice_id": "paarthurnax_resolution",
+    "choice_option": "killed",
+    "sets_choice": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_alduins_bane_defeat"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Paarthurnax_(quest)"
+  },
+  {
+    "id": "mq_paarthurnax_report",
+    "title": "Report Paarthurnax's Death to the Blades",
+    "objective": "Return to Sky Haven Temple and report Paarthurnax's death.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "sky_haven_temple",
+    "choice_id": "paarthurnax_resolution",
+    "choice_option": "killed",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_paarthurnax_kill"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Paarthurnax_(quest)"
+  },
+  {
+    "id": "mq_world_eater_depart_skuldafn",
+    "title": "Release Odahviing and Depart for Skuldafn",
+    "objective": "Release Odahviing at Dragonsreach and have him carry you to Skuldafn.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "dragonsreach",
+    "one_way": true,
+    "warning_text": "Departure begins a one-way expedition. Finish preparations before releasing Odahviing.",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_fallen_capture_odahviing"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_World-Eater%27s_Eyrie"
+  },
+  {
+    "id": "claw_diamond_skuldafn",
+    "title": "Acquire the Diamond Claw",
+    "objective": "Loot the Diamond Claw from its draugr guardian in Skuldafn Temple.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "skuldafn",
+    "missable": true,
+    "one_way": true,
+    "expires_after_task_id": "mq_skuldafn_enter_sovngarde",
+    "warning_text": "Skuldafn cannot be revisited normally after entering Sovngarde.",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_world_eater_depart_skuldafn"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Diamond_Claw"
+  },
+  {
+    "id": "mq_skuldafn_use_diamond_claw",
+    "title": "Use the Diamond Claw",
+    "objective": "Use the Diamond Claw to open the puzzle door and progress through Skuldafn Temple.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "skuldafn",
+    "one_way": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "claw_diamond_skuldafn"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_World-Eater%27s_Eyrie"
+  },
+  {
+    "id": "mq_skuldafn_defeat_nahkriin",
+    "title": "Defeat Nahkriin",
+    "objective": "Defeat the dragon priest guarding Alduin's portal.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "skuldafn",
+    "one_way": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_skuldafn_use_diamond_claw"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_World-Eater%27s_Eyrie"
+  },
+  {
+    "id": "mask_nahkriin",
+    "title": "Obtain the Nahkriin Mask",
+    "objective": "Loot Nahkriin's unique dragon priest mask before leaving Skuldafn.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "skuldafn",
+    "missable": true,
+    "one_way": true,
+    "expires_after_task_id": "mq_skuldafn_enter_sovngarde",
+    "warning_text": "Nahkriin cannot be revisited after leaving Skuldafn normally.",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_skuldafn_defeat_nahkriin"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Nahkriin_(item)"
+  },
+  {
+    "id": "mq_skuldafn_reach_portal",
+    "title": "Open the Portal to Sovngarde",
+    "objective": "Use Nahkriin's staff at the dragon seal to open Alduin's portal.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "skuldafn",
+    "one_way": true,
+    "warning_text": "Do not enter until every remaining Skuldafn objective is complete.",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_skuldafn_defeat_nahkriin"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_World-Eater%27s_Eyrie"
+  },
+  {
+    "id": "mq_skuldafn_enter_sovngarde",
+    "title": "Enter Sovngarde",
+    "objective": "Enter Alduin's portal after completing every Skuldafn objective you intend to collect.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "skuldafn",
+    "one_way": true,
+    "warning_text": "Entering permanently ends normal access to Skuldafn.",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_skuldafn_reach_portal"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_World-Eater%27s_Eyrie"
+  },
+  {
+    "id": "mq_sovngarde_hall",
+    "title": "Reach the Hall of Valor and Rally the Heroes",
+    "objective": "Cross Sovngarde, prove yourself to Tsun, and enlist the ancient heroes against Alduin.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "sovngarde",
+    "one_way": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_skuldafn_enter_sovngarde"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Sovngarde_(quest)"
+  },
+  {
+    "id": "mq_dragonslayer_defeat_alduin",
+    "title": "Defeat Alduin in Sovngarde",
+    "objective": "Dispel Alduin's mist with the heroes and defeat the World-Eater.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "sovngarde",
+    "one_way": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_sovngarde_hall"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragonslayer"
+  },
+  {
+    "id": "mq_dragonslayer_call_valor",
+    "title": "Receive Call of Valor and Return to Skyrim",
+    "objective": "Receive the Call of Valor shout from Tsun before returning to the Throat of the World.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "sovngarde",
+    "one_way": true,
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_dragonslayer_defeat_alduin"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragonslayer"
+  },
+  {
+    "id": "shout_storm_call_skuldafn",
+    "title": "Learn a word of Storm Call at Skuldafn",
+    "objective": "Learn the next unacquired word of Storm Call from Skuldafn's word wall.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "skuldafn",
+    "missable": true,
+    "one_way": true,
+    "expires_after_task_id": "mq_skuldafn_enter_sovngarde",
+    "warning_text": "The Skuldafn word wall cannot be revisited normally after departure.",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_world_eater_depart_skuldafn"
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Storm_Call"
+  },
+  {
+    "id": "daedric_break_of_dawn_beacon",
+    "title": "Find Meridia's Beacon",
+    "objective": "After level 12, watch for Meridia's Beacon in a randomized dungeon chest.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "OPPORTUNISTIC",
+    "prerequisites": [
+      {
+        "type": "minimum_level",
+        "minimum_level": 12
+      }
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Break_of_Dawn"
+  },
+  {
+    "id": "shout_animal_allegiance_ancients_ascent",
+    "title": "Learn a word of Animal Allegiance at Ancient's Ascent",
+    "objective": "Learn a word of Animal Allegiance at Ancient's Ascent.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Animal_Allegiance",
+    "location_id": "ancients_ascent"
+  },
+  {
+    "id": "shout_animal_allegiance_angarvunde",
+    "title": "Learn a word of Animal Allegiance at Angarvunde",
+    "objective": "Learn a word of Animal Allegiance at Angarvunde.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Animal_Allegiance",
+    "location_id": "angarvunde"
+  },
+  {
+    "id": "shout_animal_allegiance_ysgramors_tomb",
+    "title": "Learn a word of Animal Allegiance at Ysgramor's Tomb",
+    "objective": "Learn a word of Animal Allegiance at Ysgramor's Tomb.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Animal_Allegiance",
+    "location_id": "ysgramors_tomb",
+    "access_condition_ids": [
+      "access_ysgramors_tomb"
+    ]
+  },
+  {
+    "id": "shout_aura_whisper_northwind_summit",
+    "title": "Learn a word of Aura Whisper at Northwind Summit",
+    "objective": "Learn a word of Aura Whisper at Northwind Summit.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Aura_Whisper",
+    "location_id": "northwind_summit"
+  },
+  {
+    "id": "shout_aura_whisper_valthume",
+    "title": "Learn a word of Aura Whisper at Valthume",
+    "objective": "Learn a word of Aura Whisper at Valthume.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Aura_Whisper",
+    "location_id": "valthume"
+  },
+  {
+    "id": "shout_aura_whisper_volunruud",
+    "title": "Learn a word of Aura Whisper at Volunruud",
+    "objective": "Learn a word of Aura Whisper at Volunruud.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Aura_Whisper",
+    "location_id": "volunruud"
+  },
+  {
+    "id": "shout_become_ethereal_ironbind_barrow",
+    "title": "Learn a word of Become Ethereal at Ironbind Barrow",
+    "objective": "Learn a word of Become Ethereal at Ironbind Barrow.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Become_Ethereal",
+    "location_id": "ironbind_barrow"
+  },
+  {
+    "id": "shout_become_ethereal_lost_valley_redoubt",
+    "title": "Learn a word of Become Ethereal at Lost Valley Redoubt",
+    "objective": "Learn a word of Become Ethereal at Lost Valley Redoubt.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Become_Ethereal",
+    "location_id": "lost_valley_redoubt"
+  },
+  {
+    "id": "shout_disarm_eldersblood_peak",
+    "title": "Learn a word of Disarm at Eldersblood Peak",
+    "objective": "Learn a word of Disarm at Eldersblood Peak.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Disarm",
+    "location_id": "eldersblood_peak"
+  },
+  {
+    "id": "shout_disarm_silverdrift_lair",
+    "title": "Learn a word of Disarm at Silverdrift Lair",
+    "objective": "Learn a word of Disarm at Silverdrift Lair.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Disarm",
+    "location_id": "silverdrift_lair"
+  },
+  {
+    "id": "shout_disarm_snow_veil_sanctum",
+    "title": "Learn a word of Disarm at Snow Veil Sanctum",
+    "objective": "Learn a word of Disarm at Snow Veil Sanctum.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Disarm",
+    "location_id": "snow_veil_sanctum",
+    "access_condition_ids": [
+      "access_snow_veil_sanctum"
+    ]
+  },
+  {
+    "id": "shout_dismay_dead_crone_rock",
+    "title": "Learn a word of Dismay at Dead Crone Rock",
+    "objective": "Learn a word of Dismay at Dead Crone Rock.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dismay",
+    "location_id": "dead_crone_rock"
+  },
+  {
+    "id": "shout_dismay_lost_tongue_overlook",
+    "title": "Learn a word of Dismay at Lost Tongue Overlook",
+    "objective": "Learn a word of Dismay at Lost Tongue Overlook.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dismay",
+    "location_id": "lost_tongue_overlook"
+  },
+  {
+    "id": "shout_dismay_shalidors_maze",
+    "title": "Learn a word of Dismay at Shalidor's Maze",
+    "objective": "Learn a word of Dismay at Shalidor's Maze.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dismay",
+    "location_id": "shalidors_maze"
+  },
+  {
+    "id": "shout_elemental_fury_dragontooth_crater",
+    "title": "Learn a word of Elemental Fury at Dragontooth Crater",
+    "objective": "Learn a word of Elemental Fury at Dragontooth Crater.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elemental_Fury",
+    "location_id": "dragontooth_crater"
+  },
+  {
+    "id": "shout_elemental_fury_kilkreath_temple",
+    "title": "Learn a word of Elemental Fury at Kilkreath Temple",
+    "objective": "Learn a word of Elemental Fury at Kilkreath Temple.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elemental_Fury",
+    "location_id": "kilkreath_temple"
+  },
+  {
+    "id": "shout_elemental_fury_shriekwind_bastion",
+    "title": "Learn a word of Elemental Fury at Shriekwind Bastion",
+    "objective": "Learn a word of Elemental Fury at Shriekwind Bastion.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elemental_Fury",
+    "location_id": "shriekwind_bastion"
+  },
+  {
+    "id": "shout_fire_breath_dustmans_cairn",
+    "title": "Learn a word of Fire Breath at Dustman's Cairn",
+    "objective": "Learn a word of Fire Breath at Dustman's Cairn.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Fire_Breath",
+    "location_id": "dustmans_cairn",
+    "access_condition_ids": [
+      "access_dustmans_cairn"
+    ]
+  },
+  {
+    "id": "shout_fire_breath_sunderstone_gorge",
+    "title": "Learn a word of Fire Breath at Sunderstone Gorge",
+    "objective": "Learn a word of Fire Breath at Sunderstone Gorge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Fire_Breath",
+    "location_id": "sunderstone_gorge"
+  },
+  {
+    "id": "shout_frost_breath_bonestrewn_crest",
+    "title": "Learn a word of Frost Breath at Bonestrewn Crest",
+    "objective": "Learn a word of Frost Breath at Bonestrewn Crest.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Frost_Breath",
+    "location_id": "bonestrewn_crest"
+  },
+  {
+    "id": "shout_frost_breath_folgunthur",
+    "title": "Learn a word of Frost Breath at Folgunthur",
+    "objective": "Learn a word of Frost Breath at Folgunthur.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Frost_Breath",
+    "location_id": "folgunthur"
+  },
+  {
+    "id": "shout_frost_breath_skyborn_altar",
+    "title": "Learn a word of Frost Breath at Skyborn Altar",
+    "objective": "Learn a word of Frost Breath at Skyborn Altar.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Frost_Breath",
+    "location_id": "skyborn_altar"
+  },
+  {
+    "id": "shout_ice_form_frostmere_crypt",
+    "title": "Learn a word of Ice Form at Frostmere Crypt",
+    "objective": "Learn a word of Ice Form at Frostmere Crypt.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ice_Form",
+    "location_id": "frostmere_crypt"
+  },
+  {
+    "id": "shout_ice_form_mount_anthor",
+    "title": "Learn a word of Ice Form at Mount Anthor",
+    "objective": "Learn a word of Ice Form at Mount Anthor.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ice_Form",
+    "location_id": "mount_anthor"
+  },
+  {
+    "id": "shout_ice_form_saarthal",
+    "title": "Learn a word of Ice Form at Saarthal",
+    "objective": "Learn a word of Ice Form at Saarthal.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ice_Form",
+    "location_id": "saarthal",
+    "access_condition_ids": [
+      "access_saarthal"
+    ]
+  },
+  {
+    "id": "shout_kynes_peace_ragnvald",
+    "title": "Learn a word of Kyne's Peace at Ragnvald",
+    "objective": "Learn a word of Kyne's Peace at Ragnvald.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Kyne's_Peace",
+    "location_id": "ragnvald"
+  },
+  {
+    "id": "shout_kynes_peace_rannveigs_fast",
+    "title": "Learn a word of Kyne's Peace at Rannveig's Fast",
+    "objective": "Learn a word of Kyne's Peace at Rannveig's Fast.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Kyne's_Peace",
+    "location_id": "rannveigs_fast"
+  },
+  {
+    "id": "shout_kynes_peace_shroud_hearth_barrow",
+    "title": "Learn a word of Kyne's Peace at Shroud Hearth Barrow",
+    "objective": "Learn a word of Kyne's Peace at Shroud Hearth Barrow.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Kyne's_Peace",
+    "location_id": "shroud_hearth_barrow",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "claw_sapphire_ivarstead"
+      }
+    ]
+  },
+  {
+    "id": "shout_marked_for_death_autumnwatch_tower",
+    "title": "Learn a word of Marked for Death at Autumnwatch Tower",
+    "objective": "Learn a word of Marked for Death at Autumnwatch Tower.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Marked_for_Death",
+    "location_id": "autumnwatch_tower"
+  },
+  {
+    "id": "shout_marked_for_death_forsaken_cave",
+    "title": "Learn a word of Marked for Death at Forsaken Cave",
+    "objective": "Learn a word of Marked for Death at Forsaken Cave.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Marked_for_Death",
+    "location_id": "forsaken_cave"
+  },
+  {
+    "id": "shout_slow_time_deepwood_redoubt",
+    "title": "Learn a word of Slow Time at Deepwood Redoubt / Hag's End",
+    "objective": "Learn a word of Slow Time at Deepwood Redoubt / Hag's End.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Slow_Time",
+    "location_id": "deepwood_redoubt"
+  },
+  {
+    "id": "shout_slow_time_korvanjund",
+    "title": "Learn a word of Slow Time at Korvanjund",
+    "objective": "Learn a word of Slow Time at Korvanjund.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Slow_Time",
+    "location_id": "korvanjund",
+    "access_condition_ids": [
+      "access_korvanjund"
+    ]
+  },
+  {
+    "id": "shout_storm_call_forelhost",
+    "title": "Learn a word of Storm Call at Forelhost",
+    "objective": "Learn a word of Storm Call at Forelhost.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Storm_Call",
+    "location_id": "forelhost"
+  },
+  {
+    "id": "shout_storm_call_high_gate_ruins",
+    "title": "Learn a word of Storm Call at High Gate Ruins",
+    "objective": "Learn a word of Storm Call at High Gate Ruins.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Storm_Call",
+    "location_id": "high_gate_ruins"
+  },
+  {
+    "id": "shout_whirlwind_sprint_dead_mens_respite",
+    "title": "Learn a word of Whirlwind Sprint at Dead Men's Respite",
+    "objective": "Learn a word of Whirlwind Sprint at Dead Men's Respite.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Whirlwind_Sprint",
+    "location_id": "dead_mens_respite",
+    "access_condition_ids": [
+      "access_dead_mens_respite"
+    ]
+  },
+  {
+    "id": "shout_whirlwind_sprint_volskygge",
+    "title": "Learn a word of Whirlwind Sprint at Volskygge",
+    "objective": "Learn a word of Whirlwind Sprint at Volskygge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Whirlwind_Sprint",
+    "location_id": "volskygge"
+  },
+  {
+    "id": "shout_drain_vitality_arcwind_point",
+    "title": "Learn a word of Drain Vitality at Arcwind Point",
+    "objective": "Learn a word of Drain Vitality at Arcwind Point.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Drain_Vitality",
+    "location_id": "arcwind_point"
+  },
+  {
+    "id": "shout_drain_vitality_dimhollow_crypt",
+    "title": "Learn a word of Drain Vitality at Dimhollow Crypt",
+    "objective": "Learn a word of Drain Vitality at Dimhollow Crypt.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Drain_Vitality",
+    "location_id": "dimhollow_crypt",
+    "access_condition_ids": [
+      "access_dimhollow_crypt"
+    ]
+  },
+  {
+    "id": "shout_drain_vitality_forgotten_vale",
+    "title": "Learn a word of Drain Vitality at Forgotten Vale",
+    "objective": "Learn a word of Drain Vitality at Forgotten Vale.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Drain_Vitality",
+    "location_id": "forgotten_vale",
+    "access_condition_ids": [
+      "access_forgotten_vale"
+    ]
+  },
+  {
+    "id": "shout_cyclone_benkongerike",
+    "title": "Learn a word of Cyclone at Benkongerike",
+    "objective": "Learn a word of Cyclone at Benkongerike.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Cyclone",
+    "location_id": "benkongerike"
+  },
+  {
+    "id": "shout_cyclone_kolbjorn_barrow",
+    "title": "Learn a word of Cyclone at Kolbjorn Barrow",
+    "objective": "Learn a word of Cyclone at Kolbjorn Barrow.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Cyclone",
+    "location_id": "kolbjorn_barrow",
+    "access_condition_ids": [
+      "access_kolbjorn_depths"
+    ]
+  },
+  {
+    "id": "shout_cyclone_white_ridge_barrow",
+    "title": "Learn a word of Cyclone at White Ridge Barrow",
+    "objective": "Learn a word of Cyclone at White Ridge Barrow.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Cyclone",
+    "location_id": "white_ridge_barrow"
+  },
+  {
+    "id": "shout_dragon_aspect_temple_of_miraak",
+    "title": "Learn a word of Dragon Aspect at Temple of Miraak",
+    "objective": "Learn a word of Dragon Aspect at Temple of Miraak.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Aspect",
+    "location_id": "temple_of_miraak",
+    "access_condition_ids": [
+      "access_temple_of_miraak"
+    ]
+  },
+  {
+    "id": "shout_dragon_aspect_raven_rock_mine",
+    "title": "Learn a word of Dragon Aspect at Raven Rock Mine / Bloodskal Barrow",
+    "objective": "Learn a word of Dragon Aspect at Raven Rock Mine / Bloodskal Barrow.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Aspect",
+    "location_id": "raven_rock_mine",
+    "access_condition_ids": [
+      "access_bloodskal_barrow"
+    ]
+  },
+  {
+    "id": "shout_dragon_aspect_apocrypha",
+    "title": "Learn a word of Dragon Aspect at Apocrypha",
+    "objective": "Learn a word of Dragon Aspect at Apocrypha.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Aspect",
+    "location_id": "apocrypha",
+    "access_condition_ids": [
+      "access_waking_dreams"
+    ]
+  },
+  {
+    "id": "shout_throw_voice_shearpoint",
+    "title": "Learn Throw Voice at Shearpoint",
+    "objective": "Learn Throw Voice at Shearpoint.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Throw_Voice",
+    "location_id": "shearpoint"
+  },
+  {
+    "id": "shout_marked_for_death_sanctuary",
+    "title": "Learn a word of Marked for Death in the Dark Brotherhood Sanctuary",
+    "objective": "Learn a word of Marked for Death in the Dark Brotherhood Sanctuary.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Marked_for_Death",
+    "location_id": "dark_brotherhood_sanctuary",
+    "any_of_task_ids": [
+      "db_join_at_shack",
+      "db_destroy_at_shack"
+    ]
+  },
+  {
+    "id": "shout_slow_time_labyrinthian",
+    "title": "Learn a word of Slow Time in Labyrinthian",
+    "objective": "Learn a word of Slow Time in Labyrinthian.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Slow_Time",
+    "location_id": "labyrinthian",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_containment_report_college"
+      }
+    ]
+  },
+  {
+    "id": "shout_summon_durnehviir_soul_cairn",
+    "title": "Receive Summon Durnehviir in the Soul Cairn",
+    "objective": "Receive Summon Durnehviir in the Soul Cairn.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summon_Durnehviir",
+    "location_id": "soul_cairn",
+    "access_condition_ids": [
+      "access_soul_cairn"
+    ]
+  },
+  {
+    "id": "shout_soul_tear_summon_1",
+    "title": "Summon Durnehviir in Tamriel — teaching 1",
+    "objective": "Summon Durnehviir outdoors in Tamriel and receive the next word of Soul Tear.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "GLOBAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Soul_Tear",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "shout_summon_durnehviir_soul_cairn"
+      }
+    ]
+  },
+  {
+    "id": "shout_soul_tear_summon_2",
+    "title": "Summon Durnehviir in Tamriel — teaching 2",
+    "objective": "Summon Durnehviir outdoors in Tamriel and receive the next word of Soul Tear.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "GLOBAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Soul_Tear",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "shout_soul_tear_summon_1"
+      }
+    ]
+  },
+  {
+    "id": "shout_soul_tear_summon_3",
+    "title": "Summon Durnehviir in Tamriel — teaching 3",
+    "objective": "Summon Durnehviir outdoors in Tamriel and receive the next word of Soul Tear.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "GLOBAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Soul_Tear",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "shout_soul_tear_summon_2"
+      }
+    ]
+  },
+  {
+    "id": "shout_battle_fury_vahloks_tomb_1",
+    "title": "Learn Battle Fury word 1 in Vahlok's Tomb",
+    "objective": "Learn Battle Fury word 1 in Vahlok's Tomb.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Battle_Fury",
+    "location_id": "vahloks_tomb",
+    "access_condition_ids": [
+      "access_vahloks_tomb"
+    ]
+  },
+  {
+    "id": "shout_battle_fury_vahloks_tomb_2",
+    "title": "Learn Battle Fury word 2 in Vahlok's Tomb",
+    "objective": "Learn Battle Fury word 2 in Vahlok's Tomb.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Battle_Fury",
+    "location_id": "vahloks_tomb",
+    "access_condition_ids": [
+      "access_vahloks_tomb"
+    ],
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "shout_battle_fury_vahloks_tomb_1"
+      }
+    ]
+  },
+  {
+    "id": "shout_battle_fury_vahloks_tomb_3",
+    "title": "Learn Battle Fury word 3 in Vahlok's Tomb",
+    "objective": "Learn Battle Fury word 3 in Vahlok's Tomb.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Battle_Fury",
+    "location_id": "vahloks_tomb",
+    "access_condition_ids": [
+      "access_vahloks_tomb"
+    ],
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "shout_battle_fury_vahloks_tomb_2"
+      }
+    ]
+  },
+  {
+    "id": "shout_bend_will_saerings_watch",
+    "title": "Learn a word of Bend Will at Saering's Watch",
+    "objective": "Learn a word of Bend Will at Saering's Watch.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Bend_Will",
+    "location_id": "saerings_watch"
+  },
+  {
+    "id": "shout_bend_will_apocrypha",
+    "title": "Receive the next word of Bend Will in Apocrypha",
+    "objective": "Receive the next word of Bend Will in Apocrypha.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Bend_Will",
+    "location_id": "apocrypha",
+    "access_condition_ids": [
+      "access_bend_will_mind"
+    ]
+  },
+  {
+    "id": "shout_bend_will_skaal",
+    "title": "Receive the final word of Bend Will at Skaal Village",
+    "objective": "Receive the final word of Bend Will at Skaal Village.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Bend_Will",
+    "location_id": "skaal_village",
+    "access_condition_ids": [
+      "access_bend_will_dragon"
+    ],
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "shout_bend_will_apocrypha"
+      }
+    ]
+  },
+  {
+    "id": "mask_hevnoraak",
+    "title": "Acquire the Hevnoraak Mask",
+    "objective": "Acquire the Hevnoraak dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "valthume",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hevnoraak"
+  },
+  {
+    "id": "mask_krosis",
+    "title": "Acquire the Krosis Mask",
+    "objective": "Acquire the Krosis dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "shearpoint",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Krosis"
+  },
+  {
+    "id": "mask_otar",
+    "title": "Acquire the Otar Mask",
+    "objective": "Acquire the Otar dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "ragnvald",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Otar"
+  },
+  {
+    "id": "mask_rahgot",
+    "title": "Acquire the Rahgot Mask",
+    "objective": "Acquire the Rahgot dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "forelhost",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Rahgot"
+  },
+  {
+    "id": "mask_vokun",
+    "title": "Acquire the Vokun Mask",
+    "objective": "Acquire the Vokun dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "high_gate_ruins",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Vokun"
+  },
+  {
+    "id": "mask_volsung",
+    "title": "Acquire the Volsung Mask",
+    "objective": "Acquire the Volsung dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "volskygge",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Volsung"
+  },
+  {
+    "id": "mask_wooden",
+    "title": "Acquire the Wooden Mask",
+    "objective": "Acquire the Wooden Mask dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "bromjunaar_sanctuary",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Wooden_Mask"
+  },
+  {
+    "id": "mask_konahrik",
+    "title": "Acquire the Konahrik Mask",
+    "objective": "Use the Wooden Mask and all eight shrine masks at Bromjunaar Sanctuary to acquire Konahrik.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "bromjunaar_sanctuary",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Konahrik",
+    "prerequisites": [
+      {
+        "type": "preparation_complete",
+        "task_id": "prep_konahrik_masks",
+        "description": "Confirm current possession of the Wooden Mask and all eight shrine masks."
+      }
+    ]
+  },
+  {
+    "id": "mask_ahzidal",
+    "title": "Acquire the Ahzidal Mask",
+    "objective": "Acquire the Ahzidal dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "kolbjorn_barrow",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ahzidal",
+    "access_condition_ids": [
+      "access_kolbjorn_depths"
+    ]
+  },
+  {
+    "id": "mask_dukaan",
+    "title": "Acquire the Dukaan Mask",
+    "objective": "Acquire the Dukaan dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "white_ridge_barrow",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dukaan"
+  },
+  {
+    "id": "mask_zahkriisos",
+    "title": "Acquire the Zahkriisos Mask",
+    "objective": "Acquire the Zahkriisos dragon priest mask.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "raven_rock_mine",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Zahkriisos",
+    "access_condition_ids": [
+      "access_bloodskal_barrow"
+    ]
+  },
+  {
+    "id": "mask_miraak",
+    "title": "Acquire the Miraak Mask",
+    "objective": "Loot Miraak's mask after defeating him in Apocrypha.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "apocrypha",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Miraak",
+    "access_condition_ids": [
+      "access_waking_dreams"
+    ],
+    "missable": true,
+    "warning_text": "Loot Miraak's mask before leaving the summit; Wayfinder cannot infer later whether it was missed."
+  },
+  {
+    "id": "claw_coral_buy_winterhold",
+    "title": "Acquire the Coral Dragon Claw from Birna",
+    "objective": "Obtain the Coral Dragon Claw from Birna in Winterhold.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "winterhold",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws"
+  },
+  {
+    "id": "claw_coral_yngol_barrow",
+    "title": "Acquire the Coral Dragon Claw at Yngol Barrow",
+    "objective": "Take the Coral Dragon Claw from its pedestal at Yngol Barrow.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "yngol_barrow",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws"
+  },
+  {
+    "id": "claw_ebony_korvanjund",
+    "title": "Acquire the Ebony Claw",
+    "objective": "Acquire the Ebony Claw in Korvanjund.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "korvanjund",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws",
+    "access_condition_ids": [
+      "access_korvanjund"
+    ]
+  },
+  {
+    "id": "claw_emerald_reachwater",
+    "title": "Acquire the Emerald Dragon Claw",
+    "objective": "Acquire the Emerald Dragon Claw at Reachwater Rock.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "reachwater_rock",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws"
+  },
+  {
+    "id": "claw_glass_forelhost",
+    "title": "Acquire the Glass Claw",
+    "objective": "Acquire the Glass Claw in Forelhost.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "forelhost",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws"
+  },
+  {
+    "id": "claw_iron_valthume",
+    "title": "Acquire the Iron Claw",
+    "objective": "Acquire the Iron Claw in Valthume.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "valthume",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws"
+  },
+  {
+    "id": "claw_ivory_folgunthur",
+    "title": "Acquire the Ivory Dragon Claw",
+    "objective": "Acquire the Ivory Dragon Claw in Folgunthur.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "folgunthur",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws"
+  },
+  {
+    "id": "claw_ruby_dead_mens_respite",
+    "title": "Acquire the Ruby Dragon Claw",
+    "objective": "Acquire the Ruby Dragon Claw in Dead Men's Respite.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "dead_mens_respite",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws",
+    "access_condition_ids": [
+      "access_dead_mens_respite"
+    ]
+  },
+  {
+    "id": "claw_sapphire_ivarstead",
+    "title": "Acquire the Sapphire Dragon Claw",
+    "objective": "Receive the Sapphire Dragon Claw in Ivarstead after completing Wilhelm's investigation.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "ivarstead",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws",
+    "access_condition_ids": [
+      "access_sapphire_claw_reward"
+    ]
+  },
+  {
+    "id": "claw_amethyst_left_vahloks_tomb",
+    "title": "Acquire the left half of the Amethyst Claw",
+    "objective": "Acquire the left half of the Amethyst Claw in Vahlok's Tomb.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "vahloks_tomb",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws",
+    "access_condition_ids": [
+      "access_vahloks_tomb"
+    ]
+  },
+  {
+    "id": "claw_amethyst_right_vahloks_tomb",
+    "title": "Acquire the right half of the Amethyst Claw",
+    "objective": "Acquire the right half of the Amethyst Claw in Vahlok's Tomb.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "location_id": "vahloks_tomb",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Claws",
+    "access_condition_ids": [
+      "access_vahloks_tomb"
+    ]
+  },
+  {
+    "id": "prep_konahrik_masks",
+    "title": "Assemble the Wooden Mask and all eight shrine masks",
+    "objective": "Confirm you currently possess the Wooden Mask and all eight shrine masks. Prior acquisition alone does not guarantee current possession.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "PREPARATION",
+    "required_collectible_ids": [
+      "dragon_priest_mask_wooden",
+      "dragon_priest_mask_hevnoraak",
+      "dragon_priest_mask_krosis",
+      "dragon_priest_mask_morokei",
+      "dragon_priest_mask_nahkriin",
+      "dragon_priest_mask_otar",
+      "dragon_priest_mask_rahgot",
+      "dragon_priest_mask_vokun",
+      "dragon_priest_mask_volsung"
+    ],
+    "preparation_for": [
+      "mask_konahrik"
+    ],
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Bromjunaar_Sanctuary"
+  }
 ]

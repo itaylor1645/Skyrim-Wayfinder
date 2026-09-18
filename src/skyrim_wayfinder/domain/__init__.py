@@ -1,8 +1,13 @@
 from .models import (
+    AccessCondition,
     CanonicalContent,
     Choice,
     ChoiceOption,
     Collection,
+    CollectibleCompletionRule,
+    CollectibleCredit,
+    CollectibleDefinition,
+    CompletionRole,
     CompletionDomain,
     ContentSource,
     GeographyType,
@@ -13,6 +18,9 @@ from .models import (
     Prerequisite,
     RegionType,
     Story,
+    StoryClassification,
+    ShoutCredit,
+    ShoutDefinition,
     Task,
     TaskEvaluation,
     TaskMembership,
@@ -22,8 +30,9 @@ from .models import (
 )
 
 __all__ = [
-    "CanonicalContent", "Choice", "ChoiceOption", "Collection", "CompletionDomain",
+    "AccessCondition", "CanonicalContent", "Choice", "ChoiceOption", "Collection", "CollectibleCompletionRule",
+    "CollectibleCredit", "CollectibleDefinition", "CompletionRole", "CompletionDomain",
     "ContentSource", "GeographyType", "Location", "LocationType", "PlannerBehavior", "PlannerItem", "Prerequisite",
-    "RegionType", "Story", "Task", "TaskEvaluation", "TaskMembership",
+    "RegionType", "Story", "StoryClassification", "ShoutCredit", "ShoutDefinition", "Task", "TaskEvaluation", "TaskMembership",
     "TaskStatus", "TravelRegion", "VerificationStatus",
 ]

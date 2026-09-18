@@ -8,7 +8,7 @@ Official Skyrim, Dawnguard, Hearthfire, and Dragonborn destinations needed by th
 
 UESP is the primary practical source. Each canonical Location carries its narrowest useful factual source URL(s). Quest and collection overview pages in the coverage inventory establish why destinations are required. Dynamically selected and radiant-only destinations do not expand the catalog.
 
-**Catalog totals:** 21 Travel Regions; 235 Locations; 31 Locations awaiting Product review.
+**Catalog totals:** 21 Travel Regions; 237 Locations; 0 Locations awaiting Product review.
 
 ## Travel Regions
 
@@ -16,18 +16,18 @@ UESP is the primary practical source. Each canonical Location carries its narrow
 |---|---:|---:|---|---|
 | Whiterun (`whiterun`) | CITY | 21 | Whiterun | Whiterun is the practical major-city hub for central Skyrim and the Riverwood corridor. |
 | Falkreath (`falkreath`) | CITY | 22 | Falkreath | Falkreath is the practical city hub for southern forest destinations, including Helgen. |
-| Riften (`riften`) | CITY | 34 | Riften | Riften is the practical major-city hub for mainland Rift destinations. |
+| Riften (`riften`) | CITY | 35 | Riften | Riften is the practical major-city hub for mainland Rift destinations. |
 | Markarth (`markarth`) | CITY | 24 | Markarth | Markarth is the major-city travel hub for the Reach. |
 | Morthal (`morthal`) | CITY | 14 | Morthal | Morthal is the practical city hub for Hjaalmarch destinations. |
 | Solitude (`solitude`) | CITY | 22 | Solitude | Solitude is the major-city travel hub for Haafingar and the northwestern coast. |
 | Dawnstar (`dawnstar`) | CITY | 24 | Dawnstar | Dawnstar is the practical major-city hub for destinations in the Pale. |
 | Winterhold (`winterhold`) | CITY | 13 | Winterhold / College of Winterhold | Winterhold and the College form the practical hub for the northeastern coast. |
-| Windhelm (`windhelm`) | CITY | 22 | Windhelm | Windhelm is the practical major-city hub for Eastmarch. |
+| Windhelm (`windhelm`) | CITY | 21 | Windhelm | Windhelm is the practical major-city hub for Eastmarch. |
 | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | CITY | 11 | Raven Rock | Raven Rock is Solstheim's principal transport and service hub; southern destinations form its ordinary travel area. |
 | High Hrothgar / Throat of the World (`high_hrothgar`) | EXPEDITION | 2 | Ivarstead | The climb and limited access make the mountain a distinct Survival planning trip. |
 | Labyrinthian (`labyrinthian`) | EXPEDITION | 3 | Labyrinthian staging area | Labyrinthian is isolated and quest-gated enough to warrant a dedicated expedition region. |
 | Blackreach (`blackreach`) | EXPEDITION | 3 | Blackreach access point | Blackreach is a large, self-contained underground expedition rather than ordinary city-region travel. |
-| Solstheim — Skaal / North (`solstheim_north`) | EXPEDITION | 11 | Skaal Village | Northern Solstheim lacks city services and involves long, exposed trips best planned as an expedition from Skaal Village. |
+| Solstheim — Skaal / North (`solstheim_north`) | EXPEDITION | 13 | Skaal Village | Northern Solstheim lacks city services and involves long, exposed trips best planned as an expedition from Skaal Village. |
 | Skuldafn (`skuldafn`) | SPECIAL_DESTINATION | 1 | Skuldafn | Skuldafn is a one-way special destination and cannot be treated as ordinary city travel. |
 | Sovngarde (`sovngarde`) | SPECIAL_DESTINATION | 1 | Hall of Valor | Sovngarde is a quest-gated worldspace reached only through Skuldafn and requires its own special-destination plan. |
 | Castle Volkihar (`castle_volkihar`) | SPECIAL_DESTINATION | 1 | Castle Volkihar | The island castle is reached by a dedicated sea crossing and is operationally distinct from mainland city travel. |
@@ -36,74 +36,35 @@ UESP is the primary practical source. Each canonical Location carries its narrow
 | Apocrypha (`apocrypha`) | SPECIAL_DESTINATION | 1 | Black Book entry | Apocrypha is a separate plane accessed through quest-specific Black Books and is not ordinary Solstheim travel. |
 | Misty Grove (`misty_grove`) | SPECIAL_DESTINATION | 1 | Misty Grove portal | Misty Grove is a temporary otherworldly destination and cannot be grouped with its changing departure inn. |
 
-## Region model requiring Product review
-
-### Solstheim — Raven Rock / South, Solstheim — Skaal / North
-
-- **Proposed:** Use Raven Rock / South as the ordinary service region and Skaal / North as an expedition region.
-- **Alternative:** Use one unified Solstheim region.
-- **Reason:** The two-region model reduces long Survival journeys without creating a region for every island landmark; Product approval is required before task population.
-
-## Completion-scope questions for Product
+## Approved completion-scope decisions
 
 ### Summon Karstaag
 
-- **Proposed disposition:** Exclude from Unique Spells & Powers pending Product review.
-- **Potential Locations:** `glacial_cave`, `castle_karstaag_ruins`
-- **Reason:** It is a fixed quest reward and discrete power, but it has only three lifetime uses rather than being a permanent reusable ability. The potential Locations are intentionally not canonicalized until inclusion is approved.
+- **Disposition:** Include acquisition in Unique Spells & Powers; do not track remaining uses.
+- **Catalog Locations:** `glacial_cave`, `castle_karstaag_ruins`
+- **Reason:** The power is a deliberately acquired unique reward tied to fixed official content; its three-use limit does not create separate completion states.
 - **Evidence:** [source 1](https://en.uesp.net/wiki/Skyrim:Summoning_Karstaag)
 
 ### Equipment-bound powers such as Breath of Nchuak and Ahzidal's Genius
 
-- **Proposed disposition:** Exclude as separate Unique Spells & Powers completion rewards.
-- **Potential Locations:** `nchardak`, `kolbjorn_barrow`
+- **Disposition:** Exclude as separate Unique Spells & Powers completion rewards.
+- **Catalog Locations:** `nchardak`, `kolbjorn_barrow`
 - **Reason:** These effects exist only while the associated collectible equipment is worn; their Locations are already present for Dragonborn content.
 - **Evidence:** [source 1](https://en.uesp.net/wiki/Skyrim:Powers)
 
 ### Detect Life and other ordinarily purchasable spells with fixed copies or quest rewards
 
-- **Proposed disposition:** Exclude from the focused Unique Spells & Powers domain.
-- **Potential Locations:** `trevas_watch`
+- **Disposition:** Exclude from the focused Unique Spells & Powers domain.
+- **Catalog Locations:** None
 - **Reason:** The Product boundary excludes ordinary purchasable spell tomes. Treva's Watch was removed from the catalog after this scope audit because it otherwise had no approved completion purpose.
 - **Evidence:** [source 1](https://en.uesp.net/wiki/Skyrim:Detect_Life_(spell))
 
 ## REVIEW_REQUIRED Location assignments
 
-Every row remains assigned to exactly one provisional Region. Do not author bulk Tasks against these Locations until Product resolves the assignment.
+Every Location owns exactly one Travel Region. This table must remain empty before Task population.
 
 | Location | Provisional Region | Alternative(s) | Why ambiguous | Evidence |
 |---|---|---|---|---|
-| Arcwind Point (`arcwind_point`) | Riften (`riften`) | falkreath, high_hrothgar | The mountain site is approached from the Ivarstead side but lies near southern mountain routes; it is not part of the High Hrothgar climb itself. | [source 1](https://en.uesp.net/wiki/Skyrim:Arcwind_Point) |
-| Ashfallow Citadel (`ashfallow_citadel`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | solstheim_north, Unified Solstheim region | The citadel is north of Raven Rock near the transition between proposed operating areas. | [source 1](https://en.uesp.net/wiki/Skyrim:Ashfallow_Citadel) |
-| Beast Stone (`beast_stone`) | Solstheim — Skaal / North (`solstheim_north`) | solstheim_raven_rock, Unified Solstheim region | The northern stone supports the Skaal grouping; review concerns the overall island split. | [source 1](https://en.uesp.net/wiki/Skyrim:Beast_Stone) |
-| Benkongerike (`benkongerike`) | Solstheim — Skaal / North (`solstheim_north`) | solstheim_raven_rock, Unified Solstheim region | The northern cave supports the Skaal hub proposal but can still be treated as a Raven Rock expedition. | [source 1](https://en.uesp.net/wiki/Skyrim:Benkongerike) |
-| Earth Stone (`earth_stone`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | Unified Solstheim region | The stone is adjacent to Raven Rock; its status follows review of the island split. | [source 1](https://en.uesp.net/wiki/Skyrim:Earth_Stone) |
-| Forsaken Cave (`forsaken_cave`) | Windhelm (`windhelm`) | dawnstar | The cave is on the long road between Windhelm and Dawnstar; Windhelm is proposed for the easier eastern approach. | [source 1](https://en.uesp.net/wiki/Skyrim:Forsaken_Cave) |
-| Fort Frostmoth (`fort_frostmoth`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | Unified Solstheim region | The southern fort is most practical from Raven Rock; its status follows review of the island split. | [source 1](https://en.uesp.net/wiki/Skyrim:Fort_Frostmoth) |
-| Frostflow Lighthouse (`frostflow_lighthouse`) | Dawnstar (`dawnstar`) | winterhold | The lighthouse sits on the long north coast between Dawnstar and Winterhold. | [source 1](https://en.uesp.net/wiki/Skyrim:Frostflow_Lighthouse) |
-| High Gate Ruins (`high_gate_ruins`) | Dawnstar (`dawnstar`) | morthal, solitude | The ruin is near the Pale, Hjaalmarch, and Haafingar travel boundaries; Dawnstar is proposed as the closest ordinary hub. | [source 1](https://en.uesp.net/wiki/Skyrim:High_Gate_Ruins) |
-| Hrothmund's Barrow (`hrothmunds_barrow`) | Solstheim — Skaal / North (`solstheim_north`) | solstheim_raven_rock, Unified Solstheim region | The northern quest site follows Thirsk/Skaal travel, but a unified island model remains plausible. | [source 1](https://en.uesp.net/wiki/Skyrim:Hrothmund%27s_Barrow) |
-| Irkngthand (`irkngthand`) | Dawnstar (`dawnstar`) | windhelm | The ruin lies in the eastern Pale but is also naturally approached from Windhelm. | [source 1](https://en.uesp.net/wiki/Skyrim:Irkngthand) |
-| Kolbjorn Barrow (`kolbjorn_barrow`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | Unified Solstheim region | The barrow is a repeated southern expedition staged from Raven Rock; review concerns the proposed island split. | [source 1](https://en.uesp.net/wiki/Skyrim:Kolbjorn_Barrow) |
-| Korvanjund (`korvanjund`) | Whiterun (`whiterun`) | dawnstar | The ruin lies near the Whiterun/Pale transition; the Whiterun road is direct, while Dawnstar matches northern geography. | [source 1](https://en.uesp.net/wiki/Skyrim:Korvanjund) |
-| Nchardak (`nchardak`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | solstheim_north, Unified Solstheim region | The eastern ruin is reached with Neloth from Tel Mithryn and sits between the proposed southern and northern operating areas. | [source 1](https://en.uesp.net/wiki/Skyrim:Nchardak) |
-| Northwind Summit (`northwind_summit`) | Windhelm (`windhelm`) | riften | The summit is near the Eastmarch/Rift transition and can be approached from either Windhelm or Riften. | [source 1](https://en.uesp.net/wiki/Skyrim:Northwind_Summit) |
-| Raven Rock (`raven_rock`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | Unified Solstheim region | Raven Rock is clearly the island's primary service hub; review concerns whether Solstheim should be split at all. | [source 1](https://en.uesp.net/wiki/Skyrim:Raven_Rock) |
-| Raven Rock Mine / Bloodskal Barrow (`raven_rock_mine`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | Unified Solstheim region | The mine begins inside Raven Rock; its status follows review of the proposed island region model. | [source 1](https://en.uesp.net/wiki/Skyrim:Raven_Rock_Mine), [source 2](https://en.uesp.net/wiki/Skyrim:Bloodskal_Barrow) |
-| Saering's Watch (`saerings_watch`) | Solstheim — Skaal / North (`solstheim_north`) | solstheim_raven_rock, Unified Solstheim region | The far-northern lair supports the Skaal hub proposal but can still be reached as one long Raven Rock trip. | [source 1](https://en.uesp.net/wiki/Skyrim:Saering%27s_Watch) |
-| Severin Manor (`severin_manor`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | Unified Solstheim region | The home is unambiguously in Raven Rock; its status follows review of the proposed island region model. | [source 1](https://en.uesp.net/wiki/Skyrim:Severin_Manor) |
-| Skaal Village (`skaal_village`) | Solstheim — Skaal / North (`solstheim_north`) | Unified Solstheim region | Skaal Village is the proposed northern expedition hub; review concerns whether it warrants a separate operational region. | [source 1](https://en.uesp.net/wiki/Skyrim:Skaal_Village) |
-| Sun Stone (`sun_stone`) | Solstheim — Skaal / North (`solstheim_north`) | solstheim_raven_rock, Unified Solstheim region | The northern stone supports the Skaal grouping; review concerns the overall island split. | [source 1](https://en.uesp.net/wiki/Skyrim:Sun_Stone) |
-| Tel Mithryn (`tel_mithryn`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | solstheim_north, Unified Solstheim region | Tel Mithryn is a secondary settlement far east of Raven Rock and could justify different grouping, but a third micro-region is not proposed. | [source 1](https://en.uesp.net/wiki/Skyrim:Tel_Mithryn) |
-| Temple of Miraak (`temple_of_miraak`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | solstheim_north, Unified Solstheim region | The central temple is connected to both Raven Rock quest staging and the Skaal storyline. | [source 1](https://en.uesp.net/wiki/Skyrim:Temple_of_Miraak) |
-| Thirsk Mead Hall (`thirsk_mead_hall`) | Solstheim — Skaal / North (`solstheim_north`) | solstheim_raven_rock, Unified Solstheim region | The hall is near Skaal Village, but its viability as a repeat staging point depends on quest choices. | [source 1](https://en.uesp.net/wiki/Skyrim:Thirsk_Mead_Hall) |
-| Tree Stone (`tree_stone`) | Solstheim — Skaal / North (`solstheim_north`) | solstheim_raven_rock, Unified Solstheim region | The stone is beside the centrally located Temple of Miraak and could reasonably follow either proposed island region. | [source 1](https://en.uesp.net/wiki/Skyrim:Tree_Stone) |
-| Vahlok's Tomb (`vahloks_tomb`) | Solstheim — Skaal / North (`solstheim_north`) | solstheim_raven_rock, Unified Solstheim region | The tomb is tied to Skaal quests but lies far enough south to make the boundary subjective. | [source 1](https://en.uesp.net/wiki/Skyrim:Vahlok%27s_Tomb) |
-| Valthume (`valthume`) | Markarth (`markarth`) | whiterun | The ruin is in the eastern Reach, but its road approach can be more practical from Whiterun than from Markarth. | [source 1](https://en.uesp.net/wiki/Skyrim:Valthume) |
-| Volunruud (`volunruud`) | Whiterun (`whiterun`) | dawnstar | The ruin is between Whiterun's northern road network and the southern Pale; either city can be a practical staging hub. | [source 1](https://en.uesp.net/wiki/Skyrim:Volunruud) |
-| Water Stone (`water_stone`) | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | Unified Solstheim region | The southwestern stone is most practical from Raven Rock; its status follows review of the island split. | [source 1](https://en.uesp.net/wiki/Skyrim:Water_Stone) |
-| White Ridge Barrow (`white_ridge_barrow`) | Solstheim — Skaal / North (`solstheim_north`) | solstheim_raven_rock, Unified Solstheim region | The northern barrow supports the Skaal hub proposal but can still be treated as a Raven Rock expedition. | [source 1](https://en.uesp.net/wiki/Skyrim:White_Ridge_Barrow) |
-| Wind Stone (`wind_stone`) | Solstheim — Skaal / North (`solstheim_north`) | Unified Solstheim region | The stone is beside Skaal Village; its status follows review of the island split. | [source 1](https://en.uesp.net/wiki/Skyrim:Wind_Stone) |
 
 ## Completion-scope coverage
 
@@ -123,7 +84,7 @@ Every row remains assigned to exactly one provisional Region. Do not author bulk
 | Dragonborn | 23 | [source 1](https://en.uesp.net/wiki/Dragonborn:Quests) |
 | Holds & Homes | 36 | [source 1](https://en.uesp.net/wiki/Skyrim:Houses), [source 2](https://en.uesp.net/wiki/Skyrim:Thane) |
 | Hearthfire Homesteads | 3 | [source 1](https://en.uesp.net/wiki/Skyrim:Hearthfire) |
-| Unique Spells & Powers | 29 | [source 1](https://en.uesp.net/wiki/Skyrim:Powers), [source 2](https://en.uesp.net/wiki/Skyrim:Spells) |
+| Unique Spells & Powers | 31 | [source 1](https://en.uesp.net/wiki/Skyrim:Powers), [source 2](https://en.uesp.net/wiki/Skyrim:Spells), [source 3](https://en.uesp.net/wiki/Skyrim:Summoning_Karstaag) |
 
 ## Location coverage inventory
 
@@ -140,7 +101,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Halted Stream Camp (`halted_stream_camp`) | Whiterun | DUNGEON | SKYRIM | Unique Spells & Powers | VERIFIED |
 | Honningbrew Meadery (`honningbrew_meadery`) | Whiterun | BUILDING | SKYRIM | Thieves Guild | VERIFIED |
 | Jorrvaskr (`jorrvaskr`) | Whiterun | BUILDING | SKYRIM | Companions; Thieves Guild | VERIFIED |
-| Korvanjund (`korvanjund`) | Whiterun | DUNGEON | SKYRIM | Civil War; Dragon Claws; Shouts | REVIEW_REQUIRED |
+| Korvanjund (`korvanjund`) | Whiterun | DUNGEON | SKYRIM | Civil War; Dragon Claws; Shouts | VERIFIED |
 | Rannveig's Fast (`rannveigs_fast`) | Whiterun | DUNGEON | SKYRIM | Shouts; Thieves Guild | VERIFIED |
 | Riverwood (`riverwood`) | Whiterun | SETTLEMENT | SKYRIM | Skyrim Main Quest | VERIFIED |
 | Riverwood Trader (`riverwood_trader`) | Whiterun | BUILDING | SKYRIM | Dragon Claws | VERIFIED |
@@ -148,7 +109,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Shrine of Talos near Shimmermist Cave (`shrine_of_talos_whiterun`) | Whiterun | EXTERIOR_SITE | SKYRIM | Holds & Homes | VERIFIED |
 | Sleeping Giant Inn (`sleeping_giant_inn`) | Whiterun | BUILDING | SKYRIM | Skyrim Main Quest | VERIFIED |
 | The Underforge (`underforge`) | Whiterun | BUILDING | SKYRIM | Companions | VERIFIED |
-| Volunruud (`volunruud`) | Whiterun | DUNGEON | SKYRIM | Dark Brotherhood; Shouts | REVIEW_REQUIRED |
+| Volunruud (`volunruud`) | Whiterun | DUNGEON | SKYRIM | Dark Brotherhood; Shouts | VERIFIED |
 | Western Watchtower (`western_watchtower`) | Whiterun | EXTERIOR_SITE | SKYRIM | Skyrim Main Quest | VERIFIED |
 | Whiterun (`whiterun`) | Whiterun | SETTLEMENT | SKYRIM | Civil War; Companions; Daedric Artifacts; Holds & Homes | VERIFIED |
 | Whiterun Hall of the Dead (`hall_of_the_dead_whiterun`) | Whiterun | BUILDING | SKYRIM | Thieves Guild | VERIFIED |
@@ -176,7 +137,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Twilight Sepulcher (`twilight_sepulcher`) | Falkreath | DUNGEON | SKYRIM | Thieves Guild; Unique Spells & Powers | VERIFIED |
 | Aetherium Forge (`aetherium_forge`) | Riften | DUNGEON | DAWNGUARD | Dawnguard | VERIFIED |
 | Angarvunde (`angarvunde`) | Riften | DUNGEON | SKYRIM | Shouts | VERIFIED |
-| Arcwind Point (`arcwind_point`) | Riften | EXTERIOR_SITE | SKYRIM | Dawnguard; Shouts | REVIEW_REQUIRED |
+| Arcwind Point (`arcwind_point`) | Riften | EXTERIOR_SITE | SKYRIM | Dawnguard; Shouts | VERIFIED |
 | Autumnwatch Tower (`autumnwatch_tower`) | Riften | EXTERIOR_SITE | SKYRIM | Shouts | VERIFIED |
 | Avanchnzel (`avanchnzel`) | Riften | DUNGEON | SKYRIM | Unique Spells & Powers | VERIFIED |
 | Black-Briar Lodge (`black_briar_lodge`) | Riften | BUILDING | SKYRIM | Thieves Guild | VERIFIED |
@@ -194,6 +155,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Lost Tongue Overlook (`lost_tongue_overlook`) | Riften | EXTERIOR_SITE | SKYRIM | Shouts | VERIFIED |
 | Mistveil Keep (`mistveil_keep`) | Riften | BUILDING | SKYRIM | Holds & Homes; Thieves Guild | VERIFIED |
 | Nightingale Hall (`nightingale_hall`) | Riften | DUNGEON | SKYRIM | Thieves Guild | VERIFIED |
+| Northwind Summit (`northwind_summit`) | Riften | EXTERIOR_SITE | SKYRIM | Shouts | VERIFIED |
 | Redwater Den (`redwater_den`) | Riften | DUNGEON | DAWNGUARD | Dawnguard | VERIFIED |
 | Rift Imperial Camp (`rift_imperial_camp`) | Riften | EXTERIOR_SITE | SKYRIM | Civil War | VERIFIED |
 | Riften (`riften`) | Riften | SETTLEMENT | SKYRIM | Holds & Homes; Thieves Guild | VERIFIED |
@@ -230,7 +192,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | The Hag's Cure (`hags_cure`) | Markarth | BUILDING | SKYRIM | Dark Brotherhood | VERIFIED |
 | Treasury House (`treasury_house`) | Markarth | BUILDING | SKYRIM | Thieves Guild | VERIFIED |
 | Understone Keep (`understone_keep`) | Markarth | BUILDING | SKYRIM | Dark Brotherhood; Holds & Homes; Thieves Guild | VERIFIED |
-| Valthume (`valthume`) | Markarth | DUNGEON | SKYRIM | Dragon Claws; Dragon Priest Masks; Shouts | REVIEW_REQUIRED |
+| Valthume (`valthume`) | Markarth | DUNGEON | SKYRIM | Dragon Claws; Dragon Priest Masks; Shouts | VERIFIED |
 | Vlindrel Hall (`vlindrel_hall`) | Markarth | BUILDING | SKYRIM | Holds & Homes | VERIFIED |
 | Abandoned Shack (`abandoned_shack`) | Morthal | BUILDING | SKYRIM | Dark Brotherhood | VERIFIED |
 | Alva's House (`alvas_house`) | Morthal | BUILDING | SKYRIM | Holds & Homes | VERIFIED |
@@ -273,12 +235,12 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Dimhollow Crypt (`dimhollow_crypt`) | Dawnstar | DUNGEON | DAWNGUARD | Dawnguard; Shouts | VERIFIED |
 | Driftshade Refuge (`driftshade_refuge`) | Dawnstar | DUNGEON | SKYRIM | Companions | VERIFIED |
 | Fort Dunstad (`fort_dunstad`) | Dawnstar | DUNGEON | SKYRIM | Civil War | VERIFIED |
-| Frostflow Lighthouse (`frostflow_lighthouse`) | Dawnstar | BUILDING | SKYRIM | Unique Spells & Powers | REVIEW_REQUIRED |
+| Frostflow Lighthouse (`frostflow_lighthouse`) | Dawnstar | BUILDING | SKYRIM | Unique Spells & Powers | VERIFIED |
 | Frostmere Crypt (`frostmere_crypt`) | Dawnstar | DUNGEON | SKYRIM | Shouts | VERIFIED |
 | Hela's Folly (`helas_folly`) | Dawnstar | EXTERIOR_SITE | SKYRIM | Dark Brotherhood | VERIFIED |
 | Heljarchen Hall (`heljarchen_hall`) | Dawnstar | BUILDING | HEARTHFIRE | Hearthfire Homesteads | VERIFIED |
-| High Gate Ruins (`high_gate_ruins`) | Dawnstar | DUNGEON | SKYRIM | Dragon Priest Masks; Shouts; Unique Spells & Powers | REVIEW_REQUIRED |
-| Irkngthand (`irkngthand`) | Dawnstar | DUNGEON | SKYRIM | Thieves Guild | REVIEW_REQUIRED |
+| High Gate Ruins (`high_gate_ruins`) | Dawnstar | DUNGEON | SKYRIM | Dragon Priest Masks; Shouts; Unique Spells & Powers | VERIFIED |
+| Irkngthand (`irkngthand`) | Dawnstar | DUNGEON | SKYRIM | Thieves Guild | VERIFIED |
 | Ironbind Barrow (`ironbind_barrow`) | Dawnstar | DUNGEON | SKYRIM | Shouts | VERIFIED |
 | Mythic Dawn Museum (`mythic_dawn_museum`) | Dawnstar | BUILDING | SKYRIM | Daedric Artifacts | VERIFIED |
 | Mzinchaleft (`mzinchaleft`) | Dawnstar | DUNGEON | SKYRIM | Dark Brotherhood | VERIFIED |
@@ -310,14 +272,13 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Aretino Residence (`aretino_residence`) | Windhelm | BUILDING | SKYRIM | Dark Brotherhood | VERIFIED |
 | Bonestrewn Crest (`bonestrewn_crest`) | Windhelm | EXTERIOR_SITE | SKYRIM | Shouts | VERIFIED |
 | Eastmarch Imperial Camp (`eastmarch_imperial_camp`) | Windhelm | EXTERIOR_SITE | SKYRIM | Civil War | VERIFIED |
-| Forsaken Cave (`forsaken_cave`) | Windhelm | DUNGEON | SKYRIM | Shouts | REVIEW_REQUIRED |
+| Forsaken Cave (`forsaken_cave`) | Windhelm | DUNGEON | SKYRIM | Shouts | VERIFIED |
 | Fort Amol (`fort_amol`) | Windhelm | DUNGEON | SKYRIM | Civil War; Unique Spells & Powers | VERIFIED |
 | Hjerim (`hjerim`) | Windhelm | BUILDING | SKYRIM | Holds & Homes | VERIFIED |
 | House of Clan Shatter-Shield (`house_clan_shatter_shield`) | Windhelm | BUILDING | SKYRIM | Thieves Guild | VERIFIED |
 | Kynesgrove (`kynesgrove`) | Windhelm | SETTLEMENT | SKYRIM | Skyrim Main Quest | VERIFIED |
 | Morvunskar (`morvunskar`) | Windhelm | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
 | Mzulft (`mzulft`) | Windhelm | DUNGEON | SKYRIM | College of Winterhold; Dawnguard | VERIFIED |
-| Northwind Summit (`northwind_summit`) | Windhelm | EXTERIOR_SITE | SKYRIM | Shouts | REVIEW_REQUIRED |
 | Palace of the Kings (`palace_of_the_kings`) | Windhelm | BUILDING | SKYRIM | Civil War; Holds & Homes; Thieves Guild | VERIFIED |
 | Raldbthar (`raldbthar`) | Windhelm | DUNGEON | SKYRIM | Dark Brotherhood; Dawnguard | VERIFIED |
 | Sacellum of Boethiah (`sacellum_of_boethiah`) | Windhelm | EXTERIOR_SITE | SKYRIM | Daedric Artifacts | VERIFIED |
@@ -327,17 +288,17 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Windhelm (`windhelm`) | Windhelm | SETTLEMENT | SKYRIM | Civil War; Holds & Homes | VERIFIED |
 | Witchmist Grove (`witchmist_grove`) | Windhelm | EXTERIOR_SITE | SKYRIM | Daedric Artifacts | VERIFIED |
 | Yngol Barrow (`yngol_barrow`) | Windhelm | DUNGEON | SKYRIM | Dragon Claws | VERIFIED |
-| Ashfallow Citadel (`ashfallow_citadel`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragonborn; Holds & Homes | REVIEW_REQUIRED |
-| Earth Stone (`earth_stone`) | Solstheim — Raven Rock / South | EXTERIOR_SITE | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
-| Fort Frostmoth (`fort_frostmoth`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
-| Kolbjorn Barrow (`kolbjorn_barrow`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragon Priest Masks; Dragonborn; Shouts; Unique Spells & Powers | REVIEW_REQUIRED |
-| Nchardak (`nchardak`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragonborn; Unique Spells & Powers | REVIEW_REQUIRED |
-| Raven Rock (`raven_rock`) | Solstheim — Raven Rock / South | SETTLEMENT | DRAGONBORN | Dragonborn; Holds & Homes | REVIEW_REQUIRED |
-| Raven Rock Mine / Bloodskal Barrow (`raven_rock_mine`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragon Priest Masks; Dragonborn; Shouts; Unique Spells & Powers | REVIEW_REQUIRED |
-| Severin Manor (`severin_manor`) | Solstheim — Raven Rock / South | BUILDING | DRAGONBORN | Dragonborn; Holds & Homes | REVIEW_REQUIRED |
-| Tel Mithryn (`tel_mithryn`) | Solstheim — Raven Rock / South | SETTLEMENT | DRAGONBORN | Dragonborn; Unique Spells & Powers | REVIEW_REQUIRED |
-| Temple of Miraak (`temple_of_miraak`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragonborn; Shouts; Unique Spells & Powers | REVIEW_REQUIRED |
-| Water Stone (`water_stone`) | Solstheim — Raven Rock / South | EXTERIOR_SITE | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
+| Ashfallow Citadel (`ashfallow_citadel`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragonborn; Holds & Homes | VERIFIED |
+| Earth Stone (`earth_stone`) | Solstheim — Raven Rock / South | EXTERIOR_SITE | DRAGONBORN | Dragonborn | VERIFIED |
+| Fort Frostmoth (`fort_frostmoth`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragonborn | VERIFIED |
+| Kolbjorn Barrow (`kolbjorn_barrow`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragon Priest Masks; Dragonborn; Shouts; Unique Spells & Powers | VERIFIED |
+| Nchardak (`nchardak`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragonborn; Unique Spells & Powers | VERIFIED |
+| Raven Rock (`raven_rock`) | Solstheim — Raven Rock / South | SETTLEMENT | DRAGONBORN | Dragonborn; Holds & Homes | VERIFIED |
+| Raven Rock Mine / Bloodskal Barrow (`raven_rock_mine`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragon Priest Masks; Dragonborn; Shouts; Unique Spells & Powers | VERIFIED |
+| Severin Manor (`severin_manor`) | Solstheim — Raven Rock / South | BUILDING | DRAGONBORN | Dragonborn; Holds & Homes | VERIFIED |
+| Tel Mithryn (`tel_mithryn`) | Solstheim — Raven Rock / South | SETTLEMENT | DRAGONBORN | Dragonborn; Unique Spells & Powers | VERIFIED |
+| Temple of Miraak (`temple_of_miraak`) | Solstheim — Raven Rock / South | DUNGEON | DRAGONBORN | Dragonborn; Shouts; Unique Spells & Powers | VERIFIED |
+| Water Stone (`water_stone`) | Solstheim — Raven Rock / South | EXTERIOR_SITE | DRAGONBORN | Dragonborn | VERIFIED |
 | High Hrothgar (`high_hrothgar`) | High Hrothgar / Throat of the World | BUILDING | SKYRIM | Shouts; Skyrim Main Quest | VERIFIED |
 | Throat of the World (`throat_of_the_world`) | High Hrothgar / Throat of the World | EXTERIOR_SITE | SKYRIM | Shouts; Skyrim Main Quest; Unique Spells & Powers | VERIFIED |
 | Bromjunaar Sanctuary (`bromjunaar_sanctuary`) | Labyrinthian | BUILDING | SKYRIM | Dragon Priest Masks; Unique Spells & Powers | VERIFIED |
@@ -346,17 +307,19 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Blackreach (`blackreach`) | Blackreach | WORLDSPACE | SKYRIM | Daedric Artifacts; Skyrim Main Quest; Unique Spells & Powers | VERIFIED |
 | Sinderion's Field Laboratory (`sinderions_field_laboratory`) | Blackreach | BUILDING | SKYRIM | Unique Spells & Powers | VERIFIED |
 | Tower of Mzark (`tower_of_mzark`) | Blackreach | BUILDING | SKYRIM | Daedric Artifacts; Skyrim Main Quest | VERIFIED |
-| Beast Stone (`beast_stone`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
-| Benkongerike (`benkongerike`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Dragonborn; Shouts; Unique Spells & Powers | REVIEW_REQUIRED |
-| Hrothmund's Barrow (`hrothmunds_barrow`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
-| Saering's Watch (`saerings_watch`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn; Shouts | REVIEW_REQUIRED |
-| Skaal Village (`skaal_village`) | Solstheim — Skaal / North | SETTLEMENT | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
-| Sun Stone (`sun_stone`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
-| Thirsk Mead Hall (`thirsk_mead_hall`) | Solstheim — Skaal / North | BUILDING | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
-| Tree Stone (`tree_stone`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
-| Vahlok's Tomb (`vahloks_tomb`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Dragon Claws; Dragonborn; Shouts | REVIEW_REQUIRED |
-| White Ridge Barrow (`white_ridge_barrow`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Dragon Priest Masks; Dragonborn; Shouts; Unique Spells & Powers | REVIEW_REQUIRED |
-| Wind Stone (`wind_stone`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn | REVIEW_REQUIRED |
+| Beast Stone (`beast_stone`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn | VERIFIED |
+| Benkongerike (`benkongerike`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Dragonborn; Shouts; Unique Spells & Powers | VERIFIED |
+| Castle Karstaag Ruins (`castle_karstaag_ruins`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Unique Spells & Powers | VERIFIED |
+| Glacial Cave (`glacial_cave`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Unique Spells & Powers | VERIFIED |
+| Hrothmund's Barrow (`hrothmunds_barrow`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Dragonborn | VERIFIED |
+| Saering's Watch (`saerings_watch`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn; Shouts | VERIFIED |
+| Skaal Village (`skaal_village`) | Solstheim — Skaal / North | SETTLEMENT | DRAGONBORN | Dragonborn | VERIFIED |
+| Sun Stone (`sun_stone`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn | VERIFIED |
+| Thirsk Mead Hall (`thirsk_mead_hall`) | Solstheim — Skaal / North | BUILDING | DRAGONBORN | Dragonborn | VERIFIED |
+| Tree Stone (`tree_stone`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn | VERIFIED |
+| Vahlok's Tomb (`vahloks_tomb`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Dragon Claws; Dragonborn; Shouts | VERIFIED |
+| White Ridge Barrow (`white_ridge_barrow`) | Solstheim — Skaal / North | DUNGEON | DRAGONBORN | Dragon Priest Masks; Dragonborn; Shouts; Unique Spells & Powers | VERIFIED |
+| Wind Stone (`wind_stone`) | Solstheim — Skaal / North | EXTERIOR_SITE | DRAGONBORN | Dragonborn | VERIFIED |
 | Skuldafn (`skuldafn`) | Skuldafn | DUNGEON | SKYRIM | Dragon Claws; Dragon Priest Masks; Shouts; Skyrim Main Quest | VERIFIED |
 | Sovngarde (`sovngarde`) | Sovngarde | WORLDSPACE | SKYRIM | Shouts; Skyrim Main Quest | VERIFIED |
 | Castle Volkihar (`castle_volkihar`) | Castle Volkihar | BUILDING | DAWNGUARD | Dawnguard | VERIFIED |
@@ -367,9 +330,9 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Apocrypha (`apocrypha`) | Apocrypha | WORLDSPACE | DRAGONBORN | Dragon Priest Masks; Dragonborn; Shouts; Unique Spells & Powers | VERIFIED |
 | Misty Grove (`misty_grove`) | Misty Grove | WORLDSPACE | SKYRIM | Daedric Artifacts | VERIFIED |
 
-## Product review procedure
+## Geography Foundation closure
 
-1. Approve or revise the proposed two-region Solstheim model.
-2. Review each `REVIEW_REQUIRED` row, choosing the provisional or listed alternative Region.
-3. Confirm that the coverage inventory represents the intended official completion scope without adding radiant-only or Creation Club destinations.
-4. After decisions are applied, require zero unresolved assignments before bulk Task population begins.
+- The two-region Solstheim model is Product-approved.
+- All catalog Locations have verified Survival-planning assignments.
+- The coverage inventory excludes radiant-only and Creation Club destination expansion.
+- Bulk Task population remains a separate, subsequent increment.

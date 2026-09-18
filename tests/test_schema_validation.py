@@ -117,7 +117,7 @@ def test_task_region_override_is_rejected(tmp_path):
 def test_locationless_task_with_location_is_rejected(tmp_path):
     root = copied_canonical(tmp_path)
     tasks = read_json(root, "tasks.json")
-    milestone = next(item for item in tasks if item["id"] == "mq_the_fallen_milestone")
+    milestone = next(item for item in tasks if item["id"] == "daedric_break_of_dawn_beacon")
     milestone["location_id"] = "dragonsreach"
     write_json(root, "tasks.json", tasks)
     with pytest.raises(CanonicalDataError, match="Locationless task"):
@@ -135,9 +135,30 @@ def test_exactly_one_primary_membership_is_required(tmp_path):
         load_canonical_content(root)
 
 
+def test_every_membership_requires_explicit_completion_role(tmp_path):
+    root = copied_canonical(tmp_path)
+    memberships = read_json(root, "task_memberships.json")
+    memberships[0].pop("completion_role")
+    write_json(root, "task_memberships.json", memberships)
+    with pytest.raises(CanonicalDataError, match="explicit completion_role"):
+        load_canonical_content(root)
+
+
+def test_prerequisite_cycles_are_rejected(tmp_path):
+    root = copied_canonical(tmp_path)
+    tasks = read_json(root, "tasks.json")
+    by_id = {item["id"]: item for item in tasks}
+    by_id["mq_unbound_escape_helgen"]["prerequisites"] = [
+        {"type": "task_complete", "task_id": "mq_before_storm_go_whiterun"}
+    ]
+    write_json(root, "tasks.json", tasks)
+    with pytest.raises(CanonicalDataError, match="Prerequisite cycle"):
+        load_canonical_content(root)
+
+
 def test_geography_foundation_metadata_is_complete(content):
     assert len(content.regions) == 21
-    assert len(content.locations) == 235
+    assert len(content.locations) == 237
     assert all(region.region_type in RegionType for region in content.regions.values())
     assert all(region.region_type is not getattr(RegionType, "GLOBAL", None) for region in content.regions.values())
     assert all(location.location_type in LocationType for location in content.locations.values())
@@ -168,6 +189,9 @@ def test_accepted_location_assignments_remain_stable(content):
         "aretino_residence": "windhelm",
         "abandoned_shack": "morthal",
         "skuldafn": "skuldafn",
+        "northwind_summit": "riften",
+        "glacial_cave": "solstheim_north",
+        "castle_karstaag_ruins": "solstheim_north",
     }
     assert {item: content.locations[item].region_id for item in expected} == expected
 
@@ -187,6 +211,7 @@ def test_coverage_and_review_artifacts_match_catalog(content):
         if location.verification_status is VerificationStatus.REVIEW_REQUIRED
     }
     assert set(coverage["review_assignments"]) == review_ids
+    assert not review_ids
     report = (root / "docs" / "geography-catalog-review.md").read_text(encoding="utf-8")
     assert f"{len(content.regions)} Travel Regions" in report
     assert f"{len(content.locations)} Locations" in report

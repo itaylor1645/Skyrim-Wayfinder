@@ -79,28 +79,16 @@ def render_review() -> str:
             f"{len(locations)} | {escaped(region.principal_hub)} | {escaped(region.rationale)} |"
         )
 
-    lines += ["", "## Region model requiring Product review", ""]
-    for review in coverage["region_reviews"]:
-        region_names = ", ".join(content.regions[item].display_name for item in review["region_ids"])
+    lines += ["", "## Approved completion-scope decisions", ""]
+    for decision in coverage.get("scope_decisions", []):
+        sources = link_list(tuple(decision["source_urls"]))
+        locations = ", ".join(f"`{item}`" for item in decision["location_ids"]) or "None"
         lines += [
-            f"### {region_names}",
+            f"### {decision['reward']}",
             "",
-            f"- **Proposed:** {review['proposal']}",
-            f"- **Alternative:** {review['alternative']}",
-            f"- **Reason:** {review['reason']}",
-            "",
-        ]
-
-    lines += ["## Completion-scope questions for Product", ""]
-    for review in coverage.get("scope_reviews", []):
-        sources = link_list(tuple(review["source_urls"]))
-        locations = ", ".join(f"`{item}`" for item in review["potential_location_ids"])
-        lines += [
-            f"### {review['reward']}",
-            "",
-            f"- **Proposed disposition:** {review['proposed_disposition']}",
-            f"- **Potential Locations:** {locations}",
-            f"- **Reason:** {review['reason']}",
+            f"- **Disposition:** {decision['disposition']}",
+            f"- **Catalog Locations:** {locations}",
+            f"- **Reason:** {decision['reason']}",
             f"- **Evidence:** {sources}",
             "",
         ]
@@ -108,8 +96,7 @@ def render_review() -> str:
     lines += [
         "## REVIEW_REQUIRED Location assignments",
         "",
-        "Every row remains assigned to exactly one provisional Region. Do not author bulk Tasks against these "
-        "Locations until Product resolves the assignment.",
+        "Every Location owns exactly one Travel Region. This table must remain empty before Task population.",
         "",
         "| Location | Provisional Region | Alternative(s) | Why ambiguous | Evidence |",
         "|---|---|---|---|---|",
@@ -154,13 +141,12 @@ def render_review() -> str:
 
     lines += [
         "",
-        "## Product review procedure",
+        "## Geography Foundation closure",
         "",
-        "1. Approve or revise the proposed two-region Solstheim model.",
-        "2. Review each `REVIEW_REQUIRED` row, choosing the provisional or listed alternative Region.",
-        "3. Confirm that the coverage inventory represents the intended official completion scope without adding "
-        "radiant-only or Creation Club destinations.",
-        "4. After decisions are applied, require zero unresolved assignments before bulk Task population begins.",
+        "- The two-region Solstheim model is Product-approved.",
+        "- All catalog Locations have verified Survival-planning assignments.",
+        "- The coverage inventory excludes radiant-only and Creation Club destination expansion.",
+        "- Bulk Task population remains a separate, subsequent increment.",
         "",
     ]
     return "\n".join(lines)

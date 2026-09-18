@@ -54,7 +54,7 @@ class ExplorerView(QWidget):
             visible_domain_entries = self._visible_entries(domain_entries, hide_completed)
             if not visible_domain_entries:
                 continue
-            domain_done, domain_total = self._progress(domain_entries)
+            domain_done, domain_total = self.service.domain_progress(domain.id)
             domain_item = QTreeWidgetItem([f"{domain.display_name}  {domain_done} / {domain_total}"])
             domain_item.setForeground(
                 0, QBrush(QColor(domain_color(domain.id, self.service.content.theme)))
@@ -68,7 +68,7 @@ class ExplorerView(QWidget):
                 collection_entries = [entry for entries in stories.values() for entry in entries]
                 if not self._visible_entries(collection_entries, hide_completed):
                     continue
-                collection_done, collection_total = self._progress(collection_entries)
+                collection_done, collection_total = self.service.collection_progress(collection.id)
                 collection_item = QTreeWidgetItem([
                     f"{collection.display_name}  {collection_done} / {collection_total}"
                 ])
@@ -81,7 +81,7 @@ class ExplorerView(QWidget):
                     visible_entries = self._visible_entries(entries, hide_completed)
                     if not visible_entries:
                         continue
-                    story_done, story_total = self._progress(entries)
+                    story_done, story_total = self.service.story_progress(story.id)
                     story_item = QTreeWidgetItem([
                         f"{story.display_name}  {story_done} / {story_total}"
                     ])

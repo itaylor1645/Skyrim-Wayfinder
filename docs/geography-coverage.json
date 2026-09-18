@@ -74,72 +74,32 @@
     },
     {
       "name": "Unique Spells & Powers",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Powers","https://en.uesp.net/wiki/Skyrim:Spells"],
-      "location_ids": ["temple_of_dibella","temple_of_mara","bards_college","dead_mens_respite","frostflow_lighthouse","avanchnzel","blackreach","sinderions_field_laboratory","sarethi_farm","sky_haven_temple","throat_of_the_world","twilight_sepulcher","temple_of_the_divines","college_of_winterhold","halted_stream_camp","ansilvund","fort_amol","high_gate_ruins","labyrinthian","soul_cairn","raven_rock_mine","kolbjorn_barrow","benkongerike","white_ridge_barrow","tel_mithryn","nchardak","temple_of_miraak","apocrypha","bromjunaar_sanctuary"]
+      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Powers","https://en.uesp.net/wiki/Skyrim:Spells","https://en.uesp.net/wiki/Skyrim:Summoning_Karstaag"],
+      "location_ids": ["temple_of_dibella","temple_of_mara","bards_college","dead_mens_respite","frostflow_lighthouse","avanchnzel","blackreach","sinderions_field_laboratory","sarethi_farm","sky_haven_temple","throat_of_the_world","twilight_sepulcher","temple_of_the_divines","college_of_winterhold","halted_stream_camp","ansilvund","fort_amol","high_gate_ruins","labyrinthian","soul_cairn","raven_rock_mine","kolbjorn_barrow","benkongerike","white_ridge_barrow","tel_mithryn","nchardak","temple_of_miraak","apocrypha","bromjunaar_sanctuary","glacial_cave","castle_karstaag_ruins"]
     }
   ],
-  "region_reviews": [
-    {
-      "region_ids": ["solstheim_raven_rock", "solstheim_north"],
-      "proposal": "Use Raven Rock / South as the ordinary service region and Skaal / North as an expedition region.",
-      "alternative": "Use one unified Solstheim region.",
-      "reason": "The two-region model reduces long Survival journeys without creating a region for every island landmark; Product approval is required before task population."
-    }
-  ],
-  "scope_reviews": [
+  "scope_decisions": [
     {
       "reward": "Summon Karstaag",
-      "proposed_disposition": "Exclude from Unique Spells & Powers pending Product review.",
-      "potential_location_ids": ["glacial_cave", "castle_karstaag_ruins"],
-      "reason": "It is a fixed quest reward and discrete power, but it has only three lifetime uses rather than being a permanent reusable ability. The potential Locations are intentionally not canonicalized until inclusion is approved.",
+      "disposition": "Include acquisition in Unique Spells & Powers; do not track remaining uses.",
+      "location_ids": ["glacial_cave", "castle_karstaag_ruins"],
+      "reason": "The power is a deliberately acquired unique reward tied to fixed official content; its three-use limit does not create separate completion states.",
       "source_urls": ["https://en.uesp.net/wiki/Skyrim:Summoning_Karstaag"]
     },
     {
       "reward": "Equipment-bound powers such as Breath of Nchuak and Ahzidal's Genius",
-      "proposed_disposition": "Exclude as separate Unique Spells & Powers completion rewards.",
-      "potential_location_ids": ["nchardak", "kolbjorn_barrow"],
+      "disposition": "Exclude as separate Unique Spells & Powers completion rewards.",
+      "location_ids": ["nchardak", "kolbjorn_barrow"],
       "reason": "These effects exist only while the associated collectible equipment is worn; their Locations are already present for Dragonborn content.",
       "source_urls": ["https://en.uesp.net/wiki/Skyrim:Powers"]
     },
     {
       "reward": "Detect Life and other ordinarily purchasable spells with fixed copies or quest rewards",
-      "proposed_disposition": "Exclude from the focused Unique Spells & Powers domain.",
-      "potential_location_ids": ["trevas_watch"],
+      "disposition": "Exclude from the focused Unique Spells & Powers domain.",
+      "location_ids": [],
       "reason": "The Product boundary excludes ordinary purchasable spell tomes. Treva's Watch was removed from the catalog after this scope audit because it otherwise had no approved completion purpose.",
       "source_urls": ["https://en.uesp.net/wiki/Skyrim:Detect_Life_(spell)"]
     }
   ],
-  "review_assignments": {
-    "volunruud": {"alternatives": ["dawnstar"], "reason": "The ruin is between Whiterun's northern road network and the southern Pale; either city can be a practical staging hub."},
-    "korvanjund": {"alternatives": ["dawnstar"], "reason": "The ruin lies near the Whiterun/Pale transition; the Whiterun road is direct, while Dawnstar matches northern geography."},
-    "arcwind_point": {"alternatives": ["falkreath", "high_hrothgar"], "reason": "The mountain site is approached from the Ivarstead side but lies near southern mountain routes; it is not part of the High Hrothgar climb itself."},
-    "valthume": {"alternatives": ["whiterun"], "reason": "The ruin is in the eastern Reach, but its road approach can be more practical from Whiterun than from Markarth."},
-    "high_gate_ruins": {"alternatives": ["morthal", "solitude"], "reason": "The ruin is near the Pale, Hjaalmarch, and Haafingar travel boundaries; Dawnstar is proposed as the closest ordinary hub."},
-    "frostflow_lighthouse": {"alternatives": ["winterhold"], "reason": "The lighthouse sits on the long north coast between Dawnstar and Winterhold."},
-    "northwind_summit": {"alternatives": ["riften"], "reason": "The summit is near the Eastmarch/Rift transition and can be approached from either Windhelm or Riften."},
-    "forsaken_cave": {"alternatives": ["dawnstar"], "reason": "The cave is on the long road between Windhelm and Dawnstar; Windhelm is proposed for the easier eastern approach."},
-    "irkngthand": {"alternatives": ["windhelm"], "reason": "The ruin lies in the eastern Pale but is also naturally approached from Windhelm."},
-    "raven_rock": {"alternatives": ["Unified Solstheim region"], "reason": "Raven Rock is clearly the island's primary service hub; review concerns whether Solstheim should be split at all."},
-    "severin_manor": {"alternatives": ["Unified Solstheim region"], "reason": "The home is unambiguously in Raven Rock; its status follows review of the proposed island region model."},
-    "raven_rock_mine": {"alternatives": ["Unified Solstheim region"], "reason": "The mine begins inside Raven Rock; its status follows review of the proposed island region model."},
-    "kolbjorn_barrow": {"alternatives": ["Unified Solstheim region"], "reason": "The barrow is a repeated southern expedition staged from Raven Rock; review concerns the proposed island split."},
-    "tel_mithryn": {"alternatives": ["solstheim_north", "Unified Solstheim region"], "reason": "Tel Mithryn is a secondary settlement far east of Raven Rock and could justify different grouping, but a third micro-region is not proposed."},
-    "nchardak": {"alternatives": ["solstheim_north", "Unified Solstheim region"], "reason": "The eastern ruin is reached with Neloth from Tel Mithryn and sits between the proposed southern and northern operating areas."},
-    "temple_of_miraak": {"alternatives": ["solstheim_north", "Unified Solstheim region"], "reason": "The central temple is connected to both Raven Rock quest staging and the Skaal storyline."},
-    "earth_stone": {"alternatives": ["Unified Solstheim region"], "reason": "The stone is adjacent to Raven Rock; its status follows review of the island split."},
-    "water_stone": {"alternatives": ["Unified Solstheim region"], "reason": "The southwestern stone is most practical from Raven Rock; its status follows review of the island split."},
-    "fort_frostmoth": {"alternatives": ["Unified Solstheim region"], "reason": "The southern fort is most practical from Raven Rock; its status follows review of the island split."},
-    "ashfallow_citadel": {"alternatives": ["solstheim_north", "Unified Solstheim region"], "reason": "The citadel is north of Raven Rock near the transition between proposed operating areas."},
-    "skaal_village": {"alternatives": ["Unified Solstheim region"], "reason": "Skaal Village is the proposed northern expedition hub; review concerns whether it warrants a separate operational region."},
-    "saerings_watch": {"alternatives": ["solstheim_raven_rock", "Unified Solstheim region"], "reason": "The far-northern lair supports the Skaal hub proposal but can still be reached as one long Raven Rock trip."},
-    "benkongerike": {"alternatives": ["solstheim_raven_rock", "Unified Solstheim region"], "reason": "The northern cave supports the Skaal hub proposal but can still be treated as a Raven Rock expedition."},
-    "white_ridge_barrow": {"alternatives": ["solstheim_raven_rock", "Unified Solstheim region"], "reason": "The northern barrow supports the Skaal hub proposal but can still be treated as a Raven Rock expedition."},
-    "vahloks_tomb": {"alternatives": ["solstheim_raven_rock", "Unified Solstheim region"], "reason": "The tomb is tied to Skaal quests but lies far enough south to make the boundary subjective."},
-    "wind_stone": {"alternatives": ["Unified Solstheim region"], "reason": "The stone is beside Skaal Village; its status follows review of the island split."},
-    "beast_stone": {"alternatives": ["solstheim_raven_rock", "Unified Solstheim region"], "reason": "The northern stone supports the Skaal grouping; review concerns the overall island split."},
-    "sun_stone": {"alternatives": ["solstheim_raven_rock", "Unified Solstheim region"], "reason": "The northern stone supports the Skaal grouping; review concerns the overall island split."},
-    "tree_stone": {"alternatives": ["solstheim_raven_rock", "Unified Solstheim region"], "reason": "The stone is beside the centrally located Temple of Miraak and could reasonably follow either proposed island region."},
-    "thirsk_mead_hall": {"alternatives": ["solstheim_raven_rock", "Unified Solstheim region"], "reason": "The hall is near Skaal Village, but its viability as a repeat staging point depends on quest choices."},
-    "hrothmunds_barrow": {"alternatives": ["solstheim_raven_rock", "Unified Solstheim region"], "reason": "The northern quest site follows Thirsk/Skaal travel, but a unified island model remains plausible."}
-  }
+  "review_assignments": {}
 }

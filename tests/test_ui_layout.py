@@ -79,14 +79,14 @@ def test_region_selector_groups_and_gates_special_destinations(tmp_path):
     window = MainWindow(service)
     labels = [window.planner.region.itemText(index).strip() for index in range(window.planner.region.count())]
     assert "City Regions" in labels
-    assert "Expeditions" not in labels
+    assert "Expeditions" in labels  # Shalidor's Maze supplies open Labyrinthian work
     assert "Skuldafn" not in labels
     service.set_task_state("hold_whiterun_thane", TaskStatus.COMPLETE)
     window.planner.refresh()
     labels = [window.planner.region.itemText(index).strip() for index in range(window.planner.region.count())]
     assert "Expeditions" in labels
     assert "High Hrothgar / Throat of the World" in labels
-    service.set_task_state("mq_the_fallen_milestone", TaskStatus.COMPLETE)
+    service.set_task_state("mq_world_eater_depart_skuldafn", TaskStatus.COMPLETE)
     window.planner.refresh()
     labels = [window.planner.region.itemText(index).strip() for index in range(window.planner.region.count())]
     assert "Special Destinations" in labels

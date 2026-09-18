@@ -1,3 +1,3 @@
-from .wayfinder import ChoiceConfirmationRequired, WayfinderService
+from .wayfinder import ChoiceConfirmationRequired, TaskOutcomeRequired, WayfinderService
 
-__all__ = ["ChoiceConfirmationRequired", "WayfinderService"]
+__all__ = ["ChoiceConfirmationRequired", "TaskOutcomeRequired", "WayfinderService"]

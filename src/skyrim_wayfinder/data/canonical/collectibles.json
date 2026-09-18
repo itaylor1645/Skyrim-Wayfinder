@@ -1,0 +1,252 @@
+[
+  {
+    "id": "dragon_priest_mask_hevnoraak",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_hevnoraak",
+    "display_name": "Hevnoraak",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hevnoraak"
+  },
+  {
+    "id": "dragon_priest_mask_krosis",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_krosis",
+    "display_name": "Krosis",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Krosis"
+  },
+  {
+    "id": "dragon_priest_mask_morokei",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_labyrinthian",
+    "display_name": "Morokei",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Morokei"
+  },
+  {
+    "id": "dragon_priest_mask_nahkriin",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_skuldafn",
+    "display_name": "Nahkriin",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Nahkriin"
+  },
+  {
+    "id": "dragon_priest_mask_otar",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_otar",
+    "display_name": "Otar",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Otar"
+  },
+  {
+    "id": "dragon_priest_mask_rahgot",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_rahgot",
+    "display_name": "Rahgot",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Rahgot"
+  },
+  {
+    "id": "dragon_priest_mask_vokun",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_vokun",
+    "display_name": "Vokun",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Vokun"
+  },
+  {
+    "id": "dragon_priest_mask_volsung",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_volsung",
+    "display_name": "Volsung",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Volsung"
+  },
+  {
+    "id": "dragon_priest_mask_wooden",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_wooden",
+    "display_name": "Wooden Mask",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Wooden_Mask"
+  },
+  {
+    "id": "dragon_priest_mask_konahrik",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_konahrik",
+    "display_name": "Konahrik",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Konahrik"
+  },
+  {
+    "id": "dragon_priest_mask_ahzidal",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_ahzidal",
+    "display_name": "Ahzidal",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "DRAGONBORN",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ahzidal"
+  },
+  {
+    "id": "dragon_priest_mask_dukaan",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_dukaan",
+    "display_name": "Dukaan",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "DRAGONBORN",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dukaan"
+  },
+  {
+    "id": "dragon_priest_mask_zahkriisos",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_zahkriisos",
+    "display_name": "Zahkriisos",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "DRAGONBORN",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Zahkriisos"
+  },
+  {
+    "id": "dragon_priest_mask_miraak",
+    "collection_id": "dragon_priest_masks",
+    "story_id": "mask_miraak",
+    "display_name": "Miraak",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "DRAGONBORN",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Miraak"
+  },
+  {
+    "id": "dragon_claw_coral",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_coral",
+    "display_name": "Coral Dragon Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ANY",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Coral_Dragon_Claw"
+  },
+  {
+    "id": "dragon_claw_diamond",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_diamond",
+    "display_name": "Diamond Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Diamond_Claw"
+  },
+  {
+    "id": "dragon_claw_ebony",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_ebony",
+    "display_name": "Ebony Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ebony_Claw"
+  },
+  {
+    "id": "dragon_claw_emerald",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_emerald",
+    "display_name": "Emerald Dragon Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Emerald_Dragon_Claw"
+  },
+  {
+    "id": "dragon_claw_glass",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_glass",
+    "display_name": "Glass Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glass_Claw"
+  },
+  {
+    "id": "dragon_claw_golden",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_golden",
+    "display_name": "Golden Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Golden_Claw"
+  },
+  {
+    "id": "dragon_claw_iron",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_iron",
+    "display_name": "Iron Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Iron_Claw"
+  },
+  {
+    "id": "dragon_claw_ivory",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_ivory",
+    "display_name": "Ivory Dragon Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ivory_Dragon_Claw"
+  },
+  {
+    "id": "dragon_claw_ruby",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_ruby",
+    "display_name": "Ruby Dragon Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ruby_Dragon_Claw"
+  },
+  {
+    "id": "dragon_claw_sapphire",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_sapphire",
+    "display_name": "Sapphire Dragon Claw",
+    "required_credit_count": 1,
+    "completion_rule": "ALL",
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Sapphire_Dragon_Claw"
+  },
+  {
+    "id": "dragon_claw_amethyst",
+    "collection_id": "dragon_claws",
+    "story_id": "claw_amethyst",
+    "display_name": "Amethyst Claw",
+    "required_credit_count": 2,
+    "completion_rule": "ALL",
+    "content_source": "DRAGONBORN",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Amethyst_Claw"
+  }
+]

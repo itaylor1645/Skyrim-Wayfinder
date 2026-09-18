@@ -1,52 +1,1466 @@
 [
-  {"id":"tm_mq_unbound_escape","task_id":"mq_unbound_escape_helgen","story_id":"mq_unbound","is_primary":true,"sort_order":10},
-  {"id":"tm_mq_before_storm_riverwood","task_id":"mq_before_storm_reach_riverwood","story_id":"mq_before_storm","is_primary":true,"sort_order":10},
-  {"id":"tm_mq_before_storm_whiterun","task_id":"mq_before_storm_go_whiterun","story_id":"mq_before_storm","is_primary":true,"sort_order":20},
-  {"id":"tm_mq_bleak_accept","task_id":"mq_bleak_falls_accept","story_id":"mq_bleak_falls","is_primary":true,"sort_order":10},
-  {"id":"tm_mq_bleak_dragonstone","task_id":"mq_bleak_falls_dragonstone","story_id":"mq_bleak_falls","is_primary":true,"sort_order":20},
-  {"id":"tm_claw_recover_artifact","task_id":"collectible_golden_claw_recover","story_id":"claw_golden","is_primary":true,"sort_order":10},
-  {"id":"tm_claw_recover_side","task_id":"collectible_golden_claw_recover","story_id":"side_golden_claw","is_primary":false,"sort_order":10},
-  {"id":"tm_shout_unrelenting","task_id":"shout_unrelenting_force_bleak_falls","story_id":"shout_unrelenting_bleak_falls","is_primary":true,"sort_order":10},
-  {"id":"tm_mq_bleak_return","task_id":"mq_bleak_falls_return_dragonstone","story_id":"mq_bleak_falls","is_primary":true,"sort_order":30},
-  {"id":"tm_claw_return_side","task_id":"golden_claw_return_lucan","story_id":"side_golden_claw","is_primary":true,"sort_order":20},
-  {"id":"tm_mq_dragon_rising","task_id":"mq_dragon_rising_watchtower","story_id":"mq_dragon_rising","is_primary":true,"sort_order":10},
-  {"id":"tm_hold_whiterun_thane","task_id":"hold_whiterun_thane","story_id":"hold_whiterun_thane","is_primary":true,"sort_order":10},
-  {"id":"tm_mq_dragon_rising_report","task_id":"hold_whiterun_thane","story_id":"mq_dragon_rising","is_primary":false,"sort_order":20},
-  {"id":"tm_hold_breezehome","task_id":"house_breezehome_purchase","story_id":"hold_whiterun_breezehome","is_primary":true,"sort_order":10},
-  {"id":"tm_mq_way_voice","task_id":"mq_way_voice_high_hrothgar","story_id":"mq_way_voice","is_primary":true,"sort_order":10},
-
-  {"id":"tm_college_admission","task_id":"college_gain_admission","story_id":"college_first_lessons","is_primary":true,"sort_order":5},
-  {"id":"tm_college_first_lessons","task_id":"college_first_lessons","story_id":"college_first_lessons","is_primary":true,"sort_order":10},
-  {"id":"tm_college_under_saarthal","task_id":"college_under_saarthal","story_id":"college_under_saarthal","is_primary":true,"sort_order":10},
-  {"id":"tm_college_hitting_books","task_id":"college_hitting_books","story_id":"college_hitting_books","is_primary":true,"sort_order":10},
-  {"id":"tm_college_good_intentions","task_id":"college_good_intentions","story_id":"college_good_intentions","is_primary":true,"sort_order":10},
-  {"id":"tm_college_revealing_mzulft","task_id":"college_revealing_unseen_mzulft","story_id":"college_revealing_unseen","is_primary":true,"sort_order":10},
-  {"id":"tm_college_revealing_report","task_id":"college_revealing_unseen_report_college","story_id":"college_revealing_unseen","is_primary":true,"sort_order":20},
-  {"id":"tm_college_containment_defend","task_id":"college_containment_defend_winterhold","story_id":"college_containment","is_primary":true,"sort_order":10},
-  {"id":"tm_college_containment_report","task_id":"college_containment_report_college","story_id":"college_containment","is_primary":true,"sort_order":20},
-  {"id":"tm_college_staff","task_id":"college_staff_magnus","story_id":"college_staff_magnus","is_primary":true,"sort_order":10},
-  {"id":"tm_artifact_staff","task_id":"college_staff_magnus","story_id":"artifact_staff_magnus","is_primary":false,"sort_order":10},
-  {"id":"tm_mask_morokei","task_id":"mask_morokei","story_id":"mask_labyrinthian","is_primary":true,"sort_order":10},
-  {"id":"tm_mask_morokei_college","task_id":"mask_morokei","story_id":"college_staff_magnus","is_primary":false,"sort_order":20},
-
-  {"id":"tm_prep_fire_salts","task_id":"prep_riften_fire_salts","story_id":"prep_stoking_flames","is_primary":true,"sort_order":10},
-  {"id":"tm_side_start_fire_salts","task_id":"riften_stoking_flames_start","story_id":"side_stoking_flames","is_primary":true,"sort_order":5},
-  {"id":"tm_side_fire_salts","task_id":"riften_deliver_fire_salts","story_id":"side_stoking_flames","is_primary":true,"sort_order":10},
-  {"id":"tm_hold_fire_salts","task_id":"riften_deliver_fire_salts","story_id":"hold_rift_thane","is_primary":false,"sort_order":10},
-
-  {"id":"tm_db_speak_aventus","task_id":"db_innocence_lost_speak_aventus","story_id":"db_innocence_lost","is_primary":true,"sort_order":5},
-  {"id":"tm_db_grelod","task_id":"db_innocence_lost_kill_grelod","story_id":"db_innocence_lost","is_primary":true,"sort_order":10},
-  {"id":"tm_db_report_aventus","task_id":"db_innocence_lost_report_aventus","story_id":"db_innocence_lost","is_primary":true,"sort_order":20},
-  {"id":"tm_db_trigger_sleep","task_id":"db_trigger_abduction_sleep","story_id":"db_with_friends","is_primary":true,"sort_order":5},
-  {"id":"tm_db_join","task_id":"db_join_at_shack","story_id":"db_with_friends","is_primary":true,"sort_order":10},
-  {"id":"tm_db_kill_astrid","task_id":"db_destroy_at_shack","story_id":"db_with_friends","is_primary":true,"sort_order":20},
-  {"id":"tm_db_kill_astrid_destroy","task_id":"db_destroy_at_shack","story_id":"db_destroy","is_primary":false,"sort_order":10},
-
-  {"id":"tm_mq_fallen_milestone","task_id":"mq_the_fallen_milestone","story_id":"mq_the_fallen","is_primary":true,"sort_order":10},
-  {"id":"tm_mq_skuldafn","task_id":"mq_skuldafn_reach_portal","story_id":"mq_world_eater_eyrie","is_primary":true,"sort_order":10},
-  {"id":"tm_mask_nahkriin","task_id":"mask_nahkriin","story_id":"mask_skuldafn","is_primary":true,"sort_order":10},
-  {"id":"tm_mask_nahkriin_main","task_id":"mask_nahkriin","story_id":"mq_world_eater_eyrie","is_primary":false,"sort_order":20},
-  {"id":"tm_shout_storm_call","task_id":"shout_storm_call_skuldafn","story_id":"shout_storm_skuldafn","is_primary":true,"sort_order":10},
-  {"id":"tm_shout_storm_main","task_id":"shout_storm_call_skuldafn","story_id":"mq_world_eater_eyrie","is_primary":false,"sort_order":30},
-  {"id":"tm_beacon_daedric","task_id":"daedric_break_of_dawn_beacon","story_id":"artifact_break_dawn","is_primary":true,"sort_order":10}
+  {
+    "id": "tm_mq_unbound_escape",
+    "task_id": "mq_unbound_escape_helgen",
+    "story_id": "mq_unbound",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_before_storm_riverwood",
+    "task_id": "mq_before_storm_reach_riverwood",
+    "story_id": "mq_before_storm",
+    "completion_role": "ASSOCIATED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_before_storm_whiterun",
+    "task_id": "mq_before_storm_go_whiterun",
+    "story_id": "mq_before_storm",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_bleak_accept",
+    "task_id": "mq_bleak_falls_accept",
+    "story_id": "mq_bleak_falls",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_bleak_dragonstone",
+    "task_id": "mq_bleak_falls_dragonstone",
+    "story_id": "mq_bleak_falls",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_claw_recover_artifact",
+    "task_id": "collectible_golden_claw_recover",
+    "story_id": "claw_golden",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_recover_side",
+    "task_id": "collectible_golden_claw_recover",
+    "story_id": "side_golden_claw",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_recover_main",
+    "task_id": "collectible_golden_claw_recover",
+    "story_id": "mq_bleak_falls",
+    "completion_role": "ASSOCIATED",
+    "is_primary": false,
+    "sort_order": 21
+  },
+  {
+    "id": "tm_shout_unrelenting",
+    "task_id": "shout_unrelenting_force_bleak_falls",
+    "story_id": "shout_unrelenting_bleak_falls",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_unrelenting_main",
+    "task_id": "shout_unrelenting_force_bleak_falls",
+    "story_id": "mq_bleak_falls",
+    "completion_role": "ASSOCIATED",
+    "is_primary": false,
+    "sort_order": 22
+  },
+  {
+    "id": "tm_mq_bleak_return",
+    "task_id": "mq_bleak_falls_return_dragonstone",
+    "story_id": "mq_bleak_falls",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 30
+  },
+  {
+    "id": "tm_claw_return_side",
+    "task_id": "golden_claw_return_lucan",
+    "story_id": "side_golden_claw",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_dragon_rising",
+    "task_id": "mq_dragon_rising_watchtower",
+    "story_id": "mq_dragon_rising",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_hold_whiterun_thane",
+    "task_id": "hold_whiterun_thane",
+    "story_id": "hold_whiterun_thane",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_dragon_rising_report",
+    "task_id": "hold_whiterun_thane",
+    "story_id": "mq_dragon_rising",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_hold_breezehome",
+    "task_id": "house_breezehome_purchase",
+    "story_id": "hold_whiterun_breezehome",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_way_voice",
+    "task_id": "mq_way_voice_high_hrothgar",
+    "story_id": "mq_way_voice",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_unrelenting_greybeards",
+    "task_id": "mq_way_voice_high_hrothgar",
+    "story_id": "shout_unrelenting_greybeards",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_way_voice_whirlwind",
+    "task_id": "mq_way_voice_whirlwind",
+    "story_id": "mq_way_voice",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_shout_whirlwind",
+    "task_id": "mq_way_voice_whirlwind",
+    "story_id": "shout_whirlwind_greybeards",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_horn_search",
+    "task_id": "mq_horn_search_ustengrav",
+    "story_id": "mq_horn_jurgen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_ethereal",
+    "task_id": "shout_become_ethereal_ustengrav",
+    "story_id": "shout_ethereal_ustengrav",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_ethereal_main",
+    "task_id": "shout_become_ethereal_ustengrav",
+    "story_id": "mq_horn_jurgen",
+    "completion_role": "ASSOCIATED",
+    "is_primary": false,
+    "sort_order": 15
+  },
+  {
+    "id": "tm_mq_horn_delphine",
+    "task_id": "mq_horn_meet_delphine",
+    "story_id": "mq_horn_jurgen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_horn_return",
+    "task_id": "mq_horn_return_greybeards",
+    "story_id": "mq_horn_jurgen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 30
+  },
+  {
+    "id": "tm_mq_blade_dark",
+    "task_id": "mq_blade_dark_kynesgrove",
+    "story_id": "mq_blade_dark",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_diplomatic_plan",
+    "task_id": "mq_diplomatic_plan",
+    "story_id": "mq_diplomatic_immunity",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_diplomatic_malborn",
+    "task_id": "mq_diplomatic_malborn",
+    "story_id": "mq_diplomatic_immunity",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_diplomatic_depart",
+    "task_id": "mq_diplomatic_depart",
+    "story_id": "mq_diplomatic_immunity",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 30
+  },
+  {
+    "id": "tm_mq_diplomatic_dossier",
+    "task_id": "mq_diplomatic_dossier",
+    "story_id": "mq_diplomatic_immunity",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 40
+  },
+  {
+    "id": "tm_mq_diplomatic_escape",
+    "task_id": "mq_diplomatic_escape",
+    "story_id": "mq_diplomatic_immunity",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 50
+  },
+  {
+    "id": "tm_mq_cornered_find",
+    "task_id": "mq_cornered_rat_find_esbern",
+    "story_id": "mq_cornered_rat",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_cornered_return",
+    "task_id": "mq_cornered_rat_return_esbern",
+    "story_id": "mq_cornered_rat",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_wall_karthspire",
+    "task_id": "mq_alduins_wall_karthspire",
+    "story_id": "mq_alduins_wall",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_wall_study",
+    "task_id": "mq_alduins_wall_study",
+    "story_id": "mq_alduins_wall",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_throat_skies",
+    "task_id": "mq_throat_clear_skies",
+    "story_id": "mq_throat_world",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_clear_skies",
+    "task_id": "mq_throat_clear_skies",
+    "story_id": "shout_clear_skies_high_hrothgar",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_throat_paarthurnax",
+    "task_id": "mq_throat_meet_paarthurnax",
+    "story_id": "mq_throat_world",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_shout_fire_breath",
+    "task_id": "mq_throat_meet_paarthurnax",
+    "story_id": "shout_fire_breath_throat",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_elder_septimus",
+    "task_id": "mq_elder_consult_septimus",
+    "story_id": "mq_elder_knowledge",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_elder_alftand",
+    "task_id": "mq_elder_descend_alftand",
+    "story_id": "mq_elder_knowledge",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_elder_blackreach",
+    "task_id": "mq_elder_cross_blackreach",
+    "story_id": "mq_elder_knowledge",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 30
+  },
+  {
+    "id": "tm_mq_elder_scroll",
+    "task_id": "mq_elder_acquire_scroll",
+    "story_id": "mq_elder_knowledge",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 40
+  },
+  {
+    "id": "tm_mq_bane_dragonrend",
+    "task_id": "mq_alduins_bane_learn_dragonrend",
+    "story_id": "mq_alduins_bane",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_dragonrend",
+    "task_id": "mq_alduins_bane_learn_dragonrend",
+    "story_id": "shout_dragonrend_throat",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_bane_defeat",
+    "task_id": "mq_alduins_bane_defeat",
+    "story_id": "mq_alduins_bane",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_college_admission",
+    "task_id": "college_gain_admission",
+    "story_id": "college_first_lessons",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 5
+  },
+  {
+    "id": "tm_college_first_lessons",
+    "task_id": "college_first_lessons",
+    "story_id": "college_first_lessons",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_college_under_saarthal",
+    "task_id": "college_under_saarthal",
+    "story_id": "college_under_saarthal",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_college_hitting_books",
+    "task_id": "college_hitting_books",
+    "story_id": "college_hitting_books",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_college_good_intentions",
+    "task_id": "college_good_intentions",
+    "story_id": "college_good_intentions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_college_revealing_mzulft",
+    "task_id": "college_revealing_unseen_mzulft",
+    "story_id": "college_revealing_unseen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_college_revealing_report",
+    "task_id": "college_revealing_unseen_report_college",
+    "story_id": "college_revealing_unseen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_college_containment_defend",
+    "task_id": "college_containment_defend_winterhold",
+    "story_id": "college_containment",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_college_containment_report",
+    "task_id": "college_containment_report_college",
+    "story_id": "college_containment",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_college_staff",
+    "task_id": "college_staff_magnus",
+    "story_id": "college_staff_magnus",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_artifact_staff",
+    "task_id": "college_staff_magnus",
+    "story_id": "artifact_staff_magnus",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_morokei",
+    "task_id": "mask_morokei",
+    "story_id": "mask_labyrinthian",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_morokei_college",
+    "task_id": "mask_morokei",
+    "story_id": "college_staff_magnus",
+    "completion_role": "ASSOCIATED",
+    "is_primary": false,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_prep_fire_salts",
+    "task_id": "prep_riften_fire_salts",
+    "story_id": "prep_stoking_flames",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_side_start_fire_salts",
+    "task_id": "riften_stoking_flames_start",
+    "story_id": "side_stoking_flames",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 5
+  },
+  {
+    "id": "tm_side_fire_salts",
+    "task_id": "riften_deliver_fire_salts",
+    "story_id": "side_stoking_flames",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_hold_fire_salts",
+    "task_id": "riften_deliver_fire_salts",
+    "story_id": "hold_rift_thane",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_db_speak_aventus",
+    "task_id": "db_innocence_lost_speak_aventus",
+    "story_id": "db_innocence_lost",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 5
+  },
+  {
+    "id": "tm_db_grelod",
+    "task_id": "db_innocence_lost_kill_grelod",
+    "story_id": "db_innocence_lost",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_db_report_aventus",
+    "task_id": "db_innocence_lost_report_aventus",
+    "story_id": "db_innocence_lost",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_db_trigger_sleep",
+    "task_id": "db_trigger_abduction_sleep",
+    "story_id": "db_with_friends",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 5
+  },
+  {
+    "id": "tm_db_join",
+    "task_id": "db_join_at_shack",
+    "story_id": "db_with_friends",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_db_kill_astrid",
+    "task_id": "db_destroy_at_shack",
+    "story_id": "db_with_friends",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_db_kill_astrid_destroy",
+    "task_id": "db_destroy_at_shack",
+    "story_id": "db_destroy",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_fallen_paarthurnax",
+    "task_id": "mq_fallen_plan_paarthurnax",
+    "story_id": "mq_the_fallen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_fallen_arngeir",
+    "task_id": "mq_fallen_plan_arngeir",
+    "story_id": "mq_the_fallen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 11
+  },
+  {
+    "id": "tm_mq_fallen_esbern",
+    "task_id": "mq_fallen_plan_esbern",
+    "story_id": "mq_the_fallen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 12
+  },
+  {
+    "id": "tm_mq_fallen_jarl",
+    "task_id": "mq_fallen_ask_jarl",
+    "story_id": "mq_the_fallen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_season_arngeir",
+    "task_id": "mq_season_ask_arngeir",
+    "story_id": "mq_season_unending",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_season_tullius",
+    "task_id": "mq_season_invite_tullius",
+    "story_id": "mq_season_unending",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_season_ulfric",
+    "task_id": "mq_season_invite_ulfric",
+    "story_id": "mq_season_unending",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 30
+  },
+  {
+    "id": "tm_mq_season_negotiate",
+    "task_id": "mq_season_negotiate",
+    "story_id": "mq_season_unending",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 40
+  },
+  {
+    "id": "tm_mq_fallen_capture",
+    "task_id": "mq_fallen_capture_odahviing",
+    "story_id": "mq_the_fallen",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 30
+  },
+  {
+    "id": "tm_mq_paarthurnax_kill",
+    "task_id": "mq_paarthurnax_kill",
+    "story_id": "mq_paarthurnax",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_paarthurnax_report",
+    "task_id": "mq_paarthurnax_report",
+    "story_id": "mq_paarthurnax",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_skuldafn_depart",
+    "task_id": "mq_world_eater_depart_skuldafn",
+    "story_id": "mq_world_eater_eyrie",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_diamond",
+    "task_id": "claw_diamond_skuldafn",
+    "story_id": "claw_diamond",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_diamond_main",
+    "task_id": "claw_diamond_skuldafn",
+    "story_id": "mq_world_eater_eyrie",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_mq_skuldafn_use_claw",
+    "task_id": "mq_skuldafn_use_diamond_claw",
+    "story_id": "mq_world_eater_eyrie",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 30
+  },
+  {
+    "id": "tm_mq_skuldafn_defeat_nahkriin",
+    "task_id": "mq_skuldafn_defeat_nahkriin",
+    "story_id": "mq_world_eater_eyrie",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 40
+  },
+  {
+    "id": "tm_mask_nahkriin",
+    "task_id": "mask_nahkriin",
+    "story_id": "mask_skuldafn",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_nahkriin_main",
+    "task_id": "mask_nahkriin",
+    "story_id": "mq_world_eater_eyrie",
+    "completion_role": "ASSOCIATED",
+    "is_primary": false,
+    "sort_order": 45
+  },
+  {
+    "id": "tm_mq_skuldafn_portal",
+    "task_id": "mq_skuldafn_reach_portal",
+    "story_id": "mq_world_eater_eyrie",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 50
+  },
+  {
+    "id": "tm_mq_skuldafn_enter",
+    "task_id": "mq_skuldafn_enter_sovngarde",
+    "story_id": "mq_world_eater_eyrie",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 60
+  },
+  {
+    "id": "tm_mq_sovngarde_hall",
+    "task_id": "mq_sovngarde_hall",
+    "story_id": "mq_sovngarde",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_dragonslayer_alduin",
+    "task_id": "mq_dragonslayer_defeat_alduin",
+    "story_id": "mq_dragonslayer",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mq_dragonslayer_valor",
+    "task_id": "mq_dragonslayer_call_valor",
+    "story_id": "mq_dragonslayer",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_shout_call_valor",
+    "task_id": "mq_dragonslayer_call_valor",
+    "story_id": "shout_call_valor_sovngarde",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_storm_call",
+    "task_id": "shout_storm_call_skuldafn",
+    "story_id": "shout_storm_skuldafn",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_storm_main",
+    "task_id": "shout_storm_call_skuldafn",
+    "story_id": "mq_world_eater_eyrie",
+    "completion_role": "ASSOCIATED",
+    "is_primary": false,
+    "sort_order": 55
+  },
+  {
+    "id": "tm_beacon_daedric",
+    "task_id": "daedric_break_of_dawn_beacon",
+    "story_id": "artifact_break_dawn",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_animal_allegiance_ancients_ascent_animal_allegiance",
+    "task_id": "shout_animal_allegiance_ancients_ascent",
+    "story_id": "shout_animal_allegiance_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 980
+  },
+  {
+    "id": "tm_shout_animal_allegiance_angarvunde_animal_allegiance",
+    "task_id": "shout_animal_allegiance_angarvunde",
+    "story_id": "shout_animal_allegiance_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 990
+  },
+  {
+    "id": "tm_shout_animal_allegiance_ysgramors_tomb_animal_allegiance",
+    "task_id": "shout_animal_allegiance_ysgramors_tomb",
+    "story_id": "shout_animal_allegiance_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1000
+  },
+  {
+    "id": "tm_shout_aura_whisper_northwind_summit_aura_whisper",
+    "task_id": "shout_aura_whisper_northwind_summit",
+    "story_id": "shout_aura_whisper_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1010
+  },
+  {
+    "id": "tm_shout_aura_whisper_valthume_aura_whisper",
+    "task_id": "shout_aura_whisper_valthume",
+    "story_id": "shout_aura_whisper_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1020
+  },
+  {
+    "id": "tm_shout_aura_whisper_volunruud_aura_whisper",
+    "task_id": "shout_aura_whisper_volunruud",
+    "story_id": "shout_aura_whisper_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1030
+  },
+  {
+    "id": "tm_shout_become_ethereal_ironbind_barrow_become_ethereal",
+    "task_id": "shout_become_ethereal_ironbind_barrow",
+    "story_id": "shout_become_ethereal_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1040
+  },
+  {
+    "id": "tm_shout_become_ethereal_lost_valley_redoubt_become_ethereal",
+    "task_id": "shout_become_ethereal_lost_valley_redoubt",
+    "story_id": "shout_become_ethereal_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1050
+  },
+  {
+    "id": "tm_shout_disarm_eldersblood_peak_disarm",
+    "task_id": "shout_disarm_eldersblood_peak",
+    "story_id": "shout_disarm_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1060
+  },
+  {
+    "id": "tm_shout_disarm_silverdrift_lair_disarm",
+    "task_id": "shout_disarm_silverdrift_lair",
+    "story_id": "shout_disarm_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1070
+  },
+  {
+    "id": "tm_shout_disarm_snow_veil_sanctum_disarm",
+    "task_id": "shout_disarm_snow_veil_sanctum",
+    "story_id": "shout_disarm_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1080
+  },
+  {
+    "id": "tm_shout_dismay_dead_crone_rock_dismay",
+    "task_id": "shout_dismay_dead_crone_rock",
+    "story_id": "shout_dismay_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1090
+  },
+  {
+    "id": "tm_shout_dismay_lost_tongue_overlook_dismay",
+    "task_id": "shout_dismay_lost_tongue_overlook",
+    "story_id": "shout_dismay_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1100
+  },
+  {
+    "id": "tm_shout_dismay_shalidors_maze_dismay",
+    "task_id": "shout_dismay_shalidors_maze",
+    "story_id": "shout_dismay_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1110
+  },
+  {
+    "id": "tm_shout_elemental_fury_dragontooth_crater_elemental_fury",
+    "task_id": "shout_elemental_fury_dragontooth_crater",
+    "story_id": "shout_elemental_fury_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1120
+  },
+  {
+    "id": "tm_shout_elemental_fury_kilkreath_temple_elemental_fury",
+    "task_id": "shout_elemental_fury_kilkreath_temple",
+    "story_id": "shout_elemental_fury_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1130
+  },
+  {
+    "id": "tm_shout_elemental_fury_shriekwind_bastion_elemental_fury",
+    "task_id": "shout_elemental_fury_shriekwind_bastion",
+    "story_id": "shout_elemental_fury_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1140
+  },
+  {
+    "id": "tm_shout_fire_breath_dustmans_cairn_fire_breath",
+    "task_id": "shout_fire_breath_dustmans_cairn",
+    "story_id": "shout_fire_breath_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1150
+  },
+  {
+    "id": "tm_shout_fire_breath_sunderstone_gorge_fire_breath",
+    "task_id": "shout_fire_breath_sunderstone_gorge",
+    "story_id": "shout_fire_breath_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1160
+  },
+  {
+    "id": "tm_shout_frost_breath_bonestrewn_crest_frost_breath",
+    "task_id": "shout_frost_breath_bonestrewn_crest",
+    "story_id": "shout_frost_breath_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1170
+  },
+  {
+    "id": "tm_shout_frost_breath_folgunthur_frost_breath",
+    "task_id": "shout_frost_breath_folgunthur",
+    "story_id": "shout_frost_breath_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1180
+  },
+  {
+    "id": "tm_shout_frost_breath_skyborn_altar_frost_breath",
+    "task_id": "shout_frost_breath_skyborn_altar",
+    "story_id": "shout_frost_breath_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1190
+  },
+  {
+    "id": "tm_shout_ice_form_frostmere_crypt_ice_form",
+    "task_id": "shout_ice_form_frostmere_crypt",
+    "story_id": "shout_ice_form_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1200
+  },
+  {
+    "id": "tm_shout_ice_form_mount_anthor_ice_form",
+    "task_id": "shout_ice_form_mount_anthor",
+    "story_id": "shout_ice_form_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1210
+  },
+  {
+    "id": "tm_shout_ice_form_saarthal_ice_form",
+    "task_id": "shout_ice_form_saarthal",
+    "story_id": "shout_ice_form_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1220
+  },
+  {
+    "id": "tm_shout_kynes_peace_ragnvald_kynes_peace",
+    "task_id": "shout_kynes_peace_ragnvald",
+    "story_id": "shout_kynes_peace_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1230
+  },
+  {
+    "id": "tm_shout_kynes_peace_rannveigs_fast_kynes_peace",
+    "task_id": "shout_kynes_peace_rannveigs_fast",
+    "story_id": "shout_kynes_peace_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1240
+  },
+  {
+    "id": "tm_shout_kynes_peace_shroud_hearth_barrow_kynes_peace",
+    "task_id": "shout_kynes_peace_shroud_hearth_barrow",
+    "story_id": "shout_kynes_peace_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1250
+  },
+  {
+    "id": "tm_shout_marked_for_death_autumnwatch_tower_marked_for_death",
+    "task_id": "shout_marked_for_death_autumnwatch_tower",
+    "story_id": "shout_marked_for_death_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1260
+  },
+  {
+    "id": "tm_shout_marked_for_death_forsaken_cave_marked_for_death",
+    "task_id": "shout_marked_for_death_forsaken_cave",
+    "story_id": "shout_marked_for_death_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1270
+  },
+  {
+    "id": "tm_shout_slow_time_deepwood_redoubt_slow_time",
+    "task_id": "shout_slow_time_deepwood_redoubt",
+    "story_id": "shout_slow_time_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1280
+  },
+  {
+    "id": "tm_shout_slow_time_korvanjund_slow_time",
+    "task_id": "shout_slow_time_korvanjund",
+    "story_id": "shout_slow_time_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1290
+  },
+  {
+    "id": "tm_shout_storm_call_forelhost_storm_call",
+    "task_id": "shout_storm_call_forelhost",
+    "story_id": "shout_storm_call_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1300
+  },
+  {
+    "id": "tm_shout_storm_call_high_gate_ruins_storm_call",
+    "task_id": "shout_storm_call_high_gate_ruins",
+    "story_id": "shout_storm_call_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1310
+  },
+  {
+    "id": "tm_shout_whirlwind_sprint_dead_mens_respite_whirlwind_sprint",
+    "task_id": "shout_whirlwind_sprint_dead_mens_respite",
+    "story_id": "shout_whirlwind_sprint_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1320
+  },
+  {
+    "id": "tm_shout_whirlwind_sprint_volskygge_whirlwind_sprint",
+    "task_id": "shout_whirlwind_sprint_volskygge",
+    "story_id": "shout_whirlwind_sprint_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1330
+  },
+  {
+    "id": "tm_shout_drain_vitality_arcwind_point_drain_vitality",
+    "task_id": "shout_drain_vitality_arcwind_point",
+    "story_id": "shout_drain_vitality_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1340
+  },
+  {
+    "id": "tm_shout_drain_vitality_dimhollow_crypt_drain_vitality",
+    "task_id": "shout_drain_vitality_dimhollow_crypt",
+    "story_id": "shout_drain_vitality_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1350
+  },
+  {
+    "id": "tm_shout_drain_vitality_forgotten_vale_drain_vitality",
+    "task_id": "shout_drain_vitality_forgotten_vale",
+    "story_id": "shout_drain_vitality_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1360
+  },
+  {
+    "id": "tm_shout_cyclone_benkongerike_cyclone",
+    "task_id": "shout_cyclone_benkongerike",
+    "story_id": "shout_cyclone_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1370
+  },
+  {
+    "id": "tm_shout_cyclone_kolbjorn_barrow_cyclone",
+    "task_id": "shout_cyclone_kolbjorn_barrow",
+    "story_id": "shout_cyclone_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1380
+  },
+  {
+    "id": "tm_shout_cyclone_white_ridge_barrow_cyclone",
+    "task_id": "shout_cyclone_white_ridge_barrow",
+    "story_id": "shout_cyclone_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1390
+  },
+  {
+    "id": "tm_shout_dragon_aspect_temple_of_miraak_dragon_aspect",
+    "task_id": "shout_dragon_aspect_temple_of_miraak",
+    "story_id": "shout_dragon_aspect_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1400
+  },
+  {
+    "id": "tm_shout_dragon_aspect_raven_rock_mine_dragon_aspect",
+    "task_id": "shout_dragon_aspect_raven_rock_mine",
+    "story_id": "shout_dragon_aspect_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1410
+  },
+  {
+    "id": "tm_shout_dragon_aspect_apocrypha_dragon_aspect",
+    "task_id": "shout_dragon_aspect_apocrypha",
+    "story_id": "shout_dragon_aspect_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1420
+  },
+  {
+    "id": "tm_shout_throw_voice_shearpoint_throw_voice",
+    "task_id": "shout_throw_voice_shearpoint",
+    "story_id": "shout_throw_voice_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1430
+  },
+  {
+    "id": "tm_shout_marked_for_death_sanctuary_marked_for_death",
+    "task_id": "shout_marked_for_death_sanctuary",
+    "story_id": "shout_marked_for_death_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1440
+  },
+  {
+    "id": "tm_shout_slow_time_labyrinthian_slow_time",
+    "task_id": "shout_slow_time_labyrinthian",
+    "story_id": "shout_slow_time_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1450
+  },
+  {
+    "id": "tm_shout_summon_durnehviir_soul_cairn_summon_durnehviir",
+    "task_id": "shout_summon_durnehviir_soul_cairn",
+    "story_id": "shout_summon_durnehviir_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1460
+  },
+  {
+    "id": "tm_shout_soul_tear_summon_1_soul_tear",
+    "task_id": "shout_soul_tear_summon_1",
+    "story_id": "shout_soul_tear_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1470
+  },
+  {
+    "id": "tm_shout_soul_tear_summon_2_soul_tear",
+    "task_id": "shout_soul_tear_summon_2",
+    "story_id": "shout_soul_tear_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1480
+  },
+  {
+    "id": "tm_shout_soul_tear_summon_3_soul_tear",
+    "task_id": "shout_soul_tear_summon_3",
+    "story_id": "shout_soul_tear_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1490
+  },
+  {
+    "id": "tm_shout_battle_fury_vahloks_tomb_1_battle_fury",
+    "task_id": "shout_battle_fury_vahloks_tomb_1",
+    "story_id": "shout_battle_fury_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1500
+  },
+  {
+    "id": "tm_shout_battle_fury_vahloks_tomb_2_battle_fury",
+    "task_id": "shout_battle_fury_vahloks_tomb_2",
+    "story_id": "shout_battle_fury_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1510
+  },
+  {
+    "id": "tm_shout_battle_fury_vahloks_tomb_3_battle_fury",
+    "task_id": "shout_battle_fury_vahloks_tomb_3",
+    "story_id": "shout_battle_fury_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1520
+  },
+  {
+    "id": "tm_shout_bend_will_saerings_watch_bend_will",
+    "task_id": "shout_bend_will_saerings_watch",
+    "story_id": "shout_bend_will_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1530
+  },
+  {
+    "id": "tm_shout_bend_will_apocrypha_bend_will",
+    "task_id": "shout_bend_will_apocrypha",
+    "story_id": "shout_bend_will_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1540
+  },
+  {
+    "id": "tm_shout_bend_will_skaal_bend_will",
+    "task_id": "shout_bend_will_skaal",
+    "story_id": "shout_bend_will_acquisitions",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 1550
+  },
+  {
+    "id": "tm_shout_unrelenting_horn",
+    "task_id": "mq_horn_return_greybeards",
+    "story_id": "shout_unrelenting_greybeards",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_shout_call_dragon_1",
+    "task_id": "mq_fallen_plan_paarthurnax",
+    "story_id": "shout_call_dragon_fallen",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_shout_call_dragon_2",
+    "task_id": "mq_fallen_plan_arngeir",
+    "story_id": "shout_call_dragon_fallen",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_shout_call_dragon_3",
+    "task_id": "mq_fallen_plan_esbern",
+    "story_id": "shout_call_dragon_fallen",
+    "completion_role": "REQUIRED",
+    "is_primary": false,
+    "sort_order": 30
+  },
+  {
+    "id": "tm_mask_hevnoraak",
+    "task_id": "mask_hevnoraak",
+    "story_id": "mask_hevnoraak",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_krosis",
+    "task_id": "mask_krosis",
+    "story_id": "mask_krosis",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_otar",
+    "task_id": "mask_otar",
+    "story_id": "mask_otar",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_rahgot",
+    "task_id": "mask_rahgot",
+    "story_id": "mask_rahgot",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_vokun",
+    "task_id": "mask_vokun",
+    "story_id": "mask_vokun",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_volsung",
+    "task_id": "mask_volsung",
+    "story_id": "mask_volsung",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_wooden",
+    "task_id": "mask_wooden",
+    "story_id": "mask_wooden",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_konahrik",
+    "task_id": "mask_konahrik",
+    "story_id": "mask_konahrik",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_ahzidal",
+    "task_id": "mask_ahzidal",
+    "story_id": "mask_ahzidal",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_dukaan",
+    "task_id": "mask_dukaan",
+    "story_id": "mask_dukaan",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_zahkriisos",
+    "task_id": "mask_zahkriisos",
+    "story_id": "mask_zahkriisos",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_mask_miraak",
+    "task_id": "mask_miraak",
+    "story_id": "mask_miraak",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_coral_buy_winterhold",
+    "task_id": "claw_coral_buy_winterhold",
+    "story_id": "claw_coral",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_coral_yngol_barrow",
+    "task_id": "claw_coral_yngol_barrow",
+    "story_id": "claw_coral",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_ebony_korvanjund",
+    "task_id": "claw_ebony_korvanjund",
+    "story_id": "claw_ebony",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_emerald_reachwater",
+    "task_id": "claw_emerald_reachwater",
+    "story_id": "claw_emerald",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_glass_forelhost",
+    "task_id": "claw_glass_forelhost",
+    "story_id": "claw_glass",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_iron_valthume",
+    "task_id": "claw_iron_valthume",
+    "story_id": "claw_iron",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_ivory_folgunthur",
+    "task_id": "claw_ivory_folgunthur",
+    "story_id": "claw_ivory",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_ruby_dead_mens_respite",
+    "task_id": "claw_ruby_dead_mens_respite",
+    "story_id": "claw_ruby",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_sapphire_ivarstead",
+    "task_id": "claw_sapphire_ivarstead",
+    "story_id": "claw_sapphire",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_amethyst_left_vahloks_tomb",
+    "task_id": "claw_amethyst_left_vahloks_tomb",
+    "story_id": "claw_amethyst",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  },
+  {
+    "id": "tm_claw_amethyst_right_vahloks_tomb",
+    "task_id": "claw_amethyst_right_vahloks_tomb",
+    "story_id": "claw_amethyst",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 20
+  },
+  {
+    "id": "tm_prep_konahrik_masks",
+    "task_id": "prep_konahrik_masks",
+    "story_id": "prep_konahrik_readiness",
+    "completion_role": "REQUIRED",
+    "is_primary": true,
+    "sort_order": 10
+  }
 ]

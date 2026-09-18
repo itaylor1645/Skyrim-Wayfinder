@@ -1,0 +1,326 @@
+[
+  {
+    "id": "animal_allegiance",
+    "collection_id": "animal_allegiance",
+    "display_name": "Animal Allegiance",
+    "words": [
+      "Raan",
+      "Mir",
+      "Tah"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Animal_Allegiance"
+  },
+  {
+    "id": "aura_whisper",
+    "collection_id": "aura_whisper",
+    "display_name": "Aura Whisper",
+    "words": [
+      "Laas",
+      "Yah",
+      "Nir"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Aura_Whisper"
+  },
+  {
+    "id": "become_ethereal",
+    "collection_id": "become_ethereal",
+    "display_name": "Become Ethereal",
+    "words": [
+      "Feim",
+      "Zii",
+      "Gron"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Become_Ethereal"
+  },
+  {
+    "id": "call_dragon",
+    "collection_id": "call_dragon",
+    "display_name": "Call Dragon",
+    "words": [
+      "Od",
+      "Ah",
+      "Viing"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Call_Dragon"
+  },
+  {
+    "id": "call_of_valor",
+    "collection_id": "call_of_valor",
+    "display_name": "Call of Valor",
+    "words": [
+      "Hun",
+      "Kaal",
+      "Zoor"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Call_of_Valor"
+  },
+  {
+    "id": "clear_skies",
+    "collection_id": "clear_skies",
+    "display_name": "Clear Skies",
+    "words": [
+      "Lok",
+      "Vah",
+      "Koor"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Clear_Skies"
+  },
+  {
+    "id": "disarm",
+    "collection_id": "disarm",
+    "display_name": "Disarm",
+    "words": [
+      "Zun",
+      "Haal",
+      "Viik"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Disarm"
+  },
+  {
+    "id": "dismay",
+    "collection_id": "dismay",
+    "display_name": "Dismay",
+    "words": [
+      "Faas",
+      "Ru",
+      "Maar"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dismay"
+  },
+  {
+    "id": "dragonrend",
+    "collection_id": "dragonrend",
+    "display_name": "Dragonrend",
+    "words": [
+      "Joor",
+      "Zah",
+      "Frul"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragonrend"
+  },
+  {
+    "id": "elemental_fury",
+    "collection_id": "elemental_fury",
+    "display_name": "Elemental Fury",
+    "words": [
+      "Su",
+      "Grah",
+      "Dun"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elemental_Fury"
+  },
+  {
+    "id": "fire_breath",
+    "collection_id": "fire_breath",
+    "display_name": "Fire Breath",
+    "words": [
+      "Yol",
+      "Toor",
+      "Shul"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Fire_Breath"
+  },
+  {
+    "id": "frost_breath",
+    "collection_id": "frost_breath",
+    "display_name": "Frost Breath",
+    "words": [
+      "Fo",
+      "Krah",
+      "Diin"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Frost_Breath"
+  },
+  {
+    "id": "ice_form",
+    "collection_id": "ice_form",
+    "display_name": "Ice Form",
+    "words": [
+      "Iiz",
+      "Slen",
+      "Nus"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ice_Form"
+  },
+  {
+    "id": "kynes_peace",
+    "collection_id": "kynes_peace",
+    "display_name": "Kyne's Peace",
+    "words": [
+      "Kaan",
+      "Drem",
+      "Ov"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Kyne%27s_Peace"
+  },
+  {
+    "id": "marked_for_death",
+    "collection_id": "marked_for_death",
+    "display_name": "Marked for Death",
+    "words": [
+      "Krii",
+      "Lun",
+      "Aus"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Marked_for_Death"
+  },
+  {
+    "id": "slow_time",
+    "collection_id": "slow_time",
+    "display_name": "Slow Time",
+    "words": [
+      "Tiid",
+      "Klo",
+      "Ul"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Slow_Time"
+  },
+  {
+    "id": "storm_call",
+    "collection_id": "storm_call",
+    "display_name": "Storm Call",
+    "words": [
+      "Strun",
+      "Bah",
+      "Qo"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Storm_Call"
+  },
+  {
+    "id": "throw_voice",
+    "collection_id": "throw_voice",
+    "display_name": "Throw Voice",
+    "words": [
+      "Zul",
+      "Mey",
+      "Gut"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Throw_Voice"
+  },
+  {
+    "id": "unrelenting_force",
+    "collection_id": "unrelenting_force",
+    "display_name": "Unrelenting Force",
+    "words": [
+      "Fus",
+      "Ro",
+      "Dah"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Unrelenting_Force"
+  },
+  {
+    "id": "whirlwind_sprint",
+    "collection_id": "whirlwind_sprint",
+    "display_name": "Whirlwind Sprint",
+    "words": [
+      "Wuld",
+      "Nah",
+      "Kest"
+    ],
+    "content_source": "SKYRIM",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Whirlwind_Sprint"
+  },
+  {
+    "id": "drain_vitality",
+    "collection_id": "drain_vitality",
+    "display_name": "Drain Vitality",
+    "words": [
+      "Gaan",
+      "Lah",
+      "Haas"
+    ],
+    "content_source": "DAWNGUARD",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Drain_Vitality"
+  },
+  {
+    "id": "soul_tear",
+    "collection_id": "soul_tear",
+    "display_name": "Soul Tear",
+    "words": [
+      "Rii",
+      "Vaaz",
+      "Zol"
+    ],
+    "content_source": "DAWNGUARD",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Soul_Tear"
+  },
+  {
+    "id": "summon_durnehviir",
+    "collection_id": "summon_durnehviir",
+    "display_name": "Summon Durnehviir",
+    "words": [
+      "Dur",
+      "Neh",
+      "Viir"
+    ],
+    "content_source": "DAWNGUARD",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summon_Durnehviir"
+  },
+  {
+    "id": "battle_fury",
+    "collection_id": "battle_fury",
+    "display_name": "Battle Fury",
+    "words": [
+      "Mid",
+      "Vur",
+      "Shaan"
+    ],
+    "content_source": "DRAGONBORN",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Battle_Fury"
+  },
+  {
+    "id": "bend_will",
+    "collection_id": "bend_will",
+    "display_name": "Bend Will",
+    "words": [
+      "Gol",
+      "Hah",
+      "Dov"
+    ],
+    "content_source": "DRAGONBORN",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Bend_Will"
+  },
+  {
+    "id": "cyclone",
+    "collection_id": "cyclone",
+    "display_name": "Cyclone",
+    "words": [
+      "Ven",
+      "Gaar",
+      "Nos"
+    ],
+    "content_source": "DRAGONBORN",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Cyclone"
+  },
+  {
+    "id": "dragon_aspect",
+    "collection_id": "dragon_aspect",
+    "display_name": "Dragon Aspect",
+    "words": [
+      "Mul",
+      "Qah",
+      "Diiv"
+    ],
+    "content_source": "DRAGONBORN",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Aspect"
+  }
+]

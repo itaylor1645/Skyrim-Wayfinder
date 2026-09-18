@@ -1,0 +1,428 @@
+[
+  {
+    "id": "sc_shout_animal_allegiance_ancients_ascent_animal_allegiance",
+    "task_id": "shout_animal_allegiance_ancients_ascent",
+    "shout_id": "animal_allegiance",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_animal_allegiance_angarvunde_animal_allegiance",
+    "task_id": "shout_animal_allegiance_angarvunde",
+    "shout_id": "animal_allegiance",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_animal_allegiance_ysgramors_tomb_animal_allegiance",
+    "task_id": "shout_animal_allegiance_ysgramors_tomb",
+    "shout_id": "animal_allegiance",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_aura_whisper_northwind_summit_aura_whisper",
+    "task_id": "shout_aura_whisper_northwind_summit",
+    "shout_id": "aura_whisper",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_aura_whisper_valthume_aura_whisper",
+    "task_id": "shout_aura_whisper_valthume",
+    "shout_id": "aura_whisper",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_aura_whisper_volunruud_aura_whisper",
+    "task_id": "shout_aura_whisper_volunruud",
+    "shout_id": "aura_whisper",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_become_ethereal_ironbind_barrow_become_ethereal",
+    "task_id": "shout_become_ethereal_ironbind_barrow",
+    "shout_id": "become_ethereal",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_become_ethereal_lost_valley_redoubt_become_ethereal",
+    "task_id": "shout_become_ethereal_lost_valley_redoubt",
+    "shout_id": "become_ethereal",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_disarm_eldersblood_peak_disarm",
+    "task_id": "shout_disarm_eldersblood_peak",
+    "shout_id": "disarm",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_disarm_silverdrift_lair_disarm",
+    "task_id": "shout_disarm_silverdrift_lair",
+    "shout_id": "disarm",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_disarm_snow_veil_sanctum_disarm",
+    "task_id": "shout_disarm_snow_veil_sanctum",
+    "shout_id": "disarm",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_dismay_dead_crone_rock_dismay",
+    "task_id": "shout_dismay_dead_crone_rock",
+    "shout_id": "dismay",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_dismay_lost_tongue_overlook_dismay",
+    "task_id": "shout_dismay_lost_tongue_overlook",
+    "shout_id": "dismay",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_dismay_shalidors_maze_dismay",
+    "task_id": "shout_dismay_shalidors_maze",
+    "shout_id": "dismay",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_elemental_fury_dragontooth_crater_elemental_fury",
+    "task_id": "shout_elemental_fury_dragontooth_crater",
+    "shout_id": "elemental_fury",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_elemental_fury_kilkreath_temple_elemental_fury",
+    "task_id": "shout_elemental_fury_kilkreath_temple",
+    "shout_id": "elemental_fury",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_elemental_fury_shriekwind_bastion_elemental_fury",
+    "task_id": "shout_elemental_fury_shriekwind_bastion",
+    "shout_id": "elemental_fury",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_fire_breath_dustmans_cairn_fire_breath",
+    "task_id": "shout_fire_breath_dustmans_cairn",
+    "shout_id": "fire_breath",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_fire_breath_sunderstone_gorge_fire_breath",
+    "task_id": "shout_fire_breath_sunderstone_gorge",
+    "shout_id": "fire_breath",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_frost_breath_bonestrewn_crest_frost_breath",
+    "task_id": "shout_frost_breath_bonestrewn_crest",
+    "shout_id": "frost_breath",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_frost_breath_folgunthur_frost_breath",
+    "task_id": "shout_frost_breath_folgunthur",
+    "shout_id": "frost_breath",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_frost_breath_skyborn_altar_frost_breath",
+    "task_id": "shout_frost_breath_skyborn_altar",
+    "shout_id": "frost_breath",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_ice_form_frostmere_crypt_ice_form",
+    "task_id": "shout_ice_form_frostmere_crypt",
+    "shout_id": "ice_form",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_ice_form_mount_anthor_ice_form",
+    "task_id": "shout_ice_form_mount_anthor",
+    "shout_id": "ice_form",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_ice_form_saarthal_ice_form",
+    "task_id": "shout_ice_form_saarthal",
+    "shout_id": "ice_form",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_kynes_peace_ragnvald_kynes_peace",
+    "task_id": "shout_kynes_peace_ragnvald",
+    "shout_id": "kynes_peace",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_kynes_peace_rannveigs_fast_kynes_peace",
+    "task_id": "shout_kynes_peace_rannveigs_fast",
+    "shout_id": "kynes_peace",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_kynes_peace_shroud_hearth_barrow_kynes_peace",
+    "task_id": "shout_kynes_peace_shroud_hearth_barrow",
+    "shout_id": "kynes_peace",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_marked_for_death_autumnwatch_tower_marked_for_death",
+    "task_id": "shout_marked_for_death_autumnwatch_tower",
+    "shout_id": "marked_for_death",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_marked_for_death_forsaken_cave_marked_for_death",
+    "task_id": "shout_marked_for_death_forsaken_cave",
+    "shout_id": "marked_for_death",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_slow_time_deepwood_redoubt_slow_time",
+    "task_id": "shout_slow_time_deepwood_redoubt",
+    "shout_id": "slow_time",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_slow_time_korvanjund_slow_time",
+    "task_id": "shout_slow_time_korvanjund",
+    "shout_id": "slow_time",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_storm_call_forelhost_storm_call",
+    "task_id": "shout_storm_call_forelhost",
+    "shout_id": "storm_call",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_storm_call_high_gate_ruins_storm_call",
+    "task_id": "shout_storm_call_high_gate_ruins",
+    "shout_id": "storm_call",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_whirlwind_sprint_dead_mens_respite_whirlwind_sprint",
+    "task_id": "shout_whirlwind_sprint_dead_mens_respite",
+    "shout_id": "whirlwind_sprint",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_whirlwind_sprint_volskygge_whirlwind_sprint",
+    "task_id": "shout_whirlwind_sprint_volskygge",
+    "shout_id": "whirlwind_sprint",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_drain_vitality_arcwind_point_drain_vitality",
+    "task_id": "shout_drain_vitality_arcwind_point",
+    "shout_id": "drain_vitality",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_drain_vitality_dimhollow_crypt_drain_vitality",
+    "task_id": "shout_drain_vitality_dimhollow_crypt",
+    "shout_id": "drain_vitality",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_drain_vitality_forgotten_vale_drain_vitality",
+    "task_id": "shout_drain_vitality_forgotten_vale",
+    "shout_id": "drain_vitality",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_cyclone_benkongerike_cyclone",
+    "task_id": "shout_cyclone_benkongerike",
+    "shout_id": "cyclone",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_cyclone_kolbjorn_barrow_cyclone",
+    "task_id": "shout_cyclone_kolbjorn_barrow",
+    "shout_id": "cyclone",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_cyclone_white_ridge_barrow_cyclone",
+    "task_id": "shout_cyclone_white_ridge_barrow",
+    "shout_id": "cyclone",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_dragon_aspect_temple_of_miraak_dragon_aspect",
+    "task_id": "shout_dragon_aspect_temple_of_miraak",
+    "shout_id": "dragon_aspect",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_dragon_aspect_raven_rock_mine_dragon_aspect",
+    "task_id": "shout_dragon_aspect_raven_rock_mine",
+    "shout_id": "dragon_aspect",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_dragon_aspect_apocrypha_dragon_aspect",
+    "task_id": "shout_dragon_aspect_apocrypha",
+    "shout_id": "dragon_aspect",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_throw_voice_shearpoint_throw_voice",
+    "task_id": "shout_throw_voice_shearpoint",
+    "shout_id": "throw_voice",
+    "credit_count": 3
+  },
+  {
+    "id": "sc_shout_marked_for_death_sanctuary_marked_for_death",
+    "task_id": "shout_marked_for_death_sanctuary",
+    "shout_id": "marked_for_death",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_slow_time_labyrinthian_slow_time",
+    "task_id": "shout_slow_time_labyrinthian",
+    "shout_id": "slow_time",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_summon_durnehviir_soul_cairn_summon_durnehviir",
+    "task_id": "shout_summon_durnehviir_soul_cairn",
+    "shout_id": "summon_durnehviir",
+    "credit_count": 3
+  },
+  {
+    "id": "sc_shout_soul_tear_summon_1_soul_tear",
+    "task_id": "shout_soul_tear_summon_1",
+    "shout_id": "soul_tear",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_soul_tear_summon_2_soul_tear",
+    "task_id": "shout_soul_tear_summon_2",
+    "shout_id": "soul_tear",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_soul_tear_summon_3_soul_tear",
+    "task_id": "shout_soul_tear_summon_3",
+    "shout_id": "soul_tear",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_battle_fury_vahloks_tomb_1_battle_fury",
+    "task_id": "shout_battle_fury_vahloks_tomb_1",
+    "shout_id": "battle_fury",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_battle_fury_vahloks_tomb_2_battle_fury",
+    "task_id": "shout_battle_fury_vahloks_tomb_2",
+    "shout_id": "battle_fury",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_battle_fury_vahloks_tomb_3_battle_fury",
+    "task_id": "shout_battle_fury_vahloks_tomb_3",
+    "shout_id": "battle_fury",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_bend_will_saerings_watch_bend_will",
+    "task_id": "shout_bend_will_saerings_watch",
+    "shout_id": "bend_will",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_bend_will_apocrypha_bend_will",
+    "task_id": "shout_bend_will_apocrypha",
+    "shout_id": "bend_will",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_bend_will_skaal_bend_will",
+    "task_id": "shout_bend_will_skaal",
+    "shout_id": "bend_will",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_unrelenting_force_bleak_falls_unrelenting_force",
+    "task_id": "shout_unrelenting_force_bleak_falls",
+    "shout_id": "unrelenting_force",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_mq_way_voice_high_hrothgar_unrelenting_force",
+    "task_id": "mq_way_voice_high_hrothgar",
+    "shout_id": "unrelenting_force",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_mq_horn_return_greybeards_unrelenting_force",
+    "task_id": "mq_horn_return_greybeards",
+    "shout_id": "unrelenting_force",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_mq_way_voice_whirlwind_whirlwind_sprint",
+    "task_id": "mq_way_voice_whirlwind",
+    "shout_id": "whirlwind_sprint",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_shout_become_ethereal_ustengrav_become_ethereal",
+    "task_id": "shout_become_ethereal_ustengrav",
+    "shout_id": "become_ethereal",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_mq_throat_clear_skies_clear_skies",
+    "task_id": "mq_throat_clear_skies",
+    "shout_id": "clear_skies",
+    "credit_count": 3
+  },
+  {
+    "id": "sc_mq_throat_meet_paarthurnax_fire_breath",
+    "task_id": "mq_throat_meet_paarthurnax",
+    "shout_id": "fire_breath",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_mq_alduins_bane_learn_dragonrend_dragonrend",
+    "task_id": "mq_alduins_bane_learn_dragonrend",
+    "shout_id": "dragonrend",
+    "credit_count": 3
+  },
+  {
+    "id": "sc_shout_storm_call_skuldafn_storm_call",
+    "task_id": "shout_storm_call_skuldafn",
+    "shout_id": "storm_call",
+    "credit_count": 1
+  },
+  {
+    "id": "sc_mq_dragonslayer_call_valor_call_of_valor",
+    "task_id": "mq_dragonslayer_call_valor",
+    "shout_id": "call_of_valor",
+    "credit_count": 3
+  },
+  {
+    "id": "sc_mq_fallen_plan_paarthurnax_call_dragon",
+    "task_id": "mq_fallen_plan_paarthurnax",
+    "shout_id": "call_dragon",
+    "credit_count": 3
+  },
+  {
+    "id": "sc_mq_fallen_plan_arngeir_call_dragon",
+    "task_id": "mq_fallen_plan_arngeir",
+    "shout_id": "call_dragon",
+    "credit_count": 3
+  },
+  {
+    "id": "sc_mq_fallen_plan_esbern_call_dragon",
+    "task_id": "mq_fallen_plan_esbern",
+    "shout_id": "call_dragon",
+    "credit_count": 3
+  }
+]

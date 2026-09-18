@@ -1,0 +1,155 @@
+[
+  {
+    "id": "access_ysgramors_tomb",
+    "label": "Access to Ysgramor's Tomb",
+    "description": "Reach the Companions quest stage that opens Ysgramor's Tomb.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead"
+    ],
+    "content_source": "SKYRIM"
+  },
+  {
+    "id": "access_snow_veil_sanctum",
+    "label": "Access to Snow Veil Sanctum",
+    "description": "Reach the Thieves Guild quest stage that opens Snow Veil Sanctum.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Speaking_With_Silence"
+    ],
+    "content_source": "SKYRIM"
+  },
+  {
+    "id": "access_dustmans_cairn",
+    "label": "Access to Dustman's Cairn",
+    "description": "Reach the Companions quest stage that opens Dustman's Cairn.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Proving_Honor"
+    ],
+    "content_source": "SKYRIM"
+  },
+  {
+    "id": "access_saarthal",
+    "label": "Access to Saarthal",
+    "description": "Reach the College quest stage that permits entry to Saarthal.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Under_Saarthal"
+    ],
+    "content_source": "SKYRIM"
+  },
+  {
+    "id": "access_korvanjund",
+    "label": "Access to Korvanjund",
+    "description": "Reach The Jagged Crown quest stage that permits entry to Korvanjund.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Jagged_Crown"
+    ],
+    "content_source": "SKYRIM"
+  },
+  {
+    "id": "access_dead_mens_respite",
+    "label": "Access to Dead Men's Respite",
+    "description": "Begin Tending the Flames and obtain access to Dead Men's Respite.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Tending_the_Flames"
+    ],
+    "content_source": "SKYRIM"
+  },
+  {
+    "id": "access_dimhollow_crypt",
+    "label": "Access to Dimhollow Crypt",
+    "description": "Reach the Dawnguard quest stage that opens Dimhollow Crypt.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Awakening"
+    ],
+    "content_source": "DAWNGUARD"
+  },
+  {
+    "id": "access_forgotten_vale",
+    "label": "Access to the Forgotten Vale",
+    "description": "Reach Touching the Sky and enter the Forgotten Vale.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Touching_the_Sky"
+    ],
+    "content_source": "DAWNGUARD"
+  },
+  {
+    "id": "access_soul_cairn",
+    "label": "Access to the Soul Cairn and Durnehviir",
+    "description": "Reach Beyond Death and defeat Durnehviir in the Soul Cairn.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Beyond_Death"
+    ],
+    "content_source": "DAWNGUARD"
+  },
+  {
+    "id": "access_vahloks_tomb",
+    "label": "Access to Vahlok's Tomb",
+    "description": "Begin Lost Legacy after satisfying its Solstheim prerequisites.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Lost_Legacy"
+    ],
+    "content_source": "DRAGONBORN"
+  },
+  {
+    "id": "access_kolbjorn_depths",
+    "label": "Access to Kolbjorn Barrow depths",
+    "description": "Advance Unearthed until the word wall is accessible.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Unearthed"
+    ],
+    "content_source": "DRAGONBORN"
+  },
+  {
+    "id": "access_bloodskal_barrow",
+    "label": "Access through Bloodskal Barrow",
+    "description": "Advance The Final Descent through Bloodskal Barrow.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Final_Descent"
+    ],
+    "content_source": "DRAGONBORN"
+  },
+  {
+    "id": "access_temple_of_miraak",
+    "label": "Access to the Temple of Miraak",
+    "description": "Advance the Dragonborn questline into the Temple of Miraak.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Temple_of_Miraak"
+    ],
+    "content_source": "DRAGONBORN"
+  },
+  {
+    "id": "access_waking_dreams",
+    "label": "Access to Waking Dreams in Apocrypha",
+    "description": "Reach At the Summit of Apocrypha and traverse Waking Dreams.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:At_the_Summit_of_Apocrypha"
+    ],
+    "content_source": "DRAGONBORN"
+  },
+  {
+    "id": "access_bend_will_mind",
+    "label": "Hermaeus Mora grants Bend Will — Mind",
+    "description": "Reach The Gardener of Men acquisition in Apocrypha.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Gardener_of_Men"
+    ],
+    "content_source": "DRAGONBORN"
+  },
+  {
+    "id": "access_bend_will_dragon",
+    "label": "Hermaeus Mora grants Bend Will — Dragon",
+    "description": "Complete the Skaal knowledge exchange that grants the final word.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Gardener_of_Men"
+    ],
+    "content_source": "DRAGONBORN"
+  },
+  {
+    "id": "access_sapphire_claw_reward",
+    "label": "Sapphire Dragon Claw reward is available",
+    "description": "Complete Wilhelm's investigation of Shroud Hearth Barrow and receive the Sapphire Dragon Claw.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Lifting_the_Shroud"
+    ],
+    "content_source": "SKYRIM"
+  }
+]

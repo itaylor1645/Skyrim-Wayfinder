@@ -1,15 +1,272 @@
 [
-  {"id":"skyrim_main_quest","domain_id":"main_questlines","display_name":"Skyrim Main Quest","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:Main_Quest"},
-  {"id":"college_winterhold","domain_id":"factions_major","display_name":"College of Winterhold","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:College_of_Winterhold_Quests"},
-  {"id":"dark_brotherhood","domain_id":"factions_major","display_name":"Dark Brotherhood","sort_order":20,"source_url":"https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"},
-  {"id":"dragon_claws","domain_id":"artifacts_collectibles","display_name":"Dragon Claws","sort_order":10,"source_url":"https://en.uesp.net/wiki/Skyrim:Golden_Claw"},
-  {"id":"dragon_priest_masks","domain_id":"artifacts_collectibles","display_name":"Dragon Priest Masks","sort_order":20,"source_url":"https://en.uesp.net/wiki/Skyrim:Dragon_Priest_Masks"},
-  {"id":"unique_artifacts","domain_id":"artifacts_collectibles","display_name":"Unique Artifacts","description":"Provisional curated collection; boundaries will be reviewed before bulk population.","sort_order":30},
-  {"id":"daedric_artifacts","domain_id":"artifacts_collectibles","display_name":"Daedric Artifacts","sort_order":40},
-  {"id":"unrelenting_force","domain_id":"shouts","display_name":"Unrelenting Force","sort_order":10},
-  {"id":"storm_call","domain_id":"shouts","display_name":"Storm Call","sort_order":20},
-  {"id":"hold_whiterun","domain_id":"holds_homes","display_name":"Whiterun","sort_order":10},
-  {"id":"hold_rift","domain_id":"holds_homes","display_name":"The Rift","sort_order":20},
-  {"id":"skyrim_side_quests","domain_id":"side_quests","display_name":"Skyrim Side Quests","sort_order":10},
-  {"id":"set_aside","domain_id":"preparation","display_name":"Set Aside","sort_order":10}
+  {
+    "id": "skyrim_main_quest",
+    "domain_id": "main_questlines",
+    "display_name": "Skyrim Main Quest",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Main_Quest"
+  },
+  {
+    "id": "college_winterhold",
+    "domain_id": "factions_major",
+    "display_name": "College of Winterhold",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:College_of_Winterhold_Quests"
+  },
+  {
+    "id": "dark_brotherhood",
+    "domain_id": "factions_major",
+    "display_name": "Dark Brotherhood",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"
+  },
+  {
+    "id": "dragon_claws",
+    "domain_id": "artifacts_collectibles",
+    "display_name": "Dragon Claws",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Golden_Claw"
+  },
+  {
+    "id": "dragon_priest_masks",
+    "domain_id": "artifacts_collectibles",
+    "display_name": "Dragon Priest Masks",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Priest_Masks"
+  },
+  {
+    "id": "unique_artifacts",
+    "domain_id": "artifacts_collectibles",
+    "display_name": "Unique Artifacts",
+    "description": "Provisional curated collection; boundaries will be reviewed before bulk population.",
+    "sort_order": 30
+  },
+  {
+    "id": "daedric_artifacts",
+    "domain_id": "artifacts_collectibles",
+    "display_name": "Daedric Artifacts",
+    "sort_order": 40
+  },
+  {
+    "id": "unrelenting_force",
+    "domain_id": "shouts",
+    "display_name": "Unrelenting Force",
+    "sort_order": 10
+  },
+  {
+    "id": "whirlwind_sprint",
+    "domain_id": "shouts",
+    "display_name": "Whirlwind Sprint",
+    "sort_order": 20
+  },
+  {
+    "id": "become_ethereal",
+    "domain_id": "shouts",
+    "display_name": "Become Ethereal",
+    "sort_order": 30
+  },
+  {
+    "id": "clear_skies",
+    "domain_id": "shouts",
+    "display_name": "Clear Skies",
+    "sort_order": 40
+  },
+  {
+    "id": "fire_breath",
+    "domain_id": "shouts",
+    "display_name": "Fire Breath",
+    "sort_order": 50
+  },
+  {
+    "id": "dragonrend",
+    "domain_id": "shouts",
+    "display_name": "Dragonrend",
+    "sort_order": 60
+  },
+  {
+    "id": "call_dragon",
+    "domain_id": "shouts",
+    "display_name": "Call Dragon",
+    "sort_order": 70
+  },
+  {
+    "id": "storm_call",
+    "domain_id": "shouts",
+    "display_name": "Storm Call",
+    "sort_order": 80
+  },
+  {
+    "id": "call_of_valor",
+    "domain_id": "shouts",
+    "display_name": "Call of Valor",
+    "sort_order": 90
+  },
+  {
+    "id": "hold_whiterun",
+    "domain_id": "holds_homes",
+    "display_name": "Whiterun",
+    "sort_order": 10
+  },
+  {
+    "id": "hold_rift",
+    "domain_id": "holds_homes",
+    "display_name": "The Rift",
+    "sort_order": 20
+  },
+  {
+    "id": "skyrim_side_quests",
+    "domain_id": "side_quests",
+    "display_name": "Skyrim Side Quests",
+    "sort_order": 10
+  },
+  {
+    "id": "set_aside",
+    "domain_id": "preparation",
+    "display_name": "Set Aside",
+    "sort_order": 10
+  },
+  {
+    "id": "animal_allegiance",
+    "domain_id": "shouts",
+    "display_name": "Animal Allegiance",
+    "description": "Acquire all three words of Animal Allegiance.",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Animal_Allegiance"
+  },
+  {
+    "id": "aura_whisper",
+    "domain_id": "shouts",
+    "display_name": "Aura Whisper",
+    "description": "Acquire all three words of Aura Whisper.",
+    "sort_order": 110,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Aura_Whisper"
+  },
+  {
+    "id": "disarm",
+    "domain_id": "shouts",
+    "display_name": "Disarm",
+    "description": "Acquire all three words of Disarm.",
+    "sort_order": 160,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Disarm"
+  },
+  {
+    "id": "dismay",
+    "domain_id": "shouts",
+    "display_name": "Dismay",
+    "description": "Acquire all three words of Dismay.",
+    "sort_order": 170,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dismay"
+  },
+  {
+    "id": "elemental_fury",
+    "domain_id": "shouts",
+    "display_name": "Elemental Fury",
+    "description": "Acquire all three words of Elemental Fury.",
+    "sort_order": 190,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elemental_Fury"
+  },
+  {
+    "id": "frost_breath",
+    "domain_id": "shouts",
+    "display_name": "Frost Breath",
+    "description": "Acquire all three words of Frost Breath.",
+    "sort_order": 210,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Frost_Breath"
+  },
+  {
+    "id": "ice_form",
+    "domain_id": "shouts",
+    "display_name": "Ice Form",
+    "description": "Acquire all three words of Ice Form.",
+    "sort_order": 220,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ice_Form"
+  },
+  {
+    "id": "kynes_peace",
+    "domain_id": "shouts",
+    "display_name": "Kyne's Peace",
+    "description": "Acquire all three words of Kyne's Peace.",
+    "sort_order": 230,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Kyne%27s_Peace"
+  },
+  {
+    "id": "marked_for_death",
+    "domain_id": "shouts",
+    "display_name": "Marked for Death",
+    "description": "Acquire all three words of Marked for Death.",
+    "sort_order": 240,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Marked_for_Death"
+  },
+  {
+    "id": "slow_time",
+    "domain_id": "shouts",
+    "display_name": "Slow Time",
+    "description": "Acquire all three words of Slow Time.",
+    "sort_order": 250,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Slow_Time"
+  },
+  {
+    "id": "throw_voice",
+    "domain_id": "shouts",
+    "display_name": "Throw Voice",
+    "description": "Acquire all three words of Throw Voice.",
+    "sort_order": 270,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Throw_Voice"
+  },
+  {
+    "id": "drain_vitality",
+    "domain_id": "shouts",
+    "display_name": "Drain Vitality",
+    "description": "Acquire all three words of Drain Vitality.",
+    "sort_order": 300,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Drain_Vitality"
+  },
+  {
+    "id": "soul_tear",
+    "domain_id": "shouts",
+    "display_name": "Soul Tear",
+    "description": "Acquire all three words of Soul Tear.",
+    "sort_order": 310,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Soul_Tear"
+  },
+  {
+    "id": "summon_durnehviir",
+    "domain_id": "shouts",
+    "display_name": "Summon Durnehviir",
+    "description": "Acquire all three words of Summon Durnehviir.",
+    "sort_order": 320,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summon_Durnehviir"
+  },
+  {
+    "id": "battle_fury",
+    "domain_id": "shouts",
+    "display_name": "Battle Fury",
+    "description": "Acquire all three words of Battle Fury.",
+    "sort_order": 330,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Battle_Fury"
+  },
+  {
+    "id": "bend_will",
+    "domain_id": "shouts",
+    "display_name": "Bend Will",
+    "description": "Acquire all three words of Bend Will.",
+    "sort_order": 340,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Bend_Will"
+  },
+  {
+    "id": "cyclone",
+    "domain_id": "shouts",
+    "display_name": "Cyclone",
+    "description": "Acquire all three words of Cyclone.",
+    "sort_order": 350,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Cyclone"
+  },
+  {
+    "id": "dragon_aspect",
+    "domain_id": "shouts",
+    "display_name": "Dragon Aspect",
+    "description": "Acquire all three words of Dragon Aspect.",
+    "sort_order": 360,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Aspect"
+  }
 ]

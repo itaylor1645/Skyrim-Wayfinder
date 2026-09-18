@@ -43,6 +43,16 @@ class StateRepository:
                 option_id TEXT NOT NULL,
                 updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
             );
+            CREATE TABLE IF NOT EXISTS task_outcomes (
+                task_id TEXT PRIMARY KEY,
+                outcome_id TEXT NOT NULL,
+                updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+            );
+            CREATE TABLE IF NOT EXISTS access_condition_state (
+                condition_id TEXT PRIMARY KEY,
+                satisfied INTEGER NOT NULL,
+                updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+            );
             CREATE TABLE IF NOT EXISTS settings (
                 key TEXT PRIMARY KEY,
                 value TEXT NOT NULL
@@ -54,6 +64,10 @@ class StateRepository:
             self._migrate_to_v2()
         if version < 3:
             self._migrate_to_v3()
+        if version < 4:
+            self._migrate_to_v4()
+        if version < 5:
+            self.connection.execute("UPDATE schema_version SET version = 5")
         self.connection.commit()
 
     def _migrate_to_v2(self) -> None:
@@ -138,6 +152,13 @@ class StateRepository:
             )
         self.connection.execute("UPDATE schema_version SET version = 3")
 
+    def _migrate_to_v4(self) -> None:
+        """Retire the prototype Main Quest bridge without inferring branch history."""
+        self.connection.execute(
+            "DELETE FROM task_state WHERE task_id = 'mq_the_fallen_milestone'"
+        )
+        self.connection.execute("UPDATE schema_version SET version = 4")
+
     def close(self) -> None:
         self.connection.close()
 
@@ -196,6 +217,50 @@ class StateRepository:
             row["choice_id"]: row["option_id"]
             for row in self.connection.execute("SELECT choice_id, option_id FROM choices")
         }
+
+    def get_task_outcome(self, task_id: str) -> str | None:
+        row = self.connection.execute(
+            "SELECT outcome_id FROM task_outcomes WHERE task_id = ?", (task_id,)
+        ).fetchone()
+        return row["outcome_id"] if row else None
+
+    def set_task_outcome(self, task_id: str, outcome_id: str) -> None:
+        self.connection.execute(
+            """INSERT INTO task_outcomes(task_id, outcome_id) VALUES (?, ?)
+               ON CONFLICT(task_id) DO UPDATE SET outcome_id=excluded.outcome_id,
+               updated_at=CURRENT_TIMESTAMP""",
+            (task_id, outcome_id),
+        )
+        self.connection.commit()
+
+    def reset_task_outcome(self, task_id: str) -> None:
+        self.connection.execute("DELETE FROM task_outcomes WHERE task_id = ?", (task_id,))
+        self.connection.commit()
+
+    def all_task_outcomes(self) -> dict[str, str]:
+        return {
+            row["task_id"]: row["outcome_id"]
+            for row in self.connection.execute("SELECT task_id, outcome_id FROM task_outcomes")
+        }
+
+    def is_access_condition_satisfied(self, condition_id: str) -> bool:
+        row = self.connection.execute(
+            "SELECT satisfied FROM access_condition_state WHERE condition_id = ?", (condition_id,)
+        ).fetchone()
+        return bool(row["satisfied"]) if row else False
+
+    def set_access_condition(self, condition_id: str, satisfied: bool) -> None:
+        if not satisfied:
+            self.connection.execute(
+                "DELETE FROM access_condition_state WHERE condition_id = ?", (condition_id,)
+            )
+        else:
+            self.connection.execute(
+                """INSERT INTO access_condition_state(condition_id, satisfied) VALUES (?, 1)
+                   ON CONFLICT(condition_id) DO UPDATE SET satisfied=1, updated_at=CURRENT_TIMESTAMP""",
+                (condition_id,),
+            )
+        self.connection.commit()
 
     def get_setting(self, key: str, default: str | None = None) -> str | None:
         row = self.connection.execute("SELECT value FROM settings WHERE key = ?", (key,)).fetchone()

@@ -33,14 +33,7 @@ def test_multi_membership_task_is_one_canonical_object_and_state(service):
 
 
 def test_missable_metadata_reaches_service_layer(service):
-    for task_id in (
-        "mq_unbound_escape_helgen", "mq_before_storm_reach_riverwood",
-        "mq_before_storm_go_whiterun", "mq_bleak_falls_accept",
-        "mq_bleak_falls_dragonstone", "mq_bleak_falls_return_dragonstone",
-        "mq_dragon_rising_watchtower", "mq_way_voice_high_hrothgar",
-        "mq_the_fallen_milestone",
-    ):
-        service.set_task_state(task_id, TaskStatus.COMPLETE)
+    service.set_task_state("mq_world_eater_depart_skuldafn", TaskStatus.COMPLETE)
     skuldafn = next(item for item in service.regional_plan("skuldafn") if item.id == "skuldafn")
     assert skuldafn.location.one_way
     assert "MISSABLE" in skuldafn.warning_text
@@ -58,10 +51,10 @@ def test_explorer_keeps_all_behavior_types(service):
     assert by_id["college_first_lessons"].status is TaskStatus.COMPLETE
     assert by_id["college_staff_magnus"].status is TaskStatus.LOCKED
     assert by_id["daedric_break_of_dawn_beacon"].task.planner_behavior is PlannerBehavior.OPPORTUNISTIC
-    assert by_id["mq_the_fallen_milestone"].task.planner_behavior is PlannerBehavior.MILESTONE
+    assert by_id["mq_paarthurnax_kill"].task.planner_behavior is PlannerBehavior.REGIONAL_ACTION
 
 
-def test_opportunistic_and_milestone_tasks_are_not_planner_actions(service):
+def test_opportunistic_tasks_are_not_planner_actions(service):
     service.state.player_level = 12
     assert service.global_actions() == []
     all_regional = {
@@ -69,20 +62,21 @@ def test_opportunistic_and_milestone_tasks_are_not_planner_actions(service):
         for item in service.regional_plan(region) for entry in item.tasks
     }
     assert "daedric_break_of_dawn_beacon" not in all_regional
-    assert "mq_the_fallen_milestone" not in all_regional
+    assert "daedric_break_of_dawn_beacon" not in all_regional
 
 
 def test_overall_completion_deduplicates_memberships(service):
     service.set_task_state("mask_morokei", TaskStatus.COMPLETE)
     complete, total = service.overall_completion()
     assert complete == 1
-    assert total == len(service.content.tasks)
+    assert total == len(service.content.tasks) - 4  # inactive Season Unending is not achievable yet
+    assert total < len(service.content.memberships)
 
 
 def test_expanded_catalog_does_not_expand_operational_selector(service):
     operational = service.operational_regions()
     visible_ids = {region.id for regions in operational.values() for region in regions}
-    assert "markarth" not in visible_ids  # catalog Locations alone do not make a selector entry
+    assert "markarth" in visible_ids  # authored but locked Main Quest work makes this operational
     assert "blackreach" not in visible_ids
-    assert "solstheim_raven_rock" not in visible_ids
+    assert "solstheim_raven_rock" in visible_ids  # open Dragonborn word walls are now authored
     assert "whiterun" in {region.id for region in operational[RegionType.CITY]}

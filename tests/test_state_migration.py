@@ -70,3 +70,19 @@ def test_new_explicit_prerequisite_is_inferred_without_overwriting_other_state(t
     assert repository.get_task_state("db_innocence_lost_kill_grelod") is TaskStatus.COMPLETE
     assert repository.get_task_state("db_innocence_lost_report_aventus") is TaskStatus.DEFERRED
     repository.close()
+
+
+def test_retired_fallen_milestone_is_reset_without_inference(tmp_path):
+    path = tmp_path / "v3.sqlite3"
+    legacy_database(
+        path,
+        [("mq_the_fallen_milestone", "COMPLETE")],
+        current_region="whiterun",
+        version=3,
+    )
+    repository = StateRepository(path)
+    assert repository.get_task_state("mq_the_fallen_milestone") is None
+    assert repository.get_task_state("mq_fallen_ask_jarl") is None
+    assert repository.get_choice("mq_fallen_adviser") is None
+    assert repository.all_task_outcomes() == {}
+    repository.close()

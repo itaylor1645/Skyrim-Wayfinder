@@ -54,6 +54,22 @@ class PlannerBehavior(StrEnum):
     MILESTONE = "MILESTONE"
 
 
+class StoryClassification(StrEnum):
+    REQUIRED = "REQUIRED"
+    CONDITIONAL = "CONDITIONAL"
+    OPTIONAL = "OPTIONAL"
+
+
+class CompletionRole(StrEnum):
+    REQUIRED = "REQUIRED"
+    ASSOCIATED = "ASSOCIATED"
+
+
+class CollectibleCompletionRule(StrEnum):
+    ANY = "ANY"
+    ALL = "ALL"
+
+
 @dataclass(frozen=True)
 class CompletionDomain:
     id: str
@@ -81,6 +97,8 @@ class Story:
     description: str = ""
     sort_order: int = 0
     source_url: str | None = None
+    classification: StoryClassification = StoryClassification.REQUIRED
+    resolution_choice_id: str | None = None
 
 
 @dataclass(frozen=True)
@@ -89,8 +107,56 @@ class TaskMembership:
     task_id: str
     story_id: str
     is_primary: bool
+    completion_role: CompletionRole
     sort_order: int = 0
     review_note: str | None = None
+
+
+@dataclass(frozen=True)
+class AccessCondition:
+    id: str
+    label: str
+    description: str
+    source_urls: tuple[str, ...]
+    content_source: ContentSource
+
+
+@dataclass(frozen=True)
+class ShoutDefinition:
+    id: str
+    collection_id: str
+    display_name: str
+    words: tuple[str, ...]
+    content_source: ContentSource
+    source_url: str
+
+
+@dataclass(frozen=True)
+class ShoutCredit:
+    id: str
+    task_id: str
+    shout_id: str
+    credit_count: int
+
+
+@dataclass(frozen=True)
+class CollectibleDefinition:
+    id: str
+    collection_id: str
+    story_id: str
+    display_name: str
+    required_credit_count: int
+    completion_rule: CollectibleCompletionRule
+    content_source: ContentSource
+    source_url: str
+
+
+@dataclass(frozen=True)
+class CollectibleCredit:
+    id: str
+    task_id: str
+    collectible_id: str
+    credit_count: int = 1
 
 
 @dataclass(frozen=True)
@@ -132,6 +198,8 @@ class Prerequisite:
     minimum_level: int | None = None
     choice_id: str | None = None
     option: str | None = None
+    when_outcome_task_id: str | None = None
+    when_outcome: str | None = None
     description: str | None = None
 
 
@@ -140,6 +208,7 @@ class ChoiceOption:
     id: str
     label: str
     excludes_options: tuple[str, ...] = ()
+    manual_resolution: bool = False
 
 
 @dataclass(frozen=True)
@@ -159,9 +228,16 @@ class Task:
     planner_behavior: PlannerBehavior
     location_id: str | None = None
     prerequisites: tuple[Prerequisite, ...] = ()
+    any_of_task_ids: tuple[str, ...] = ()
     choice_id: str | None = None
     choice_option: str | None = None
     sets_choice: bool = False
+    outcome_options: dict[str, str] = field(default_factory=dict)
+    applicable_outcome_task_id: str | None = None
+    applicable_outcome: str | None = None
+    expires_after_task_id: str | None = None
+    access_condition_ids: tuple[str, ...] = ()
+    required_collectible_ids: tuple[str, ...] = ()
     preparation_for: tuple[str, ...] = ()
     missable: bool = False
     one_way: bool = False
@@ -204,5 +280,10 @@ class CanonicalContent:
     locations: dict[str, Location]
     tasks: dict[str, Task]
     choices: dict[str, Choice]
+    access_conditions: dict[str, AccessCondition]
+    shouts: dict[str, ShoutDefinition]
+    shout_credits: dict[str, ShoutCredit]
+    collectibles: dict[str, CollectibleDefinition]
+    collectible_credits: dict[str, CollectibleCredit]
     theme: dict[str, dict[str, Any]] = field(default_factory=dict)
     fingerprint: str = ""
