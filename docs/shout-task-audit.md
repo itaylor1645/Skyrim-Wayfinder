@@ -9,7 +9,7 @@
 - Acquisition Task identities: **71**
 - Reused Increment 2B Tasks: **13**
 - Newly authored Tasks: **58**
-- AccessConditions: **17**
+- AccessConditions: **21**
 
 Ordinary Word Walls credit the next unlearned word; their Locations are not permanently mapped to a specific rune.
 
@@ -62,7 +62,7 @@ Source: [https://en.uesp.net/wiki/Skyrim:Fire_Breath](https://en.uesp.net/wiki/S
 
 | Acquisition Task | Location → Region | Word credit | Gating | Behavior | Cross-memberships / warnings |
 |---|---|---:|---|---|---|
-| Learn a word of Fire Breath at Dustman's Cairn (`shout_fire_breath_dustmans_cairn`) | Dustman's Cairn → Whiterun | 1 | Access to Dustman's Cairn | REGIONAL_ACTION | — |
+| Learn a word of Fire Breath at Dustman's Cairn (`shout_fire_breath_dustmans_cairn`) | Dustman's Cairn → Whiterun | 1 | Access to Dustman's Cairn | REGIONAL_ACTION | Companions / Proving Honor (ASSOCIATED) |
 | Learn a word of Fire Breath at Sunderstone Gorge (`shout_fire_breath_sunderstone_gorge`) | Sunderstone Gorge → Falkreath | 1 | None | REGIONAL_ACTION | — |
 | Meet Paarthurnax and Learn Fire Breath (`mq_throat_meet_paarthurnax`) | Throat of the World → High Hrothgar / Throat of the World | 1 | Receive Clear Skies | REGIONAL_ACTION | Skyrim Main Quest / The Throat of the World (REQUIRED) |
 
@@ -115,7 +115,7 @@ Source: [https://en.uesp.net/wiki/Skyrim:Animal_Allegiance](https://en.uesp.net/
 |---|---|---:|---|---|---|
 | Learn a word of Animal Allegiance at Ancient's Ascent (`shout_animal_allegiance_ancients_ascent`) | Ancient's Ascent → Falkreath | 1 | None | REGIONAL_ACTION | — |
 | Learn a word of Animal Allegiance at Angarvunde (`shout_animal_allegiance_angarvunde`) | Angarvunde → Riften | 1 | None | REGIONAL_ACTION | — |
-| Learn a word of Animal Allegiance at Ysgramor's Tomb (`shout_animal_allegiance_ysgramors_tomb`) | Ysgramor's Tomb → Winterhold | 1 | Access to Ysgramor's Tomb | REGIONAL_ACTION | — |
+| Learn a word of Animal Allegiance at Ysgramor's Tomb (`shout_animal_allegiance_ysgramors_tomb`) | Ysgramor's Tomb → Winterhold | 1 | Access to Ysgramor's Tomb | REGIONAL_ACTION | Companions / Glory of the Dead (ASSOCIATED) |
 
 ## Aura Whisper
 
@@ -137,7 +137,7 @@ Source: [https://en.uesp.net/wiki/Skyrim:Disarm](https://en.uesp.net/wiki/Skyrim
 |---|---|---:|---|---|---|
 | Learn a word of Disarm at Eldersblood Peak (`shout_disarm_eldersblood_peak`) | Eldersblood Peak → Morthal | 1 | None | REGIONAL_ACTION | — |
 | Learn a word of Disarm at Silverdrift Lair (`shout_disarm_silverdrift_lair`) | Silverdrift Lair → Dawnstar | 1 | None | REGIONAL_ACTION | — |
-| Learn a word of Disarm at Snow Veil Sanctum (`shout_disarm_snow_veil_sanctum`) | Snow Veil Sanctum → Windhelm | 1 | Access to Snow Veil Sanctum | REGIONAL_ACTION | — |
+| Learn a word of Disarm at Snow Veil Sanctum (`shout_disarm_snow_veil_sanctum`) | Snow Veil Sanctum → Windhelm | 1 | Access to Snow Veil Sanctum | REGIONAL_ACTION | Thieves Guild / Speaking With Silence (ASSOCIATED) |
 
 ## Dismay
 
@@ -181,7 +181,7 @@ Source: [https://en.uesp.net/wiki/Skyrim:Ice_Form](https://en.uesp.net/wiki/Skyr
 |---|---|---:|---|---|---|
 | Learn a word of Ice Form at Frostmere Crypt (`shout_ice_form_frostmere_crypt`) | Frostmere Crypt → Dawnstar | 1 | None | REGIONAL_ACTION | — |
 | Learn a word of Ice Form at Mount Anthor (`shout_ice_form_mount_anthor`) | Mount Anthor → Winterhold | 1 | None | REGIONAL_ACTION | — |
-| Learn a word of Ice Form at Saarthal (`shout_ice_form_saarthal`) | Saarthal → Winterhold | 1 | Access to Saarthal | REGIONAL_ACTION | — |
+| Learn a word of Ice Form at Saarthal (`shout_ice_form_saarthal`) | Saarthal → Winterhold | 1 | Access to Saarthal | REGIONAL_ACTION | College of Winterhold / Under Saarthal (ASSOCIATED) |
 
 ## Kyne's Peace
 
@@ -214,7 +214,7 @@ Source: [https://en.uesp.net/wiki/Skyrim:Slow_Time](https://en.uesp.net/wiki/Sky
 |---|---|---:|---|---|---|
 | Learn a word of Slow Time at Deepwood Redoubt / Hag's End (`shout_slow_time_deepwood_redoubt`) | Deepwood Redoubt / Hag's End → Solitude | 1 | None | REGIONAL_ACTION | — |
 | Learn a word of Slow Time at Korvanjund (`shout_slow_time_korvanjund`) | Korvanjund → Whiterun | 1 | Access to Korvanjund | REGIONAL_ACTION | — |
-| Learn a word of Slow Time in Labyrinthian (`shout_slow_time_labyrinthian`) | Labyrinthian → Labyrinthian | 1 | Report After Defending Winterhold | REGIONAL_ACTION | — |
+| Learn a word of Slow Time in Labyrinthian (`shout_slow_time_labyrinthian`) | Labyrinthian → Labyrinthian | 1 | Receive the Labyrinthian assignment | REGIONAL_ACTION | College of Winterhold / The Staff of Magnus (ASSOCIATED) |
 
 ## Throw Voice
 

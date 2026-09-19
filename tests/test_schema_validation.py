@@ -158,7 +158,7 @@ def test_prerequisite_cycles_are_rejected(tmp_path):
 
 def test_geography_foundation_metadata_is_complete(content):
     assert len(content.regions) == 21
-    assert len(content.locations) == 237
+    assert len(content.locations) == 248
     assert all(region.region_type in RegionType for region in content.regions.values())
     assert all(region.region_type is not getattr(RegionType, "GLOBAL", None) for region in content.regions.values())
     assert all(location.location_type in LocationType for location in content.locations.values())
@@ -190,6 +190,11 @@ def test_accepted_location_assignments_remain_stable(content):
         "abandoned_shack": "morthal",
         "skuldafn": "skuldafn",
         "northwind_summit": "riften",
+        "broken_tower_redoubt": "markarth",
+        "brucas_leap_redoubt": "markarth",
+        "druadach_redoubt": "markarth",
+        "hag_rock_redoubt": "markarth",
+        "red_eagle_redoubt": "markarth",
         "glacial_cave": "solstheim_north",
         "castle_karstaag_ruins": "solstheim_north",
     }

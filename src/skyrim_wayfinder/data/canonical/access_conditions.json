@@ -6,7 +6,10 @@
     "source_urls": [
       "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead"
     ],
-    "content_source": "SKYRIM"
+    "content_source": "SKYRIM",
+    "satisfied_by_any_task_ids": [
+      "companions_glory_receive_wuuthrad"
+    ]
   },
   {
     "id": "access_snow_veil_sanctum",
@@ -15,7 +18,10 @@
     "source_urls": [
       "https://en.uesp.net/wiki/Skyrim:Speaking_With_Silence"
     ],
-    "content_source": "SKYRIM"
+    "content_source": "SKYRIM",
+    "satisfied_by_any_task_ids": [
+      "guild_snow_open"
+    ]
   },
   {
     "id": "access_dustmans_cairn",
@@ -24,7 +30,10 @@
     "source_urls": [
       "https://en.uesp.net/wiki/Skyrim:Proving_Honor"
     ],
-    "content_source": "SKYRIM"
+    "content_source": "SKYRIM",
+    "satisfied_by_any_task_ids": [
+      "companions_proving_accept"
+    ]
   },
   {
     "id": "access_saarthal",
@@ -33,7 +42,10 @@
     "source_urls": [
       "https://en.uesp.net/wiki/Skyrim:Under_Saarthal"
     ],
-    "content_source": "SKYRIM"
+    "content_source": "SKYRIM",
+    "satisfied_by_any_task_ids": [
+      "college_first_lessons"
+    ]
   },
   {
     "id": "access_korvanjund",
@@ -151,5 +163,49 @@
       "https://en.uesp.net/wiki/Skyrim:Lifting_the_Shroud"
     ],
     "content_source": "SKYRIM"
+  },
+  {
+    "id": "access_forsworn_conspiracy_started",
+    "label": "The Forsworn Conspiracy has started",
+    "description": "Enter Markarth and begin The Forsworn Conspiracy so Vigilant Tyranus can appear.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors"
+    ],
+    "content_source": "SKYRIM"
+  },
+  {
+    "id": "access_blindsighted_irkngthand",
+    "label": "Blindsighted access to Irkngthand",
+    "description": "Advance the Thieves Guild quest Blindsighted until the Skeleton Key can be acquired in Irkngthand.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Blindsighted"
+    ],
+    "content_source": "SKYRIM",
+    "satisfied_by_any_task_ids": [
+      "guild_blind_enter"
+    ]
+  },
+  {
+    "id": "companions_lycanthropy_active",
+    "label": "Current Companions lycanthropy",
+    "description": "The player currently has Beast Blood. Correct this manually when Skyrim state changes outside the authored Companions tasks.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Lycanthropy"
+    ],
+    "content_source": "SKYRIM"
+  },
+  {
+    "id": "access_companions_personal_purification",
+    "label": "Personal purification is currently available",
+    "description": "Available immediately after Kodlak's purification, or later after both Farkas and Vilkas have completed Purity.",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead",
+      "https://en.uesp.net/wiki/Skyrim:Purity"
+    ],
+    "content_source": "SKYRIM",
+    "satisfied_by_all_task_ids": [
+      "companions_purity_farkas_cure",
+      "companions_purity_vilkas_cure"
+    ]
   }
 ]

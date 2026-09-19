@@ -160,5 +160,119 @@
     "task_id": "claw_amethyst_right_vahloks_tomb",
     "collectible_id": "dragon_claw_amethyst",
     "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_azuras_star",
+    "task_id": "artifact_azuras_star_acquire",
+    "collectible_id": "daedric_azuras_star",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_black_star",
+    "task_id": "artifact_black_star_acquire",
+    "collectible_id": "daedric_black_star",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_ebony_mail",
+    "task_id": "artifact_ebony_mail_acquire",
+    "collectible_id": "daedric_ebony_mail",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_rueful_axe",
+    "task_id": "artifact_rueful_axe_acquire",
+    "collectible_id": "daedric_rueful_axe",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_masque_clavicus",
+    "task_id": "artifact_masque_clavicus_acquire",
+    "collectible_id": "daedric_masque_clavicus",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_oghma_infinium",
+    "task_id": "artifact_oghma_infinium_acquire",
+    "collectible_id": "daedric_oghma_infinium",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_ring_hircine",
+    "task_id": "artifact_ring_hircine_acquire",
+    "collectible_id": "daedric_ring_hircine",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_saviors_hide",
+    "task_id": "artifact_saviors_hide_acquire",
+    "collectible_id": "daedric_saviors_hide",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_volendrung",
+    "task_id": "artifact_volendrung_acquire",
+    "collectible_id": "daedric_volendrung",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_mehrunes_razor",
+    "task_id": "artifact_mehrunes_razor_acquire",
+    "collectible_id": "daedric_mehrunes_razor",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_ebony_blade",
+    "task_id": "artifact_ebony_blade_acquire",
+    "collectible_id": "daedric_ebony_blade",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_dawnbreaker",
+    "task_id": "artifact_dawnbreaker_acquire",
+    "collectible_id": "daedric_dawnbreaker",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_mace_molag_bal",
+    "task_id": "artifact_mace_molag_bal_acquire",
+    "collectible_id": "daedric_mace_molag_bal",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_ring_namira",
+    "task_id": "artifact_ring_namira_acquire",
+    "collectible_id": "daedric_ring_namira",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_skeleton_key",
+    "task_id": "artifact_skeleton_key_acquire",
+    "collectible_id": "daedric_skeleton_key",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_spellbreaker",
+    "task_id": "artifact_spellbreaker_acquire",
+    "collectible_id": "daedric_spellbreaker",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_sanguine_rose",
+    "task_id": "artifact_sanguine_rose_acquire",
+    "collectible_id": "daedric_sanguine_rose",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_wabbajack",
+    "task_id": "artifact_wabbajack_acquire",
+    "collectible_id": "daedric_wabbajack",
+    "credit_count": 1
+  },
+  {
+    "id": "credit_daedric_skull_corruption",
+    "task_id": "artifact_skull_corruption_acquire",
+    "collectible_id": "daedric_skull_corruption",
+    "credit_count": 1
   }
 ]

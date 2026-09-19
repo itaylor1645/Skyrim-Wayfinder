@@ -128,16 +128,25 @@ class DetailDialog(QDialog):
             layout.addWidget(reason)
         for condition_id in task.access_condition_ids:
             condition = self.service.content.access_conditions[condition_id]
-            satisfied = self.service.state.is_access_condition_satisfied(condition_id)
+            manual_satisfied = self.service.state.is_access_condition_satisfied(condition_id)
+            satisfied = self.service.is_access_condition_satisfied(condition_id)
             access = QHBoxLayout()
             note = QLabel(f"Access condition: {condition.label}\n{condition.description}")
             note.setWordWrap(True)
             access.addWidget(note, 1)
-            button = QPushButton("Reset access" if satisfied else "Mark access satisfied")
-            button.clicked.connect(
-                lambda _checked=False, item=condition_id, value=not satisfied:
-                self._set_access(item, value)
-            )
+            if manual_satisfied:
+                button = QPushButton("Reset manual access")
+                button.clicked.connect(
+                    lambda _checked=False, item=condition_id: self._set_access(item, False)
+                )
+            elif satisfied:
+                button = QPushButton("Progression satisfied")
+                button.setEnabled(False)
+            else:
+                button = QPushButton("Mark access satisfied")
+                button.clicked.connect(
+                    lambda _checked=False, item=condition_id: self._set_access(item, True)
+                )
             access.addWidget(button)
             layout.addLayout(access)
         if task.review_note:

@@ -140,6 +140,7 @@
     "collection_id": "college_winterhold",
     "display_name": "First Lessons",
     "sort_order": 10,
+    "classification": "REQUIRED",
     "source_url": "https://en.uesp.net/wiki/Skyrim:First_Lessons"
   },
   {
@@ -147,6 +148,7 @@
     "collection_id": "college_winterhold",
     "display_name": "Under Saarthal",
     "sort_order": 20,
+    "classification": "REQUIRED",
     "source_url": "https://en.uesp.net/wiki/Skyrim:Under_Saarthal"
   },
   {
@@ -154,6 +156,7 @@
     "collection_id": "college_winterhold",
     "display_name": "Hitting the Books",
     "sort_order": 30,
+    "classification": "REQUIRED",
     "source_url": "https://en.uesp.net/wiki/Skyrim:Hitting_the_Books"
   },
   {
@@ -161,6 +164,7 @@
     "collection_id": "college_winterhold",
     "display_name": "Good Intentions",
     "sort_order": 40,
+    "classification": "REQUIRED",
     "source_url": "https://en.uesp.net/wiki/Skyrim:Good_Intentions"
   },
   {
@@ -168,6 +172,7 @@
     "collection_id": "college_winterhold",
     "display_name": "Revealing the Unseen",
     "sort_order": 50,
+    "classification": "REQUIRED",
     "source_url": "https://en.uesp.net/wiki/Skyrim:Revealing_the_Unseen"
   },
   {
@@ -175,6 +180,7 @@
     "collection_id": "college_winterhold",
     "display_name": "Containment",
     "sort_order": 60,
+    "classification": "REQUIRED",
     "source_url": "https://en.uesp.net/wiki/Skyrim:Containment"
   },
   {
@@ -182,6 +188,7 @@
     "collection_id": "college_winterhold",
     "display_name": "The Staff of Magnus",
     "sort_order": 70,
+    "classification": "REQUIRED",
     "source_url": "https://en.uesp.net/wiki/Skyrim:The_Staff_of_Magnus"
   },
   {
@@ -241,7 +248,7 @@
     "id": "artifact_break_dawn",
     "collection_id": "daedric_artifacts",
     "display_name": "The Break of Dawn",
-    "sort_order": 10,
+    "sort_order": 90,
     "source_url": "https://en.uesp.net/wiki/Skyrim:The_Break_of_Dawn"
   },
   {
@@ -683,5 +690,515 @@
     "display_name": "Konahrik Readiness",
     "sort_order": 20,
     "source_url": "https://en.uesp.net/wiki/Skyrim:Bromjunaar_Sanctuary"
+  },
+  {
+    "id": "daedric_black_star",
+    "collection_id": "daedric_artifacts",
+    "display_name": "The Black Star",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Black_Star"
+  },
+  {
+    "id": "daedric_boethiahs_calling",
+    "collection_id": "daedric_artifacts",
+    "display_name": "Boethiah's Calling",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Boethiah%27s_Calling"
+  },
+  {
+    "id": "daedric_best_friend",
+    "collection_id": "daedric_artifacts",
+    "display_name": "A Daedra's Best Friend",
+    "sort_order": 30,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Daedra%27s_Best_Friend"
+  },
+  {
+    "id": "daedric_discerning",
+    "collection_id": "daedric_artifacts",
+    "display_name": "Discerning the Transmundane",
+    "sort_order": 40,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Discerning_the_Transmundane"
+  },
+  {
+    "id": "daedric_ill_met",
+    "collection_id": "daedric_artifacts",
+    "display_name": "Ill Met by Moonlight",
+    "sort_order": 50,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ill_Met_By_Moonlight"
+  },
+  {
+    "id": "daedric_cursed_tribe",
+    "collection_id": "daedric_artifacts",
+    "display_name": "The Cursed Tribe",
+    "sort_order": 60,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Cursed_Tribe"
+  },
+  {
+    "id": "daedric_pieces_past",
+    "collection_id": "daedric_artifacts",
+    "display_name": "Pieces of the Past",
+    "sort_order": 70,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past"
+  },
+  {
+    "id": "daedric_whispering_door",
+    "collection_id": "daedric_artifacts",
+    "display_name": "The Whispering Door",
+    "sort_order": 80,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Whispering_Door"
+  },
+  {
+    "id": "daedric_house_horrors",
+    "collection_id": "daedric_artifacts",
+    "display_name": "The House of Horrors",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors"
+  },
+  {
+    "id": "daedric_taste_death",
+    "collection_id": "daedric_artifacts",
+    "display_name": "The Taste of Death",
+    "sort_order": 110,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Taste_of_Death"
+  },
+  {
+    "id": "daedric_only_cure",
+    "collection_id": "daedric_artifacts",
+    "display_name": "The Only Cure",
+    "sort_order": 120,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Only_Cure"
+  },
+  {
+    "id": "daedric_night_remember",
+    "collection_id": "daedric_artifacts",
+    "display_name": "A Night to Remember",
+    "sort_order": 130,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Night_To_Remember"
+  },
+  {
+    "id": "daedric_mind_madness",
+    "collection_id": "daedric_artifacts",
+    "display_name": "The Mind of Madness",
+    "sort_order": 140,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Mind_of_Madness"
+  },
+  {
+    "id": "daedric_waking_nightmare",
+    "collection_id": "daedric_artifacts",
+    "display_name": "Waking Nightmare",
+    "sort_order": 150,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Waking_Nightmare"
+  },
+  {
+    "id": "artifact_skeleton_key_bridge",
+    "collection_id": "daedric_artifacts",
+    "display_name": "Skeleton Key Acquisition",
+    "sort_order": 160,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Skeleton_Key"
+  },
+  {
+    "id": "prep_cursed_tribe",
+    "collection_id": "set_aside",
+    "display_name": "The Cursed Tribe Ingredients",
+    "sort_order": 30,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Cursed_Tribe"
+  },
+  {
+    "id": "prep_only_cure",
+    "collection_id": "set_aside",
+    "display_name": "The Only Cure Ingredients",
+    "sort_order": 40,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Only_Cure"
+  },
+  {
+    "id": "companions_take_up_arms",
+    "collection_id": "companions",
+    "display_name": "Take Up Arms",
+    "sort_order": 10,
+    "classification": "REQUIRED",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Take_Up_Arms"
+  },
+  {
+    "id": "companions_proving_honor",
+    "collection_id": "companions",
+    "display_name": "Proving Honor",
+    "sort_order": 20,
+    "classification": "REQUIRED",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Proving_Honor"
+  },
+  {
+    "id": "companions_silver_hand",
+    "collection_id": "companions",
+    "display_name": "The Silver Hand",
+    "sort_order": 30,
+    "classification": "REQUIRED",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Silver_Hand"
+  },
+  {
+    "id": "companions_bloods_honor",
+    "collection_id": "companions",
+    "display_name": "Blood's Honor",
+    "sort_order": 40,
+    "classification": "REQUIRED",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blood%27s_Honor"
+  },
+  {
+    "id": "companions_purity_revenge",
+    "collection_id": "companions",
+    "display_name": "Purity of Revenge",
+    "sort_order": 50,
+    "classification": "REQUIRED",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity_of_Revenge"
+  },
+  {
+    "id": "companions_glory_dead",
+    "collection_id": "companions",
+    "display_name": "Glory of the Dead",
+    "sort_order": 60,
+    "classification": "REQUIRED",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead"
+  },
+  {
+    "id": "companions_totems_hircine",
+    "collection_id": "companions",
+    "display_name": "Totems of Hircine",
+    "sort_order": 70,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Totems_of_Hircine"
+  },
+  {
+    "id": "companions_purity_farkas",
+    "collection_id": "companions",
+    "display_name": "Purity — Farkas",
+    "sort_order": 80,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity"
+  },
+  {
+    "id": "companions_purity_vilkas",
+    "collection_id": "companions",
+    "display_name": "Purity — Vilkas",
+    "sort_order": 90,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity"
+  },
+  {
+    "id": "college_eye_magnus",
+    "collection_id": "college_winterhold",
+    "display_name": "The Eye of Magnus",
+    "sort_order": 80,
+    "classification": "REQUIRED",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Eye_of_Magnus"
+  },
+  {
+    "id": "college_arniels_endeavor",
+    "collection_id": "college_winterhold",
+    "display_name": "Arniel's Endeavor",
+    "sort_order": 90,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor"
+  },
+  {
+    "id": "college_brelynas_practice",
+    "collection_id": "college_winterhold",
+    "display_name": "Brelyna's Practice",
+    "sort_order": 100,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Brelyna%27s_Practice"
+  },
+  {
+    "id": "college_jzargos_experiment",
+    "collection_id": "college_winterhold",
+    "display_name": "J'zargo's Experiment",
+    "sort_order": 110,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:J%27zargo%27s_Experiment"
+  },
+  {
+    "id": "college_onmunds_request",
+    "collection_id": "college_winterhold",
+    "display_name": "Onmund's Request",
+    "sort_order": 120,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Onmund%27s_Request"
+  },
+  {
+    "id": "college_ritual_alteration",
+    "collection_id": "college_winterhold",
+    "display_name": "Alteration Ritual Spell",
+    "sort_order": 130,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alteration_Ritual_Spell"
+  },
+  {
+    "id": "college_ritual_conjuration",
+    "collection_id": "college_winterhold",
+    "display_name": "Conjuration Ritual Spell",
+    "sort_order": 140,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Conjuration_Ritual_Spell"
+  },
+  {
+    "id": "college_ritual_destruction",
+    "collection_id": "college_winterhold",
+    "display_name": "Destruction Ritual Spell",
+    "sort_order": 150,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Destruction_Ritual_Spell"
+  },
+  {
+    "id": "college_ritual_illusion",
+    "collection_id": "college_winterhold",
+    "display_name": "Illusion Ritual Spell",
+    "sort_order": 160,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Illusion_Ritual_Spell"
+  },
+  {
+    "id": "college_ritual_restoration",
+    "collection_id": "college_winterhold",
+    "display_name": "Restoration Ritual Spell",
+    "sort_order": 170,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Restoration_Ritual_Spell"
+  },
+  {
+    "id": "college_forgotten_names",
+    "collection_id": "college_winterhold",
+    "display_name": "Forgotten Names",
+    "sort_order": 180,
+    "classification": "OPTIONAL",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Forgotten_Names"
+  },
+  {
+    "id": "spell_dragonhide",
+    "collection_id": "unique_spells",
+    "display_name": "Dragonhide",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alteration_Ritual_Spell"
+  },
+  {
+    "id": "spell_flame_thrall",
+    "collection_id": "unique_spells",
+    "display_name": "Flame Thrall",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Conjuration_Ritual_Spell"
+  },
+  {
+    "id": "spell_fire_storm",
+    "collection_id": "unique_spells",
+    "display_name": "Fire Storm",
+    "sort_order": 30,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Destruction_Ritual_Spell"
+  },
+  {
+    "id": "spell_hysteria",
+    "collection_id": "unique_spells",
+    "display_name": "Hysteria",
+    "sort_order": 40,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Illusion_Ritual_Spell"
+  },
+  {
+    "id": "spell_bane_undead",
+    "collection_id": "unique_spells",
+    "display_name": "Bane of the Undead",
+    "sort_order": 50,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Restoration_Ritual_Spell"
+  },
+  {
+    "id": "spell_summon_arniels_shade",
+    "collection_id": "unique_spells",
+    "display_name": "Summon Arniel's Shade",
+    "sort_order": 60,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor"
+  },
+  {
+    "id": "spell_equilibrium",
+    "collection_id": "unique_spells",
+    "display_name": "Equilibrium",
+    "sort_order": 70,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Equilibrium"
+  },
+  {
+    "id": "spell_vision_tenth_eye",
+    "collection_id": "unique_spells",
+    "display_name": "Vision of the Tenth Eye",
+    "sort_order": 80,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Illusion_Ritual_Spell"
+  },
+  {
+    "id": "spell_arniels_convection",
+    "collection_id": "unique_spells",
+    "display_name": "Arniel's Convection",
+    "sort_order": 90,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor"
+  },
+  {
+    "id": "guild_chance_arrangement",
+    "collection_id": "thieves_guild",
+    "display_name": "A Chance Arrangement",
+    "classification": "REQUIRED",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Chance_Arrangement"
+  },
+  {
+    "id": "guild_taking_care_business",
+    "collection_id": "thieves_guild",
+    "display_name": "Taking Care of Business",
+    "classification": "REQUIRED",
+    "sort_order": 20,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Taking_Care_of_Business"
+  },
+  {
+    "id": "guild_loud_clear",
+    "collection_id": "thieves_guild",
+    "display_name": "Loud and Clear",
+    "classification": "REQUIRED",
+    "sort_order": 30,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Loud_and_Clear"
+  },
+  {
+    "id": "guild_dampened_spirits",
+    "collection_id": "thieves_guild",
+    "display_name": "Dampened Spirits",
+    "classification": "REQUIRED",
+    "sort_order": 40,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dampened_Spirits"
+  },
+  {
+    "id": "guild_scoundrels_folly",
+    "collection_id": "thieves_guild",
+    "display_name": "Scoundrel's Folly",
+    "classification": "REQUIRED",
+    "sort_order": 50,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Scoundrel%27s_Folly"
+  },
+  {
+    "id": "guild_speaking_silence",
+    "collection_id": "thieves_guild",
+    "display_name": "Speaking With Silence",
+    "classification": "REQUIRED",
+    "sort_order": 60,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Speaking_With_Silence"
+  },
+  {
+    "id": "guild_hard_answers",
+    "collection_id": "thieves_guild",
+    "display_name": "Hard Answers",
+    "classification": "REQUIRED",
+    "sort_order": 70,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hard_Answers"
+  },
+  {
+    "id": "guild_pursuit",
+    "collection_id": "thieves_guild",
+    "display_name": "The Pursuit",
+    "classification": "REQUIRED",
+    "sort_order": 80,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Pursuit"
+  },
+  {
+    "id": "guild_trinity_restored",
+    "collection_id": "thieves_guild",
+    "display_name": "Trinity Restored",
+    "classification": "REQUIRED",
+    "sort_order": 90,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Trinity_Restored"
+  },
+  {
+    "id": "guild_blindsighted",
+    "collection_id": "thieves_guild",
+    "display_name": "Blindsighted",
+    "classification": "REQUIRED",
+    "sort_order": 100,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blindsighted"
+  },
+  {
+    "id": "guild_darkness_returns",
+    "collection_id": "thieves_guild",
+    "display_name": "Darkness Returns",
+    "classification": "REQUIRED",
+    "sort_order": 110,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Darkness_Returns"
+  },
+  {
+    "id": "guild_silver_lining",
+    "collection_id": "thieves_guild",
+    "display_name": "Silver Lining",
+    "classification": "REQUIRED",
+    "sort_order": 120,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Silver_Lining"
+  },
+  {
+    "id": "guild_dainty_sload",
+    "collection_id": "thieves_guild",
+    "display_name": "The Dainty Sload",
+    "classification": "REQUIRED",
+    "sort_order": 130,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Dainty_Sload"
+  },
+  {
+    "id": "guild_imitation_amnesty",
+    "collection_id": "thieves_guild",
+    "display_name": "Imitation Amnesty",
+    "classification": "REQUIRED",
+    "sort_order": 140,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Imitation_Amnesty"
+  },
+  {
+    "id": "guild_summerset_shadows",
+    "collection_id": "thieves_guild",
+    "display_name": "Summerset Shadows",
+    "classification": "REQUIRED",
+    "sort_order": 150,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summerset_Shadows"
+  },
+  {
+    "id": "guild_under_new_management",
+    "collection_id": "thieves_guild",
+    "display_name": "Under New Management",
+    "classification": "REQUIRED",
+    "sort_order": 160,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Under_New_Management"
+  },
+  {
+    "id": "guild_meet_family",
+    "collection_id": "thieves_guild",
+    "display_name": "Meet the Family",
+    "classification": "OPTIONAL",
+    "sort_order": 170,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Meet_the_Family"
+  },
+  {
+    "id": "guild_toying_dead",
+    "collection_id": "thieves_guild",
+    "display_name": "Toying With The Dead",
+    "classification": "OPTIONAL",
+    "sort_order": 180,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Toying_With_The_Dead"
+  },
+  {
+    "id": "guild_caravan_fence",
+    "collection_id": "thieves_guild",
+    "display_name": "Thieves Guild Caravan Fence Quest",
+    "classification": "OPTIONAL",
+    "sort_order": 190,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_Caravan_Fence_Quest"
+  },
+  {
+    "id": "guild_valds_debt",
+    "collection_id": "thieves_guild",
+    "display_name": "Vald's Debt",
+    "classification": "OPTIONAL",
+    "sort_order": 200,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Vald%27s_Debt"
+  },
+  {
+    "id": "guild_litany_larceny",
+    "collection_id": "thieves_guild",
+    "display_name": "The Litany of Larceny",
+    "classification": "OPTIONAL",
+    "sort_order": 210,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Litany_of_Larceny"
   }
 ]

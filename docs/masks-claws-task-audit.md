@@ -28,7 +28,7 @@ Generated from the canonical dataset. Do not edit by hand.
 | Dragon Priest Masks | Konahrik | ALL | 1 | `mask_konahrik` | `prep_konahrik_masks` |
 | Dragon Priest Masks | Krosis | ALL | 1 | `mask_krosis` | None |
 | Dragon Priest Masks | Miraak | ALL | 1 | `mask_miraak` | `access_waking_dreams` |
-| Dragon Priest Masks | Morokei | ALL | 1 | `mask_morokei` (reused) | `college_containment_report_college` |
+| Dragon Priest Masks | Morokei | ALL | 1 | `mask_morokei` (reused) | `college_staff_magnus_accept` |
 | Dragon Priest Masks | Nahkriin | ALL | 1 | `mask_nahkriin` (reused) | `mq_skuldafn_defeat_nahkriin` |
 | Dragon Priest Masks | Otar | ALL | 1 | `mask_otar` | None |
 | Dragon Priest Masks | Rahgot | ALL | 1 | `mask_rahgot` | None |

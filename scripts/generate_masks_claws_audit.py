@@ -15,19 +15,28 @@ REUSED = {
 
 def render_audit() -> str:
     content = load_canonical_content()
+    scoped = [
+        item for item in content.collectibles.values()
+        if item.collection_id in {"dragon_priest_masks", "dragon_claws"}
+    ]
+    scoped_ids = {item.id for item in scoped}
+    scoped_credits = [
+        item for item in content.collectible_credits.values()
+        if item.collectible_id in scoped_ids
+    ]
     lines = [
         "# Masks + Claws Task Audit", "",
         "Generated from the canonical dataset. Do not edit by hand.", "",
         f"- Dragon Priest Mask identities: {sum(c.collection_id == 'dragon_priest_masks' for c in content.collectibles.values())}",
         f"- Dragon Claw identities: {sum(c.collection_id == 'dragon_claws' for c in content.collectibles.values())}",
-        f"- Collectible definitions: {len(content.collectibles)}",
-        f"- Collectible credits: {len(content.collectible_credits)}",
-        f"- Distinct acquisition Tasks: {len({c.task_id for c in content.collectible_credits.values()})}",
+        f"- Collectible definitions: {len(scoped)}",
+        f"- Collectible credits: {len(scoped_credits)}",
+        f"- Distinct acquisition Tasks: {len({c.task_id for c in scoped_credits})}",
         f"- Reused acquisition Tasks: {len(REUSED)}", "",
         "| Collection | Collectible | Rule | Required | Acquisition Task(s) | Access / prerequisite |",
         "|---|---|---:|---:|---|---|",
     ]
-    for item in sorted(content.collectibles.values(), key=lambda c: (c.collection_id, c.display_name)):
+    for item in sorted(scoped, key=lambda c: (c.collection_id, c.display_name)):
         credits = sorted(
             (credit for credit in content.collectible_credits.values() if credit.collectible_id == item.id),
             key=lambda credit: credit.task_id,

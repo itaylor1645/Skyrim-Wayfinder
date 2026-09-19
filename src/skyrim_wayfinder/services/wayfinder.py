@@ -110,7 +110,7 @@ class WayfinderService:
         reasons += tuple(
             f"Access required: {self.content.access_conditions[item].label}."
             for item in task.access_condition_ids
-            if not self.state.is_access_condition_satisfied(item)
+            if not self.is_access_condition_satisfied(item, _stack | {task_id})
         )
         reasons += tuple(
             f"Requires prior acquisition: {self.content.collectibles[item].display_name}."
@@ -174,9 +174,29 @@ class WayfinderService:
         elif condition.type == "choice":
             if self.state.get_choice(condition.choice_id or "") != condition.option:
                 return condition.description or "Requires a different player choice."
+        elif condition.type == "finite_progress":
+            assert condition.finite_progress_id
+            definition = self.content.finite_progress[condition.finite_progress_id]
+            current = self.state.get_finite_progress(definition.id)
+            if current < definition.required_count:
+                return condition.description or f"Requires {definition.display_name}: {current} / {definition.required_count}."
         else:
             return f"Unsupported prerequisite type: {condition.type}."
         return None
+
+    def finite_progress(self, progress_id: str) -> tuple[int, int]:
+        definition = self.content.finite_progress[progress_id]
+        return self.state.get_finite_progress(progress_id), definition.required_count
+
+    def set_finite_progress(self, progress_id: str, count: int) -> None:
+        definition = self.content.finite_progress[progress_id]
+        self.state.set_finite_progress(progress_id, max(0, min(count, definition.required_count)))
+
+    def thieves_guild_landmarks(self) -> tuple[bool, bool]:
+        narrative = self.story_progress("guild_darkness_returns")
+        restoration = self.story_progress("guild_under_new_management")
+        return (narrative[1] > 0 and narrative[0] == narrative[1],
+                restoration[1] > 0 and restoration[0] == restoration[1])
 
     def set_task_state(
         self, task_id: str, status: TaskStatus | None, *, confirm_choice: bool = False,
@@ -218,6 +238,11 @@ class WayfinderService:
             if status is not TaskStatus.COMPLETE and task.sets_choice and task.choice_id and task.choice_option:
                 self.state.reset_choice(task.choice_id, task.choice_option)
             self.state.set_task_state(task_id, status)
+            if status is TaskStatus.COMPLETE:
+                for condition_id in task.sets_access_condition_ids:
+                    self.state.set_access_condition(condition_id, True)
+                for condition_id in task.clears_access_condition_ids:
+                    self.state.set_access_condition(condition_id, False)
 
     def set_manual_choice(self, choice_id: str, option_id: str | None) -> None:
         choice = self.content.choices[choice_id]
@@ -233,6 +258,23 @@ class WayfinderService:
         if condition_id not in self.content.access_conditions:
             raise KeyError(condition_id)
         self.state.set_access_condition(condition_id, satisfied)
+
+    def is_access_condition_satisfied(
+        self, condition_id: str, _stack: frozenset[str] = frozenset()
+    ) -> bool:
+        """Combine preserved manual correction state with canonical progression bindings."""
+        if self.state.is_access_condition_satisfied(condition_id):
+            return True
+        condition = self.content.access_conditions[condition_id]
+        if any(
+            self.evaluate(task_id, _stack).status is TaskStatus.COMPLETE
+            for task_id in condition.satisfied_by_any_task_ids
+        ):
+            return True
+        return bool(condition.satisfied_by_all_task_ids) and all(
+            self.evaluate(task_id, _stack).status is TaskStatus.COMPLETE
+            for task_id in condition.satisfied_by_all_task_ids
+        )
 
     def shout_progress(self, shout_id: str) -> tuple[int, int]:
         acquired = sum(
@@ -257,6 +299,7 @@ class WayfinderService:
         acquired = sum(
             credits_by_task[task_id] for task_id, evaluation in evaluations.items()
             if evaluation.status is TaskStatus.COMPLETE
+            or self.state.get_task_state(task_id) is TaskStatus.COMPLETE
         )
         possible = sum(
             credits_by_task[task_id] for task_id, evaluation in evaluations.items()
@@ -400,18 +443,23 @@ class WayfinderService:
         }
 
     def story_progress(self, story_id: str) -> tuple[int, int]:
-        collectible = next(
-            (item for item in self.content.collectibles.values() if item.story_id == story_id), None
-        )
-        if collectible:
-            complete, required = self.collectible_progress(collectible.id)
-            if required == 0:
-                return 0, 0
-            return (1 if complete >= required else 0), 1
         task_ids = {
             membership.task_id for membership in self.content.memberships.values()
             if membership.story_id == story_id and membership.completion_role is CompletionRole.REQUIRED
         }
+        collectibles = [
+            item for item in self.content.collectibles.values() if item.story_id == story_id
+        ]
+        credit_task_ids = {
+            credit.task_id for credit in self.content.collectible_credits.values()
+            if credit.collectible_id in {item.id for item in collectibles}
+        }
+        # Pure collectible stories (Masks/Claws and acquisition-only bridges) report
+        # identity progress. Quest stories with supporting Tasks report quest progress.
+        if collectibles and task_ids <= credit_task_ids:
+            progress = [self.collectible_progress(item.id) for item in collectibles]
+            applicable = [item for item in progress if item[1] > 0]
+            return sum(item[0] >= item[1] for item in applicable), len(applicable)
         evaluations = [self.evaluate(task_id) for task_id in task_ids]
         applicable = [item for item in evaluations if item.status is not TaskStatus.NOT_APPLICABLE]
         return sum(item.status is TaskStatus.COMPLETE for item in applicable), len(applicable)
@@ -444,6 +492,19 @@ class WayfinderService:
         evaluations = [self.evaluate(task_id) for task_id in task_ids]
         applicable = [item for item in evaluations if item.status is not TaskStatus.NOT_APPLICABLE]
         return sum(item.status is TaskStatus.COMPLETE for item in applicable), len(applicable)
+
+    def collection_catalog_total(self, collection_id: str) -> int:
+        collectibles = [
+            item for item in self.content.collectibles.values()
+            if item.collection_id == collection_id
+        ]
+        if collectibles:
+            return len(collectibles)
+        return self.collection_progress(collection_id)[1]
+
+    def collectible_collection_summary(self, collection_id: str) -> tuple[int, int, int]:
+        acquired, achievable = self.collection_progress(collection_id)
+        return acquired, achievable, self.collection_catalog_total(collection_id)
 
     def domain_progress(self, domain_id: str) -> tuple[int, int]:
         if domain_id == "shouts":

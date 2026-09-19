@@ -1,78 +1,58 @@
 # Skyrim Wayfinder
 
-Skyrim Wayfinder is a local Windows desktop planner for completion-oriented Skyrim Special Edition playthroughs. It answers: "Given where I am, what useful completion objectives can I do before traveling elsewhere?" Progress is entered manually.
+Skyrim Wayfinder is a local Windows desktop planner for completion-oriented Skyrim Special Edition playthroughs. It answers: “Given where I am, what useful objectives can I do before traveling elsewhere?” Progress is entered manually; the app does not read Skyrim saves.
 
-## Increment 1 scope
+## Current scope
 
-The functional MVP provides:
+The Regional Planner groups actionable objectives by physical Location so one card shows the work available during that visit. The completion ledger groups the same canonical Tasks by domain, collection, and Story; a Task can appear in multiple branches without duplicating its state. Preparation has a collapsible sidebar, and completed ledger objectives can be hidden.
 
-- a Regional Planner dynamically grouped by canonical Location, with grouped region choices and access/departure guidance;
-- an independently scrolling, collapsible Preparation sidebar;
-- a hierarchical multi-membership Task Explorer/completion ledger with a persisted completed-objective filter;
-- authoritative `Task -> Location -> TravelRegion` geography;
-- prerequisite, minimum-level, branch-exclusion, missable, and one-way rules;
-- Done, Deferred, Blocked, Active, manual Not Applicable, and Reset to Automatic actions;
-- local SQLite persistence; and
-- 38 representative atomic, source-auditable objectives rather than a complete Skyrim database.
+Canonical content currently includes the Skyrim Main Quest, official Shouts, Dragon Priest Masks, Dragon Claws, Daedric Artifacts, the Companions, the College of Winterhold, and the Thieves Guild. Nine College-derived Unique Spells & Powers are included. These are authored increments, **not complete coverage of every Skyrim quest or collectible**. The dataset currently has 417 Tasks and 167 Stories.
 
-Creation Club content, mod content, save parsing, inventory synchronization, maps, routing, cloud sync, and full game coverage are not implemented.
+The Thieves Guild distinguishes finishing the Mercer/Nightingale narrative from fully restoring the Guild and becoming Guild Master. Four manually maintained, finite city-influence counters (Whiterun, Markarth, Solitude, and Windhelm; five qualifying completed jobs each) unlock the corresponding special jobs. Random radiant jobs and their destinations are not permanent completion objectives.
 
-## Geography Foundation
+## Geography foundation
 
-The canonical geography layer currently contains 21 Survival-planning Travel Regions and 235 player-meaningful Locations needed by the approved official Skyrim, Dawnguard, Hearthfire, and Dragonborn completion scope. This phase adds geography only; it does not add future quest Tasks or prerequisite logic.
+The catalog contains 21 Survival-planning Travel Regions and 248 verified, player-meaningful Locations, with no `REVIEW_REQUIRED` assignments. These regions represent practical staging hubs, not necessarily official Hold boundaries.
 
-- `Location.region_id` is the sole authoritative Region assignment.
-- Every Location records a broad type, official content origin, factual source URLs, assignment rationale, and verification status.
-- Borderline assignments remain fully assigned but are marked `REVIEW_REQUIRED` and listed in the generated [geography catalog review](docs/geography-catalog-review.md).
-- [geography-coverage.json](docs/geography-coverage.json) records which planned completion domains require every Location.
-- `scripts/generate_geography_review.py` regenerates the human-readable review artifact from canonical data and the coverage inventory.
+- Each physical Task references one Location; each Location belongs to exactly one Travel Region. A Task cannot override its Region.
+- Locations record type, official content origin, source URLs, assignment rationale, and access metadata.
+- [Geography coverage](docs/geography-coverage.json) traces Locations to planned domains. The generated [geography catalog review](docs/geography-catalog-review.md) shows current assignments.
+- `scripts/generate_geography_review.py` regenerates the review from canonical data and the coverage inventory.
 
-Bulk Task authoring against unresolved geography is intentionally deferred until Product review.
+## Setup and launch (PowerShell)
 
-## Setup (PowerShell)
-
-Python 3.10-3.14 is supported. From the repository root:
+Python 3.10–3.14 is supported. From the repository root:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python -m pip install -e ".[dev]"
 ```
 
-This installs dependencies only in the project-local virtual environment.
-
-## Launch
-
-Double-click `Skyrim Wayfinder.bat` in the repository folder, or launch from PowerShell:
+Double-click `Skyrim Wayfinder.bat`, or launch from PowerShell:
 
 ```powershell
 .\.venv\Scripts\python -m skyrim_wayfinder
 ```
 
-User state is written to `%LOCALAPPDATA%\SkyrimWayfinder\wayfinder.sqlite3`, not the repository.
+Dependencies stay in the project-local virtual environment. User progress is stored in `%LOCALAPPDATA%\SkyrimWayfinder\wayfinder.sqlite3`, outside the repository. An `.exe` or installer is not supplied yet.
 
-## Tests
+## Tests and audits
 
 ```powershell
 .\.venv\Scripts\python -m pytest
 ```
 
-## Architecture
+Generated content reviews include the [Main Quest](docs/main-quest-task-audit.md), [Shouts](docs/shout-task-audit.md), [Masks and Claws](docs/masks-claws-task-audit.md), [Daedric Artifacts](docs/daedric-artifacts-task-audit.md), [Companions](docs/companions-task-audit.md), [College](docs/college-task-audit.md), and [Thieves Guild](docs/thieves-guild-task-audit.md) audits. Each records scope, prerequisites, geography, cross-memberships, and source links relevant to its increment.
 
-- `domain/` contains completion taxonomy, authoritative geography, planner behaviors, tasks, memberships, and task states.
-- `services/` evaluates availability, preserves manual state beneath derived exclusions, generates Location cards, and applies confirmed branch choices.
-- `persistence/` stores only user/playthrough state in SQLite.
-- `data/canonical/` contains version-controlled JSON definitions and source URL metadata.
-- `docs/geography-coverage.json` traces canonical Locations to planned completion domains; the geography review is generated from it.
-- `ui/` contains PySide6 views and centralized domain/theme presentation.
+## Architecture and state
 
-Canonical definitions are never mutated when progress changes. SQLite stores the user's state, selected region, player level, branch choices, and UI preferences. Stable string IDs join the two layers. A content fingerprint makes fresh canonical loads reproducible and auditable.
+- `src/skyrim_wayfinder/domain/` defines completion taxonomy, authoritative geography, planner behaviors, Tasks, memberships, access conditions, and finite-progress definitions.
+- `src/skyrim_wayfinder/services/` evaluates availability, groups regional Location cards, and derives progress from canonical prerequisites while retaining manual corrections.
+- `src/skyrim_wayfinder/persistence/` stores only user/playthrough state in SQLite: Task status, observed outcomes, choices, access overrides, Guild influence counts, selected region, player level, and UI preferences.
+- `src/skyrim_wayfinder/data/canonical/` contains version-controlled JSON definitions and source metadata; `src/skyrim_wayfinder/ui/` contains the PySide6 interface.
 
-Completion taxonomy and geography are independent. Tasks can have multiple ledger memberships while retaining one state record. Physical Tasks reference one Location, each Location belongs to one Travel Region, and Tasks never override that Region.
+`AVAILABLE` and `LOCKED` are derived. Users can mark Tasks Done, Deferred, Blocked, Active, or Not Applicable, and reset them to automatic evaluation. A temporary derived branch exclusion does not overwrite an unrelated stored manual state. Completing a historical acquisition remains recorded even if its prerequisite is later corrected or the item is subsequently surrendered; the Skeleton Key is an example.
 
-## Current limitations
+## Boundaries
 
-- The dataset is deliberately representative, not comprehensive.
-- `The Fallen Completed` is a non-recommended bookkeeping milestone because intermediate main quests are not in this increment; it prevents Skuldafn from unlocking from an inaccurate shortened quest chain.
-- Meridia's Beacon is currently opportunistic and remains out of normal recommendations because its destination is randomized.
-- Gold and inventory quantities are not tracked. The player confirms preparation manually.
-- Executable packaging is deferred; the included batch file launches the project-local development environment.
+Creation Club and mod content, save parsing, inventory synchronization, maps, routing, and cloud sync are out of scope. The current Thieves Guild increment intentionally excludes repeatable job identities, Stones of Barenziah, the Dragonborn quest *Paid in Full*, broad unique-equipment collection, and a mutable Nightingale-power collection. Other factions and side-quest catalogs remain future work.

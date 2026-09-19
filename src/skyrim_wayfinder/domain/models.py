@@ -119,6 +119,8 @@ class AccessCondition:
     description: str
     source_urls: tuple[str, ...]
     content_source: ContentSource
+    satisfied_by_any_task_ids: tuple[str, ...] = ()
+    satisfied_by_all_task_ids: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -149,6 +151,7 @@ class CollectibleDefinition:
     completion_rule: CollectibleCompletionRule
     content_source: ContentSource
     source_url: str
+    oblivion_walker_eligible: bool | None = None
 
 
 @dataclass(frozen=True)
@@ -201,6 +204,16 @@ class Prerequisite:
     when_outcome_task_id: str | None = None
     when_outcome: str | None = None
     description: str | None = None
+    finite_progress_id: str | None = None
+
+
+@dataclass(frozen=True)
+class FiniteProgressDefinition:
+    id: str
+    display_name: str
+    required_count: int
+    collection_id: str
+    source_url: str
 
 
 @dataclass(frozen=True)
@@ -237,6 +250,8 @@ class Task:
     applicable_outcome: str | None = None
     expires_after_task_id: str | None = None
     access_condition_ids: tuple[str, ...] = ()
+    sets_access_condition_ids: tuple[str, ...] = ()
+    clears_access_condition_ids: tuple[str, ...] = ()
     required_collectible_ids: tuple[str, ...] = ()
     preparation_for: tuple[str, ...] = ()
     missable: bool = False
@@ -285,5 +300,6 @@ class CanonicalContent:
     shout_credits: dict[str, ShoutCredit]
     collectibles: dict[str, CollectibleDefinition]
     collectible_credits: dict[str, CollectibleCredit]
+    finite_progress: dict[str, FiniteProgressDefinition] = field(default_factory=dict)
     theme: dict[str, dict[str, Any]] = field(default_factory=dict)
     fingerprint: str = ""

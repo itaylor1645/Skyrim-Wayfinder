@@ -268,5 +268,28 @@
     "description": "Acquire all three words of Dragon Aspect.",
     "sort_order": 360,
     "source_url": "https://en.uesp.net/wiki/Skyrim:Dragon_Aspect"
+  },
+  {
+    "id": "companions",
+    "domain_id": "factions_major",
+    "display_name": "Companions",
+    "description": "Core Companions progression and finite optional post-story content.",
+    "sort_order": 5,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Companions"
+  },
+  {
+    "id": "unique_spells",
+    "domain_id": "unique_spells_powers",
+    "display_name": "Unique Spells",
+    "description": "Unique, non-purchasable permanent spell acquisitions.",
+    "sort_order": 10,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Spells"
+  },
+  {
+    "id": "thieves_guild",
+    "domain_id": "factions_major",
+    "display_name": "Thieves Guild",
+    "sort_order": 35,
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"
   }
 ]

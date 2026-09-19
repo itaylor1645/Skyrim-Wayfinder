@@ -7,7 +7,7 @@
 - Stories: **19** (including conditional and optional Stories)
 - Unique Tasks represented under Main Quest: **56**
 - Main Quest memberships: **56**
-- Main Quest Tasks with cross-category membership: **17**
+- Main Quest Tasks with cross-category membership: **21**
 - Geography corrections made during Increment 2B: **none**
 
 Only Tasks own geography. Every Region below is derived from `Task.location_id → Location.region_id`.
@@ -123,10 +123,10 @@ Story source: [https://en.uesp.net/wiki/Skyrim:Elder_Knowledge](https://en.uesp.
 
 | Task | Location → Region | Prerequisites / applicability | Behavior | Other memberships | Warnings |
 |---|---|---|---|---|---|
-| [Consult Septimus Signus](https://en.uesp.net/wiki/Skyrim:Elder_Knowledge) (REQUIRED) | Septimus Signus's Outpost → Winterhold | Meet Paarthurnax and Learn Fire Breath | REGIONAL_ACTION | — | — |
-| [Descend through Alftand](https://en.uesp.net/wiki/Skyrim:Elder_Knowledge) (REQUIRED) | Alftand → Winterhold | Consult Septimus Signus | REGIONAL_ACTION | — | — |
-| [Cross Blackreach to the Tower of Mzark](https://en.uesp.net/wiki/Skyrim:Elder_Knowledge) (REQUIRED) | Blackreach → Blackreach | Descend through Alftand | REGIONAL_ACTION | — | — |
-| [Acquire the Elder Scroll (Dragon)](https://en.uesp.net/wiki/Skyrim:Elder_Knowledge) (REQUIRED) | Tower of Mzark → Blackreach | Cross Blackreach to the Tower of Mzark | REGIONAL_ACTION | — | — |
+| [Consult Septimus Signus](https://en.uesp.net/wiki/Skyrim:Elder_Knowledge) (REQUIRED) | Septimus Signus's Outpost → Winterhold | Any one: Meet Paarthurnax and Learn Fire Breath / Ask Septimus about the Dwemer lockbox | REGIONAL_ACTION | Artifacts & Collectibles / Daedric Artifacts / Discerning the Transmundane (REQUIRED) | — |
+| [Descend through Alftand](https://en.uesp.net/wiki/Skyrim:Elder_Knowledge) (REQUIRED) | Alftand → Winterhold | Consult Septimus Signus | REGIONAL_ACTION | Artifacts & Collectibles / Daedric Artifacts / Discerning the Transmundane (REQUIRED) | — |
+| [Cross Blackreach to the Tower of Mzark](https://en.uesp.net/wiki/Skyrim:Elder_Knowledge) (REQUIRED) | Blackreach → Blackreach | Descend through Alftand | REGIONAL_ACTION | Artifacts & Collectibles / Daedric Artifacts / Discerning the Transmundane (REQUIRED) | — |
+| [Acquire the Elder Scroll (Dragon)](https://en.uesp.net/wiki/Skyrim:Elder_Knowledge) (REQUIRED) | Tower of Mzark → Blackreach | Cross Blackreach to the Tower of Mzark | REGIONAL_ACTION | Artifacts & Collectibles / Daedric Artifacts / Discerning the Transmundane (REQUIRED) | — |
 
 ## Alduin's Bane (Required)
 

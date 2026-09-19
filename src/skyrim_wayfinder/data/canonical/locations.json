@@ -1,255 +1,3166 @@
 [
-  {"id":"whiterun","display_name":"Whiterun","region_id":"whiterun","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Whiterun"],"assignment_rationale":"The settlement is the principal hub of its namesake city region.","verification_status":"VERIFIED"},
-  {"id":"dragonsreach","display_name":"Dragonsreach","region_id":"whiterun","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Dragonsreach"],"assignment_rationale":"The palace is inside Whiterun and uses Whiterun as its travel hub.","verification_status":"VERIFIED"},
-  {"id":"breezehome","display_name":"Breezehome","region_id":"whiterun","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Breezehome"],"assignment_rationale":"The player home is inside Whiterun.","verification_status":"VERIFIED","gated":true,"access_notes":"The interior becomes a usable player home only after purchase."},
-  {"id":"jorrvaskr","display_name":"Jorrvaskr","region_id":"whiterun","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Jorrvaskr"],"assignment_rationale":"The Companions' headquarters is inside Whiterun.","verification_status":"VERIFIED"},
-  {"id":"underforge","display_name":"The Underforge","region_id":"whiterun","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Underforge"],"assignment_rationale":"This quest-significant chamber is beneath Jorrvaskr in Whiterun.","verification_status":"VERIFIED","gated":true,"access_notes":"Normal access is granted through Companions quest progression."},
-  {"id":"hall_of_the_dead_whiterun","display_name":"Whiterun Hall of the Dead","region_id":"whiterun","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Hall_of_the_Dead_(Whiterun)"],"assignment_rationale":"The building is inside Whiterun.","verification_status":"VERIFIED","aliases":["Whiterun Catacombs"]},
-  {"id":"riverwood","display_name":"Riverwood","region_id":"whiterun","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Riverwood"],"assignment_rationale":"Whiterun is the accepted practical hub for Riverwood.","verification_status":"VERIFIED"},
-  {"id":"riverwood_trader","display_name":"Riverwood Trader","region_id":"whiterun","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Riverwood_Trader"],"assignment_rationale":"The shop is in Riverwood, which belongs to the Whiterun planning region.","verification_status":"VERIFIED"},
-  {"id":"sleeping_giant_inn","display_name":"Sleeping Giant Inn","region_id":"whiterun","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Sleeping_Giant_Inn"],"assignment_rationale":"The inn is in Riverwood, within the Whiterun planning region.","verification_status":"VERIFIED"},
-  {"id":"bleak_falls_barrow","display_name":"Bleak Falls Barrow","region_id":"whiterun","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Bleak_Falls_Barrow"],"assignment_rationale":"Whiterun is the accepted practical hub for the Riverwood and Bleak Falls corridor.","verification_status":"VERIFIED"},
-  {"id":"western_watchtower","display_name":"Western Watchtower","region_id":"whiterun","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Western_Watchtower"],"assignment_rationale":"The watchtower is immediately outside Whiterun.","verification_status":"VERIFIED"},
-  {"id":"fellglow_keep","display_name":"Fellglow Keep","region_id":"whiterun","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fellglow_Keep"],"assignment_rationale":"Whiterun is the accepted practical hub for the keep east-northeast of the city.","verification_status":"VERIFIED"},
-  {"id":"dustmans_cairn","display_name":"Dustman's Cairn","region_id":"whiterun","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Dustman%27s_Cairn"],"assignment_rationale":"The cairn lies in Whiterun's western plains and is naturally staged from Whiterun.","verification_status":"VERIFIED"},
-  {"id":"rannveigs_fast","display_name":"Rannveig's Fast","region_id":"whiterun","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Rannveig%27s_Fast"],"assignment_rationale":"The ruin is west of Whiterun and is most practically staged from that city.","verification_status":"VERIFIED"},
-  {"id":"volunruud","display_name":"Volunruud","region_id":"whiterun","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Volunruud"],"assignment_rationale":"Whiterun is the approved staging hub because its northern road network provides the most useful route to the ruin.","verification_status":"VERIFIED"},
-  {"id":"halted_stream_camp","display_name":"Halted Stream Camp","region_id":"whiterun","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Halted_Stream_Camp"],"assignment_rationale":"The camp is immediately north of Whiterun.","verification_status":"VERIFIED"},
-  {"id":"korvanjund","display_name":"Korvanjund","region_id":"whiterun","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Korvanjund"],"assignment_rationale":"Whiterun is the approved practical hub because its northern road network provides the most useful direct approach.","verification_status":"VERIFIED"},
-  {"id":"honningbrew_meadery","display_name":"Honningbrew Meadery","region_id":"whiterun","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Honningbrew_Meadery"],"assignment_rationale":"The meadery is directly southeast of Whiterun.","verification_status":"VERIFIED"},
-  {"id":"fort_greymoor","display_name":"Fort Greymoor","region_id":"whiterun","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Greymoor"],"assignment_rationale":"The fort is on Whiterun's western plain.","verification_status":"VERIFIED"},
-
-  {"id":"falkreath","display_name":"Falkreath","region_id":"falkreath","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Falkreath"],"assignment_rationale":"The settlement is the principal hub of its namesake city region.","verification_status":"VERIFIED"},
-  {"id":"falkreath_jarl_longhouse","display_name":"Falkreath Jarl's Longhouse","region_id":"falkreath","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Jarl%27s_Longhouse_(Falkreath)"],"assignment_rationale":"The longhouse is inside Falkreath.","verification_status":"VERIFIED"},
-  {"id":"falkreath_jail","display_name":"Falkreath Jail","region_id":"falkreath","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Falkreath_Barracks"],"assignment_rationale":"The jail is part of Falkreath's barracks complex.","verification_status":"VERIFIED","aliases":["Falkreath Barracks"]},
-  {"id":"helgen_keep","display_name":"Helgen Keep","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Helgen_Keep"],"assignment_rationale":"Falkreath is the accepted practical hub for Helgen.","verification_status":"VERIFIED","aliases":["Helgen"]},
-  {"id":"ancients_ascent","display_name":"Ancient's Ascent","region_id":"falkreath","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Ancient%27s_Ascent"],"assignment_rationale":"The dragon lair is in the southern mountains of Falkreath's travel area.","verification_status":"VERIFIED"},
-  {"id":"shriekwind_bastion","display_name":"Shriekwind Bastion","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Shriekwind_Bastion"],"assignment_rationale":"The ruin is directly north of Falkreath.","verification_status":"VERIFIED"},
-  {"id":"sunderstone_gorge","display_name":"Sunderstone Gorge","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Sunderstone_Gorge"],"assignment_rationale":"Falkreath is the practical southern staging hub for the gorge.","verification_status":"VERIFIED"},
-  {"id":"dark_brotherhood_sanctuary","display_name":"Dark Brotherhood Sanctuary","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood_Sanctuary"],"assignment_rationale":"The sanctuary entrance is immediately west of Falkreath.","verification_status":"VERIFIED","aliases":["Falkreath Sanctuary"],"gated":true,"access_notes":"Normal entry requires Dark Brotherhood quest access or the destroy branch password."},
-  {"id":"pinewatch","display_name":"Pinewatch","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Pinewatch"],"assignment_rationale":"The homestead and hidden dungeon are northeast of Falkreath.","verification_status":"VERIFIED"},
-  {"id":"bloated_mans_grotto","display_name":"Bloated Man's Grotto","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Bloated_Man%27s_Grotto"],"assignment_rationale":"The grotto is in Falkreath's northern forest.","verification_status":"VERIFIED"},
-  {"id":"lakeview_manor","display_name":"Lakeview Manor","region_id":"falkreath","location_type":"BUILDING","content_source":"HEARTHFIRE","source_urls":["https://en.uesp.net/wiki/Skyrim:Lakeview_Manor"],"assignment_rationale":"The Hearthfire homestead is on Falkreath's northern lake road.","verification_status":"VERIFIED","gated":true,"access_notes":"The property becomes available after purchasing the Falkreath hold land and building the home."},
-  {"id":"gallows_rock","display_name":"Gallows Rock","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Gallows_Rock"],"assignment_rationale":"The fort is in the eastern Falkreath forest and is best staged from Falkreath.","verification_status":"VERIFIED"},
-  {"id":"ancestor_glade","display_name":"Ancestor Glade","region_id":"falkreath","location_type":"DUNGEON","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Ancestor_Glade"],"assignment_rationale":"The glade is in Falkreath's southern mountains.","verification_status":"VERIFIED"},
-  {"id":"cracked_tusk_keep","display_name":"Cracked Tusk Keep","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Cracked_Tusk_Keep"],"assignment_rationale":"The keep is west of Falkreath.","verification_status":"VERIFIED"},
-  {"id":"haemars_shame","display_name":"Haemar's Shame","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Haemar%27s_Shame"],"assignment_rationale":"The cave lies on the Falkreath-to-Riften mountain road and is most practical from Falkreath.","verification_status":"VERIFIED"},
-  {"id":"knifepoint_ridge","display_name":"Knifepoint Ridge","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Knifepoint_Ridge"],"assignment_rationale":"The mine is in western Falkreath Hold and is staged from Falkreath.","verification_status":"VERIFIED"},
-  {"id":"ilinaltas_deep","display_name":"Ilinalta's Deep","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Ilinalta%27s_Deep"],"assignment_rationale":"The submerged fort is in Lake Ilinalta north of Falkreath.","verification_status":"VERIFIED"},
-  {"id":"twilight_sepulcher","display_name":"Twilight Sepulcher","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Twilight_Sepulcher"],"assignment_rationale":"The remote ruin lies in western Falkreath Hold and is best staged from Falkreath.","verification_status":"VERIFIED","gated":true,"access_notes":"The inner pilgrimage route is tied to late Thieves Guild progression."},
-  {"id":"fort_neugrad","display_name":"Fort Neugrad","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Neugrad"],"assignment_rationale":"The fort is immediately north of Falkreath.","verification_status":"VERIFIED"},
-  {"id":"falkreath_stormcloak_camp","display_name":"Falkreath Stormcloak Camp","region_id":"falkreath","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Falkreath_Stormcloak_Camp"],"assignment_rationale":"The military camp coordinates operations in the Falkreath region.","verification_status":"VERIFIED"},
-  {"id":"half_moon_mill","display_name":"Half-Moon Mill","region_id":"falkreath","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Half-Moon_Mill"],"assignment_rationale":"The mill is on Lake Ilinalta within Falkreath's practical travel area.","verification_status":"VERIFIED"},
-
-  {"id":"riften","display_name":"Riften","region_id":"riften","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Riften"],"assignment_rationale":"The settlement is the principal hub of its namesake city region.","verification_status":"VERIFIED"},
-  {"id":"mistveil_keep","display_name":"Mistveil Keep","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Mistveil_Keep"],"assignment_rationale":"The palace is inside Riften.","verification_status":"VERIFIED"},
-  {"id":"honeyside","display_name":"Honeyside","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Honeyside"],"assignment_rationale":"The player home is inside Riften.","verification_status":"VERIFIED","gated":true,"access_notes":"The interior becomes a usable player home only after purchase."},
-  {"id":"scorched_hammer","display_name":"The Scorched Hammer","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Scorched_Hammer"],"assignment_rationale":"Balimund's forge is inside Riften.","verification_status":"VERIFIED","aliases":["Balimund's forge"]},
-  {"id":"honorhall_orphanage","display_name":"Honorhall Orphanage","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Honorhall_Orphanage"],"assignment_rationale":"The orphanage is inside Riften.","verification_status":"VERIFIED","aliases":["Honorhall"]},
-  {"id":"temple_of_mara","display_name":"Temple of Mara","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Temple_of_Mara"],"assignment_rationale":"The temple is inside Riften.","verification_status":"VERIFIED"},
-  {"id":"riften_fishery","display_name":"Riften Fishery","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Riften_Fishery"],"assignment_rationale":"The fishery is directly outside Riften's walls.","verification_status":"VERIFIED"},
-  {"id":"riften_warehouse","display_name":"Riften Warehouse","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Riften_Warehouse"],"assignment_rationale":"The warehouse is on Riften's docks.","verification_status":"VERIFIED","gated":true,"access_notes":"The warehouse is normally unlocked during the Riften skooma investigation."},
-  {"id":"ratway","display_name":"The Ratway","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Ratway"],"assignment_rationale":"The sewer complex is beneath Riften.","verification_status":"VERIFIED"},
-  {"id":"ragged_flagon","display_name":"The Ragged Flagon","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Ragged_Flagon"],"assignment_rationale":"The Thieves Guild hub is within Riften's Ratway.","verification_status":"VERIFIED"},
-  {"id":"riftweald_manor","display_name":"Riftweald Manor","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Riftweald_Manor"],"assignment_rationale":"The manor is inside Riften.","verification_status":"VERIFIED","gated":true,"access_notes":"Quest progression provides the intended route through the secured manor."},
-  {"id":"goldenglow_estate","display_name":"Goldenglow Estate","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Goldenglow_Estate"],"assignment_rationale":"The estate is on Lake Honrich immediately west of Riften.","verification_status":"VERIFIED"},
-  {"id":"black_briar_lodge","display_name":"Black-Briar Lodge","region_id":"riften","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Black-Briar_Lodge"],"assignment_rationale":"The lodge is east of Riften in the central Rift.","verification_status":"VERIFIED"},
-  {"id":"cragslane_cavern","display_name":"Cragslane Cavern","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Cragslane_Cavern"],"assignment_rationale":"The cavern is north of Riften and part of its skooma-trade route.","verification_status":"VERIFIED"},
-  {"id":"ivarstead","display_name":"Ivarstead","region_id":"riften","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Ivarstead"],"assignment_rationale":"For ordinary settlement work, Riften is the practical city hub; the separate mountain region begins with the High Hrothgar climb.","verification_status":"VERIFIED"},
-  {"id":"shroud_hearth_barrow","display_name":"Shroud Hearth Barrow","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Shroud_Hearth_Barrow"],"assignment_rationale":"The barrow is immediately beside Ivarstead and uses Riften as its ordinary city hub.","verification_status":"VERIFIED"},
-  {"id":"angarvunde","display_name":"Angarvunde","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Angarvunde"],"assignment_rationale":"The ruin is west of Riften in the central Rift.","verification_status":"VERIFIED"},
-  {"id":"lost_tongue_overlook","display_name":"Lost Tongue Overlook","region_id":"riften","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Lost_Tongue_Overlook"],"assignment_rationale":"The dragon lair is in the mountains south of Riften.","verification_status":"VERIFIED"},
-  {"id":"autumnwatch_tower","display_name":"Autumnwatch Tower","region_id":"riften","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Autumnwatch_Tower"],"assignment_rationale":"The towers are in the southern Rift and are staged from Riften.","verification_status":"VERIFIED"},
-  {"id":"arcwind_point","display_name":"Arcwind Point","region_id":"riften","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Arcwind_Point"],"assignment_rationale":"Riften is the approved practical hub for the Ivarstead/Rift-side approach; the site is not part of the High Hrothgar travel objective.","verification_status":"VERIFIED"},
-  {"id":"forelhost","display_name":"Forelhost","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Forelhost"],"assignment_rationale":"The ruin is southeast of Riften and is staged from that city.","verification_status":"VERIFIED"},
-  {"id":"largashbur","display_name":"Largashbur","region_id":"riften","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Largashbur"],"assignment_rationale":"The stronghold is in the southern Rift and is best staged from Riften.","verification_status":"VERIFIED"},
-  {"id":"fallowstone_cave","display_name":"Fallowstone Cave","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fallowstone_Cave"],"assignment_rationale":"The cave is northeast of Riften and is the mainland approach to Giant's Grove.","verification_status":"VERIFIED","aliases":["Giant's Grove route"]},
-  {"id":"ruins_of_bthalft","display_name":"Ruins of Bthalft","region_id":"riften","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Ruins_of_Bthalft"],"assignment_rationale":"The ruins are west of Riften in the Rift.","verification_status":"VERIFIED"},
-  {"id":"aetherium_forge","display_name":"Aetherium Forge","region_id":"riften","location_type":"DUNGEON","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Aetherium_Forge"],"assignment_rationale":"The forge is accessed beneath the Ruins of Bthalft in the Riften travel region.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"The forge elevator is activated only after assembling the Aetherium Crest during Lost to the Ages."},
-  {"id":"avanchnzel","display_name":"Avanchnzel","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Avanchnzel"],"assignment_rationale":"The ruin is in the mountains southwest of Riften.","verification_status":"VERIFIED","gated":true,"access_notes":"The intended entrance route opens through the Unfathomable Depths quest."},
-  {"id":"fort_greenwall","display_name":"Fort Greenwall","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Greenwall"],"assignment_rationale":"The fort is directly north of Riften.","verification_status":"VERIFIED"},
-  {"id":"rift_imperial_camp","display_name":"Rift Imperial Camp","region_id":"riften","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Rift_Imperial_Camp"],"assignment_rationale":"The military camp coordinates Imperial operations in the Rift.","verification_status":"VERIFIED"},
-  {"id":"fort_dawnguard","display_name":"Fort Dawnguard","region_id":"riften","location_type":"BUILDING","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Dawnguard"],"assignment_rationale":"Riften is the practical mainland hub for the Dayspring Canyon entrance and repeated travel to the fort.","verification_status":"VERIFIED","aliases":["Dayspring Canyon"],"requires_special_access":true,"access_notes":"The fort is reached through the unmarked Dayspring Canyon entrance east of Riften."},
-  {"id":"forebears_holdout","display_name":"Forebears' Holdout","region_id":"riften","location_type":"DUNGEON","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Forebears%27_Holdout"],"assignment_rationale":"The cave is northeast of Riften and is staged from the Rift.","verification_status":"VERIFIED"},
-  {"id":"tolvalds_cave","display_name":"Tolvald's Cave","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Tolvald%27s_Cave"],"assignment_rationale":"The cave is on the eastern Rift route and is most practical from Riften.","verification_status":"VERIFIED"},
-
-  {"id":"markarth","display_name":"Markarth","region_id":"markarth","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Markarth"],"assignment_rationale":"The settlement is the principal hub of its namesake city region.","verification_status":"VERIFIED"},
-  {"id":"understone_keep","display_name":"Understone Keep","region_id":"markarth","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Understone_Keep"],"assignment_rationale":"The palace is inside Markarth.","verification_status":"VERIFIED"},
-  {"id":"vlindrel_hall","display_name":"Vlindrel Hall","region_id":"markarth","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Vlindrel_Hall"],"assignment_rationale":"The player home is inside Markarth.","verification_status":"VERIFIED","gated":true,"access_notes":"The interior becomes a usable player home only after purchase."},
-  {"id":"hall_of_the_dead_markarth","display_name":"Markarth Hall of the Dead","region_id":"markarth","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Hall_of_the_Dead_(Markarth)"],"assignment_rationale":"The building is inside Markarth.","verification_status":"VERIFIED"},
-  {"id":"abandoned_house_markarth","display_name":"Abandoned House","region_id":"markarth","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Abandoned_House"],"assignment_rationale":"The house is inside Markarth.","verification_status":"VERIFIED","aliases":["Molag Bal's Abandoned House"]},
-  {"id":"temple_of_dibella","display_name":"Temple of Dibella","region_id":"markarth","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Temple_of_Dibella"],"assignment_rationale":"The temple and inner sanctum are inside Markarth.","verification_status":"VERIFIED","aliases":["Dibella's Inner Sanctum"]},
-  {"id":"treasury_house","display_name":"Treasury House","region_id":"markarth","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Treasury_House"],"assignment_rationale":"The building is inside Markarth.","verification_status":"VERIFIED"},
-  {"id":"hags_cure","display_name":"The Hag's Cure","region_id":"markarth","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Hag%27s_Cure"],"assignment_rationale":"The shop is inside Markarth.","verification_status":"VERIFIED"},
-  {"id":"dead_crone_rock","display_name":"Dead Crone Rock","region_id":"markarth","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Dead_Crone_Rock"],"assignment_rationale":"The ruin is in the western Reach and is staged from Markarth.","verification_status":"VERIFIED"},
-  {"id":"lost_valley_redoubt","display_name":"Lost Valley Redoubt","region_id":"markarth","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Lost_Valley_Redoubt"],"assignment_rationale":"The redoubt is in the southern Reach.","verification_status":"VERIFIED"},
-  {"id":"dragontooth_crater","display_name":"Dragontooth Crater","region_id":"markarth","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Dragontooth_Crater"],"assignment_rationale":"The dragon lair is in the western Reach and uses Markarth as its hub.","verification_status":"VERIFIED"},
-  {"id":"valthume","display_name":"Valthume","region_id":"markarth","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Valthume"],"assignment_rationale":"Markarth is the approved coherent staging hub for this eastern Reach ruin despite a potentially convenient eastern approach.","verification_status":"VERIFIED"},
-  {"id":"ragnvald","display_name":"Ragnvald","region_id":"markarth","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Ragnvald"],"assignment_rationale":"The ruin is north of Markarth in the Reach.","verification_status":"VERIFIED"},
-  {"id":"reachcliff_cave","display_name":"Reachcliff Cave","region_id":"markarth","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Reachcliff_Cave"],"assignment_rationale":"The cave is southeast of Markarth in the Reach.","verification_status":"VERIFIED"},
-  {"id":"reachwater_rock","display_name":"Reachwater Rock","region_id":"markarth","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Reachwater_Rock"],"assignment_rationale":"The cave is in the southern Reach and is staged from Markarth.","verification_status":"VERIFIED"},
-  {"id":"bthardamz","display_name":"Bthardamz","region_id":"markarth","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Bthardamz"],"assignment_rationale":"The Dwemer ruin is in the western Reach.","verification_status":"VERIFIED","gated":true,"access_notes":"The inner ruin is intended to open during The Only Cure."},
-  {"id":"shrine_to_peryite","display_name":"Shrine to Peryite","region_id":"markarth","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Shrine_to_Peryite"],"assignment_rationale":"The shrine is in the Reach northeast of Markarth.","verification_status":"VERIFIED"},
-  {"id":"karthspire","display_name":"Karthspire","region_id":"markarth","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Karthspire"],"assignment_rationale":"The camp and cave are in the Reach and are staged from Markarth.","verification_status":"VERIFIED"},
-  {"id":"sky_haven_temple","display_name":"Sky Haven Temple","region_id":"markarth","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Sky_Haven_Temple"],"assignment_rationale":"The temple is reached through Karthspire in the Markarth region.","verification_status":"VERIFIED","gated":true,"access_notes":"The intended entrance opens during Alduin's Wall."},
-  {"id":"arkngthamz","display_name":"Arkngthamz","region_id":"markarth","location_type":"DUNGEON","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Arkngthamz"],"assignment_rationale":"The ruin is in the southern Reach.","verification_status":"VERIFIED"},
-  {"id":"deep_folk_crossing","display_name":"Deep Folk Crossing","region_id":"markarth","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Deep_Folk_Crossing"],"assignment_rationale":"The Dwemer crossing is northeast of Markarth in the Reach.","verification_status":"VERIFIED"},
-  {"id":"fort_sungard","display_name":"Fort Sungard","region_id":"markarth","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Sungard"],"assignment_rationale":"The fort is east of Markarth in the Reach.","verification_status":"VERIFIED"},
-  {"id":"reach_stormcloak_camp","display_name":"Reach Stormcloak Camp","region_id":"markarth","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Reach_Stormcloak_Camp"],"assignment_rationale":"The military camp coordinates Stormcloak operations in the Reach.","verification_status":"VERIFIED"},
-  {"id":"reach_imperial_camp","display_name":"Reach Imperial Camp","region_id":"markarth","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Reach_Imperial_Camp"],"assignment_rationale":"The military camp coordinates Imperial operations in the Reach.","verification_status":"VERIFIED"},
-
-  {"id":"morthal","display_name":"Morthal","region_id":"morthal","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Morthal"],"assignment_rationale":"The settlement is the principal hub of its namesake city region.","verification_status":"VERIFIED"},
-  {"id":"highmoon_hall","display_name":"Highmoon Hall","region_id":"morthal","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Highmoon_Hall"],"assignment_rationale":"The palace is inside Morthal.","verification_status":"VERIFIED"},
-  {"id":"windstad_manor","display_name":"Windstad Manor","region_id":"morthal","location_type":"BUILDING","content_source":"HEARTHFIRE","source_urls":["https://en.uesp.net/wiki/Skyrim:Windstad_Manor"],"assignment_rationale":"The Hearthfire homestead is on the Hjaalmarch coast north of Morthal.","verification_status":"VERIFIED","gated":true,"access_notes":"The property becomes available after purchasing the Hjaalmarch land and building the home."},
-  {"id":"abandoned_shack","display_name":"Abandoned Shack","region_id":"morthal","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Abandoned_Shack"],"assignment_rationale":"Morthal is the accepted practical hub for the shack in the Hjaalmarch marshes.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"Initial access occurs through the Dark Brotherhood abduction sequence.","warning_text":"Branch choice: your action here determines whether you join or destroy the Dark Brotherhood."},
-  {"id":"movarths_lair","display_name":"Movarth's Lair","region_id":"morthal","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Movarth%27s_Lair"],"assignment_rationale":"The lair is northeast of Morthal in Hjaalmarch.","verification_status":"VERIFIED"},
-  {"id":"alvas_house","display_name":"Alva's House","region_id":"morthal","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Alva%27s_House"],"assignment_rationale":"The house is inside Morthal.","verification_status":"VERIFIED"},
-  {"id":"burned_house_morthal","display_name":"Burned House","region_id":"morthal","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Laid_to_Rest"],"assignment_rationale":"The burned house is inside Morthal.","verification_status":"VERIFIED","aliases":["Hroggar's burned house"]},
-  {"id":"folgunthur","display_name":"Folgunthur","region_id":"morthal","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Folgunthur"],"assignment_rationale":"The ruin is in Hjaalmarch southeast of Solitude and is most practically staged from Morthal.","verification_status":"VERIFIED"},
-  {"id":"eldersblood_peak","display_name":"Eldersblood Peak","region_id":"morthal","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Eldersblood_Peak"],"assignment_rationale":"The dragon lair is in the mountains west of Morthal.","verification_status":"VERIFIED"},
-  {"id":"ustengrav","display_name":"Ustengrav","region_id":"morthal","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Ustengrav"],"assignment_rationale":"The ruin is northeast of Morthal in Hjaalmarch.","verification_status":"VERIFIED"},
-  {"id":"fort_snowhawk","display_name":"Fort Snowhawk","region_id":"morthal","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Snowhawk"],"assignment_rationale":"The fort is west of Morthal in Hjaalmarch.","verification_status":"VERIFIED"},
-  {"id":"hjaalmarch_stormcloak_camp","display_name":"Hjaalmarch Stormcloak Camp","region_id":"morthal","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Hjaalmarch_Stormcloak_Camp"],"assignment_rationale":"The military camp coordinates Stormcloak operations in Hjaalmarch.","verification_status":"VERIFIED"},
-  {"id":"moorside_inn","display_name":"Moorside Inn","region_id":"morthal","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Moorside_Inn"],"assignment_rationale":"The inn is inside Morthal.","verification_status":"VERIFIED"},
-
-  {"id":"solitude","display_name":"Solitude","region_id":"solitude","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Solitude"],"assignment_rationale":"The settlement is the principal hub of its namesake city region.","verification_status":"VERIFIED"},
-  {"id":"blue_palace","display_name":"Blue Palace","region_id":"solitude","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Blue_Palace"],"assignment_rationale":"The palace and Pelagius Wing are inside Solitude.","verification_status":"VERIFIED","aliases":["Pelagius Wing"]},
-  {"id":"proudspire_manor","display_name":"Proudspire Manor","region_id":"solitude","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Proudspire_Manor"],"assignment_rationale":"The player home is inside Solitude.","verification_status":"VERIFIED","gated":true,"access_notes":"The interior becomes a usable player home only after purchase."},
-  {"id":"castle_dour","display_name":"Castle Dour","region_id":"solitude","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Castle_Dour"],"assignment_rationale":"The Imperial headquarters is inside Solitude.","verification_status":"VERIFIED"},
-  {"id":"temple_of_the_divines","display_name":"Temple of the Divines","region_id":"solitude","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Temple_of_the_Divines"],"assignment_rationale":"The temple and Potema catacomb route are inside Solitude.","verification_status":"VERIFIED","aliases":["Potema's Catacombs"]},
-  {"id":"east_empire_company_warehouse","display_name":"East Empire Company Warehouse","region_id":"solitude","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:East_Empire_Company_Warehouse"],"assignment_rationale":"The warehouse is on Solitude's docks.","verification_status":"VERIFIED"},
-  {"id":"winking_skeever","display_name":"The Winking Skeever","region_id":"solitude","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Winking_Skeever"],"assignment_rationale":"The inn is inside Solitude.","verification_status":"VERIFIED"},
-  {"id":"katlas_farm","display_name":"Katla's Farm","region_id":"solitude","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Katla%27s_Farm"],"assignment_rationale":"The farm and carriage staging point are immediately outside Solitude.","verification_status":"VERIFIED"},
-  {"id":"thalmor_embassy","display_name":"Thalmor Embassy","region_id":"solitude","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Thalmor_Embassy"],"assignment_rationale":"The embassy is in Haafingar and is staged from Solitude.","verification_status":"VERIFIED","gated":true,"missable":true,"requires_special_access":true,"access_notes":"Full interior access is tied to Diplomatic Immunity and cannot normally be repeated after the quest."},
-  {"id":"reeking_cave","display_name":"Reeking Cave","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Reeking_Cave"],"assignment_rationale":"The cave is the embassy escape route in Haafingar and uses Solitude as its hub.","verification_status":"VERIFIED"},
-  {"id":"dainty_sload","display_name":"The Dainty Sload","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Dainty_Sload"],"assignment_rationale":"The ship is anchored off Solitude's coast.","verification_status":"VERIFIED"},
-  {"id":"volskygge","display_name":"Volskygge","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Volskygge"],"assignment_rationale":"The ruin is in western Haafingar and uses Solitude as its hub.","verification_status":"VERIFIED"},
-  {"id":"kilkreath_temple","display_name":"Kilkreath Temple","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Kilkreath_Temple"],"assignment_rationale":"The temple and Statue to Meridia are west of Solitude in Haafingar.","verification_status":"VERIFIED","aliases":["Statue to Meridia"],"gated":true,"access_notes":"The inner temple opens through The Break of Dawn."},
-  {"id":"dead_mens_respite","display_name":"Dead Men's Respite","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Dead_Men%27s_Respite"],"assignment_rationale":"The ruin is south of Solitude and is staged from the city.","verification_status":"VERIFIED"},
-  {"id":"deepwood_redoubt","display_name":"Deepwood Redoubt / Hag's End","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Deepwood_Redoubt","https://en.uesp.net/wiki/Skyrim:Hag%27s_End"],"assignment_rationale":"The connected complex is in western Haafingar and is staged from Solitude.","verification_status":"VERIFIED","aliases":["Hag's End"]},
-  {"id":"wolfskull_cave","display_name":"Wolfskull Cave","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Wolfskull_Cave"],"assignment_rationale":"The cave is in Haafingar northwest of Solitude.","verification_status":"VERIFIED"},
-  {"id":"dragon_bridge","display_name":"Dragon Bridge","region_id":"solitude","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Dragon_Bridge"],"assignment_rationale":"The settlement is in southern Haafingar and is served by Solitude.","verification_status":"VERIFIED"},
-  {"id":"penitus_oculatus_outpost","display_name":"Penitus Oculatus Outpost","region_id":"solitude","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Penitus_Oculatus_Outpost"],"assignment_rationale":"The outpost is at Dragon Bridge in Haafingar.","verification_status":"VERIFIED"},
-  {"id":"katariah","display_name":"The Katariah","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Katariah"],"assignment_rationale":"The Emperor's ship is anchored in the Solitude inlet.","verification_status":"VERIFIED","gated":true,"access_notes":"The ship is present and accessible during late Dark Brotherhood progression."},
-  {"id":"rimerock_burrow","display_name":"Rimerock Burrow","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Rimerock_Burrow"],"assignment_rationale":"The cave is in remote western Haafingar and uses Solitude as its hub.","verification_status":"VERIFIED"},
-  {"id":"fort_hraggstad","display_name":"Fort Hraggstad","region_id":"solitude","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Hraggstad"],"assignment_rationale":"The fort is west of Solitude in Haafingar.","verification_status":"VERIFIED"},
-
-  {"id":"dawnstar","display_name":"Dawnstar","region_id":"dawnstar","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Dawnstar"],"assignment_rationale":"The settlement is the principal hub of its namesake city region.","verification_status":"VERIFIED"},
-  {"id":"white_hall","display_name":"The White Hall","region_id":"dawnstar","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_White_Hall"],"assignment_rationale":"The palace is inside Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"heljarchen_hall","display_name":"Heljarchen Hall","region_id":"dawnstar","location_type":"BUILDING","content_source":"HEARTHFIRE","source_urls":["https://en.uesp.net/wiki/Skyrim:Heljarchen_Hall"],"assignment_rationale":"The Hearthfire homestead is on the southern Pale road and is administered from Dawnstar.","verification_status":"VERIFIED","gated":true,"access_notes":"The property becomes available after purchasing the Pale land and building the home."},
-  {"id":"windpeak_inn","display_name":"Windpeak Inn","region_id":"dawnstar","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Windpeak_Inn"],"assignment_rationale":"The inn is inside Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"nightcaller_temple","display_name":"Nightcaller Temple","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Nightcaller_Temple"],"assignment_rationale":"The temple overlooks Dawnstar from the eastern ridge.","verification_status":"VERIFIED","gated":true,"access_notes":"The intended route through the sealed temple opens during Waking Nightmare."},
-  {"id":"mythic_dawn_museum","display_name":"Mythic Dawn Museum","region_id":"dawnstar","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past"],"assignment_rationale":"The museum is inside Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"shrine_of_mehrunes_dagon","display_name":"Shrine of Mehrunes Dagon","region_id":"dawnstar","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Shrine_of_Mehrunes_Dagon"],"assignment_rationale":"The mountain shrine is reached most practically from Dawnstar.","verification_status":"VERIFIED","gated":true,"access_notes":"The shrine interior is opened through Pieces of the Past."},
-  {"id":"dawnstar_sanctuary","display_name":"Dawnstar Sanctuary","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Dawnstar_Sanctuary"],"assignment_rationale":"The sanctuary is on the coast immediately north of Dawnstar.","verification_status":"VERIFIED","gated":true,"access_notes":"Usable access is granted through Dark Brotherhood progression."},
-  {"id":"high_gate_ruins","display_name":"High Gate Ruins","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:High_Gate_Ruins"],"assignment_rationale":"Dawnstar is the approved northern staging hub for this geographically awkward ruin near several travel boundaries.","verification_status":"VERIFIED"},
-  {"id":"shearpoint","display_name":"Shearpoint","region_id":"dawnstar","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Shearpoint"],"assignment_rationale":"The dragon lair is in the Pale and is staged from Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"silverdrift_lair","display_name":"Silverdrift Lair","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Silverdrift_Lair"],"assignment_rationale":"The ruin is in the central Pale and is staged from Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"ironbind_barrow","display_name":"Ironbind Barrow","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Ironbind_Barrow"],"assignment_rationale":"The barrow is in the southern Pale and is staged from Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"skyborn_altar","display_name":"Skyborn Altar","region_id":"dawnstar","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Skyborn_Altar"],"assignment_rationale":"The dragon lair is in the southern Pale and is staged from Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"frostmere_crypt","display_name":"Frostmere Crypt","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Frostmere_Crypt"],"assignment_rationale":"The crypt is in the Pale southwest of Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"dimhollow_crypt","display_name":"Dimhollow Crypt","region_id":"dawnstar","location_type":"DUNGEON","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Dimhollow_Crypt"],"assignment_rationale":"The crypt is in the Pale southwest of Dawnstar.","verification_status":"VERIFIED","gated":true,"access_notes":"The deep crypt route becomes relevant and accessible through early Dawnguard progression."},
-  {"id":"frostflow_lighthouse","display_name":"Frostflow Lighthouse","region_id":"dawnstar","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Frostflow_Lighthouse"],"assignment_rationale":"Dawnstar is the approved staging hub for the lighthouse on the northern coast between Dawnstar and Winterhold.","verification_status":"VERIFIED"},
-  {"id":"mzinchaleft","display_name":"Mzinchaleft","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Mzinchaleft"],"assignment_rationale":"The ruin is southwest of Dawnstar in the Pale.","verification_status":"VERIFIED"},
-  {"id":"helas_folly","display_name":"Hela's Folly","region_id":"dawnstar","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Hela%27s_Folly"],"assignment_rationale":"The wreck is on the coast northeast of Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"fort_dunstad","display_name":"Fort Dunstad","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Dunstad"],"assignment_rationale":"The fort is in the southern Pale and belongs to Dawnstar's travel region.","verification_status":"VERIFIED"},
-  {"id":"pale_imperial_camp","display_name":"Pale Imperial Camp","region_id":"dawnstar","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Pale_Imperial_Camp"],"assignment_rationale":"The military camp coordinates Imperial operations in the Pale.","verification_status":"VERIFIED"},
-  {"id":"pale_stormcloak_camp","display_name":"Pale Stormcloak Camp","region_id":"dawnstar","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Pale_Stormcloak_Camp"],"assignment_rationale":"The military camp coordinates Stormcloak operations in the Pale.","verification_status":"VERIFIED"},
-
-  {"id":"winterhold","display_name":"Winterhold","region_id":"winterhold","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Winterhold"],"assignment_rationale":"The settlement is the principal hub of its namesake city region.","verification_status":"VERIFIED","aliases":["Town of Winterhold"]},
-  {"id":"college_of_winterhold","display_name":"College of Winterhold","region_id":"winterhold","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:College_of_Winterhold_(place)"],"assignment_rationale":"The College is attached to Winterhold and forms the region's principal service hub.","verification_status":"VERIFIED","aliases":["College courtyard","The Midden","Arch-Mage's Quarters"]},
-  {"id":"frozen_hearth","display_name":"The Frozen Hearth","region_id":"winterhold","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:The_Frozen_Hearth"],"assignment_rationale":"The inn is inside Winterhold.","verification_status":"VERIFIED"},
-  {"id":"saarthal","display_name":"Saarthal","region_id":"winterhold","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Saarthal"],"assignment_rationale":"The excavation is immediately southwest of Winterhold.","verification_status":"VERIFIED","gated":true,"access_notes":"The intended excavation entrance opens during Under Saarthal."},
-  {"id":"mount_anthor","display_name":"Mount Anthor","region_id":"winterhold","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Mount_Anthor"],"assignment_rationale":"The dragon lair is in the mountains southwest of Winterhold.","verification_status":"VERIFIED"},
-  {"id":"ysgramors_tomb","display_name":"Ysgramor's Tomb","region_id":"winterhold","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Ysgramor%27s_Tomb"],"assignment_rationale":"Winterhold is the practical mainland hub for the tomb on the northern coast.","verification_status":"VERIFIED","gated":true,"access_notes":"The ceremonial entrance is opened during late Companions progression."},
-  {"id":"hobs_fall_cave","display_name":"Hob's Fall Cave","region_id":"winterhold","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Hob%27s_Fall_Cave"],"assignment_rationale":"The cave is on the coast west of Winterhold.","verification_status":"VERIFIED"},
-  {"id":"yngvild","display_name":"Yngvild","region_id":"winterhold","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Yngvild"],"assignment_rationale":"Winterhold is the practical hub for the island ruin off the northern coast.","verification_status":"VERIFIED"},
-  {"id":"septimus_signus_outpost","display_name":"Septimus Signus's Outpost","region_id":"winterhold","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Septimus_Signus%27s_Outpost"],"assignment_rationale":"Winterhold is the practical coastal hub for the remote northern outpost.","verification_status":"VERIFIED"},
-  {"id":"shrine_of_azura","display_name":"Shrine of Azura","region_id":"winterhold","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Shrine_of_Azura"],"assignment_rationale":"The shrine is directly south of Winterhold.","verification_status":"VERIFIED"},
-  {"id":"fort_kastav","display_name":"Fort Kastav","region_id":"winterhold","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Kastav"],"assignment_rationale":"The fort is on the road south of Winterhold.","verification_status":"VERIFIED"},
-  {"id":"winterhold_imperial_camp","display_name":"Winterhold Imperial Camp","region_id":"winterhold","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Winterhold_Imperial_Camp"],"assignment_rationale":"The military camp coordinates Imperial operations in Winterhold.","verification_status":"VERIFIED"},
-
-  {"id":"windhelm","display_name":"Windhelm","region_id":"windhelm","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Windhelm"],"assignment_rationale":"The settlement is the principal hub of its namesake city region.","verification_status":"VERIFIED"},
-  {"id":"palace_of_the_kings","display_name":"Palace of the Kings","region_id":"windhelm","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Palace_of_the_Kings"],"assignment_rationale":"The palace is inside Windhelm.","verification_status":"VERIFIED"},
-  {"id":"hjerim","display_name":"Hjerim","region_id":"windhelm","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Hjerim"],"assignment_rationale":"The player home is inside Windhelm.","verification_status":"VERIFIED","gated":true,"access_notes":"Ownership and normal use depend on Blood on the Ice and Windhelm property progression."},
-  {"id":"house_clan_shatter_shield","display_name":"House of Clan Shatter-Shield","region_id":"windhelm","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:House_of_Clan_Shatter-Shield"],"assignment_rationale":"The house is inside Windhelm.","verification_status":"VERIFIED"},
-  {"id":"aretino_residence","display_name":"Aretino Residence","region_id":"windhelm","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Aretino_Residence"],"assignment_rationale":"The residence is inside Windhelm.","verification_status":"VERIFIED","aliases":["Aventus Aretino's house"]},
-  {"id":"mzulft","display_name":"Mzulft","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Mzulft"],"assignment_rationale":"Windhelm is the accepted major-city hub for the ruin southeast of Kynesgrove.","verification_status":"VERIFIED","gated":true,"access_notes":"The main ruin's intended route is tied to College quest progression."},
-  {"id":"bonestrewn_crest","display_name":"Bonestrewn Crest","region_id":"windhelm","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Bonestrewn_Crest"],"assignment_rationale":"The dragon lair is south of Windhelm in Eastmarch.","verification_status":"VERIFIED"},
-  {"id":"northwind_summit","display_name":"Northwind Summit","region_id":"riften","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Northwind_Summit"],"assignment_rationale":"Riften is the approved practical staging hub because the intuitive player approach runs through the Rift and Shor's Stone side.","verification_status":"VERIFIED"},
-  {"id":"forsaken_cave","display_name":"Forsaken Cave","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Forsaken_Cave"],"assignment_rationale":"Windhelm is the approved eastern staging hub for the cave on the long Windhelm-to-Dawnstar corridor.","verification_status":"VERIFIED"},
-  {"id":"snow_veil_sanctum","display_name":"Snow Veil Sanctum","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Snow_Veil_Sanctum"],"assignment_rationale":"The ruin is northeast of Windhelm and is physically staged from Eastmarch despite its Riften questline.","verification_status":"VERIFIED","gated":true,"access_notes":"The sealed door is opened during Speaking With Silence."},
-  {"id":"yngol_barrow","display_name":"Yngol Barrow","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Yngol_Barrow"],"assignment_rationale":"The barrow is northeast of Windhelm on the Eastmarch coast.","verification_status":"VERIFIED"},
-  {"id":"stony_creek_cave","display_name":"Stony Creek Cave","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Stony_Creek_Cave"],"assignment_rationale":"The cave is in eastern Eastmarch and is staged from Windhelm.","verification_status":"VERIFIED"},
-  {"id":"raldbthar","display_name":"Raldbthar","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Raldbthar"],"assignment_rationale":"The ruin is west of Windhelm in Eastmarch.","verification_status":"VERIFIED"},
-  {"id":"uttering_hills_cave","display_name":"Uttering Hills Cave","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Uttering_Hills_Cave"],"assignment_rationale":"The cave is west of Windhelm in Eastmarch.","verification_status":"VERIFIED"},
-  {"id":"fort_amol","display_name":"Fort Amol","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Amol"],"assignment_rationale":"The fort is in southern Eastmarch and uses Windhelm as its city hub.","verification_status":"VERIFIED"},
-  {"id":"kynesgrove","display_name":"Kynesgrove","region_id":"windhelm","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Kynesgrove"],"assignment_rationale":"The settlement is south of Windhelm in Eastmarch.","verification_status":"VERIFIED"},
-  {"id":"sacellum_of_boethiah","display_name":"Sacellum of Boethiah","region_id":"windhelm","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Sacellum_of_Boethiah"],"assignment_rationale":"The shrine is in the mountains east of Windhelm.","verification_status":"VERIFIED"},
-  {"id":"morvunskar","display_name":"Morvunskar","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Morvunskar"],"assignment_rationale":"The fort is southwest of Windhelm in Eastmarch.","verification_status":"VERIFIED"},
-  {"id":"ansilvund","display_name":"Ansilvund","region_id":"windhelm","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Ansilvund"],"assignment_rationale":"The ruin is in southern Eastmarch and is staged from Windhelm.","verification_status":"VERIFIED"},
-  {"id":"eastmarch_imperial_camp","display_name":"Eastmarch Imperial Camp","region_id":"windhelm","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Eastmarch_Imperial_Camp"],"assignment_rationale":"The military camp coordinates Imperial operations in Eastmarch.","verification_status":"VERIFIED"},
-  {"id":"angas_mill","display_name":"Anga's Mill","region_id":"windhelm","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Anga%27s_Mill"],"assignment_rationale":"The mill is west of Windhelm and is most practical from Eastmarch.","verification_status":"VERIFIED"},
-
-  {"id":"high_hrothgar","display_name":"High Hrothgar","region_id":"high_hrothgar","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:High_Hrothgar"],"assignment_rationale":"The monastery is the central destination of the dedicated mountain expedition region.","verification_status":"VERIFIED"},
-  {"id":"throat_of_the_world","display_name":"Throat of the World","region_id":"high_hrothgar","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Throat_of_the_World"],"assignment_rationale":"The summit is reached through High Hrothgar and belongs to the same dedicated mountain expedition.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"The upper mountain route is opened through main-quest progression and Clear Skies."},
-
-  {"id":"labyrinthian","display_name":"Labyrinthian","region_id":"labyrinthian","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Labyrinthian"],"assignment_rationale":"The complex is the anchor destination of its dedicated expedition region.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"The principal quest dungeon requires the Torc of Labyrinthian from College progression."},
-  {"id":"bromjunaar_sanctuary","display_name":"Bromjunaar Sanctuary","region_id":"labyrinthian","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Bromjunaar_Sanctuary"],"assignment_rationale":"The mask sanctuary is a distinct objective-bearing chamber within the Labyrinthian complex.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"The Wooden Mask transports the player to the restored sanctuary state."},
-  {"id":"shalidors_maze","display_name":"Shalidor's Maze","region_id":"labyrinthian","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Shalidor%27s_Maze"],"assignment_rationale":"The maze is a distinct objective-bearing dungeon in the Labyrinthian complex.","verification_status":"VERIFIED"},
-
-  {"id":"blackreach","display_name":"Blackreach","region_id":"blackreach","location_type":"WORLDSPACE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Blackreach"],"assignment_rationale":"The underground worldspace is the anchor of its dedicated expedition region.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"Initial entry requires an attunement sphere and access through a connected Dwemer ruin."},
-  {"id":"tower_of_mzark","display_name":"Tower of Mzark","region_id":"blackreach","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Tower_of_Mzark"],"assignment_rationale":"The tower is a distinct main-quest destination within Blackreach.","verification_status":"VERIFIED"},
-  {"id":"sinderions_field_laboratory","display_name":"Sinderion's Field Laboratory","region_id":"blackreach","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Sinderion%27s_Field_Laboratory"],"assignment_rationale":"The laboratory is a distinct collectible and reward destination within Blackreach.","verification_status":"VERIFIED"},
-
-  {"id":"skuldafn","display_name":"Skuldafn","region_id":"skuldafn","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Skuldafn"],"assignment_rationale":"The temple is the sole anchor of its one-way special-destination region.","verification_status":"VERIFIED","gated":true,"one_way":true,"missable":true,"requires_special_access":true,"access_notes":"Odahviing carries the player from Dragonsreach; normal return is impossible and the destination cannot be revisited after leaving.","warning_text":"ONE-WAY / MISSABLE: finish every objective before entering the portal to Sovngarde."},
-  {"id":"sovngarde","display_name":"Sovngarde","region_id":"sovngarde","location_type":"WORLDSPACE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Sovngarde_(place)"],"assignment_rationale":"The worldspace is the sole anchor of its special-destination region.","verification_status":"VERIFIED","gated":true,"one_way":true,"missable":true,"requires_special_access":true,"access_notes":"Sovngarde is reached through the Skuldafn portal during the main quest and cannot normally be revisited after departure."},
-
-  {"id":"castle_volkihar","display_name":"Castle Volkihar","region_id":"castle_volkihar","location_type":"BUILDING","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Castle_Volkihar"],"assignment_rationale":"The island castle is the anchor of its dedicated special-destination region.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"Initial access and usable interiors depend on Dawnguard quest progression and faction state."},
-  {"id":"soul_cairn","display_name":"Soul Cairn","region_id":"soul_cairn","location_type":"WORLDSPACE","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Soul_Cairn"],"assignment_rationale":"The plane is the anchor of its dedicated special-destination region.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"Entry requires the portal beneath Castle Volkihar and the quest's soul-trap or vampire access condition."},
-  {"id":"darkfall_cave","display_name":"Darkfall Cave","region_id":"forgotten_vale","location_type":"DUNGEON","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Darkfall_Cave"],"assignment_rationale":"The cave is the quest-gated approach to the Forgotten Vale and belongs to the same self-contained expedition.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"The passage is used during Touching the Sky and leads into the Forgotten Vale route."},
-  {"id":"forgotten_vale","display_name":"Forgotten Vale","region_id":"forgotten_vale","location_type":"WORLDSPACE","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Forgotten_Vale"],"assignment_rationale":"The worldspace is the anchor of its dedicated special-destination region.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"The Vale is reached through Darkfall Cave during Dawnguard progression."},
-  {"id":"forgotten_vale_inner_sanctum","display_name":"Forgotten Vale Inner Sanctum","region_id":"forgotten_vale","location_type":"BUILDING","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Forgotten_Vale"],"assignment_rationale":"The Inner Sanctum is a distinct end destination within the long Forgotten Vale expedition.","verification_status":"VERIFIED","gated":true,"access_notes":"Access requires completing the Wayshrine pilgrimage in the Vale."},
-
-  {"id":"raven_rock","display_name":"Raven Rock","region_id":"solstheim_raven_rock","location_type":"SETTLEMENT","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Raven_Rock"],"assignment_rationale":"Raven Rock is the approved practical hub for southern Solstheim.","verification_status":"VERIFIED"},
-  {"id":"severin_manor","display_name":"Severin Manor","region_id":"solstheim_raven_rock","location_type":"BUILDING","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Severin_Manor"],"assignment_rationale":"The player home is inside Raven Rock and belongs to its approved travel region.","verification_status":"VERIFIED","gated":true,"access_notes":"The home is awarded through Raven Rock quest progression rather than purchased."},
-  {"id":"raven_rock_mine","display_name":"Raven Rock Mine / Bloodskal Barrow","region_id":"solstheim_raven_rock","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Raven_Rock_Mine","https://en.uesp.net/wiki/Skyrim:Bloodskal_Barrow"],"assignment_rationale":"The connected mine and barrow begin inside Raven Rock and belong to its southern hub region.","verification_status":"VERIFIED","aliases":["Bloodskal Barrow"]},
-  {"id":"kolbjorn_barrow","display_name":"Kolbjorn Barrow","region_id":"solstheim_raven_rock","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Kolbjorn_Barrow"],"assignment_rationale":"The barrow is southeast of Raven Rock and is repeatedly staged from that settlement.","verification_status":"VERIFIED","gated":true,"access_notes":"Excavation stages open progressively during Unearthed."},
-  {"id":"tel_mithryn","display_name":"Tel Mithryn","region_id":"solstheim_raven_rock","location_type":"SETTLEMENT","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Tel_Mithryn"],"assignment_rationale":"The southern settlement belongs to Raven Rock / South under the approved two-region model rather than creating a third micro-region.","verification_status":"VERIFIED"},
-  {"id":"nchardak","display_name":"Nchardak","region_id":"solstheim_raven_rock","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Nchardak"],"assignment_rationale":"The southeastern ruin is reached with Neloth from Tel Mithryn and follows that settlement into the Raven Rock / South planning region.","verification_status":"VERIFIED","gated":true,"access_notes":"Neloth and Dragonborn quest progression provide the intended access to the reading room."},
-  {"id":"temple_of_miraak","display_name":"Temple of Miraak","region_id":"solstheim_raven_rock","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Temple_of_Miraak"],"assignment_rationale":"The central-southern temple is assigned to Raven Rock / South for consistent staging under the approved two-region model.","verification_status":"VERIFIED"},
-  {"id":"earth_stone","display_name":"Earth Stone","region_id":"solstheim_raven_rock","location_type":"EXTERIOR_SITE","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Earth_Stone"],"assignment_rationale":"The stone is immediately outside Raven Rock.","verification_status":"VERIFIED"},
-  {"id":"water_stone","display_name":"Water Stone","region_id":"solstheim_raven_rock","location_type":"EXTERIOR_SITE","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Water_Stone"],"assignment_rationale":"The southwestern stone is most practically staged from Raven Rock.","verification_status":"VERIFIED"},
-  {"id":"fort_frostmoth","display_name":"Fort Frostmoth","region_id":"solstheim_raven_rock","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Fort_Frostmoth"],"assignment_rationale":"The fort is southeast of Raven Rock and belongs to its approved southern travel region.","verification_status":"VERIFIED"},
-  {"id":"ashfallow_citadel","display_name":"Ashfallow Citadel","region_id":"solstheim_raven_rock","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Ashfallow_Citadel"],"assignment_rationale":"The citadel is north of Raven Rock but its fixed quest and property progression make Raven Rock / South the practical staging region.","verification_status":"VERIFIED"},
-
-  {"id":"skaal_village","display_name":"Skaal Village","region_id":"solstheim_north","location_type":"SETTLEMENT","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Skaal_Village"],"assignment_rationale":"The village is the approved staging hub for northern Solstheim expeditions.","verification_status":"VERIFIED"},
-  {"id":"saerings_watch","display_name":"Saering's Watch","region_id":"solstheim_north","location_type":"EXTERIOR_SITE","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Saering%27s_Watch"],"assignment_rationale":"The far-northern dragon lair is most practically staged from Skaal Village.","verification_status":"VERIFIED"},
-  {"id":"benkongerike","display_name":"Benkongerike","region_id":"solstheim_north","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Benkongerike"],"assignment_rationale":"The northern cave is most practically staged from Skaal Village.","verification_status":"VERIFIED"},
-  {"id":"white_ridge_barrow","display_name":"White Ridge Barrow","region_id":"solstheim_north","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:White_Ridge_Barrow"],"assignment_rationale":"The northern barrow is most practically staged from Skaal Village.","verification_status":"VERIFIED"},
-  {"id":"vahloks_tomb","display_name":"Vahlok's Tomb","region_id":"solstheim_north","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Vahlok%27s_Tomb"],"assignment_rationale":"The tomb follows its Skaal quest staging into the approved Skaal / North planning region despite its southerly position.","verification_status":"VERIFIED","gated":true,"access_notes":"The intended excavation route opens during Lost Legacy."},
-  {"id":"wind_stone","display_name":"Wind Stone","region_id":"solstheim_north","location_type":"EXTERIOR_SITE","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Wind_Stone"],"assignment_rationale":"The stone is immediately southwest of Skaal Village.","verification_status":"VERIFIED"},
-  {"id":"beast_stone","display_name":"Beast Stone","region_id":"solstheim_north","location_type":"EXTERIOR_SITE","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Beast_Stone"],"assignment_rationale":"The stone is in northern Solstheim and is staged from Skaal Village.","verification_status":"VERIFIED"},
-  {"id":"sun_stone","display_name":"Sun Stone","region_id":"solstheim_north","location_type":"EXTERIOR_SITE","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Sun_Stone"],"assignment_rationale":"The stone is in northern Solstheim and is staged from Skaal Village.","verification_status":"VERIFIED"},
-  {"id":"tree_stone","display_name":"Tree Stone","region_id":"solstheim_north","location_type":"EXTERIOR_SITE","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Tree_Stone"],"assignment_rationale":"Although adjacent to the Temple of Miraak, the stone belongs to the Skaal-centered All-Maker Stone circuit and is staged from Skaal / North.","verification_status":"VERIFIED"},
-  {"id":"thirsk_mead_hall","display_name":"Thirsk Mead Hall","region_id":"solstheim_north","location_type":"BUILDING","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Thirsk_Mead_Hall"],"assignment_rationale":"The hall is near Skaal Village and belongs to the northern planning region regardless of quest outcome.","verification_status":"VERIFIED"},
-  {"id":"hrothmunds_barrow","display_name":"Hrothmund's Barrow","region_id":"solstheim_north","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Hrothmund%27s_Barrow"],"assignment_rationale":"The northern quest site follows its Skaal/Thirsk route into the approved Skaal / North planning region.","verification_status":"VERIFIED","gated":true,"access_notes":"The intended entry is tied to Thirsk faction progression."},
-  {"id":"glacial_cave","display_name":"Glacial Cave","region_id":"solstheim_north","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Glacial_Cave"],"assignment_rationale":"The remote northwestern cave is part of the fixed Summon Karstaag acquisition route and is staged as a Skaal / North expedition.","verification_status":"VERIFIED"},
-  {"id":"castle_karstaag_ruins","display_name":"Castle Karstaag Ruins","region_id":"solstheim_north","location_type":"DUNGEON","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Castle_Karstaag_Ruins"],"assignment_rationale":"The northwestern ruins are the fixed completion destination for acquiring Summon Karstaag and are staged as a Skaal / North expedition.","verification_status":"VERIFIED"},
-
-  {"id":"apocrypha","display_name":"Apocrypha","region_id":"apocrypha","location_type":"WORLDSPACE","content_source":"DRAGONBORN","source_urls":["https://en.uesp.net/wiki/Skyrim:Apocrypha"],"assignment_rationale":"The realm is the sole anchor of its dedicated special-destination region; individual Black Book instances remain one player-recognized destination.","verification_status":"VERIFIED","gated":true,"requires_special_access":true,"access_notes":"Entry occurs through specific Black Books, and each book opens its corresponding part of the realm."},
-  {"id":"alftand","display_name":"Alftand","region_id":"winterhold","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Alftand"],"assignment_rationale":"The ruin is southwest of Winterhold and provides the main-quest approach to Blackreach.","verification_status":"VERIFIED"},
-  {"id":"driftshade_refuge","display_name":"Driftshade Refuge","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Driftshade_Refuge"],"assignment_rationale":"The refuge is in the northern Pale and is staged from Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"irkngthand","display_name":"Irkngthand","region_id":"dawnstar","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Irkngthand"],"assignment_rationale":"Dawnstar is the approved planning hub for the ruin's Pale-side position despite Windhelm being a plausible approach.","verification_status":"VERIFIED","gated":true,"access_notes":"The intended entrance route opens during Blindsighted."},
-  {"id":"nightgate_inn","display_name":"Nightgate Inn","region_id":"dawnstar","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Nightgate_Inn"],"assignment_rationale":"The inn is on the southern Pale road and is most practically grouped with Dawnstar.","verification_status":"VERIFIED"},
-  {"id":"redwater_den","display_name":"Redwater Den","region_id":"riften","location_type":"DUNGEON","content_source":"DAWNGUARD","source_urls":["https://en.uesp.net/wiki/Skyrim:Redwater_Den"],"assignment_rationale":"The den is in the Rift and is staged from Riften.","verification_status":"VERIFIED"},
-  {"id":"sarethi_farm","display_name":"Sarethi Farm","region_id":"riften","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Sarethi_Farm"],"assignment_rationale":"The farm is northwest of Riften and is the fixed return point for the crimson nirnroot reward.","verification_status":"VERIFIED"},
-  {"id":"glenmoril_coven","display_name":"Glenmoril Coven","region_id":"falkreath","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Glenmoril_Coven"],"assignment_rationale":"The cave is in western Falkreath Hold and is best staged from Falkreath.","verification_status":"VERIFIED"},
-  {"id":"nightingale_hall","display_name":"Nightingale Hall","region_id":"riften","location_type":"DUNGEON","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Nightingale_Hall"],"assignment_rationale":"The hall is southeast of Riften and is the fixed Nightingale initiation destination.","verification_status":"VERIFIED","gated":true,"access_notes":"The intended entrance opens during Trinity Restored."},
-  {"id":"jorgens_house","display_name":"Jorgen and Lami's House","region_id":"morthal","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Jorgen_and_Lami%27s_House"],"assignment_rationale":"The house is inside Morthal and contains a fixed Mehrunes' Razor fragment objective.","verification_status":"VERIFIED"},
-  {"id":"rorikstead","display_name":"Rorikstead","region_id":"whiterun","location_type":"SETTLEMENT","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Rorikstead"],"assignment_rationale":"Whiterun is the practical major-city hub for the western plains settlement.","verification_status":"VERIFIED"},
-  {"id":"witchmist_grove","display_name":"Witchmist Grove","region_id":"windhelm","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Witchmist_Grove"],"assignment_rationale":"The grove is in Eastmarch south of Windhelm and is best staged from that city.","verification_status":"VERIFIED"},
-  {"id":"shrine_of_talos_whiterun","display_name":"Shrine of Talos near Shimmermist Cave","region_id":"whiterun","location_type":"EXTERIOR_SITE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Elisif%27s_Tribute"],"assignment_rationale":"The fixed tribute shrine is northeast of Whiterun and is most practically staged from that city.","verification_status":"VERIFIED","aliases":["Elisif's tribute shrine"]},
-  {"id":"bards_college","display_name":"Bards College","region_id":"solitude","location_type":"BUILDING","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Bards_College"],"assignment_rationale":"The College is inside Solitude and is the return point for the quest that grants Gift of Gab.","verification_status":"VERIFIED"},
-  {"id":"misty_grove","display_name":"Misty Grove","region_id":"misty_grove","location_type":"WORLDSPACE","content_source":"SKYRIM","source_urls":["https://en.uesp.net/wiki/Skyrim:Misty_Grove"],"assignment_rationale":"The pocket realm is the sole anchor of its special-destination region.","verification_status":"VERIFIED","gated":true,"one_way":true,"missable":true,"requires_special_access":true,"access_notes":"The realm is reached through Morvunskar during A Night to Remember and cannot normally be revisited after leaving."}
+  {
+    "id": "whiterun",
+    "display_name": "Whiterun",
+    "region_id": "whiterun",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Whiterun"
+    ],
+    "assignment_rationale": "The settlement is the principal hub of its namesake city region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "dragonsreach",
+    "display_name": "Dragonsreach",
+    "region_id": "whiterun",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dragonsreach"
+    ],
+    "assignment_rationale": "The palace is inside Whiterun and uses Whiterun as its travel hub.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "breezehome",
+    "display_name": "Breezehome",
+    "region_id": "whiterun",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Breezehome"
+    ],
+    "assignment_rationale": "The player home is inside Whiterun.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The interior becomes a usable player home only after purchase."
+  },
+  {
+    "id": "jorrvaskr",
+    "display_name": "Jorrvaskr",
+    "region_id": "whiterun",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Jorrvaskr"
+    ],
+    "assignment_rationale": "The Companions' headquarters is inside Whiterun.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "underforge",
+    "display_name": "The Underforge",
+    "region_id": "whiterun",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Underforge"
+    ],
+    "assignment_rationale": "This quest-significant chamber is beneath Jorrvaskr in Whiterun.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "Normal access is granted through Companions quest progression."
+  },
+  {
+    "id": "hall_of_the_dead_whiterun",
+    "display_name": "Whiterun Hall of the Dead",
+    "region_id": "whiterun",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Hall_of_the_Dead_(Whiterun)"
+    ],
+    "assignment_rationale": "The building is inside Whiterun.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Whiterun Catacombs"
+    ]
+  },
+  {
+    "id": "riverwood",
+    "display_name": "Riverwood",
+    "region_id": "whiterun",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Riverwood"
+    ],
+    "assignment_rationale": "Whiterun is the accepted practical hub for Riverwood.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "riverwood_trader",
+    "display_name": "Riverwood Trader",
+    "region_id": "whiterun",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Riverwood_Trader"
+    ],
+    "assignment_rationale": "The shop is in Riverwood, which belongs to the Whiterun planning region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "sleeping_giant_inn",
+    "display_name": "Sleeping Giant Inn",
+    "region_id": "whiterun",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Sleeping_Giant_Inn"
+    ],
+    "assignment_rationale": "The inn is in Riverwood, within the Whiterun planning region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "bleak_falls_barrow",
+    "display_name": "Bleak Falls Barrow",
+    "region_id": "whiterun",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Bleak_Falls_Barrow"
+    ],
+    "assignment_rationale": "Whiterun is the accepted practical hub for the Riverwood and Bleak Falls corridor.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "western_watchtower",
+    "display_name": "Western Watchtower",
+    "region_id": "whiterun",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Western_Watchtower"
+    ],
+    "assignment_rationale": "The watchtower is immediately outside Whiterun.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fellglow_keep",
+    "display_name": "Fellglow Keep",
+    "region_id": "whiterun",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fellglow_Keep"
+    ],
+    "assignment_rationale": "Whiterun is the accepted practical hub for the keep east-northeast of the city.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "dustmans_cairn",
+    "display_name": "Dustman's Cairn",
+    "region_id": "whiterun",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dustman%27s_Cairn"
+    ],
+    "assignment_rationale": "The cairn lies in Whiterun's western plains and is naturally staged from Whiterun.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "rannveigs_fast",
+    "display_name": "Rannveig's Fast",
+    "region_id": "whiterun",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Rannveig%27s_Fast"
+    ],
+    "assignment_rationale": "The ruin is west of Whiterun and is most practically staged from that city.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "volunruud",
+    "display_name": "Volunruud",
+    "region_id": "whiterun",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Volunruud"
+    ],
+    "assignment_rationale": "Whiterun is the approved staging hub because its northern road network provides the most useful route to the ruin.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "halted_stream_camp",
+    "display_name": "Halted Stream Camp",
+    "region_id": "whiterun",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Halted_Stream_Camp"
+    ],
+    "assignment_rationale": "The camp is immediately north of Whiterun.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "korvanjund",
+    "display_name": "Korvanjund",
+    "region_id": "whiterun",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Korvanjund"
+    ],
+    "assignment_rationale": "Whiterun is the approved practical hub because its northern road network provides the most useful direct approach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "honningbrew_meadery",
+    "display_name": "Honningbrew Meadery",
+    "region_id": "whiterun",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Honningbrew_Meadery"
+    ],
+    "assignment_rationale": "The meadery is directly southeast of Whiterun.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fort_greymoor",
+    "display_name": "Fort Greymoor",
+    "region_id": "whiterun",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Greymoor"
+    ],
+    "assignment_rationale": "The fort is on Whiterun's western plain.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "falkreath",
+    "display_name": "Falkreath",
+    "region_id": "falkreath",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Falkreath"
+    ],
+    "assignment_rationale": "The settlement is the principal hub of its namesake city region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "falkreath_jarl_longhouse",
+    "display_name": "Falkreath Jarl's Longhouse",
+    "region_id": "falkreath",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Jarl%27s_Longhouse_(Falkreath)"
+    ],
+    "assignment_rationale": "The longhouse is inside Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "falkreath_jail",
+    "display_name": "Falkreath Jail",
+    "region_id": "falkreath",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Falkreath_Barracks"
+    ],
+    "assignment_rationale": "The jail is part of Falkreath's barracks complex.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Falkreath Barracks"
+    ]
+  },
+  {
+    "id": "helgen_keep",
+    "display_name": "Helgen Keep",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Helgen_Keep"
+    ],
+    "assignment_rationale": "Falkreath is the accepted practical hub for Helgen.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Helgen"
+    ]
+  },
+  {
+    "id": "ancients_ascent",
+    "display_name": "Ancient's Ascent",
+    "region_id": "falkreath",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ancient%27s_Ascent"
+    ],
+    "assignment_rationale": "The dragon lair is in the southern mountains of Falkreath's travel area.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "shriekwind_bastion",
+    "display_name": "Shriekwind Bastion",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Shriekwind_Bastion"
+    ],
+    "assignment_rationale": "The ruin is directly north of Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "sunderstone_gorge",
+    "display_name": "Sunderstone Gorge",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Sunderstone_Gorge"
+    ],
+    "assignment_rationale": "Falkreath is the practical southern staging hub for the gorge.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "dark_brotherhood_sanctuary",
+    "display_name": "Dark Brotherhood Sanctuary",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood_Sanctuary"
+    ],
+    "assignment_rationale": "The sanctuary entrance is immediately west of Falkreath.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Falkreath Sanctuary"
+    ],
+    "gated": true,
+    "access_notes": "Normal entry requires Dark Brotherhood quest access or the destroy branch password."
+  },
+  {
+    "id": "pinewatch",
+    "display_name": "Pinewatch",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Pinewatch"
+    ],
+    "assignment_rationale": "The homestead and hidden dungeon are northeast of Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "bloated_mans_grotto",
+    "display_name": "Bloated Man's Grotto",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Bloated_Man%27s_Grotto"
+    ],
+    "assignment_rationale": "The grotto is in Falkreath's northern forest.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "lakeview_manor",
+    "display_name": "Lakeview Manor",
+    "region_id": "falkreath",
+    "location_type": "BUILDING",
+    "content_source": "HEARTHFIRE",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Lakeview_Manor"
+    ],
+    "assignment_rationale": "The Hearthfire homestead is on Falkreath's northern lake road.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The property becomes available after purchasing the Falkreath hold land and building the home."
+  },
+  {
+    "id": "gallows_rock",
+    "display_name": "Gallows Rock",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Gallows_Rock"
+    ],
+    "assignment_rationale": "The fort is in the eastern Falkreath forest and is best staged from Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ancestor_glade",
+    "display_name": "Ancestor Glade",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ancestor_Glade"
+    ],
+    "assignment_rationale": "The glade is in Falkreath's southern mountains.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "cracked_tusk_keep",
+    "display_name": "Cracked Tusk Keep",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Cracked_Tusk_Keep"
+    ],
+    "assignment_rationale": "The keep is west of Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "haemars_shame",
+    "display_name": "Haemar's Shame",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Haemar%27s_Shame"
+    ],
+    "assignment_rationale": "The cave lies on the Falkreath-to-Riften mountain road and is most practical from Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "knifepoint_ridge",
+    "display_name": "Knifepoint Ridge",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Knifepoint_Ridge"
+    ],
+    "assignment_rationale": "The mine is in western Falkreath Hold and is staged from Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ilinaltas_deep",
+    "display_name": "Ilinalta's Deep",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ilinalta%27s_Deep"
+    ],
+    "assignment_rationale": "The submerged fort is in Lake Ilinalta north of Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "twilight_sepulcher",
+    "display_name": "Twilight Sepulcher",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Twilight_Sepulcher"
+    ],
+    "assignment_rationale": "The remote ruin lies in western Falkreath Hold and is best staged from Falkreath.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The inner pilgrimage route is tied to late Thieves Guild progression."
+  },
+  {
+    "id": "fort_neugrad",
+    "display_name": "Fort Neugrad",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Neugrad"
+    ],
+    "assignment_rationale": "The fort is immediately north of Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "falkreath_stormcloak_camp",
+    "display_name": "Falkreath Stormcloak Camp",
+    "region_id": "falkreath",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Falkreath_Stormcloak_Camp"
+    ],
+    "assignment_rationale": "The military camp coordinates operations in the Falkreath region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "half_moon_mill",
+    "display_name": "Half-Moon Mill",
+    "region_id": "falkreath",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Half-Moon_Mill"
+    ],
+    "assignment_rationale": "The mill is on Lake Ilinalta within Falkreath's practical travel area.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "riften",
+    "display_name": "Riften",
+    "region_id": "riften",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Riften"
+    ],
+    "assignment_rationale": "The settlement is the principal hub of its namesake city region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "mistveil_keep",
+    "display_name": "Mistveil Keep",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Mistveil_Keep"
+    ],
+    "assignment_rationale": "The palace is inside Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "honeyside",
+    "display_name": "Honeyside",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Honeyside"
+    ],
+    "assignment_rationale": "The player home is inside Riften.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The interior becomes a usable player home only after purchase."
+  },
+  {
+    "id": "scorched_hammer",
+    "display_name": "The Scorched Hammer",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Scorched_Hammer"
+    ],
+    "assignment_rationale": "Balimund's forge is inside Riften.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Balimund's forge"
+    ]
+  },
+  {
+    "id": "honorhall_orphanage",
+    "display_name": "Honorhall Orphanage",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Honorhall_Orphanage"
+    ],
+    "assignment_rationale": "The orphanage is inside Riften.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Honorhall"
+    ]
+  },
+  {
+    "id": "temple_of_mara",
+    "display_name": "Temple of Mara",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Temple_of_Mara"
+    ],
+    "assignment_rationale": "The temple is inside Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "riften_fishery",
+    "display_name": "Riften Fishery",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Riften_Fishery"
+    ],
+    "assignment_rationale": "The fishery is directly outside Riften's walls.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "riften_warehouse",
+    "display_name": "Riften Warehouse",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Riften_Warehouse"
+    ],
+    "assignment_rationale": "The warehouse is on Riften's docks.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The warehouse is normally unlocked during the Riften skooma investigation."
+  },
+  {
+    "id": "ratway",
+    "display_name": "The Ratway",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Ratway"
+    ],
+    "assignment_rationale": "The sewer complex is beneath Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ragged_flagon",
+    "display_name": "The Ragged Flagon",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Ragged_Flagon"
+    ],
+    "assignment_rationale": "The Thieves Guild hub is within Riften's Ratway.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "riftweald_manor",
+    "display_name": "Riftweald Manor",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Riftweald_Manor"
+    ],
+    "assignment_rationale": "The manor is inside Riften.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "Quest progression provides the intended route through the secured manor."
+  },
+  {
+    "id": "goldenglow_estate",
+    "display_name": "Goldenglow Estate",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Goldenglow_Estate"
+    ],
+    "assignment_rationale": "The estate is on Lake Honrich immediately west of Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "black_briar_lodge",
+    "display_name": "Black-Briar Lodge",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Black-Briar_Lodge"
+    ],
+    "assignment_rationale": "The lodge is east of Riften in the central Rift.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "cragslane_cavern",
+    "display_name": "Cragslane Cavern",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Cragslane_Cavern"
+    ],
+    "assignment_rationale": "The cavern is north of Riften and part of its skooma-trade route.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ivarstead",
+    "display_name": "Ivarstead",
+    "region_id": "riften",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ivarstead"
+    ],
+    "assignment_rationale": "For ordinary settlement work, Riften is the practical city hub; the separate mountain region begins with the High Hrothgar climb.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "shroud_hearth_barrow",
+    "display_name": "Shroud Hearth Barrow",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Shroud_Hearth_Barrow"
+    ],
+    "assignment_rationale": "The barrow is immediately beside Ivarstead and uses Riften as its ordinary city hub.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "angarvunde",
+    "display_name": "Angarvunde",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Angarvunde"
+    ],
+    "assignment_rationale": "The ruin is west of Riften in the central Rift.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "lost_tongue_overlook",
+    "display_name": "Lost Tongue Overlook",
+    "region_id": "riften",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Lost_Tongue_Overlook"
+    ],
+    "assignment_rationale": "The dragon lair is in the mountains south of Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "autumnwatch_tower",
+    "display_name": "Autumnwatch Tower",
+    "region_id": "riften",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Autumnwatch_Tower"
+    ],
+    "assignment_rationale": "The towers are in the southern Rift and are staged from Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "arcwind_point",
+    "display_name": "Arcwind Point",
+    "region_id": "riften",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Arcwind_Point"
+    ],
+    "assignment_rationale": "Riften is the approved practical hub for the Ivarstead/Rift-side approach; the site is not part of the High Hrothgar travel objective.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "forelhost",
+    "display_name": "Forelhost",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Forelhost"
+    ],
+    "assignment_rationale": "The ruin is southeast of Riften and is staged from that city.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "largashbur",
+    "display_name": "Largashbur",
+    "region_id": "riften",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Largashbur"
+    ],
+    "assignment_rationale": "The stronghold is in the southern Rift and is best staged from Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fallowstone_cave",
+    "display_name": "Fallowstone Cave",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fallowstone_Cave"
+    ],
+    "assignment_rationale": "The cave is northeast of Riften and is the mainland approach to Giant's Grove.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Giant's Grove route"
+    ]
+  },
+  {
+    "id": "ruins_of_bthalft",
+    "display_name": "Ruins of Bthalft",
+    "region_id": "riften",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ruins_of_Bthalft"
+    ],
+    "assignment_rationale": "The ruins are west of Riften in the Rift.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "aetherium_forge",
+    "display_name": "Aetherium Forge",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Aetherium_Forge"
+    ],
+    "assignment_rationale": "The forge is accessed beneath the Ruins of Bthalft in the Riften travel region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "The forge elevator is activated only after assembling the Aetherium Crest during Lost to the Ages."
+  },
+  {
+    "id": "avanchnzel",
+    "display_name": "Avanchnzel",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Avanchnzel"
+    ],
+    "assignment_rationale": "The ruin is in the mountains southwest of Riften.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The intended entrance route opens through the Unfathomable Depths quest."
+  },
+  {
+    "id": "fort_greenwall",
+    "display_name": "Fort Greenwall",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Greenwall"
+    ],
+    "assignment_rationale": "The fort is directly north of Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "rift_imperial_camp",
+    "display_name": "Rift Imperial Camp",
+    "region_id": "riften",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Rift_Imperial_Camp"
+    ],
+    "assignment_rationale": "The military camp coordinates Imperial operations in the Rift.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fort_dawnguard",
+    "display_name": "Fort Dawnguard",
+    "region_id": "riften",
+    "location_type": "BUILDING",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Dawnguard"
+    ],
+    "assignment_rationale": "Riften is the practical mainland hub for the Dayspring Canyon entrance and repeated travel to the fort.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Dayspring Canyon"
+    ],
+    "requires_special_access": true,
+    "access_notes": "The fort is reached through the unmarked Dayspring Canyon entrance east of Riften."
+  },
+  {
+    "id": "forebears_holdout",
+    "display_name": "Forebears' Holdout",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Forebears%27_Holdout"
+    ],
+    "assignment_rationale": "The cave is northeast of Riften and is staged from the Rift.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "tolvalds_cave",
+    "display_name": "Tolvald's Cave",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Tolvald%27s_Cave"
+    ],
+    "assignment_rationale": "The cave is on the eastern Rift route and is most practical from Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "markarth",
+    "display_name": "Markarth",
+    "region_id": "markarth",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Markarth"
+    ],
+    "assignment_rationale": "The settlement is the principal hub of its namesake city region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "understone_keep",
+    "display_name": "Understone Keep",
+    "region_id": "markarth",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Understone_Keep"
+    ],
+    "assignment_rationale": "The palace is inside Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "vlindrel_hall",
+    "display_name": "Vlindrel Hall",
+    "region_id": "markarth",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Vlindrel_Hall"
+    ],
+    "assignment_rationale": "The player home is inside Markarth.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The interior becomes a usable player home only after purchase."
+  },
+  {
+    "id": "hall_of_the_dead_markarth",
+    "display_name": "Markarth Hall of the Dead",
+    "region_id": "markarth",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Hall_of_the_Dead_(Markarth)"
+    ],
+    "assignment_rationale": "The building is inside Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "abandoned_house_markarth",
+    "display_name": "Abandoned House",
+    "region_id": "markarth",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Abandoned_House"
+    ],
+    "assignment_rationale": "The house is inside Markarth.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Molag Bal's Abandoned House"
+    ]
+  },
+  {
+    "id": "temple_of_dibella",
+    "display_name": "Temple of Dibella",
+    "region_id": "markarth",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Temple_of_Dibella"
+    ],
+    "assignment_rationale": "The temple and inner sanctum are inside Markarth.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Dibella's Inner Sanctum"
+    ]
+  },
+  {
+    "id": "treasury_house",
+    "display_name": "Treasury House",
+    "region_id": "markarth",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Treasury_House"
+    ],
+    "assignment_rationale": "The building is inside Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "hags_cure",
+    "display_name": "The Hag's Cure",
+    "region_id": "markarth",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Hag%27s_Cure"
+    ],
+    "assignment_rationale": "The shop is inside Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "dead_crone_rock",
+    "display_name": "Dead Crone Rock",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dead_Crone_Rock"
+    ],
+    "assignment_rationale": "The ruin is in the western Reach and is staged from Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "lost_valley_redoubt",
+    "display_name": "Lost Valley Redoubt",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Lost_Valley_Redoubt"
+    ],
+    "assignment_rationale": "The redoubt is in the southern Reach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "dragontooth_crater",
+    "display_name": "Dragontooth Crater",
+    "region_id": "markarth",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dragontooth_Crater"
+    ],
+    "assignment_rationale": "The dragon lair is in the western Reach and uses Markarth as its hub.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "valthume",
+    "display_name": "Valthume",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Valthume"
+    ],
+    "assignment_rationale": "Markarth is the approved coherent staging hub for this eastern Reach ruin despite a potentially convenient eastern approach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ragnvald",
+    "display_name": "Ragnvald",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ragnvald"
+    ],
+    "assignment_rationale": "The ruin is north of Markarth in the Reach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "reachcliff_cave",
+    "display_name": "Reachcliff Cave",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Reachcliff_Cave"
+    ],
+    "assignment_rationale": "The cave is southeast of Markarth in the Reach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "reachwater_rock",
+    "display_name": "Reachwater Rock",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Reachwater_Rock"
+    ],
+    "assignment_rationale": "The cave is in the southern Reach and is staged from Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "bthardamz",
+    "display_name": "Bthardamz",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Bthardamz"
+    ],
+    "assignment_rationale": "The Dwemer ruin is in the western Reach.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The inner ruin is intended to open during The Only Cure."
+  },
+  {
+    "id": "shrine_to_peryite",
+    "display_name": "Shrine to Peryite",
+    "region_id": "markarth",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Shrine_to_Peryite"
+    ],
+    "assignment_rationale": "The shrine is in the Reach northeast of Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "karthspire",
+    "display_name": "Karthspire",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Karthspire"
+    ],
+    "assignment_rationale": "The camp and cave are in the Reach and are staged from Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "sky_haven_temple",
+    "display_name": "Sky Haven Temple",
+    "region_id": "markarth",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Sky_Haven_Temple"
+    ],
+    "assignment_rationale": "The temple is reached through Karthspire in the Markarth region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The intended entrance opens during Alduin's Wall."
+  },
+  {
+    "id": "arkngthamz",
+    "display_name": "Arkngthamz",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Arkngthamz"
+    ],
+    "assignment_rationale": "The ruin is in the southern Reach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "deep_folk_crossing",
+    "display_name": "Deep Folk Crossing",
+    "region_id": "markarth",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Deep_Folk_Crossing"
+    ],
+    "assignment_rationale": "The Dwemer crossing is northeast of Markarth in the Reach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fort_sungard",
+    "display_name": "Fort Sungard",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Sungard"
+    ],
+    "assignment_rationale": "The fort is east of Markarth in the Reach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "reach_stormcloak_camp",
+    "display_name": "Reach Stormcloak Camp",
+    "region_id": "markarth",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Reach_Stormcloak_Camp"
+    ],
+    "assignment_rationale": "The military camp coordinates Stormcloak operations in the Reach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "reach_imperial_camp",
+    "display_name": "Reach Imperial Camp",
+    "region_id": "markarth",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Reach_Imperial_Camp"
+    ],
+    "assignment_rationale": "The military camp coordinates Imperial operations in the Reach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "morthal",
+    "display_name": "Morthal",
+    "region_id": "morthal",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Morthal"
+    ],
+    "assignment_rationale": "The settlement is the principal hub of its namesake city region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "highmoon_hall",
+    "display_name": "Highmoon Hall",
+    "region_id": "morthal",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Highmoon_Hall"
+    ],
+    "assignment_rationale": "The palace is inside Morthal.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "windstad_manor",
+    "display_name": "Windstad Manor",
+    "region_id": "morthal",
+    "location_type": "BUILDING",
+    "content_source": "HEARTHFIRE",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Windstad_Manor"
+    ],
+    "assignment_rationale": "The Hearthfire homestead is on the Hjaalmarch coast north of Morthal.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The property becomes available after purchasing the Hjaalmarch land and building the home."
+  },
+  {
+    "id": "abandoned_shack",
+    "display_name": "Abandoned Shack",
+    "region_id": "morthal",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Abandoned_Shack"
+    ],
+    "assignment_rationale": "Morthal is the accepted practical hub for the shack in the Hjaalmarch marshes.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "Initial access occurs through the Dark Brotherhood abduction sequence.",
+    "warning_text": "Branch choice: your action here determines whether you join or destroy the Dark Brotherhood."
+  },
+  {
+    "id": "movarths_lair",
+    "display_name": "Movarth's Lair",
+    "region_id": "morthal",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Movarth%27s_Lair"
+    ],
+    "assignment_rationale": "The lair is northeast of Morthal in Hjaalmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "alvas_house",
+    "display_name": "Alva's House",
+    "region_id": "morthal",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Alva%27s_House"
+    ],
+    "assignment_rationale": "The house is inside Morthal.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "burned_house_morthal",
+    "display_name": "Burned House",
+    "region_id": "morthal",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Laid_to_Rest"
+    ],
+    "assignment_rationale": "The burned house is inside Morthal.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Hroggar's burned house"
+    ]
+  },
+  {
+    "id": "folgunthur",
+    "display_name": "Folgunthur",
+    "region_id": "morthal",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Folgunthur"
+    ],
+    "assignment_rationale": "The ruin is in Hjaalmarch southeast of Solitude and is most practically staged from Morthal.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "eldersblood_peak",
+    "display_name": "Eldersblood Peak",
+    "region_id": "morthal",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Eldersblood_Peak"
+    ],
+    "assignment_rationale": "The dragon lair is in the mountains west of Morthal.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ustengrav",
+    "display_name": "Ustengrav",
+    "region_id": "morthal",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ustengrav"
+    ],
+    "assignment_rationale": "The ruin is northeast of Morthal in Hjaalmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fort_snowhawk",
+    "display_name": "Fort Snowhawk",
+    "region_id": "morthal",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Snowhawk"
+    ],
+    "assignment_rationale": "The fort is west of Morthal in Hjaalmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "hjaalmarch_stormcloak_camp",
+    "display_name": "Hjaalmarch Stormcloak Camp",
+    "region_id": "morthal",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Hjaalmarch_Stormcloak_Camp"
+    ],
+    "assignment_rationale": "The military camp coordinates Stormcloak operations in Hjaalmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "moorside_inn",
+    "display_name": "Moorside Inn",
+    "region_id": "morthal",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Moorside_Inn"
+    ],
+    "assignment_rationale": "The inn is inside Morthal.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "solitude",
+    "display_name": "Solitude",
+    "region_id": "solitude",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Solitude"
+    ],
+    "assignment_rationale": "The settlement is the principal hub of its namesake city region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "blue_palace",
+    "display_name": "Blue Palace",
+    "region_id": "solitude",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Blue_Palace"
+    ],
+    "assignment_rationale": "The palace and Pelagius Wing are inside Solitude.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Pelagius Wing"
+    ]
+  },
+  {
+    "id": "proudspire_manor",
+    "display_name": "Proudspire Manor",
+    "region_id": "solitude",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Proudspire_Manor"
+    ],
+    "assignment_rationale": "The player home is inside Solitude.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The interior becomes a usable player home only after purchase."
+  },
+  {
+    "id": "castle_dour",
+    "display_name": "Castle Dour",
+    "region_id": "solitude",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Castle_Dour"
+    ],
+    "assignment_rationale": "The Imperial headquarters is inside Solitude.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "temple_of_the_divines",
+    "display_name": "Temple of the Divines",
+    "region_id": "solitude",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Temple_of_the_Divines"
+    ],
+    "assignment_rationale": "The temple and Potema catacomb route are inside Solitude.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Potema's Catacombs"
+    ]
+  },
+  {
+    "id": "east_empire_company_warehouse",
+    "display_name": "East Empire Company Warehouse",
+    "region_id": "solitude",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:East_Empire_Company_Warehouse"
+    ],
+    "assignment_rationale": "The warehouse is on Solitude's docks.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "winking_skeever",
+    "display_name": "The Winking Skeever",
+    "region_id": "solitude",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Winking_Skeever"
+    ],
+    "assignment_rationale": "The inn is inside Solitude.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "katlas_farm",
+    "display_name": "Katla's Farm",
+    "region_id": "solitude",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Katla%27s_Farm"
+    ],
+    "assignment_rationale": "The farm and carriage staging point are immediately outside Solitude.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "thalmor_embassy",
+    "display_name": "Thalmor Embassy",
+    "region_id": "solitude",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Thalmor_Embassy"
+    ],
+    "assignment_rationale": "The embassy is in Haafingar and is staged from Solitude.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "missable": true,
+    "requires_special_access": true,
+    "access_notes": "Full interior access is tied to Diplomatic Immunity and cannot normally be repeated after the quest."
+  },
+  {
+    "id": "reeking_cave",
+    "display_name": "Reeking Cave",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Reeking_Cave"
+    ],
+    "assignment_rationale": "The cave is the embassy escape route in Haafingar and uses Solitude as its hub.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "dainty_sload",
+    "display_name": "The Dainty Sload",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Dainty_Sload"
+    ],
+    "assignment_rationale": "The ship is anchored off Solitude's coast.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "volskygge",
+    "display_name": "Volskygge",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Volskygge"
+    ],
+    "assignment_rationale": "The ruin is in western Haafingar and uses Solitude as its hub.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "kilkreath_temple",
+    "display_name": "Kilkreath Temple",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Kilkreath_Temple"
+    ],
+    "assignment_rationale": "The temple and Statue to Meridia are west of Solitude in Haafingar.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Statue to Meridia"
+    ],
+    "gated": true,
+    "access_notes": "The inner temple opens through The Break of Dawn."
+  },
+  {
+    "id": "dead_mens_respite",
+    "display_name": "Dead Men's Respite",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dead_Men%27s_Respite"
+    ],
+    "assignment_rationale": "The ruin is south of Solitude and is staged from the city.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "deepwood_redoubt",
+    "display_name": "Deepwood Redoubt / Hag's End",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Deepwood_Redoubt",
+      "https://en.uesp.net/wiki/Skyrim:Hag%27s_End"
+    ],
+    "assignment_rationale": "The connected complex is in western Haafingar and is staged from Solitude.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Hag's End"
+    ]
+  },
+  {
+    "id": "wolfskull_cave",
+    "display_name": "Wolfskull Cave",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Wolfskull_Cave"
+    ],
+    "assignment_rationale": "The cave is in Haafingar northwest of Solitude.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "dragon_bridge",
+    "display_name": "Dragon Bridge",
+    "region_id": "solitude",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dragon_Bridge"
+    ],
+    "assignment_rationale": "The settlement is in southern Haafingar and is served by Solitude.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "penitus_oculatus_outpost",
+    "display_name": "Penitus Oculatus Outpost",
+    "region_id": "solitude",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Penitus_Oculatus_Outpost"
+    ],
+    "assignment_rationale": "The outpost is at Dragon Bridge in Haafingar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "katariah",
+    "display_name": "The Katariah",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Katariah"
+    ],
+    "assignment_rationale": "The Emperor's ship is anchored in the Solitude inlet.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The ship is present and accessible during late Dark Brotherhood progression."
+  },
+  {
+    "id": "rimerock_burrow",
+    "display_name": "Rimerock Burrow",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Rimerock_Burrow"
+    ],
+    "assignment_rationale": "The cave is in remote western Haafingar and uses Solitude as its hub.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fort_hraggstad",
+    "display_name": "Fort Hraggstad",
+    "region_id": "solitude",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Hraggstad"
+    ],
+    "assignment_rationale": "The fort is west of Solitude in Haafingar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "dawnstar",
+    "display_name": "Dawnstar",
+    "region_id": "dawnstar",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dawnstar"
+    ],
+    "assignment_rationale": "The settlement is the principal hub of its namesake city region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "white_hall",
+    "display_name": "The White Hall",
+    "region_id": "dawnstar",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_White_Hall"
+    ],
+    "assignment_rationale": "The palace is inside Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "heljarchen_hall",
+    "display_name": "Heljarchen Hall",
+    "region_id": "dawnstar",
+    "location_type": "BUILDING",
+    "content_source": "HEARTHFIRE",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Heljarchen_Hall"
+    ],
+    "assignment_rationale": "The Hearthfire homestead is on the southern Pale road and is administered from Dawnstar.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The property becomes available after purchasing the Pale land and building the home."
+  },
+  {
+    "id": "windpeak_inn",
+    "display_name": "Windpeak Inn",
+    "region_id": "dawnstar",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Windpeak_Inn"
+    ],
+    "assignment_rationale": "The inn is inside Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "nightcaller_temple",
+    "display_name": "Nightcaller Temple",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Nightcaller_Temple"
+    ],
+    "assignment_rationale": "The temple overlooks Dawnstar from the eastern ridge.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The intended route through the sealed temple opens during Waking Nightmare."
+  },
+  {
+    "id": "mythic_dawn_museum",
+    "display_name": "Mythic Dawn Museum",
+    "region_id": "dawnstar",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past"
+    ],
+    "assignment_rationale": "The museum is inside Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "shrine_of_mehrunes_dagon",
+    "display_name": "Shrine of Mehrunes Dagon",
+    "region_id": "dawnstar",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Shrine_of_Mehrunes_Dagon"
+    ],
+    "assignment_rationale": "The mountain shrine is reached most practically from Dawnstar.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The shrine interior is opened through Pieces of the Past."
+  },
+  {
+    "id": "dawnstar_sanctuary",
+    "display_name": "Dawnstar Sanctuary",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dawnstar_Sanctuary"
+    ],
+    "assignment_rationale": "The sanctuary is on the coast immediately north of Dawnstar.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "Usable access is granted through Dark Brotherhood progression."
+  },
+  {
+    "id": "high_gate_ruins",
+    "display_name": "High Gate Ruins",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:High_Gate_Ruins"
+    ],
+    "assignment_rationale": "Dawnstar is the approved northern staging hub for this geographically awkward ruin near several travel boundaries.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "shearpoint",
+    "display_name": "Shearpoint",
+    "region_id": "dawnstar",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Shearpoint"
+    ],
+    "assignment_rationale": "The dragon lair is in the Pale and is staged from Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "silverdrift_lair",
+    "display_name": "Silverdrift Lair",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Silverdrift_Lair"
+    ],
+    "assignment_rationale": "The ruin is in the central Pale and is staged from Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ironbind_barrow",
+    "display_name": "Ironbind Barrow",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ironbind_Barrow"
+    ],
+    "assignment_rationale": "The barrow is in the southern Pale and is staged from Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "skyborn_altar",
+    "display_name": "Skyborn Altar",
+    "region_id": "dawnstar",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Skyborn_Altar"
+    ],
+    "assignment_rationale": "The dragon lair is in the southern Pale and is staged from Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "frostmere_crypt",
+    "display_name": "Frostmere Crypt",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Frostmere_Crypt"
+    ],
+    "assignment_rationale": "The crypt is in the Pale southwest of Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "dimhollow_crypt",
+    "display_name": "Dimhollow Crypt",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Dimhollow_Crypt"
+    ],
+    "assignment_rationale": "The crypt is in the Pale southwest of Dawnstar.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The deep crypt route becomes relevant and accessible through early Dawnguard progression."
+  },
+  {
+    "id": "frostflow_lighthouse",
+    "display_name": "Frostflow Lighthouse",
+    "region_id": "dawnstar",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Frostflow_Lighthouse"
+    ],
+    "assignment_rationale": "Dawnstar is the approved staging hub for the lighthouse on the northern coast between Dawnstar and Winterhold.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "mzinchaleft",
+    "display_name": "Mzinchaleft",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Mzinchaleft"
+    ],
+    "assignment_rationale": "The ruin is southwest of Dawnstar in the Pale.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "helas_folly",
+    "display_name": "Hela's Folly",
+    "region_id": "dawnstar",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Hela%27s_Folly"
+    ],
+    "assignment_rationale": "The wreck is on the coast northeast of Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fort_dunstad",
+    "display_name": "Fort Dunstad",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Dunstad"
+    ],
+    "assignment_rationale": "The fort is in the southern Pale and belongs to Dawnstar's travel region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "pale_imperial_camp",
+    "display_name": "Pale Imperial Camp",
+    "region_id": "dawnstar",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Pale_Imperial_Camp"
+    ],
+    "assignment_rationale": "The military camp coordinates Imperial operations in the Pale.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "pale_stormcloak_camp",
+    "display_name": "Pale Stormcloak Camp",
+    "region_id": "dawnstar",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Pale_Stormcloak_Camp"
+    ],
+    "assignment_rationale": "The military camp coordinates Stormcloak operations in the Pale.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "winterhold",
+    "display_name": "Winterhold",
+    "region_id": "winterhold",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Winterhold"
+    ],
+    "assignment_rationale": "The settlement is the principal hub of its namesake city region.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Town of Winterhold"
+    ]
+  },
+  {
+    "id": "college_of_winterhold",
+    "display_name": "College of Winterhold",
+    "region_id": "winterhold",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:College_of_Winterhold_(place)"
+    ],
+    "assignment_rationale": "The College is attached to Winterhold and forms the region's principal service hub.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "College courtyard",
+      "The Midden",
+      "Arch-Mage's Quarters"
+    ]
+  },
+  {
+    "id": "frozen_hearth",
+    "display_name": "The Frozen Hearth",
+    "region_id": "winterhold",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:The_Frozen_Hearth"
+    ],
+    "assignment_rationale": "The inn is inside Winterhold.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "saarthal",
+    "display_name": "Saarthal",
+    "region_id": "winterhold",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Saarthal"
+    ],
+    "assignment_rationale": "The excavation is immediately southwest of Winterhold.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The intended excavation entrance opens during Under Saarthal."
+  },
+  {
+    "id": "mount_anthor",
+    "display_name": "Mount Anthor",
+    "region_id": "winterhold",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Mount_Anthor"
+    ],
+    "assignment_rationale": "The dragon lair is in the mountains southwest of Winterhold.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ysgramors_tomb",
+    "display_name": "Ysgramor's Tomb",
+    "region_id": "winterhold",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ysgramor%27s_Tomb"
+    ],
+    "assignment_rationale": "Winterhold is the practical mainland hub for the tomb on the northern coast.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The ceremonial entrance is opened during late Companions progression."
+  },
+  {
+    "id": "hobs_fall_cave",
+    "display_name": "Hob's Fall Cave",
+    "region_id": "winterhold",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Hob%27s_Fall_Cave"
+    ],
+    "assignment_rationale": "The cave is on the coast west of Winterhold.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "yngvild",
+    "display_name": "Yngvild",
+    "region_id": "winterhold",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Yngvild"
+    ],
+    "assignment_rationale": "Winterhold is the practical hub for the island ruin off the northern coast.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "septimus_signus_outpost",
+    "display_name": "Septimus Signus's Outpost",
+    "region_id": "winterhold",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Septimus_Signus%27s_Outpost"
+    ],
+    "assignment_rationale": "Winterhold is the practical coastal hub for the remote northern outpost.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "shrine_of_azura",
+    "display_name": "Shrine of Azura",
+    "region_id": "winterhold",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Shrine_of_Azura"
+    ],
+    "assignment_rationale": "The shrine is directly south of Winterhold.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fort_kastav",
+    "display_name": "Fort Kastav",
+    "region_id": "winterhold",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Kastav"
+    ],
+    "assignment_rationale": "The fort is on the road south of Winterhold.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "winterhold_imperial_camp",
+    "display_name": "Winterhold Imperial Camp",
+    "region_id": "winterhold",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Winterhold_Imperial_Camp"
+    ],
+    "assignment_rationale": "The military camp coordinates Imperial operations in Winterhold.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "windhelm",
+    "display_name": "Windhelm",
+    "region_id": "windhelm",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Windhelm"
+    ],
+    "assignment_rationale": "The settlement is the principal hub of its namesake city region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "palace_of_the_kings",
+    "display_name": "Palace of the Kings",
+    "region_id": "windhelm",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Palace_of_the_Kings"
+    ],
+    "assignment_rationale": "The palace is inside Windhelm.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "hjerim",
+    "display_name": "Hjerim",
+    "region_id": "windhelm",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Hjerim"
+    ],
+    "assignment_rationale": "The player home is inside Windhelm.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "Ownership and normal use depend on Blood on the Ice and Windhelm property progression."
+  },
+  {
+    "id": "house_clan_shatter_shield",
+    "display_name": "House of Clan Shatter-Shield",
+    "region_id": "windhelm",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:House_of_Clan_Shatter-Shield"
+    ],
+    "assignment_rationale": "The house is inside Windhelm.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "aretino_residence",
+    "display_name": "Aretino Residence",
+    "region_id": "windhelm",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Aretino_Residence"
+    ],
+    "assignment_rationale": "The residence is inside Windhelm.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Aventus Aretino's house"
+    ]
+  },
+  {
+    "id": "mzulft",
+    "display_name": "Mzulft",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Mzulft"
+    ],
+    "assignment_rationale": "Windhelm is the accepted major-city hub for the ruin southeast of Kynesgrove.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The main ruin's intended route is tied to College quest progression."
+  },
+  {
+    "id": "bonestrewn_crest",
+    "display_name": "Bonestrewn Crest",
+    "region_id": "windhelm",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Bonestrewn_Crest"
+    ],
+    "assignment_rationale": "The dragon lair is south of Windhelm in Eastmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "northwind_summit",
+    "display_name": "Northwind Summit",
+    "region_id": "riften",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Northwind_Summit"
+    ],
+    "assignment_rationale": "Riften is the approved practical staging hub because the intuitive player approach runs through the Rift and Shor's Stone side.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "forsaken_cave",
+    "display_name": "Forsaken Cave",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Forsaken_Cave"
+    ],
+    "assignment_rationale": "Windhelm is the approved eastern staging hub for the cave on the long Windhelm-to-Dawnstar corridor.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "snow_veil_sanctum",
+    "display_name": "Snow Veil Sanctum",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Snow_Veil_Sanctum"
+    ],
+    "assignment_rationale": "The ruin is northeast of Windhelm and is physically staged from Eastmarch despite its Riften questline.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The sealed door is opened during Speaking With Silence."
+  },
+  {
+    "id": "yngol_barrow",
+    "display_name": "Yngol Barrow",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Yngol_Barrow"
+    ],
+    "assignment_rationale": "The barrow is northeast of Windhelm on the Eastmarch coast.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "stony_creek_cave",
+    "display_name": "Stony Creek Cave",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Stony_Creek_Cave"
+    ],
+    "assignment_rationale": "The cave is in eastern Eastmarch and is staged from Windhelm.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "raldbthar",
+    "display_name": "Raldbthar",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Raldbthar"
+    ],
+    "assignment_rationale": "The ruin is west of Windhelm in Eastmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "uttering_hills_cave",
+    "display_name": "Uttering Hills Cave",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Uttering_Hills_Cave"
+    ],
+    "assignment_rationale": "The cave is west of Windhelm in Eastmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fort_amol",
+    "display_name": "Fort Amol",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Amol"
+    ],
+    "assignment_rationale": "The fort is in southern Eastmarch and uses Windhelm as its city hub.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "kynesgrove",
+    "display_name": "Kynesgrove",
+    "region_id": "windhelm",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Kynesgrove"
+    ],
+    "assignment_rationale": "The settlement is south of Windhelm in Eastmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "sacellum_of_boethiah",
+    "display_name": "Sacellum of Boethiah",
+    "region_id": "windhelm",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Sacellum_of_Boethiah"
+    ],
+    "assignment_rationale": "The shrine is in the mountains east of Windhelm.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "morvunskar",
+    "display_name": "Morvunskar",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Morvunskar"
+    ],
+    "assignment_rationale": "The fort is southwest of Windhelm in Eastmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ansilvund",
+    "display_name": "Ansilvund",
+    "region_id": "windhelm",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ansilvund"
+    ],
+    "assignment_rationale": "The ruin is in southern Eastmarch and is staged from Windhelm.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "eastmarch_imperial_camp",
+    "display_name": "Eastmarch Imperial Camp",
+    "region_id": "windhelm",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Eastmarch_Imperial_Camp"
+    ],
+    "assignment_rationale": "The military camp coordinates Imperial operations in Eastmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "angas_mill",
+    "display_name": "Anga's Mill",
+    "region_id": "windhelm",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Anga%27s_Mill"
+    ],
+    "assignment_rationale": "The mill is west of Windhelm and is most practical from Eastmarch.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "high_hrothgar",
+    "display_name": "High Hrothgar",
+    "region_id": "high_hrothgar",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:High_Hrothgar"
+    ],
+    "assignment_rationale": "The monastery is the central destination of the dedicated mountain expedition region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "throat_of_the_world",
+    "display_name": "Throat of the World",
+    "region_id": "high_hrothgar",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Throat_of_the_World"
+    ],
+    "assignment_rationale": "The summit is reached through High Hrothgar and belongs to the same dedicated mountain expedition.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "The upper mountain route is opened through main-quest progression and Clear Skies."
+  },
+  {
+    "id": "labyrinthian",
+    "display_name": "Labyrinthian",
+    "region_id": "labyrinthian",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Labyrinthian"
+    ],
+    "assignment_rationale": "The complex is the anchor destination of its dedicated expedition region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "The principal quest dungeon requires the Torc of Labyrinthian from College progression."
+  },
+  {
+    "id": "bromjunaar_sanctuary",
+    "display_name": "Bromjunaar Sanctuary",
+    "region_id": "labyrinthian",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Bromjunaar_Sanctuary"
+    ],
+    "assignment_rationale": "The mask sanctuary is a distinct objective-bearing chamber within the Labyrinthian complex.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "The Wooden Mask transports the player to the restored sanctuary state."
+  },
+  {
+    "id": "shalidors_maze",
+    "display_name": "Shalidor's Maze",
+    "region_id": "labyrinthian",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Shalidor%27s_Maze"
+    ],
+    "assignment_rationale": "The maze is a distinct objective-bearing dungeon in the Labyrinthian complex.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "blackreach",
+    "display_name": "Blackreach",
+    "region_id": "blackreach",
+    "location_type": "WORLDSPACE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Blackreach"
+    ],
+    "assignment_rationale": "The underground worldspace is the anchor of its dedicated expedition region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "Initial entry requires an attunement sphere and access through a connected Dwemer ruin."
+  },
+  {
+    "id": "tower_of_mzark",
+    "display_name": "Tower of Mzark",
+    "region_id": "blackreach",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Tower_of_Mzark"
+    ],
+    "assignment_rationale": "The tower is a distinct main-quest destination within Blackreach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "sinderions_field_laboratory",
+    "display_name": "Sinderion's Field Laboratory",
+    "region_id": "blackreach",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Sinderion%27s_Field_Laboratory"
+    ],
+    "assignment_rationale": "The laboratory is a distinct collectible and reward destination within Blackreach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "skuldafn",
+    "display_name": "Skuldafn",
+    "region_id": "skuldafn",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Skuldafn"
+    ],
+    "assignment_rationale": "The temple is the sole anchor of its one-way special-destination region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "one_way": true,
+    "missable": true,
+    "requires_special_access": true,
+    "access_notes": "Odahviing carries the player from Dragonsreach; normal return is impossible and the destination cannot be revisited after leaving.",
+    "warning_text": "ONE-WAY / MISSABLE: finish every objective before entering the portal to Sovngarde."
+  },
+  {
+    "id": "sovngarde",
+    "display_name": "Sovngarde",
+    "region_id": "sovngarde",
+    "location_type": "WORLDSPACE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Sovngarde_(place)"
+    ],
+    "assignment_rationale": "The worldspace is the sole anchor of its special-destination region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "one_way": true,
+    "missable": true,
+    "requires_special_access": true,
+    "access_notes": "Sovngarde is reached through the Skuldafn portal during the main quest and cannot normally be revisited after departure."
+  },
+  {
+    "id": "castle_volkihar",
+    "display_name": "Castle Volkihar",
+    "region_id": "castle_volkihar",
+    "location_type": "BUILDING",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Castle_Volkihar"
+    ],
+    "assignment_rationale": "The island castle is the anchor of its dedicated special-destination region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "Initial access and usable interiors depend on Dawnguard quest progression and faction state."
+  },
+  {
+    "id": "soul_cairn",
+    "display_name": "Soul Cairn",
+    "region_id": "soul_cairn",
+    "location_type": "WORLDSPACE",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Soul_Cairn"
+    ],
+    "assignment_rationale": "The plane is the anchor of its dedicated special-destination region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "Entry requires the portal beneath Castle Volkihar and the quest's soul-trap or vampire access condition."
+  },
+  {
+    "id": "darkfall_cave",
+    "display_name": "Darkfall Cave",
+    "region_id": "forgotten_vale",
+    "location_type": "DUNGEON",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Darkfall_Cave"
+    ],
+    "assignment_rationale": "The cave is the quest-gated approach to the Forgotten Vale and belongs to the same self-contained expedition.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "The passage is used during Touching the Sky and leads into the Forgotten Vale route."
+  },
+  {
+    "id": "forgotten_vale",
+    "display_name": "Forgotten Vale",
+    "region_id": "forgotten_vale",
+    "location_type": "WORLDSPACE",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Forgotten_Vale"
+    ],
+    "assignment_rationale": "The worldspace is the anchor of its dedicated special-destination region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "The Vale is reached through Darkfall Cave during Dawnguard progression."
+  },
+  {
+    "id": "forgotten_vale_inner_sanctum",
+    "display_name": "Forgotten Vale Inner Sanctum",
+    "region_id": "forgotten_vale",
+    "location_type": "BUILDING",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Forgotten_Vale"
+    ],
+    "assignment_rationale": "The Inner Sanctum is a distinct end destination within the long Forgotten Vale expedition.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "Access requires completing the Wayshrine pilgrimage in the Vale."
+  },
+  {
+    "id": "raven_rock",
+    "display_name": "Raven Rock",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "SETTLEMENT",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Raven_Rock"
+    ],
+    "assignment_rationale": "Raven Rock is the approved practical hub for southern Solstheim.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "severin_manor",
+    "display_name": "Severin Manor",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "BUILDING",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Severin_Manor"
+    ],
+    "assignment_rationale": "The player home is inside Raven Rock and belongs to its approved travel region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The home is awarded through Raven Rock quest progression rather than purchased."
+  },
+  {
+    "id": "raven_rock_mine",
+    "display_name": "Raven Rock Mine / Bloodskal Barrow",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Raven_Rock_Mine",
+      "https://en.uesp.net/wiki/Skyrim:Bloodskal_Barrow"
+    ],
+    "assignment_rationale": "The connected mine and barrow begin inside Raven Rock and belong to its southern hub region.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Bloodskal Barrow"
+    ]
+  },
+  {
+    "id": "kolbjorn_barrow",
+    "display_name": "Kolbjorn Barrow",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Kolbjorn_Barrow"
+    ],
+    "assignment_rationale": "The barrow is southeast of Raven Rock and is repeatedly staged from that settlement.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "Excavation stages open progressively during Unearthed."
+  },
+  {
+    "id": "tel_mithryn",
+    "display_name": "Tel Mithryn",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "SETTLEMENT",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Tel_Mithryn"
+    ],
+    "assignment_rationale": "The southern settlement belongs to Raven Rock / South under the approved two-region model rather than creating a third micro-region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "nchardak",
+    "display_name": "Nchardak",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Nchardak"
+    ],
+    "assignment_rationale": "The southeastern ruin is reached with Neloth from Tel Mithryn and follows that settlement into the Raven Rock / South planning region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "Neloth and Dragonborn quest progression provide the intended access to the reading room."
+  },
+  {
+    "id": "temple_of_miraak",
+    "display_name": "Temple of Miraak",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Temple_of_Miraak"
+    ],
+    "assignment_rationale": "The central-southern temple is assigned to Raven Rock / South for consistent staging under the approved two-region model.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "earth_stone",
+    "display_name": "Earth Stone",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Earth_Stone"
+    ],
+    "assignment_rationale": "The stone is immediately outside Raven Rock.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "water_stone",
+    "display_name": "Water Stone",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Water_Stone"
+    ],
+    "assignment_rationale": "The southwestern stone is most practically staged from Raven Rock.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "fort_frostmoth",
+    "display_name": "Fort Frostmoth",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Fort_Frostmoth"
+    ],
+    "assignment_rationale": "The fort is southeast of Raven Rock and belongs to its approved southern travel region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "ashfallow_citadel",
+    "display_name": "Ashfallow Citadel",
+    "region_id": "solstheim_raven_rock",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Ashfallow_Citadel"
+    ],
+    "assignment_rationale": "The citadel is north of Raven Rock but its fixed quest and property progression make Raven Rock / South the practical staging region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "skaal_village",
+    "display_name": "Skaal Village",
+    "region_id": "solstheim_north",
+    "location_type": "SETTLEMENT",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Skaal_Village"
+    ],
+    "assignment_rationale": "The village is the approved staging hub for northern Solstheim expeditions.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "saerings_watch",
+    "display_name": "Saering's Watch",
+    "region_id": "solstheim_north",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Saering%27s_Watch"
+    ],
+    "assignment_rationale": "The far-northern dragon lair is most practically staged from Skaal Village.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "benkongerike",
+    "display_name": "Benkongerike",
+    "region_id": "solstheim_north",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Benkongerike"
+    ],
+    "assignment_rationale": "The northern cave is most practically staged from Skaal Village.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "white_ridge_barrow",
+    "display_name": "White Ridge Barrow",
+    "region_id": "solstheim_north",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:White_Ridge_Barrow"
+    ],
+    "assignment_rationale": "The northern barrow is most practically staged from Skaal Village.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "vahloks_tomb",
+    "display_name": "Vahlok's Tomb",
+    "region_id": "solstheim_north",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Vahlok%27s_Tomb"
+    ],
+    "assignment_rationale": "The tomb follows its Skaal quest staging into the approved Skaal / North planning region despite its southerly position.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The intended excavation route opens during Lost Legacy."
+  },
+  {
+    "id": "wind_stone",
+    "display_name": "Wind Stone",
+    "region_id": "solstheim_north",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Wind_Stone"
+    ],
+    "assignment_rationale": "The stone is immediately southwest of Skaal Village.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "beast_stone",
+    "display_name": "Beast Stone",
+    "region_id": "solstheim_north",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Beast_Stone"
+    ],
+    "assignment_rationale": "The stone is in northern Solstheim and is staged from Skaal Village.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "sun_stone",
+    "display_name": "Sun Stone",
+    "region_id": "solstheim_north",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Sun_Stone"
+    ],
+    "assignment_rationale": "The stone is in northern Solstheim and is staged from Skaal Village.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "tree_stone",
+    "display_name": "Tree Stone",
+    "region_id": "solstheim_north",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Tree_Stone"
+    ],
+    "assignment_rationale": "Although adjacent to the Temple of Miraak, the stone belongs to the Skaal-centered All-Maker Stone circuit and is staged from Skaal / North.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "thirsk_mead_hall",
+    "display_name": "Thirsk Mead Hall",
+    "region_id": "solstheim_north",
+    "location_type": "BUILDING",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Thirsk_Mead_Hall"
+    ],
+    "assignment_rationale": "The hall is near Skaal Village and belongs to the northern planning region regardless of quest outcome.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "hrothmunds_barrow",
+    "display_name": "Hrothmund's Barrow",
+    "region_id": "solstheim_north",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Hrothmund%27s_Barrow"
+    ],
+    "assignment_rationale": "The northern quest site follows its Skaal/Thirsk route into the approved Skaal / North planning region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The intended entry is tied to Thirsk faction progression."
+  },
+  {
+    "id": "glacial_cave",
+    "display_name": "Glacial Cave",
+    "region_id": "solstheim_north",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Glacial_Cave"
+    ],
+    "assignment_rationale": "The remote northwestern cave is part of the fixed Summon Karstaag acquisition route and is staged as a Skaal / North expedition.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "castle_karstaag_ruins",
+    "display_name": "Castle Karstaag Ruins",
+    "region_id": "solstheim_north",
+    "location_type": "DUNGEON",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Castle_Karstaag_Ruins"
+    ],
+    "assignment_rationale": "The northwestern ruins are the fixed completion destination for acquiring Summon Karstaag and are staged as a Skaal / North expedition.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "apocrypha",
+    "display_name": "Apocrypha",
+    "region_id": "apocrypha",
+    "location_type": "WORLDSPACE",
+    "content_source": "DRAGONBORN",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Apocrypha"
+    ],
+    "assignment_rationale": "The realm is the sole anchor of its dedicated special-destination region; individual Black Book instances remain one player-recognized destination.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "requires_special_access": true,
+    "access_notes": "Entry occurs through specific Black Books, and each book opens its corresponding part of the realm."
+  },
+  {
+    "id": "alftand",
+    "display_name": "Alftand",
+    "region_id": "winterhold",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Alftand"
+    ],
+    "assignment_rationale": "The ruin is southwest of Winterhold and provides the main-quest approach to Blackreach.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "driftshade_refuge",
+    "display_name": "Driftshade Refuge",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Driftshade_Refuge"
+    ],
+    "assignment_rationale": "The refuge is in the northern Pale and is staged from Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "irkngthand",
+    "display_name": "Irkngthand",
+    "region_id": "dawnstar",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Irkngthand"
+    ],
+    "assignment_rationale": "Dawnstar is the approved planning hub for the ruin's Pale-side position despite Windhelm being a plausible approach.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The intended entrance route opens during Blindsighted."
+  },
+  {
+    "id": "nightgate_inn",
+    "display_name": "Nightgate Inn",
+    "region_id": "dawnstar",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Nightgate_Inn"
+    ],
+    "assignment_rationale": "The inn is on the southern Pale road and is most practically grouped with Dawnstar.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "redwater_den",
+    "display_name": "Redwater Den",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "DAWNGUARD",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Redwater_Den"
+    ],
+    "assignment_rationale": "The den is in the Rift and is staged from Riften.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "sarethi_farm",
+    "display_name": "Sarethi Farm",
+    "region_id": "riften",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Sarethi_Farm"
+    ],
+    "assignment_rationale": "The farm is northwest of Riften and is the fixed return point for the crimson nirnroot reward.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "glenmoril_coven",
+    "display_name": "Glenmoril Coven",
+    "region_id": "falkreath",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Glenmoril_Coven"
+    ],
+    "assignment_rationale": "The cave is in western Falkreath Hold and is best staged from Falkreath.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "nightingale_hall",
+    "display_name": "Nightingale Hall",
+    "region_id": "riften",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Nightingale_Hall"
+    ],
+    "assignment_rationale": "The hall is southeast of Riften and is the fixed Nightingale initiation destination.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "access_notes": "The intended entrance opens during Trinity Restored."
+  },
+  {
+    "id": "jorgens_house",
+    "display_name": "Jorgen and Lami's House",
+    "region_id": "morthal",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Jorgen_and_Lami%27s_House"
+    ],
+    "assignment_rationale": "The house is inside Morthal and contains a fixed Mehrunes' Razor fragment objective.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "rorikstead",
+    "display_name": "Rorikstead",
+    "region_id": "whiterun",
+    "location_type": "SETTLEMENT",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Rorikstead"
+    ],
+    "assignment_rationale": "Whiterun is the practical major-city hub for the western plains settlement.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "witchmist_grove",
+    "display_name": "Witchmist Grove",
+    "region_id": "windhelm",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Witchmist_Grove"
+    ],
+    "assignment_rationale": "The grove is in Eastmarch south of Windhelm and is best staged from that city.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "shrine_of_talos_whiterun",
+    "display_name": "Shrine of Talos near Shimmermist Cave",
+    "region_id": "whiterun",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Elisif%27s_Tribute"
+    ],
+    "assignment_rationale": "The fixed tribute shrine is northeast of Whiterun and is most practically staged from that city.",
+    "verification_status": "VERIFIED",
+    "aliases": [
+      "Elisif's tribute shrine"
+    ]
+  },
+  {
+    "id": "bards_college",
+    "display_name": "Bards College",
+    "region_id": "solitude",
+    "location_type": "BUILDING",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Bards_College"
+    ],
+    "assignment_rationale": "The College is inside Solitude and is the return point for the quest that grants Gift of Gab.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "misty_grove",
+    "display_name": "Misty Grove",
+    "region_id": "misty_grove",
+    "location_type": "WORLDSPACE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Misty_Grove"
+    ],
+    "assignment_rationale": "The pocket realm is the sole anchor of its special-destination region.",
+    "verification_status": "VERIFIED",
+    "gated": true,
+    "one_way": true,
+    "missable": true,
+    "requires_special_access": true,
+    "access_notes": "The realm is reached through Morvunskar during A Night to Remember and cannot normally be revisited after leaving."
+  },
+  {
+    "id": "broken_tower_redoubt",
+    "display_name": "Broken Tower Redoubt",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Broken_Tower_Redoubt"
+    ],
+    "assignment_rationale": "This Reach redoubt is most practically staged from Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "brucas_leap_redoubt",
+    "display_name": "Bruca's Leap Redoubt",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Bruca%27s_Leap_Redoubt"
+    ],
+    "assignment_rationale": "This Reach redoubt is most practically staged from Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "druadach_redoubt",
+    "display_name": "Druadach Redoubt",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Druadach_Redoubt"
+    ],
+    "assignment_rationale": "This Reach redoubt is most practically staged from Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "hag_rock_redoubt",
+    "display_name": "Hag Rock Redoubt",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Hag_Rock_Redoubt"
+    ],
+    "assignment_rationale": "This Reach redoubt is most practically staged from Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "red_eagle_redoubt",
+    "display_name": "Red Eagle Redoubt",
+    "region_id": "markarth",
+    "location_type": "DUNGEON",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Red_Eagle_Redoubt"
+    ],
+    "assignment_rationale": "This Reach redoubt is most practically staged from Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "skyforge",
+    "display_name": "Skyforge",
+    "region_id": "whiterun",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Skyforge"
+    ],
+    "assignment_rationale": "The forge is inside Whiterun and is a distinct, recurring Companions destination.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "windward_ruins",
+    "display_name": "Windward Ruins",
+    "region_id": "dawnstar",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Windward_Ruins"
+    ],
+    "assignment_rationale": "The ritual site lies immediately southwest of Dawnstar and is naturally staged from that city.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "north_skybound_watch",
+    "display_name": "North Skybound Watch",
+    "region_id": "falkreath",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:North_Skybound_Watch"
+    ],
+    "assignment_rationale": "The Helgen and Orphan Rock-side approach makes Falkreath the consistent Survival staging region.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "four_skull_lookout",
+    "display_name": "Four Skull Lookout",
+    "region_id": "markarth",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Four_Skull_Lookout"
+    ],
+    "assignment_rationale": "This Karthwasten-area ritual site is naturally staged from Markarth.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "the_red_wave",
+    "display_name": "The Red Wave",
+    "region_id": "solitude",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Red_Wave"
+    ],
+    "assignment_rationale": "The named ship is moored at Solitude docks; Solitude is the practical staging hub.",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "id": "lake_honrich_quill_wreck",
+    "display_name": "Lake Honrich — Quill Wreck",
+    "region_id": "riften",
+    "location_type": "EXTERIOR_SITE",
+    "content_source": "SKYRIM",
+    "source_urls": [
+      "https://en.uesp.net/wiki/Skyrim:Vald%27s_Debt"
+    ],
+    "assignment_rationale": "The fixed underwater quill objective is in Lake Honrich immediately by Riften.",
+    "verification_status": "VERIFIED"
+  }
 ]

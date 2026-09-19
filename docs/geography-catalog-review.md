@@ -6,21 +6,21 @@
 
 Official Skyrim, Dawnguard, Hearthfire, and Dragonborn destinations needed by the Product-approved completion domains; no Creation Club or radiant-only destination expansion.
 
-UESP is the primary practical source. Each canonical Location carries its narrowest useful factual source URL(s). Quest and collection overview pages in the coverage inventory establish why destinations are required. Dynamically selected and radiant-only destinations do not expand the catalog.
+UESP is the primary practical source. Each canonical Location carries its narrowest useful factual source URL(s). Quest and collection overview pages in the coverage inventory establish why destinations are required. Finite radiant destinations expand the catalog only when Product explicitly approves them.
 
-**Catalog totals:** 21 Travel Regions; 237 Locations; 0 Locations awaiting Product review.
+**Catalog totals:** 21 Travel Regions; 248 Locations; 0 Locations awaiting Product review.
 
 ## Travel Regions
 
 | Region | Type | Locations | Principal hub | Planning rationale |
 |---|---:|---:|---|---|
-| Whiterun (`whiterun`) | CITY | 21 | Whiterun | Whiterun is the practical major-city hub for central Skyrim and the Riverwood corridor. |
-| Falkreath (`falkreath`) | CITY | 22 | Falkreath | Falkreath is the practical city hub for southern forest destinations, including Helgen. |
-| Riften (`riften`) | CITY | 35 | Riften | Riften is the practical major-city hub for mainland Rift destinations. |
-| Markarth (`markarth`) | CITY | 24 | Markarth | Markarth is the major-city travel hub for the Reach. |
+| Whiterun (`whiterun`) | CITY | 22 | Whiterun | Whiterun is the practical major-city hub for central Skyrim and the Riverwood corridor. |
+| Falkreath (`falkreath`) | CITY | 23 | Falkreath | Falkreath is the practical city hub for southern forest destinations, including Helgen. |
+| Riften (`riften`) | CITY | 36 | Riften | Riften is the practical major-city hub for mainland Rift destinations. |
+| Markarth (`markarth`) | CITY | 30 | Markarth | Markarth is the major-city travel hub for the Reach. |
 | Morthal (`morthal`) | CITY | 14 | Morthal | Morthal is the practical city hub for Hjaalmarch destinations. |
-| Solitude (`solitude`) | CITY | 22 | Solitude | Solitude is the major-city travel hub for Haafingar and the northwestern coast. |
-| Dawnstar (`dawnstar`) | CITY | 24 | Dawnstar | Dawnstar is the practical major-city hub for destinations in the Pale. |
+| Solitude (`solitude`) | CITY | 23 | Solitude | Solitude is the major-city travel hub for Haafingar and the northwestern coast. |
+| Dawnstar (`dawnstar`) | CITY | 25 | Dawnstar | Dawnstar is the practical major-city hub for destinations in the Pale. |
 | Winterhold (`winterhold`) | CITY | 13 | Winterhold / College of Winterhold | Winterhold and the College form the practical hub for the northeastern coast. |
 | Windhelm (`windhelm`) | CITY | 21 | Windhelm | Windhelm is the practical major-city hub for Eastmarch. |
 | Solstheim — Raven Rock / South (`solstheim_raven_rock`) | CITY | 11 | Raven Rock | Raven Rock is Solstheim's principal transport and service hub; southern destinations form its ordinary travel area. |
@@ -74,10 +74,10 @@ Every Location owns exactly one Travel Region. This table must remain empty befo
 | Dragon Priest Masks | 13 | [source 1](https://en.uesp.net/wiki/Skyrim:Dragon_Priest_Mask) |
 | Shouts | 58 | [source 1](https://en.uesp.net/wiki/Skyrim:Dragon_Shouts) |
 | Dragon Claws | 12 | [source 1](https://en.uesp.net/wiki/Skyrim:Puzzles) |
-| Daedric Artifacts | 36 | [source 1](https://en.uesp.net/wiki/Skyrim:Daedric_Quests) |
-| College of Winterhold | 7 | [source 1](https://en.uesp.net/wiki/Skyrim:College_of_Winterhold_(faction)) |
-| Companions | 8 | [source 1](https://en.uesp.net/wiki/Skyrim:Companions) |
-| Thieves Guild | 37 | [source 1](https://en.uesp.net/wiki/Skyrim:Thieves_Guild) |
+| Daedric Artifacts | 42 | [source 1](https://en.uesp.net/wiki/Skyrim:Daedric_Quests) |
+| College of Winterhold | 10 | [source 1](https://en.uesp.net/wiki/Skyrim:College_of_Winterhold_(faction)) |
+| Companions | 9 | [source 1](https://en.uesp.net/wiki/Skyrim:Companions) |
+| Thieves Guild | 39 | [source 1](https://en.uesp.net/wiki/Skyrim:Thieves_Guild) |
 | Dark Brotherhood | 24 | [source 1](https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood) |
 | Civil War | 24 | [source 1](https://en.uesp.net/wiki/Skyrim:Civil_War) |
 | Dawnguard | 18 | [source 1](https://en.uesp.net/wiki/Skyrim:Dawnguard_Quests) |
@@ -107,6 +107,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Riverwood Trader (`riverwood_trader`) | Whiterun | BUILDING | SKYRIM | Dragon Claws | VERIFIED |
 | Rorikstead (`rorikstead`) | Whiterun | SETTLEMENT | SKYRIM | Daedric Artifacts | VERIFIED |
 | Shrine of Talos near Shimmermist Cave (`shrine_of_talos_whiterun`) | Whiterun | EXTERIOR_SITE | SKYRIM | Holds & Homes | VERIFIED |
+| Skyforge (`skyforge`) | Whiterun | EXTERIOR_SITE | SKYRIM | Companions | VERIFIED |
 | Sleeping Giant Inn (`sleeping_giant_inn`) | Whiterun | BUILDING | SKYRIM | Skyrim Main Quest | VERIFIED |
 | The Underforge (`underforge`) | Whiterun | BUILDING | SKYRIM | Companions | VERIFIED |
 | Volunruud (`volunruud`) | Whiterun | DUNGEON | SKYRIM | Dark Brotherhood; Shouts | VERIFIED |
@@ -131,6 +132,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Ilinalta's Deep (`ilinaltas_deep`) | Falkreath | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
 | Knifepoint Ridge (`knifepoint_ridge`) | Falkreath | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
 | Lakeview Manor (`lakeview_manor`) | Falkreath | BUILDING | HEARTHFIRE | Hearthfire Homesteads | VERIFIED |
+| North Skybound Watch (`north_skybound_watch`) | Falkreath | EXTERIOR_SITE | SKYRIM | College of Winterhold | VERIFIED |
 | Pinewatch (`pinewatch`) | Falkreath | DUNGEON | SKYRIM | Thieves Guild | VERIFIED |
 | Shriekwind Bastion (`shriekwind_bastion`) | Falkreath | DUNGEON | SKYRIM | Shouts | VERIFIED |
 | Sunderstone Gorge (`sunderstone_gorge`) | Falkreath | DUNGEON | SKYRIM | Shouts; Thieves Guild | VERIFIED |
@@ -151,6 +153,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Honeyside (`honeyside`) | Riften | BUILDING | SKYRIM | Holds & Homes | VERIFIED |
 | Honorhall Orphanage (`honorhall_orphanage`) | Riften | BUILDING | SKYRIM | Dark Brotherhood | VERIFIED |
 | Ivarstead (`ivarstead`) | Riften | SETTLEMENT | SKYRIM | Dark Brotherhood | VERIFIED |
+| Lake Honrich — Quill Wreck (`lake_honrich_quill_wreck`) | Riften | EXTERIOR_SITE | SKYRIM | Thieves Guild | VERIFIED |
 | Largashbur (`largashbur`) | Riften | SETTLEMENT | SKYRIM | Daedric Artifacts | VERIFIED |
 | Lost Tongue Overlook (`lost_tongue_overlook`) | Riften | EXTERIOR_SITE | SKYRIM | Shouts | VERIFIED |
 | Mistveil Keep (`mistveil_keep`) | Riften | BUILDING | SKYRIM | Holds & Homes; Thieves Guild | VERIFIED |
@@ -172,11 +175,16 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Tolvald's Cave (`tolvalds_cave`) | Riften | DUNGEON | SKYRIM | Thieves Guild | VERIFIED |
 | Abandoned House (`abandoned_house_markarth`) | Markarth | BUILDING | SKYRIM | Daedric Artifacts | VERIFIED |
 | Arkngthamz (`arkngthamz`) | Markarth | DUNGEON | DAWNGUARD | Dawnguard | VERIFIED |
+| Broken Tower Redoubt (`broken_tower_redoubt`) | Markarth | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
+| Bruca's Leap Redoubt (`brucas_leap_redoubt`) | Markarth | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
 | Bthardamz (`bthardamz`) | Markarth | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
 | Dead Crone Rock (`dead_crone_rock`) | Markarth | DUNGEON | SKYRIM | Daedric Artifacts; Shouts; Thieves Guild | VERIFIED |
 | Deep Folk Crossing (`deep_folk_crossing`) | Markarth | EXTERIOR_SITE | SKYRIM | Dawnguard | VERIFIED |
 | Dragontooth Crater (`dragontooth_crater`) | Markarth | EXTERIOR_SITE | SKYRIM | Shouts | VERIFIED |
+| Druadach Redoubt (`druadach_redoubt`) | Markarth | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
 | Fort Sungard (`fort_sungard`) | Markarth | DUNGEON | SKYRIM | Civil War | VERIFIED |
+| Four Skull Lookout (`four_skull_lookout`) | Markarth | EXTERIOR_SITE | SKYRIM | College of Winterhold | VERIFIED |
+| Hag Rock Redoubt (`hag_rock_redoubt`) | Markarth | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
 | Karthspire (`karthspire`) | Markarth | DUNGEON | SKYRIM | Skyrim Main Quest | VERIFIED |
 | Lost Valley Redoubt (`lost_valley_redoubt`) | Markarth | DUNGEON | SKYRIM | Shouts | VERIFIED |
 | Markarth (`markarth`) | Markarth | SETTLEMENT | SKYRIM | Holds & Homes | VERIFIED |
@@ -186,6 +194,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Reach Stormcloak Camp (`reach_stormcloak_camp`) | Markarth | EXTERIOR_SITE | SKYRIM | Civil War | VERIFIED |
 | Reachcliff Cave (`reachcliff_cave`) | Markarth | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
 | Reachwater Rock (`reachwater_rock`) | Markarth | DUNGEON | SKYRIM | Dragon Claws | VERIFIED |
+| Red Eagle Redoubt (`red_eagle_redoubt`) | Markarth | DUNGEON | SKYRIM | Daedric Artifacts | VERIFIED |
 | Shrine to Peryite (`shrine_to_peryite`) | Markarth | EXTERIOR_SITE | SKYRIM | Daedric Artifacts | VERIFIED |
 | Sky Haven Temple (`sky_haven_temple`) | Markarth | BUILDING | SKYRIM | Skyrim Main Quest; Unique Spells & Powers | VERIFIED |
 | Temple of Dibella (`temple_of_dibella`) | Markarth | BUILDING | SKYRIM | Unique Spells & Powers | VERIFIED |
@@ -212,7 +221,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Blue Palace (`blue_palace`) | Solitude | BUILDING | SKYRIM | Daedric Artifacts; Holds & Homes; Thieves Guild | VERIFIED |
 | Castle Dour (`castle_dour`) | Solitude | BUILDING | SKYRIM | Civil War; Dark Brotherhood | VERIFIED |
 | Dead Men's Respite (`dead_mens_respite`) | Solitude | DUNGEON | SKYRIM | Dragon Claws; Shouts; Unique Spells & Powers | VERIFIED |
-| Deepwood Redoubt / Hag's End (`deepwood_redoubt`) | Solitude | DUNGEON | SKYRIM | Shouts | VERIFIED |
+| Deepwood Redoubt / Hag's End (`deepwood_redoubt`) | Solitude | DUNGEON | SKYRIM | Daedric Artifacts; Shouts | VERIFIED |
 | Dragon Bridge (`dragon_bridge`) | Solitude | SETTLEMENT | SKYRIM | Dark Brotherhood; Dawnguard | VERIFIED |
 | East Empire Company Warehouse (`east_empire_company_warehouse`) | Solitude | BUILDING | SKYRIM | Thieves Guild | VERIFIED |
 | Fort Hraggstad (`fort_hraggstad`) | Solitude | DUNGEON | SKYRIM | Civil War | VERIFIED |
@@ -227,6 +236,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Thalmor Embassy (`thalmor_embassy`) | Solitude | BUILDING | SKYRIM | Skyrim Main Quest | VERIFIED |
 | The Dainty Sload (`dainty_sload`) | Solitude | DUNGEON | SKYRIM | Thieves Guild | VERIFIED |
 | The Katariah (`katariah`) | Solitude | DUNGEON | SKYRIM | Dark Brotherhood | VERIFIED |
+| The Red Wave (`the_red_wave`) | Solitude | EXTERIOR_SITE | SKYRIM | Thieves Guild | VERIFIED |
 | The Winking Skeever (`winking_skeever`) | Solitude | BUILDING | SKYRIM | Dark Brotherhood; Skyrim Main Quest | VERIFIED |
 | Volskygge (`volskygge`) | Solitude | DUNGEON | SKYRIM | Dragon Priest Masks; Shouts | VERIFIED |
 | Wolfskull Cave (`wolfskull_cave`) | Solitude | DUNGEON | SKYRIM | Holds & Homes | VERIFIED |
@@ -254,6 +264,7 @@ This generated inversion of the machine-readable inventory shows why every Locat
 | Skyborn Altar (`skyborn_altar`) | Dawnstar | EXTERIOR_SITE | SKYRIM | Shouts | VERIFIED |
 | The White Hall (`white_hall`) | Dawnstar | BUILDING | SKYRIM | Holds & Homes | VERIFIED |
 | Windpeak Inn (`windpeak_inn`) | Dawnstar | BUILDING | SKYRIM | Daedric Artifacts; Holds & Homes | VERIFIED |
+| Windward Ruins (`windward_ruins`) | Dawnstar | EXTERIOR_SITE | SKYRIM | College of Winterhold | VERIFIED |
 | Alftand (`alftand`) | Winterhold | DUNGEON | SKYRIM | Daedric Artifacts; Skyrim Main Quest | VERIFIED |
 | College of Winterhold (`college_of_winterhold`) | Winterhold | BUILDING | SKYRIM | College of Winterhold; Thieves Guild; Unique Spells & Powers | VERIFIED |
 | Fort Kastav (`fort_kastav`) | Winterhold | DUNGEON | SKYRIM | Civil War | VERIFIED |
@@ -334,5 +345,5 @@ This generated inversion of the machine-readable inventory shows why every Locat
 
 - The two-region Solstheim model is Product-approved.
 - All catalog Locations have verified Survival-planning assignments.
-- The coverage inventory excludes radiant-only and Creation Club destination expansion.
-- Bulk Task population remains a separate, subsequent increment.
+- The approved six-location Logrolf radiant set is covered; uncontrolled radiant and Creation Club expansion remains excluded.
+- The Geography Foundation preceded canonical Task population; subsequent approved increments reuse its verified Location assignments.

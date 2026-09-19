@@ -20,6 +20,7 @@ from skyrim_wayfinder.domain import (
     CompletionDomain,
     ContentSource,
     GeographyType,
+    FiniteProgressDefinition,
     Location,
     LocationType,
     PlannerBehavior,
@@ -44,7 +45,7 @@ FILES = (
     "completion_domains.json", "collections.json", "stories.json",
     "task_memberships.json", "regions.json", "locations.json", "choices.json",
     "tasks.json", "access_conditions.json", "shouts.json", "shout_credits.json",
-    "collectibles.json", "collectible_credits.json", "theme.json",
+    "collectibles.json", "collectible_credits.json", "finite_progress.json", "theme.json",
 )
 
 
@@ -105,12 +106,13 @@ def load_canonical_content(directory: str | Path | None = None) -> CanonicalCont
         "shout_credits.json": "shout credit",
         "collectibles.json": "collectible",
         "collectible_credits.json": "collectible credit",
+        "finite_progress.json": "finite progress",
     }
     for name in (
         "completion_domains.json", "collections.json", "stories.json", "regions.json",
         "locations.json", "task_memberships.json", "choices.json", "tasks.json",
         "access_conditions.json", "shouts.json", "shout_credits.json",
-        "collectibles.json", "collectible_credits.json",
+        "collectibles.json", "collectible_credits.json", "finite_progress.json",
     ):
         _unique_by_id(raw[name], id_labels[name])
     _reject_geography(raw["completion_domains.json"], "Domain")
@@ -182,6 +184,12 @@ def load_canonical_content(directory: str | Path | None = None) -> CanonicalCont
         prepared["preparation_for"] = tuple(prepared.get("preparation_for", ()))
         prepared["any_of_task_ids"] = tuple(prepared.get("any_of_task_ids", ()))
         prepared["access_condition_ids"] = tuple(prepared.get("access_condition_ids", ()))
+        prepared["sets_access_condition_ids"] = tuple(
+            prepared.get("sets_access_condition_ids", ())
+        )
+        prepared["clears_access_condition_ids"] = tuple(
+            prepared.get("clears_access_condition_ids", ())
+        )
         prepared["required_collectible_ids"] = tuple(prepared.get("required_collectible_ids", ()))
         prepared["prerequisites"] = tuple(
             Prerequisite(**condition) for condition in prepared.get("prerequisites", ())
@@ -204,6 +212,12 @@ def load_canonical_content(directory: str | Path | None = None) -> CanonicalCont
     for item in raw["access_conditions.json"]:
         prepared = dict(item)
         prepared["source_urls"] = tuple(prepared.get("source_urls", ()))
+        prepared["satisfied_by_any_task_ids"] = tuple(
+            prepared.get("satisfied_by_any_task_ids", ())
+        )
+        prepared["satisfied_by_all_task_ids"] = tuple(
+            prepared.get("satisfied_by_all_task_ids", ())
+        )
         prepared["content_source"] = ContentSource(prepared["content_source"])
         access_conditions[prepared["id"]] = AccessCondition(**prepared)
     shouts = {}
@@ -222,6 +236,9 @@ def load_canonical_content(directory: str | Path | None = None) -> CanonicalCont
     collectible_credits = {
         item["id"]: CollectibleCredit(**item) for item in raw["collectible_credits.json"]
     }
+    finite_progress = {
+        item["id"]: FiniteProgressDefinition(**item) for item in raw["finite_progress.json"]
+    }
 
     fingerprint_payload = json.dumps(raw, sort_keys=True, separators=(",", ":"))
     content = CanonicalContent(
@@ -229,7 +246,7 @@ def load_canonical_content(directory: str | Path | None = None) -> CanonicalCont
         memberships=memberships, regions=regions, locations=locations,
         tasks=tasks, choices=choices, access_conditions=access_conditions,
         shouts=shouts, shout_credits=shout_credits, collectibles=collectibles,
-        collectible_credits=collectible_credits, theme=raw["theme.json"],
+        collectible_credits=collectible_credits, finite_progress=finite_progress, theme=raw["theme.json"],
         fingerprint=hashlib.sha256(fingerprint_payload.encode()).hexdigest(),
     )
     _validate(content)
@@ -241,6 +258,11 @@ def _validate(content: CanonicalContent) -> None:
     for collection in content.collections.values():
         if collection.domain_id not in content.domains:
             errors.append(f"Collection {collection.id} references unknown domain {collection.domain_id}")
+    for progress in content.finite_progress.values():
+        if progress.collection_id not in content.collections:
+            errors.append(f"Finite progress {progress.id} references unknown collection")
+        if progress.required_count < 1 or not progress.source_url.startswith("https://"):
+            errors.append(f"Finite progress {progress.id} requires a positive count and HTTPS source")
     for story in content.stories.values():
         if story.collection_id not in content.collections:
             errors.append(f"Story {story.id} references unknown collection {story.collection_id}")
@@ -319,6 +341,8 @@ def _validate(content: CanonicalContent) -> None:
         for condition in task.prerequisites:
             if condition.type in {"task_complete", "preparation_complete"} and condition.task_id not in content.tasks:
                 errors.append(f"Task {task.id} prerequisite references {condition.task_id}")
+            if condition.type == "finite_progress" and condition.finite_progress_id not in content.finite_progress:
+                errors.append(f"Task {task.id} prerequisite references unknown finite progress")
             if condition.when_outcome_task_id:
                 source = content.tasks.get(condition.when_outcome_task_id)
                 if not source or condition.when_outcome not in source.outcome_options:
@@ -331,9 +355,22 @@ def _validate(content: CanonicalContent) -> None:
         for condition_id in task.access_condition_ids:
             if condition_id not in content.access_conditions:
                 errors.append(f"Task {task.id} references unknown access condition {condition_id}")
+        for condition_id in (*task.sets_access_condition_ids, *task.clears_access_condition_ids):
+            if condition_id not in content.access_conditions:
+                errors.append(f"Task {task.id} changes unknown access condition {condition_id}")
         for collectible_id in task.required_collectible_ids:
             if collectible_id not in content.collectibles:
                 errors.append(f"Task {task.id} requires unknown collectible {collectible_id}")
+
+    for condition in content.access_conditions.values():
+        for task_id in (
+            *condition.satisfied_by_any_task_ids,
+            *condition.satisfied_by_all_task_ids,
+        ):
+            if task_id not in content.tasks:
+                errors.append(
+                    f"Access condition {condition.id} derives from unknown task {task_id}"
+                )
 
     for shout in content.shouts.values():
         if shout.collection_id not in content.collections:
@@ -358,6 +395,11 @@ def _validate(content: CanonicalContent) -> None:
             errors.append(f"Collectible {collectible.id} requires no credits")
         if not collectible.source_url.startswith("https://"):
             errors.append(f"Collectible {collectible.id} requires an HTTPS source URL")
+        if (
+            collectible.collection_id == "daedric_artifacts"
+            and collectible.oblivion_walker_eligible is None
+        ):
+            errors.append(f"Daedric collectible {collectible.id} requires achievement metadata")
     for credit in content.collectible_credits.values():
         if credit.task_id not in content.tasks or credit.collectible_id not in content.collectibles:
             errors.append(f"Collectible credit {credit.id} has an invalid reference")

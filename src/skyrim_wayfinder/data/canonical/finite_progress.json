@@ -1,0 +1,6 @@
+[
+  {"id": "guild_influence_whiterun", "display_name": "Whiterun Guild influence", "required_count": 5, "collection_id": "thieves_guild", "source_url": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"},
+  {"id": "guild_influence_markarth", "display_name": "Markarth Guild influence", "required_count": 5, "collection_id": "thieves_guild", "source_url": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"},
+  {"id": "guild_influence_solitude", "display_name": "Solitude Guild influence", "required_count": 5, "collection_id": "thieves_guild", "source_url": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"},
+  {"id": "guild_influence_windhelm", "display_name": "Windhelm Guild influence", "required_count": 5, "collection_id": "thieves_guild", "source_url": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"}
+]

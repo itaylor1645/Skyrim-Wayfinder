@@ -1,15 +1,223 @@
 [
-  {"id":"dark_brotherhood_path","title":"Dark Brotherhood path","source_url":"https://en.uesp.net/wiki/Skyrim:With_Friends_Like_These...","options":[
-    {"id":"join","label":"Join the Dark Brotherhood","excludes_options":["destroy"]},
-    {"id":"destroy","label":"Destroy the Dark Brotherhood","excludes_options":["join"]}
-  ]},
-  {"id":"mq_fallen_adviser","title":"The Fallen adviser route","source_url":"https://en.uesp.net/wiki/Skyrim:The_Fallen","options":[
-    {"id":"paarthurnax","label":"Consult Paarthurnax","excludes_options":["arngeir","esbern"]},
-    {"id":"arngeir","label":"Consult Arngeir","excludes_options":["paarthurnax","esbern"]},
-    {"id":"esbern","label":"Consult Esbern","excludes_options":["paarthurnax","arngeir"]}
-  ]},
-  {"id":"paarthurnax_resolution","title":"Paarthurnax resolution","source_url":"https://en.uesp.net/wiki/Skyrim:Paarthurnax_(quest)","options":[
-    {"id":"killed","label":"Killed","excludes_options":["spared"]},
-    {"id":"spared","label":"Spared","excludes_options":["killed"],"manual_resolution":true}
-  ]}
+  {
+    "id": "dark_brotherhood_path",
+    "title": "Dark Brotherhood path",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:With_Friends_Like_These...",
+    "options": [
+      {
+        "id": "join",
+        "label": "Join the Dark Brotherhood",
+        "excludes_options": [
+          "destroy"
+        ]
+      },
+      {
+        "id": "destroy",
+        "label": "Destroy the Dark Brotherhood",
+        "excludes_options": [
+          "join"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mq_fallen_adviser",
+    "title": "The Fallen adviser route",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Fallen",
+    "options": [
+      {
+        "id": "paarthurnax",
+        "label": "Consult Paarthurnax",
+        "excludes_options": [
+          "arngeir",
+          "esbern"
+        ]
+      },
+      {
+        "id": "arngeir",
+        "label": "Consult Arngeir",
+        "excludes_options": [
+          "paarthurnax",
+          "esbern"
+        ]
+      },
+      {
+        "id": "esbern",
+        "label": "Consult Esbern",
+        "excludes_options": [
+          "paarthurnax",
+          "arngeir"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paarthurnax_resolution",
+    "title": "Paarthurnax resolution",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Paarthurnax_(quest)",
+    "options": [
+      {
+        "id": "killed",
+        "label": "Killed",
+        "excludes_options": [
+          "spared"
+        ]
+      },
+      {
+        "id": "spared",
+        "label": "Spared",
+        "excludes_options": [
+          "killed"
+        ],
+        "manual_resolution": true
+      }
+    ]
+  },
+  {
+    "id": "daedric_azura_reward",
+    "title": "The Black Star reward",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Black_Star",
+    "options": [
+      {
+        "id": "azura",
+        "label": "Restore Azura's Star",
+        "excludes_options": [
+          "black"
+        ]
+      },
+      {
+        "id": "black",
+        "label": "Create the Black Star",
+        "excludes_options": [
+          "azura"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daedric_clavicus_reward",
+    "title": "Clavicus Vile reward",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Daedra%27s_Best_Friend",
+    "options": [
+      {
+        "id": "masque",
+        "label": "Spare Barbas and receive the Masque",
+        "excludes_options": [
+          "axe"
+        ]
+      },
+      {
+        "id": "axe",
+        "label": "Kill Barbas and keep the Rueful Axe",
+        "excludes_options": [
+          "masque"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daedric_hircine_reward",
+    "title": "Hircine reward",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ill_Met_By_Moonlight",
+    "options": [
+      {
+        "id": "ring",
+        "label": "Spare Sinding and receive the Ring",
+        "excludes_options": [
+          "hide"
+        ]
+      },
+      {
+        "id": "hide",
+        "label": "Kill Sinding and receive the Hide",
+        "excludes_options": [
+          "ring"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daedric_razor_fate",
+    "title": "Mehrunes' Razor outcome",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past",
+    "options": [
+      {
+        "id": "razor",
+        "label": "Kill Silus and claim the Razor",
+        "excludes_options": [
+          "spared"
+        ]
+      },
+      {
+        "id": "spared",
+        "label": "Spare Silus",
+        "excludes_options": [
+          "razor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daedric_logrolf_fate",
+    "title": "Logrolf's fate",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "options": [
+      {
+        "id": "freed",
+        "label": "Free Logrolf",
+        "excludes_options": [
+          "killed"
+        ]
+      },
+      {
+        "id": "killed",
+        "label": "Kill captive Logrolf",
+        "excludes_options": [
+          "freed"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daedric_namira_fate",
+    "title": "The Taste of Death outcome",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Taste_of_Death",
+    "options": [
+      {
+        "id": "ring",
+        "label": "Complete Namira's feast",
+        "excludes_options": [
+          "saved"
+        ]
+      },
+      {
+        "id": "saved",
+        "label": "Kill Eola and save Verulus",
+        "excludes_options": [
+          "ring"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daedric_vaermina_fate",
+    "title": "Waking Nightmare outcome",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Waking_Nightmare",
+    "options": [
+      {
+        "id": "skull",
+        "label": "Kill Erandur and take the Skull",
+        "excludes_options": [
+          "destroyed"
+        ]
+      },
+      {
+        "id": "destroyed",
+        "label": "Let Erandur destroy the Skull",
+        "excludes_options": [
+          "skull"
+        ]
+      }
+    ]
+  }
 ]

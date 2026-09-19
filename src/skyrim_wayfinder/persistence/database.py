@@ -53,6 +53,11 @@ class StateRepository:
                 satisfied INTEGER NOT NULL,
                 updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
             );
+            CREATE TABLE IF NOT EXISTS finite_progress_state (
+                progress_id TEXT PRIMARY KEY,
+                current_count INTEGER NOT NULL,
+                updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+            );
             CREATE TABLE IF NOT EXISTS settings (
                 key TEXT PRIMARY KEY,
                 value TEXT NOT NULL
@@ -66,8 +71,8 @@ class StateRepository:
             self._migrate_to_v3()
         if version < 4:
             self._migrate_to_v4()
-        if version < 5:
-            self.connection.execute("UPDATE schema_version SET version = 5")
+        if version < 6:
+            self.connection.execute("UPDATE schema_version SET version = 6")
         self.connection.commit()
 
     def _migrate_to_v2(self) -> None:
@@ -260,6 +265,21 @@ class StateRepository:
                    ON CONFLICT(condition_id) DO UPDATE SET satisfied=1, updated_at=CURRENT_TIMESTAMP""",
                 (condition_id,),
             )
+        self.connection.commit()
+
+    def get_finite_progress(self, progress_id: str) -> int:
+        row = self.connection.execute(
+            "SELECT current_count FROM finite_progress_state WHERE progress_id = ?", (progress_id,)
+        ).fetchone()
+        return int(row["current_count"]) if row else 0
+
+    def set_finite_progress(self, progress_id: str, count: int) -> None:
+        self.connection.execute(
+            """INSERT INTO finite_progress_state(progress_id, current_count) VALUES (?, ?)
+               ON CONFLICT(progress_id) DO UPDATE SET current_count=excluded.current_count,
+               updated_at=CURRENT_TIMESTAMP""",
+            (progress_id, count),
+        )
         self.connection.commit()
 
     def get_setting(self, key: str, default: str | None = None) -> str | None:

@@ -436,13 +436,11 @@
     "geography_type": "PHYSICAL",
     "planner_behavior": "REGIONAL_ACTION",
     "location_id": "septimus_signus_outpost",
-    "prerequisites": [
-      {
-        "type": "task_complete",
-        "task_id": "mq_throat_meet_paarthurnax"
-      }
-    ],
-    "source_url": "https://en.uesp.net/wiki/Skyrim:Elder_Knowledge"
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Elder_Knowledge",
+    "any_of_task_ids": [
+      "mq_throat_meet_paarthurnax",
+      "daedric_discerning_seek_septimus"
+    ]
   },
   {
     "id": "mq_elder_descend_alftand",
@@ -567,7 +565,7 @@
     "prerequisites": [
       {
         "type": "task_complete",
-        "task_id": "college_under_saarthal"
+        "task_id": "college_hitting_books_accept"
       }
     ],
     "source_url": "https://en.uesp.net/wiki/Skyrim:Hitting_the_Books"
@@ -575,14 +573,14 @@
   {
     "id": "college_good_intentions",
     "title": "Consult the Augur of Dunlain",
-    "objective": "Report to the Arch-Mage and consult the Augur of Dunlain at the College.",
+    "objective": "Consult the Augur of Dunlain in the Midden and report his warning to Savos Aren.",
     "geography_type": "PHYSICAL",
     "planner_behavior": "REGIONAL_ACTION",
     "location_id": "college_of_winterhold",
     "prerequisites": [
       {
         "type": "task_complete",
-        "task_id": "college_hitting_books"
+        "task_id": "college_hitting_books_return"
       }
     ],
     "source_url": "https://en.uesp.net/wiki/Skyrim:Good_Intentions"
@@ -597,7 +595,7 @@
     "prerequisites": [
       {
         "type": "task_complete",
-        "task_id": "college_good_intentions"
+        "task_id": "college_revealing_unseen_accept"
       }
     ],
     "source_url": "https://en.uesp.net/wiki/Skyrim:Revealing_the_Unseen"
@@ -626,7 +624,7 @@
     "prerequisites": [
       {
         "type": "task_complete",
-        "task_id": "college_revealing_unseen_report_college"
+        "task_id": "college_containment_find_savos"
       }
     ],
     "source_url": "https://en.uesp.net/wiki/Skyrim:Containment"
@@ -655,7 +653,7 @@
     "prerequisites": [
       {
         "type": "task_complete",
-        "task_id": "college_containment_report_college"
+        "task_id": "college_staff_magnus_accept"
       }
     ]
   },
@@ -669,7 +667,7 @@
     "prerequisites": [
       {
         "type": "task_complete",
-        "task_id": "college_containment_report_college"
+        "task_id": "college_staff_magnus_accept"
       }
     ],
     "source_url": "https://en.uesp.net/wiki/Skyrim:Morokei_(item)"
@@ -1682,7 +1680,7 @@
     "prerequisites": [
       {
         "type": "task_complete",
-        "task_id": "college_containment_report_college"
+        "task_id": "college_staff_magnus_accept"
       }
     ]
   },
@@ -2088,5 +2086,4060 @@
       "mask_konahrik"
     ],
     "source_url": "https://en.uesp.net/wiki/Skyrim:Bromjunaar_Sanctuary"
+  },
+  {
+    "id": "daedric_black_star_visit_shrine",
+    "title": "Consult Aranea at the Shrine of Azura",
+    "objective": "Ask Aranea about Azura's vision.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Black_Star",
+    "location_id": "shrine_of_azura"
+  },
+  {
+    "id": "daedric_black_star_consult_nelacar",
+    "title": "Consult Nelacar",
+    "objective": "Ask Nelacar about Malyn Varen and the broken Star.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Black_Star",
+    "location_id": "frozen_hearth",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_black_star_visit_shrine"
+      }
+    ]
+  },
+  {
+    "id": "daedric_black_star_recover_broken",
+    "title": "Recover the Broken Star",
+    "objective": "Recover the Broken Azura's Star from Ilinalta's Deep.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Black_Star",
+    "location_id": "ilinaltas_deep",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_black_star_consult_nelacar"
+      }
+    ]
+  },
+  {
+    "id": "artifact_azuras_star_acquire",
+    "title": "Restore Azura's Star",
+    "objective": "Return the Star to Aranea, cleanse it, and receive Azura's Star.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Black_Star",
+    "location_id": "shrine_of_azura",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_black_star_recover_broken"
+      }
+    ],
+    "choice_id": "daedric_azura_reward",
+    "choice_option": "azura",
+    "sets_choice": true
+  },
+  {
+    "id": "artifact_black_star_acquire",
+    "title": "Create the Black Star",
+    "objective": "Return the Star to Nelacar, cleanse it, and receive the Black Star.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Black_Star",
+    "location_id": "frozen_hearth",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_black_star_recover_broken"
+      }
+    ],
+    "choice_id": "daedric_azura_reward",
+    "choice_option": "black",
+    "sets_choice": true
+  },
+  {
+    "id": "daedric_boethiah_reach_sacellum",
+    "title": "Meet Boethiah's cult",
+    "objective": "Travel to the Sacellum of Boethiah and speak with the priestess.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Boethiah%27s_Calling",
+    "location_id": "sacellum_of_boethiah",
+    "prerequisites": [
+      {
+        "type": "minimum_level",
+        "minimum_level": 30
+      }
+    ]
+  },
+  {
+    "id": "daedric_boethiah_sacrifice_follower",
+    "title": "Complete Boethiah's sacrifice",
+    "objective": "Lead a willing follower to the Pillar of Sacrifice and complete Boethiah's trial.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Boethiah%27s_Calling",
+    "location_id": "sacellum_of_boethiah",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_boethiah_reach_sacellum"
+      }
+    ]
+  },
+  {
+    "id": "artifact_ebony_mail_acquire",
+    "title": "Acquire the Ebony Mail",
+    "objective": "Defeat Boethiah's champion at Knifepoint Ridge and take the Ebony Mail.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Boethiah%27s_Calling",
+    "location_id": "knifepoint_ridge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_boethiah_sacrifice_follower"
+      }
+    ]
+  },
+  {
+    "id": "daedric_best_friend_speak_lod",
+    "title": "Ask Lod about the stray dog",
+    "objective": "Speak with Lod in Falkreath about the dog outside town.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Daedra%27s_Best_Friend",
+    "location_id": "falkreath",
+    "prerequisites": [
+      {
+        "type": "minimum_level",
+        "minimum_level": 10
+      }
+    ]
+  },
+  {
+    "id": "daedric_best_friend_meet_barbas",
+    "title": "Meet Barbas",
+    "objective": "Find Barbas outside Falkreath and agree to help him.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Daedra%27s_Best_Friend",
+    "location_id": "falkreath",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_best_friend_speak_lod"
+      }
+    ]
+  },
+  {
+    "id": "daedric_best_friend_find_shrine",
+    "title": "Reach Clavicus Vile's shrine",
+    "objective": "Travel with Barbas through Haemar's Shame and speak to Clavicus Vile.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Daedra%27s_Best_Friend",
+    "location_id": "haemars_shame",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_best_friend_meet_barbas"
+      }
+    ]
+  },
+  {
+    "id": "daedric_best_friend_recover_axe",
+    "title": "Recover the Rueful Axe",
+    "objective": "Retrieve the Rueful Axe from Rimerock Burrow.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Daedra%27s_Best_Friend",
+    "location_id": "rimerock_burrow",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_best_friend_find_shrine"
+      }
+    ]
+  },
+  {
+    "id": "artifact_masque_clavicus_acquire",
+    "title": "Return the Axe and acquire the Masque",
+    "objective": "Spare Barbas, return the Rueful Axe, and receive the Masque of Clavicus Vile.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Daedra%27s_Best_Friend",
+    "location_id": "haemars_shame",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_best_friend_recover_axe"
+      }
+    ],
+    "choice_id": "daedric_clavicus_reward",
+    "choice_option": "masque",
+    "sets_choice": true
+  },
+  {
+    "id": "artifact_rueful_axe_acquire",
+    "title": "Kill Barbas and keep the Rueful Axe",
+    "objective": "Accept Clavicus Vile's bargain, kill Barbas, and retain the Rueful Axe.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Daedra%27s_Best_Friend",
+    "location_id": "haemars_shame",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_best_friend_recover_axe"
+      }
+    ],
+    "choice_id": "daedric_clavicus_reward",
+    "choice_option": "axe",
+    "sets_choice": true
+  },
+  {
+    "id": "daedric_discerning_seek_septimus",
+    "title": "Ask Septimus about the Dwemer lockbox",
+    "objective": "Begin Septimus Signus's investigation of the lockbox beneath his outpost.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Discerning_the_Transmundane",
+    "location_id": "septimus_signus_outpost"
+  },
+  {
+    "id": "daedric_discerning_return_lexicon",
+    "title": "Return the transcribed Lexicon",
+    "objective": "Bring the transcribed Lexicon back to Septimus Signus.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Discerning_the_Transmundane",
+    "location_id": "septimus_signus_outpost",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "mq_elder_acquire_scroll"
+      }
+    ]
+  },
+  {
+    "id": "daedric_discerning_resume_research",
+    "title": "Resume Septimus's research",
+    "objective": "At level 15, speak to Septimus about opening the Dwemer lockbox.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Discerning_the_Transmundane",
+    "location_id": "septimus_signus_outpost",
+    "prerequisites": [
+      {
+        "type": "minimum_level",
+        "minimum_level": 15
+      },
+      {
+        "type": "task_complete",
+        "task_id": "daedric_discerning_return_lexicon"
+      }
+    ]
+  },
+  {
+    "id": "daedric_discerning_harvest_blood",
+    "title": "Harvest blood from the five elven races",
+    "objective": "Opportunistically collect Altmer, Bosmer, Dunmer, Falmer, and Orsimer blood from suitable remains.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "OPPORTUNISTIC",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Discerning_the_Transmundane",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_discerning_resume_research"
+      }
+    ]
+  },
+  {
+    "id": "daedric_discerning_deliver_blood",
+    "title": "Deliver the blood samples",
+    "objective": "Return the five blood samples to Septimus Signus.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Discerning_the_Transmundane",
+    "location_id": "septimus_signus_outpost",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_discerning_harvest_blood"
+      }
+    ]
+  },
+  {
+    "id": "artifact_oghma_infinium_acquire",
+    "title": "Acquire the Oghma Infinium",
+    "objective": "Open the Dwemer lockbox and take the Oghma Infinium.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Discerning_the_Transmundane",
+    "location_id": "septimus_signus_outpost",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_discerning_deliver_blood"
+      }
+    ]
+  },
+  {
+    "id": "daedric_ill_met_speak_sinding",
+    "title": "Speak with Sinding",
+    "objective": "Speak with Sinding in Falkreath Jail and accept the Cursed Ring.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ill_Met_By_Moonlight",
+    "location_id": "falkreath_jail"
+  },
+  {
+    "id": "daedric_ill_met_hunt_stag",
+    "title": "Hunt Hircine's White Stag",
+    "objective": "Find the White Stag at its assigned wilderness position and receive Hircine's challenge.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "OPPORTUNISTIC",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ill_Met_By_Moonlight",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_ill_met_speak_sinding"
+      }
+    ]
+  },
+  {
+    "id": "artifact_ring_hircine_acquire",
+    "title": "Spare Sinding and acquire the Ring of Hircine",
+    "objective": "Help Sinding defeat the hunters and receive the uncursed Ring of Hircine.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ill_Met_By_Moonlight",
+    "location_id": "bloated_mans_grotto",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_ill_met_hunt_stag"
+      }
+    ],
+    "choice_id": "daedric_hircine_reward",
+    "choice_option": "ring",
+    "sets_choice": true
+  },
+  {
+    "id": "artifact_saviors_hide_acquire",
+    "title": "Kill Sinding and acquire Savior's Hide",
+    "objective": "Kill and skin Sinding, then receive Savior's Hide from Hircine.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Ill_Met_By_Moonlight",
+    "location_id": "bloated_mans_grotto",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_ill_met_hunt_stag"
+      }
+    ],
+    "choice_id": "daedric_hircine_reward",
+    "choice_option": "hide",
+    "sets_choice": true
+  },
+  {
+    "id": "daedric_cursed_defend_largashbur",
+    "title": "Defend Largashbur",
+    "objective": "Help the Orcs repel the giant attack and speak with Atub.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Cursed_Tribe",
+    "location_id": "largashbur",
+    "prerequisites": [
+      {
+        "type": "minimum_level",
+        "minimum_level": 9
+      }
+    ]
+  },
+  {
+    "id": "prep_cursed_tribe_ingredients",
+    "title": "Set aside troll fat and a Daedra heart",
+    "objective": "Confirm you currently possess one troll fat and one Daedra heart for Atub's ritual.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "PREPARATION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Cursed_Tribe",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_cursed_defend_largashbur"
+      }
+    ],
+    "preparation_for": [
+      "daedric_cursed_complete_ritual"
+    ]
+  },
+  {
+    "id": "daedric_cursed_complete_ritual",
+    "title": "Complete Atub's ritual",
+    "objective": "Bring the ingredients to Atub and witness Malacath's instructions.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Cursed_Tribe",
+    "location_id": "largashbur",
+    "prerequisites": [
+      {
+        "type": "preparation_complete",
+        "task_id": "prep_cursed_tribe_ingredients"
+      }
+    ]
+  },
+  {
+    "id": "daedric_cursed_defeat_giant",
+    "title": "Defeat the giant in Giant's Grove",
+    "objective": "Travel through Fallowstone Cave and recover Shagrol's Warhammer.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Cursed_Tribe",
+    "location_id": "fallowstone_cave",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_cursed_complete_ritual"
+      }
+    ]
+  },
+  {
+    "id": "daedric_cursed_place_hammer",
+    "title": "Place Shagrol's Warhammer on the shrine",
+    "objective": "Return to Largashbur and place the warhammer on Malacath's shrine, completing the quest.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Cursed_Tribe",
+    "location_id": "largashbur",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_cursed_defeat_giant"
+      }
+    ]
+  },
+  {
+    "id": "artifact_volendrung_acquire",
+    "title": "Take Volendrung",
+    "objective": "Physically take Volendrung from Malacath's shrine after it appears.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Cursed_Tribe",
+    "location_id": "largashbur",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_cursed_place_hammer"
+      }
+    ]
+  },
+  {
+    "id": "daedric_pieces_visit_museum",
+    "title": "Visit the Mythic Dawn Museum",
+    "objective": "Speak with Silus Vesuius about reconstructing Mehrunes' Razor.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past",
+    "location_id": "mythic_dawn_museum",
+    "prerequisites": [
+      {
+        "type": "minimum_level",
+        "minimum_level": 20
+      }
+    ]
+  },
+  {
+    "id": "daedric_pieces_recover_pommel",
+    "title": "Recover the Razor's pommel",
+    "objective": "Recover the pommel stone from Dead Crone Rock.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past",
+    "location_id": "dead_crone_rock",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_pieces_visit_museum"
+      }
+    ]
+  },
+  {
+    "id": "daedric_pieces_recover_shards",
+    "title": "Recover the Razor's blade shards",
+    "objective": "Recover the blade shards from Cracked Tusk Keep.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past",
+    "location_id": "cracked_tusk_keep",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_pieces_visit_museum"
+      }
+    ]
+  },
+  {
+    "id": "daedric_pieces_recover_hilt",
+    "title": "Recover the Razor's hilt",
+    "objective": "Recover the hilt from Jorgen and Lami's House.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past",
+    "location_id": "jorgens_house",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_pieces_visit_museum"
+      }
+    ]
+  },
+  {
+    "id": "daedric_pieces_return_fragments",
+    "title": "Return the Razor fragments",
+    "objective": "Bring all three fragments back to Silus at the museum.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past",
+    "location_id": "mythic_dawn_museum",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_pieces_recover_pommel"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "daedric_pieces_recover_shards"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "daedric_pieces_recover_hilt"
+      }
+    ]
+  },
+  {
+    "id": "artifact_mehrunes_razor_acquire",
+    "title": "Kill Silus and acquire Mehrunes' Razor",
+    "objective": "Obey Mehrunes Dagon, kill Silus, reforge the Razor, and take it.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past",
+    "location_id": "shrine_of_mehrunes_dagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_pieces_return_fragments"
+      }
+    ],
+    "choice_id": "daedric_razor_fate",
+    "choice_option": "razor",
+    "sets_choice": true
+  },
+  {
+    "id": "daedric_pieces_spare_silus",
+    "title": "Spare Silus",
+    "objective": "Refuse Mehrunes Dagon and allow Silus to leave with the broken Razor.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Pieces_of_the_Past",
+    "location_id": "shrine_of_mehrunes_dagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_pieces_return_fragments"
+      }
+    ],
+    "choice_id": "daedric_razor_fate",
+    "choice_option": "spared",
+    "sets_choice": true
+  },
+  {
+    "id": "daedric_whisper_hear_rumor",
+    "title": "Ask about Balgruuf's strange children",
+    "objective": "Ask for the rumor in Whiterun after completing Dragon Rising.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Whispering_Door",
+    "location_id": "whiterun",
+    "prerequisites": [
+      {
+        "type": "minimum_level",
+        "minimum_level": 20
+      },
+      {
+        "type": "task_complete",
+        "task_id": "hold_whiterun_thane"
+      }
+    ]
+  },
+  {
+    "id": "daedric_whisper_investigate_door",
+    "title": "Investigate the Whispering Door",
+    "objective": "Speak with Nelkir and investigate the old door beneath Dragonsreach.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Whispering_Door",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_whisper_hear_rumor"
+      }
+    ]
+  },
+  {
+    "id": "artifact_ebony_blade_acquire",
+    "title": "Acquire the Ebony Blade",
+    "objective": "Obtain the key, open the Whispering Door, and take the Ebony Blade.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Whispering_Door",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_whisper_investigate_door"
+      }
+    ]
+  },
+  {
+    "id": "daedric_break_return_beacon",
+    "title": "Return Meridia's Beacon",
+    "objective": "Take Meridia's Beacon to the Statue to Meridia at Kilkreath.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Break_of_Dawn",
+    "location_id": "kilkreath_temple",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_break_of_dawn_beacon"
+      }
+    ]
+  },
+  {
+    "id": "artifact_dawnbreaker_acquire",
+    "title": "Acquire Dawnbreaker",
+    "objective": "Guide Meridia's light through Kilkreath, defeat Malkoran, and take Dawnbreaker.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Break_of_Dawn",
+    "location_id": "kilkreath_temple",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_break_return_beacon"
+      }
+    ]
+  },
+  {
+    "id": "daedric_house_enter_abandoned",
+    "title": "Enter the Abandoned House with Tyranus",
+    "objective": "Meet Vigilant Tyranus and investigate Markarth's Abandoned House.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "abandoned_house_markarth",
+    "access_condition_ids": [
+      "access_forsworn_conspiracy_started"
+    ]
+  },
+  {
+    "id": "daedric_house_record_logrolf_location",
+    "title": "Record Logrolf's assigned prison",
+    "objective": "Report which radiant location Skyrim assigned for captive Logrolf.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_enter_abandoned"
+      }
+    ],
+    "outcome_options": {
+      "broken_tower": "Broken Tower Redoubt",
+      "brucas_leap": "Bruca's Leap Redoubt",
+      "deepwood": "Deepwood Redoubt",
+      "druadach": "Druadach Redoubt",
+      "hag_rock": "Hag Rock Redoubt",
+      "red_eagle": "Red Eagle Redoubt"
+    }
+  },
+  {
+    "id": "daedric_house_free_logrolf_broken_tower",
+    "title": "Free Logrolf at Broken Tower Redoubt",
+    "objective": "Release Logrolf and send him back to Molag Bal's altar.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "broken_tower_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "freed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "broken_tower"
+  },
+  {
+    "id": "daedric_house_kill_logrolf_broken_tower",
+    "title": "Kill captive Logrolf at Broken Tower Redoubt",
+    "objective": "Kill Logrolf while he is captive, permanently failing Molag Bal's demand.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "broken_tower_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "killed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "broken_tower"
+  },
+  {
+    "id": "daedric_house_free_logrolf_brucas_leap",
+    "title": "Free Logrolf at Bruca's Leap Redoubt",
+    "objective": "Release Logrolf and send him back to Molag Bal's altar.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "brucas_leap_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "freed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "brucas_leap"
+  },
+  {
+    "id": "daedric_house_kill_logrolf_brucas_leap",
+    "title": "Kill captive Logrolf at Bruca's Leap Redoubt",
+    "objective": "Kill Logrolf while he is captive, permanently failing Molag Bal's demand.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "brucas_leap_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "killed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "brucas_leap"
+  },
+  {
+    "id": "daedric_house_free_logrolf_deepwood",
+    "title": "Free Logrolf at Deepwood Redoubt",
+    "objective": "Release Logrolf and send him back to Molag Bal's altar.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "deepwood_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "freed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "deepwood"
+  },
+  {
+    "id": "daedric_house_kill_logrolf_deepwood",
+    "title": "Kill captive Logrolf at Deepwood Redoubt",
+    "objective": "Kill Logrolf while he is captive, permanently failing Molag Bal's demand.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "deepwood_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "killed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "deepwood"
+  },
+  {
+    "id": "daedric_house_free_logrolf_druadach",
+    "title": "Free Logrolf at Druadach Redoubt",
+    "objective": "Release Logrolf and send him back to Molag Bal's altar.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "druadach_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "freed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "druadach"
+  },
+  {
+    "id": "daedric_house_kill_logrolf_druadach",
+    "title": "Kill captive Logrolf at Druadach Redoubt",
+    "objective": "Kill Logrolf while he is captive, permanently failing Molag Bal's demand.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "druadach_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "killed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "druadach"
+  },
+  {
+    "id": "daedric_house_free_logrolf_hag_rock",
+    "title": "Free Logrolf at Hag Rock Redoubt",
+    "objective": "Release Logrolf and send him back to Molag Bal's altar.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "hag_rock_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "freed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "hag_rock"
+  },
+  {
+    "id": "daedric_house_kill_logrolf_hag_rock",
+    "title": "Kill captive Logrolf at Hag Rock Redoubt",
+    "objective": "Kill Logrolf while he is captive, permanently failing Molag Bal's demand.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "hag_rock_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "killed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "hag_rock"
+  },
+  {
+    "id": "daedric_house_free_logrolf_red_eagle",
+    "title": "Free Logrolf at Red Eagle Redoubt",
+    "objective": "Release Logrolf and send him back to Molag Bal's altar.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "red_eagle_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "freed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "red_eagle"
+  },
+  {
+    "id": "daedric_house_kill_logrolf_red_eagle",
+    "title": "Kill captive Logrolf at Red Eagle Redoubt",
+    "objective": "Kill Logrolf while he is captive, permanently failing Molag Bal's demand.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "red_eagle_redoubt",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_house_record_logrolf_location"
+      }
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "killed",
+    "sets_choice": true,
+    "applicable_outcome_task_id": "daedric_house_record_logrolf_location",
+    "applicable_outcome": "red_eagle"
+  },
+  {
+    "id": "artifact_mace_molag_bal_acquire",
+    "title": "Acquire the Mace of Molag Bal",
+    "objective": "Return to the Abandoned House, complete Molag Bal's ritual, and receive the Mace.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_House_of_Horrors",
+    "location_id": "abandoned_house_markarth",
+    "any_of_task_ids": [
+      "daedric_house_free_logrolf_broken_tower",
+      "daedric_house_free_logrolf_brucas_leap",
+      "daedric_house_free_logrolf_deepwood",
+      "daedric_house_free_logrolf_druadach",
+      "daedric_house_free_logrolf_hag_rock",
+      "daedric_house_free_logrolf_red_eagle"
+    ],
+    "choice_id": "daedric_logrolf_fate",
+    "choice_option": "freed"
+  },
+  {
+    "id": "daedric_taste_investigate_hall",
+    "title": "Investigate Markarth's Hall of the Dead",
+    "objective": "Speak with Verulus and meet Eola in the Hall of the Dead.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Taste_of_Death",
+    "location_id": "hall_of_the_dead_markarth"
+  },
+  {
+    "id": "daedric_taste_clear_reachcliff",
+    "title": "Clear Reachcliff Cave",
+    "objective": "Clear the way to Namira's shrine for Eola's feast.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Taste_of_Death",
+    "location_id": "reachcliff_cave",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_taste_investigate_hall"
+      }
+    ]
+  },
+  {
+    "id": "daedric_taste_lure_verulus",
+    "title": "Bring Verulus to Reachcliff Cave",
+    "objective": "Convince Brother Verulus to follow you to Namira's shrine.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Taste_of_Death",
+    "location_id": "hall_of_the_dead_markarth",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_taste_clear_reachcliff"
+      }
+    ]
+  },
+  {
+    "id": "artifact_ring_namira_acquire",
+    "title": "Complete the feast and acquire the Ring of Namira",
+    "objective": "Kill Verulus, feed at the altar, and receive the Ring of Namira.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Taste_of_Death",
+    "location_id": "reachcliff_cave",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_taste_lure_verulus"
+      }
+    ],
+    "choice_id": "daedric_namira_fate",
+    "choice_option": "ring",
+    "sets_choice": true
+  },
+  {
+    "id": "daedric_taste_save_verulus",
+    "title": "Kill Eola and save Verulus",
+    "objective": "Turn against Eola at the feast and save Brother Verulus.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Taste_of_Death",
+    "location_id": "reachcliff_cave",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_taste_lure_verulus"
+      }
+    ],
+    "choice_id": "daedric_namira_fate",
+    "choice_option": "saved",
+    "sets_choice": true
+  },
+  {
+    "id": "daedric_only_cure_meet_kesh",
+    "title": "Meet Kesh at the Shrine to Peryite",
+    "objective": "Ask Kesh the Clean how to commune with Peryite.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Only_Cure",
+    "location_id": "shrine_to_peryite",
+    "prerequisites": [
+      {
+        "type": "minimum_level",
+        "minimum_level": 12
+      }
+    ]
+  },
+  {
+    "id": "prep_only_cure_ingredients",
+    "title": "Set aside Kesh's incense ingredients",
+    "objective": "Confirm you currently possess a flawless ruby, silver ingot, deathbell, and vampire dust.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "PREPARATION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Only_Cure",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_only_cure_meet_kesh"
+      }
+    ],
+    "preparation_for": [
+      "daedric_only_cure_inhale_incense"
+    ]
+  },
+  {
+    "id": "daedric_only_cure_inhale_incense",
+    "title": "Commune with Peryite",
+    "objective": "Bring the ingredients to Kesh and inhale the incense fumes.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Only_Cure",
+    "location_id": "shrine_to_peryite",
+    "prerequisites": [
+      {
+        "type": "preparation_complete",
+        "task_id": "prep_only_cure_ingredients"
+      }
+    ]
+  },
+  {
+    "id": "daedric_only_cure_kill_orchendor",
+    "title": "Kill Orchendor",
+    "objective": "Traverse Bthardamz and kill Orchendor.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Only_Cure",
+    "location_id": "bthardamz",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_only_cure_inhale_incense"
+      }
+    ]
+  },
+  {
+    "id": "artifact_spellbreaker_acquire",
+    "title": "Acquire Spellbreaker",
+    "objective": "Return to Peryite's shrine and receive Spellbreaker.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Only_Cure",
+    "location_id": "shrine_to_peryite",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_only_cure_kill_orchendor"
+      }
+    ]
+  },
+  {
+    "id": "daedric_night_meet_sam",
+    "title": "Meet Sam Guevenne",
+    "objective": "After level 14, encounter Sam in the tavern Skyrim selected and win his drinking contest.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "OPPORTUNISTIC",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Night_To_Remember",
+    "prerequisites": [
+      {
+        "type": "minimum_level",
+        "minimum_level": 14
+      }
+    ]
+  },
+  {
+    "id": "daedric_night_temple_dibella",
+    "title": "Investigate the Temple of Dibella",
+    "objective": "Clean up the temple and learn where the night continued.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Night_To_Remember",
+    "location_id": "temple_of_dibella",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_night_meet_sam"
+      }
+    ]
+  },
+  {
+    "id": "daedric_night_visit_rorikstead",
+    "title": "Investigate Rorikstead",
+    "objective": "Speak with Ennis about Gleda and the damage from the previous night.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Night_To_Remember",
+    "location_id": "rorikstead",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_night_temple_dibella"
+      }
+    ]
+  },
+  {
+    "id": "daedric_night_speak_ysolda",
+    "title": "Ask Ysolda about the wedding",
+    "objective": "Resolve Ysolda's demand or learn where Skyrim placed the missing wedding ring.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Night_To_Remember",
+    "location_id": "whiterun",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_night_visit_rorikstead"
+      }
+    ],
+    "outcome_options": {
+      "resolved": "Paid or persuaded Ysolda",
+      "retrieve_ring": "Sent to retrieve the ring"
+    }
+  },
+  {
+    "id": "daedric_night_reach_portal",
+    "title": "Find Sam's portal",
+    "objective": "Traverse Morvunskar and enter the portal to Misty Grove.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Night_To_Remember",
+    "location_id": "morvunskar",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_night_speak_ysolda"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "daedric_night_return_ring",
+        "when_outcome_task_id": "daedric_night_speak_ysolda",
+        "when_outcome": "retrieve_ring"
+      }
+    ]
+  },
+  {
+    "id": "artifact_sanguine_rose_acquire",
+    "title": "Acquire the Sanguine Rose",
+    "objective": "Confront Sam in Misty Grove and receive the Sanguine Rose.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Night_To_Remember",
+    "location_id": "misty_grove",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_night_reach_portal"
+      }
+    ],
+    "one_way": true,
+    "warning_text": "Misty Grove cannot normally be revisited after Sanguine returns you to Skyrim."
+  },
+  {
+    "id": "daedric_mind_speak_dervenin",
+    "title": "Speak with Dervenin",
+    "objective": "Ask Dervenin about his missing master in Solitude.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Mind_of_Madness",
+    "location_id": "solitude"
+  },
+  {
+    "id": "daedric_mind_enter_pelagius_wing",
+    "title": "Enter the Pelagius Wing",
+    "objective": "Obtain access and enter the sealed Pelagius Wing of the Blue Palace.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Mind_of_Madness",
+    "location_id": "blue_palace",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_mind_speak_dervenin"
+      }
+    ]
+  },
+  {
+    "id": "artifact_wabbajack_acquire",
+    "title": "Complete Pelagius's trials and acquire Wabbajack",
+    "objective": "Resolve the three trials in Pelagius's mind and receive Wabbajack.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Mind_of_Madness",
+    "location_id": "blue_palace",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_mind_enter_pelagius_wing"
+      }
+    ]
+  },
+  {
+    "id": "daedric_waking_follow_erandur",
+    "title": "Follow Erandur to Nightcaller Temple",
+    "objective": "Speak with Erandur at Windpeak Inn and follow him to the temple.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Waking_Nightmare",
+    "location_id": "windpeak_inn"
+  },
+  {
+    "id": "daedric_waking_reach_skull",
+    "title": "Reach the Skull of Corruption",
+    "objective": "Traverse Nightcaller Temple, use the Dreamstride, and reach the Skull.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Waking_Nightmare",
+    "location_id": "nightcaller_temple",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_waking_follow_erandur"
+      }
+    ]
+  },
+  {
+    "id": "artifact_skull_corruption_acquire",
+    "title": "Kill Erandur and acquire the Skull of Corruption",
+    "objective": "Obey Vaermina, kill Erandur, and take the Skull of Corruption.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Waking_Nightmare",
+    "location_id": "nightcaller_temple",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_waking_reach_skull"
+      }
+    ],
+    "choice_id": "daedric_vaermina_fate",
+    "choice_option": "skull",
+    "sets_choice": true
+  },
+  {
+    "id": "daedric_waking_destroy_skull",
+    "title": "Allow Erandur to destroy the Skull",
+    "objective": "Reject Vaermina's command and let Erandur banish the Skull.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Waking_Nightmare",
+    "location_id": "nightcaller_temple",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_waking_reach_skull"
+      }
+    ],
+    "choice_id": "daedric_vaermina_fate",
+    "choice_option": "destroyed",
+    "sets_choice": true
+  },
+  {
+    "id": "artifact_skeleton_key_acquire",
+    "title": "Acquire the Skeleton Key",
+    "objective": "Take the Skeleton Key during Blindsighted in Irkngthand.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Skeleton_Key",
+    "location_id": "irkngthand",
+    "access_condition_ids": [
+      "access_blindsighted_irkngthand"
+    ],
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_blind_mercer"
+      }
+    ]
+  },
+  {
+    "id": "daedric_night_retrieve_ring",
+    "title": "Retrieve the wedding ring",
+    "objective": "Recover Ysolda's wedding ring from Moira at Witchmist Grove.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Night_To_Remember",
+    "location_id": "witchmist_grove",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_night_speak_ysolda"
+      }
+    ],
+    "applicable_outcome_task_id": "daedric_night_speak_ysolda",
+    "applicable_outcome": "retrieve_ring"
+  },
+  {
+    "id": "daedric_night_return_ring",
+    "title": "Return the wedding ring to Ysolda",
+    "objective": "Return the recovered ring and learn Sam's destination.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Night_To_Remember",
+    "location_id": "whiterun",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "daedric_night_retrieve_ring"
+      }
+    ],
+    "applicable_outcome_task_id": "daedric_night_speak_ysolda",
+    "applicable_outcome": "retrieve_ring"
+  },
+  {
+    "id": "companions_take_join_trial",
+    "title": "Join the Companions",
+    "objective": "Speak with Kodlak and complete the training bout with Vilkas.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Take_Up_Arms",
+    "location_id": "jorrvaskr"
+  },
+  {
+    "id": "companions_take_deliver_sword",
+    "title": "Deliver Vilkas's sword",
+    "objective": "Take Vilkas's sword to Eorlund Gray-Mane at the Skyforge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Take_Up_Arms",
+    "location_id": "skyforge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_take_join_trial"
+      }
+    ]
+  },
+  {
+    "id": "companions_take_finish_errands",
+    "title": "Finish the new-member errands",
+    "objective": "Deliver Aela's shield and let Farkas show you the living quarters.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Take_Up_Arms",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_take_deliver_sword"
+      }
+    ]
+  },
+  {
+    "id": "companions_gate_job_after_take",
+    "title": "Complete Skyrim's assigned Companions job",
+    "objective": "Complete the radiant job Skyrim assigned after Take Up Arms; Wayfinder does not predict its identity or destination.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Proving_Honor",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_take_finish_errands"
+      }
+    ]
+  },
+  {
+    "id": "companions_proving_accept",
+    "title": "Accept Proving Honor",
+    "objective": "Speak with Skjor and agree to retrieve a Fragment of Wuuthrad with Farkas.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Proving_Honor",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_gate_job_after_take"
+      }
+    ]
+  },
+  {
+    "id": "companions_proving_recover_fragment",
+    "title": "Recover the Fragment of Wuuthrad",
+    "objective": "Enter Dustman's Cairn with Farkas and recover the Fragment of Wuuthrad.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Proving_Honor",
+    "location_id": "dustmans_cairn",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_proving_accept"
+      }
+    ]
+  },
+  {
+    "id": "companions_proving_initiation",
+    "title": "Complete the Companions initiation",
+    "objective": "Return to Jorrvaskr and take part in the formal initiation.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Proving_Honor",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_proving_recover_fragment"
+      }
+    ]
+  },
+  {
+    "id": "companions_gate_job_after_proving",
+    "title": "Complete Skyrim's next assigned Companions job",
+    "objective": "Complete the radiant job Skyrim assigned after Proving Honor; Wayfinder does not predict its identity or destination.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Silver_Hand",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_proving_initiation"
+      }
+    ]
+  },
+  {
+    "id": "companions_silver_meet_skjor",
+    "title": "Meet Skjor for the Circle initiation",
+    "objective": "Speak with Skjor and meet him at the entrance to the Underforge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Silver_Hand",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_gate_job_after_proving"
+      }
+    ]
+  },
+  {
+    "id": "companions_silver_become_werewolf",
+    "title": "Become a werewolf in the blood ritual",
+    "objective": "Enter the Underforge and accept the Beast Blood required to join the Circle.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Silver_Hand",
+    "location_id": "underforge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_silver_meet_skjor"
+      }
+    ],
+    "sets_access_condition_ids": [
+      "companions_lycanthropy_active"
+    ]
+  },
+  {
+    "id": "companions_silver_clear_gallows",
+    "title": "Defeat the Silver Hand at Gallows Rock",
+    "objective": "Fight through Gallows Rock with Aela and discover what happened to Skjor.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Silver_Hand",
+    "location_id": "gallows_rock",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_silver_become_werewolf"
+      }
+    ]
+  },
+  {
+    "id": "companions_gate_aela_retaliation",
+    "title": "Complete Aela's first assigned retaliation job",
+    "objective": "Complete the first Silver Hand retaliation assignment Skyrim gives through Aela; its identity and destination are radiant.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blood%27s_Honor",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_silver_clear_gallows"
+      }
+    ]
+  },
+  {
+    "id": "companions_gate_second_retaliation",
+    "title": "Complete the second assigned retaliation job",
+    "objective": "Complete the second required Silver Hand retaliation assignment; Wayfinder does not predict its identity or destination.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blood%27s_Honor",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_gate_aela_retaliation"
+      }
+    ]
+  },
+  {
+    "id": "companions_blood_accept",
+    "title": "Accept Kodlak's request",
+    "objective": "Speak with Kodlak about curing the Companions' lycanthropy.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blood%27s_Honor",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_gate_second_retaliation"
+      }
+    ]
+  },
+  {
+    "id": "companions_blood_take_head",
+    "title": "Take a Glenmoril Witch Head",
+    "objective": "Defeat a Glenmoril Witch and take the head needed for Kodlak's purification.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blood%27s_Honor",
+    "location_id": "glenmoril_coven",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_blood_accept"
+      }
+    ]
+  },
+  {
+    "id": "companions_blood_collect_spare_heads",
+    "title": "Collect spare Glenmoril Witch Heads",
+    "objective": "Optionally defeat the remaining witches and retain spare heads for later purification.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blood%27s_Honor",
+    "location_id": "glenmoril_coven",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_blood_take_head"
+      }
+    ],
+    "warning_text": "Spare heads support the player's cure and the two finite Purity quests. Wayfinder does not track inventory quantities."
+  },
+  {
+    "id": "companions_blood_return_jorrvaskr",
+    "title": "Return to Kodlak",
+    "objective": "Return to Jorrvaskr and discover the aftermath of the Silver Hand attack.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blood%27s_Honor",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_blood_take_head"
+      }
+    ]
+  },
+  {
+    "id": "companions_revenge_recover_fragments",
+    "title": "Recover the stolen Wuuthrad fragments",
+    "objective": "Enter Driftshade Refuge with Vilkas and recover the stolen Fragments of Wuuthrad.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity_of_Revenge",
+    "location_id": "driftshade_refuge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_blood_return_jorrvaskr"
+      }
+    ]
+  },
+  {
+    "id": "companions_revenge_return_fragments",
+    "title": "Return the Wuuthrad fragments",
+    "objective": "Bring the recovered fragments back to Jorrvaskr.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity_of_Revenge",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_revenge_recover_fragments"
+      }
+    ]
+  },
+  {
+    "id": "companions_glory_attend_funeral",
+    "title": "Attend Kodlak's funeral",
+    "objective": "Join the Companions for Kodlak's funeral at the Skyforge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead",
+    "location_id": "skyforge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_revenge_return_fragments"
+      }
+    ]
+  },
+  {
+    "id": "companions_glory_retrieve_secret_fragment",
+    "title": "Retrieve Kodlak's secret fragment",
+    "objective": "Retrieve Kodlak's Fragment of Wuuthrad from his room in Jorrvaskr.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_glory_attend_funeral"
+      }
+    ]
+  },
+  {
+    "id": "companions_glory_give_fragment_eorlund",
+    "title": "Give Kodlak's fragment to Eorlund",
+    "objective": "Return the final Fragment of Wuuthrad to Eorlund at the Skyforge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead",
+    "location_id": "skyforge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_glory_retrieve_secret_fragment"
+      }
+    ]
+  },
+  {
+    "id": "companions_glory_receive_wuuthrad",
+    "title": "Receive reforged Wuuthrad",
+    "objective": "Meet the Circle in the Underforge and receive the reforged Wuuthrad from Eorlund.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead",
+    "location_id": "underforge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_glory_give_fragment_eorlund"
+      }
+    ]
+  },
+  {
+    "id": "companions_glory_open_tomb",
+    "title": "Open Ysgramor's Tomb with Wuuthrad",
+    "objective": "Place Wuuthrad on Ysgramor's statue and open the way through the tomb.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead",
+    "location_id": "ysgramors_tomb",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_glory_receive_wuuthrad"
+      }
+    ]
+  },
+  {
+    "id": "companions_glory_free_kodlak",
+    "title": "Free Kodlak and become Harbinger",
+    "objective": "Use a Glenmoril Witch Head, defeat Kodlak's wolf spirit, and accept the role of Harbinger.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead",
+    "location_id": "ysgramors_tomb",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_glory_open_tomb"
+      }
+    ],
+    "sets_access_condition_ids": [
+      "access_companions_personal_purification"
+    ]
+  },
+  {
+    "id": "prep_companions_player_witch_head",
+    "title": "Have a Glenmoril Witch Head available for your cure",
+    "objective": "Retain one spare Glenmoril Witch Head if you intend to cure your own lycanthropy.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "PREPARATION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_blood_take_head"
+      }
+    ],
+    "preparation_for": [
+      "companions_glory_cure_player"
+    ]
+  },
+  {
+    "id": "companions_glory_cure_player",
+    "title": "Cure your lycanthropy",
+    "objective": "At the Flame of the Harbinger, use a spare Glenmoril Witch Head and defeat your wolf spirit.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Glory_of_the_Dead",
+    "location_id": "ysgramors_tomb",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_glory_free_kodlak"
+      },
+      {
+        "type": "preparation_complete",
+        "task_id": "prep_companions_player_witch_head"
+      }
+    ],
+    "access_condition_ids": [
+      "companions_lycanthropy_active",
+      "access_companions_personal_purification"
+    ],
+    "clears_access_condition_ids": [
+      "companions_lycanthropy_active",
+      "access_companions_personal_purification"
+    ],
+    "warning_text": "The easiest opportunity is immediately after purifying Kodlak. If you leave without curing yourself, reset the personal-purification access marker; later access may require completing both Purity — Farkas and Purity — Vilkas."
+  },
+  {
+    "id": "companions_totem_retrieve_1",
+    "title": "Confirm retrieval of the first assigned Totem",
+    "objective": "Complete the Totem retrieval Skyrim assigned. The dungeon is radiant, so Wayfinder records the observed progression without inventing geography.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Totems_of_Hircine",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_glory_free_kodlak"
+      }
+    ],
+    "access_condition_ids": [
+      "companions_lycanthropy_active"
+    ]
+  },
+  {
+    "id": "companions_totem_place_1",
+    "title": "Place the first Totem in the Underforge",
+    "objective": "Return the first recovered Totem of Hircine to its receptacle in the Underforge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Totems_of_Hircine",
+    "location_id": "underforge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_totem_retrieve_1"
+      }
+    ],
+    "access_condition_ids": [
+      "companions_lycanthropy_active"
+    ]
+  },
+  {
+    "id": "companions_totem_retrieve_2",
+    "title": "Confirm retrieval of the second assigned Totem",
+    "objective": "Complete the Totem retrieval Skyrim assigned. The dungeon is radiant, so Wayfinder records the observed progression without inventing geography.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Totems_of_Hircine",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_totem_place_1"
+      }
+    ],
+    "access_condition_ids": [
+      "companions_lycanthropy_active"
+    ]
+  },
+  {
+    "id": "companions_totem_place_2",
+    "title": "Place the second Totem in the Underforge",
+    "objective": "Return the second recovered Totem of Hircine to its receptacle in the Underforge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Totems_of_Hircine",
+    "location_id": "underforge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_totem_retrieve_2"
+      }
+    ],
+    "access_condition_ids": [
+      "companions_lycanthropy_active"
+    ]
+  },
+  {
+    "id": "companions_totem_retrieve_3",
+    "title": "Confirm retrieval of the third assigned Totem",
+    "objective": "Complete the Totem retrieval Skyrim assigned. The dungeon is radiant, so Wayfinder records the observed progression without inventing geography.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Totems_of_Hircine",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_totem_place_2"
+      }
+    ],
+    "access_condition_ids": [
+      "companions_lycanthropy_active"
+    ]
+  },
+  {
+    "id": "companions_totem_place_3",
+    "title": "Place the third Totem in the Underforge",
+    "objective": "Return the third recovered Totem of Hircine to its receptacle in the Underforge.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Totems_of_Hircine",
+    "location_id": "underforge",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_totem_retrieve_3"
+      }
+    ],
+    "access_condition_ids": [
+      "companions_lycanthropy_active"
+    ]
+  },
+  {
+    "id": "companions_purity_farkas_accept",
+    "title": "Accept Farkas's purification request",
+    "objective": "Speak with Farkas at Jorrvaskr and agree to help cure his lycanthropy.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_glory_free_kodlak"
+      }
+    ]
+  },
+  {
+    "id": "prep_companions_farkas_witch_head",
+    "title": "Have a Glenmoril Witch Head available for Farkas",
+    "objective": "Confirm that one spare Glenmoril Witch Head is available for Farkas's purification.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "PREPARATION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_purity_farkas_accept"
+      }
+    ],
+    "preparation_for": [
+      "companions_purity_farkas_cure"
+    ]
+  },
+  {
+    "id": "companions_purity_farkas_cure",
+    "title": "Cure Farkas's lycanthropy",
+    "objective": "Take Farkas to Ysgramor's Tomb, use a Witch Head, and defeat his wolf spirit.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity",
+    "location_id": "ysgramors_tomb",
+    "prerequisites": [
+      {
+        "type": "preparation_complete",
+        "task_id": "prep_companions_farkas_witch_head"
+      }
+    ]
+  },
+  {
+    "id": "companions_purity_vilkas_accept",
+    "title": "Accept Vilkas's purification request",
+    "objective": "Speak with Vilkas at Jorrvaskr and agree to help cure his lycanthropy.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity",
+    "location_id": "jorrvaskr",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_glory_free_kodlak"
+      }
+    ]
+  },
+  {
+    "id": "prep_companions_vilkas_witch_head",
+    "title": "Have a Glenmoril Witch Head available for Vilkas",
+    "objective": "Confirm that one spare Glenmoril Witch Head is available for Vilkas's purification.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "PREPARATION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "companions_purity_vilkas_accept"
+      }
+    ],
+    "preparation_for": [
+      "companions_purity_vilkas_cure"
+    ]
+  },
+  {
+    "id": "companions_purity_vilkas_cure",
+    "title": "Cure Vilkas's lycanthropy",
+    "objective": "Take Vilkas to Ysgramor's Tomb, use a Witch Head, and defeat his wolf spirit.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Purity",
+    "location_id": "ysgramors_tomb",
+    "prerequisites": [
+      {
+        "type": "preparation_complete",
+        "task_id": "prep_companions_vilkas_witch_head"
+      }
+    ]
+  },
+  {
+    "id": "college_under_saarthal_report",
+    "title": "Report the discovery at Saarthal",
+    "objective": "Return to the College and report the Eye of Magnus to Arch-Mage Savos Aren.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Under_Saarthal",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_under_saarthal"
+      }
+    ]
+  },
+  {
+    "id": "college_hitting_books_accept",
+    "title": "Ask Urag about the stolen books",
+    "objective": "Speak with Urag gro-Shub in the Arcanaeum and learn that the stolen books were taken to Fellglow Keep.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hitting_the_Books",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_under_saarthal_report"
+      }
+    ]
+  },
+  {
+    "id": "college_hitting_books_return",
+    "title": "Return the stolen books to Urag",
+    "objective": "Bring the three recovered books back to Urag at the College.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hitting_the_Books",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_hitting_books"
+      }
+    ]
+  },
+  {
+    "id": "college_revealing_unseen_accept",
+    "title": "Accept the Mzulft expedition",
+    "objective": "Speak with Mirabelle Ervine and agree to find the Staff of Magnus lead at Mzulft.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Revealing_the_Unseen",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_good_intentions"
+      }
+    ]
+  },
+  {
+    "id": "college_containment_find_savos",
+    "title": "Find Savos after the explosion",
+    "objective": "Reach the College courtyard and find Arch-Mage Savos Aren after Ancano's attack.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Containment",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_revealing_unseen_report_college"
+      }
+    ]
+  },
+  {
+    "id": "college_staff_magnus_accept",
+    "title": "Receive the Labyrinthian assignment",
+    "objective": "Speak with Mirabelle, receive the Torc of Labyrinthian, and take responsibility for recovering the Staff of Magnus.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Staff_of_Magnus",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_containment_report_college"
+      }
+    ]
+  },
+  {
+    "id": "college_eye_breach_barrier",
+    "title": "Breach the College barrier",
+    "objective": "Return with the Staff of Magnus and use it to open a path into the College.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Eye_of_Magnus",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_staff_magnus"
+      }
+    ]
+  },
+  {
+    "id": "college_eye_defeat_ancano",
+    "title": "Defeat Ancano and become Arch-Mage",
+    "objective": "Use the Staff of Magnus to close the Eye, defeat Ancano, and accept appointment as Arch-Mage.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Eye_of_Magnus",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_eye_breach_barrier"
+      }
+    ]
+  },
+  {
+    "id": "college_arniel_begin_cogs",
+    "title": "Begin Arniel's project",
+    "objective": "Ask Arniel about College business and agree to help with his Dwemer research.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_hitting_books_return"
+      }
+    ]
+  },
+  {
+    "id": "prep_college_arniel_cogs",
+    "title": "Have ten Dwemer cogs available for Arniel",
+    "objective": "Collect and retain ten Dwemer cogs for Arniel's first experiment.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "PREPARATION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_begin_cogs"
+      }
+    ],
+    "preparation_for": [
+      "college_arniel_deliver_cogs"
+    ]
+  },
+  {
+    "id": "college_arniel_deliver_cogs",
+    "title": "Deliver ten Dwemer cogs",
+    "objective": "Bring ten Dwemer cogs to Arniel at the College.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "preparation_complete",
+        "task_id": "prep_college_arniel_cogs"
+      }
+    ]
+  },
+  {
+    "id": "college_arniel_negotiate_enthir",
+    "title": "Speak with Enthir for Arniel",
+    "objective": "Discuss Arniel's transaction with Enthir and learn what Skyrim assigned for recovery.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_deliver_cogs"
+      }
+    ]
+  },
+  {
+    "id": "college_arniel_recover_tandil",
+    "title": "Complete Skyrim's assigned Staff of Tandil recovery",
+    "objective": "Recover the Staff of Tandil from the radiant dungeon Skyrim assigned; Wayfinder does not predict its destination.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_negotiate_enthir"
+      }
+    ]
+  },
+  {
+    "id": "college_arniel_deliver_tandil",
+    "title": "Complete Enthir's trade",
+    "objective": "Return the Staff of Tandil to Enthir and deliver the warped soul gem to Arniel.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_recover_tandil"
+      }
+    ]
+  },
+  {
+    "id": "college_arniel_receive_convection",
+    "title": "Receive Arniel's Convection",
+    "objective": "After completing The Eye of Magnus, speak with Arniel and learn Arniel's Convection for the warped soul gem experiment.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_deliver_tandil"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "college_eye_defeat_ancano"
+      }
+    ]
+  },
+  {
+    "id": "college_arniel_charge_gem",
+    "title": "Charge the warped soul gem",
+    "objective": "Use Skyrim's available Dwemer convectors and Arniel's Convection until the warped soul gem is charged; Wayfinder does not prescribe a convector route.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_receive_convection"
+      }
+    ]
+  },
+  {
+    "id": "college_arniel_return_gem",
+    "title": "Return the charged soul gem",
+    "objective": "Bring the charged warped soul gem back to Arniel at the College.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_charge_gem"
+      }
+    ]
+  },
+  {
+    "id": "college_arniel_begin_final",
+    "title": "Resume Arniel's project",
+    "objective": "After Arniel has had time to continue his work, speak with him and Enthir about the missing delivery.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_return_gem"
+      }
+    ],
+    "warning_text": "Skyrim normally requires roughly two or three in-game days before this final part becomes available."
+  },
+  {
+    "id": "college_arniel_find_courier",
+    "title": "Find Skyrim's assigned courier",
+    "objective": "Travel to the radiant location Skyrim assigned and recover the courier's package containing Keening.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_begin_final"
+      }
+    ]
+  },
+  {
+    "id": "college_arniel_receive_shade",
+    "title": "Receive Summon Arniel's Shade",
+    "objective": "Return Keening, observe Arniel's final experiment, and receive Summon Arniel's Shade when he disappears.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_arniel_find_courier"
+      }
+    ]
+  },
+  {
+    "id": "college_brelyna_accept",
+    "title": "Assist Brelyna's practice",
+    "objective": "Agree to let Brelyna practice her experimental spells on you.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Brelyna%27s_Practice",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_under_saarthal_report"
+      }
+    ]
+  },
+  {
+    "id": "college_brelyna_complete",
+    "title": "Complete Brelyna's spell practice",
+    "objective": "Allow Brelyna to complete her successive spell tests after their effects wear off.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Brelyna%27s_Practice",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_brelyna_accept"
+      }
+    ]
+  },
+  {
+    "id": "college_jzargo_accept",
+    "title": "Receive J'zargo's experimental scrolls",
+    "objective": "Agree to test J'zargo's Flame Cloak Scrolls and receive the limited supply of ten scrolls.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:J%27zargo%27s_Experiment",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_under_saarthal_report"
+      }
+    ],
+    "warning_text": "Only ten experimental scrolls are provided. Wasting them without three separately credited undead kills can make this Story impossible."
+  },
+  {
+    "id": "college_jzargo_test_scrolls",
+    "title": "Test J'zargo's scrolls on three undead",
+    "objective": "Use the experimental scrolls to earn three separately credited undead kills, wherever suitable undead are found.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "GLOBAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:J%27zargo%27s_Experiment",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_jzargo_accept"
+      }
+    ],
+    "missable": true,
+    "warning_text": "The scroll supply is limited. A single activation killing multiple undead may grant only one credit."
+  },
+  {
+    "id": "college_jzargo_report",
+    "title": "Report J'zargo's results",
+    "objective": "Return to J'zargo and report what his experimental scrolls did.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:J%27zargo%27s_Experiment",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_jzargo_test_scrolls"
+      }
+    ]
+  },
+  {
+    "id": "college_onmund_negotiate",
+    "title": "Help recover Onmund's amulet",
+    "objective": "Speak with Onmund and negotiate with Enthir. Record whether Enthir demands a radiant staff recovery or returns the amulet after persuasion.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Onmund%27s_Request",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_under_saarthal_report"
+      }
+    ],
+    "outcome_options": {
+      "staff_required": "Enthir requires the Grand Staff of Charming",
+      "persuaded": "Enthir returns the amulet after persuasion"
+    }
+  },
+  {
+    "id": "college_onmund_recover_staff",
+    "title": "Complete Skyrim's assigned staff recovery",
+    "objective": "Recover the Grand Staff of Charming from the radiant dungeon Skyrim assigned.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Onmund%27s_Request",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_onmund_negotiate"
+      }
+    ],
+    "applicable_outcome_task_id": "college_onmund_negotiate",
+    "applicable_outcome": "staff_required"
+  },
+  {
+    "id": "college_onmund_return_amulet",
+    "title": "Return Onmund's amulet",
+    "objective": "Complete Enthir's terms if required, receive Onmund's amulet, and return it to Onmund.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Onmund%27s_Request",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_onmund_negotiate"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "college_onmund_recover_staff",
+        "when_outcome_task_id": "college_onmund_negotiate",
+        "when_outcome": "staff_required"
+      }
+    ]
+  },
+  {
+    "id": "college_forgotten_discover",
+    "title": "Investigate the Midden gauntlet",
+    "objective": "Discover the strange gauntlet and read the incident report in the Midden Dark.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Forgotten_Names",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_gain_admission"
+      }
+    ],
+    "warning_text": "Forgotten Names is an unjournaled College secret; Skyrim does not present it as an ordinary quest."
+  },
+  {
+    "id": "college_forgotten_recover_rings",
+    "title": "Recover the four ornamental rings",
+    "objective": "Use the incident report's key to recover the missing rings from the Arcanaeum.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Forgotten_Names",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_forgotten_discover"
+      }
+    ]
+  },
+  {
+    "id": "college_forgotten_resolve",
+    "title": "Resolve Velehk Sain's summoning",
+    "objective": "Place the rings on the gauntlet and record whether Velehk Sain was released or killed.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Forgotten_Names",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_forgotten_recover_rings"
+      }
+    ],
+    "outcome_options": {
+      "released": "Released Velehk Sain",
+      "killed": "Killed Velehk Sain"
+    },
+    "warning_text": "This is an unjournaled one-time College secret with an irreversible observed outcome."
+  },
+  {
+    "id": "college_ritual_alteration_unlock",
+    "title": "Unlock the Alteration ritual dialogue",
+    "objective": "Official unmodified Skyrim requirement: Alteration 90. Mark this when the ritual dialogue is available in the current game.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alteration_Ritual_Spell",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_good_intentions"
+      }
+    ],
+    "warning_text": "If the skill is later reset to Legendary and Skyrim temporarily blocks progress, use the existing Blocked state; completed historical milestones are not reset."
+  },
+  {
+    "id": "college_ritual_conjuration_unlock",
+    "title": "Unlock the Conjuration ritual dialogue",
+    "objective": "Official unmodified Skyrim requirement: Conjuration 90. Mark this when the ritual dialogue is available in the current game.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Conjuration_Ritual_Spell",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_gain_admission"
+      }
+    ],
+    "warning_text": "If the skill is later reset to Legendary and Skyrim temporarily blocks progress, use the existing Blocked state; completed historical milestones are not reset."
+  },
+  {
+    "id": "college_ritual_destruction_unlock",
+    "title": "Unlock the Destruction ritual dialogue",
+    "objective": "Official unmodified Skyrim requirement: Destruction 100. Mark this when the ritual dialogue is available in the current game. Modded setups such as USSEP may lower the dialogue threshold.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Destruction_Ritual_Spell",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_gain_admission"
+      }
+    ],
+    "warning_text": "If the skill is later reset to Legendary and Skyrim temporarily blocks progress, use the existing Blocked state; completed historical milestones are not reset."
+  },
+  {
+    "id": "college_ritual_illusion_unlock",
+    "title": "Unlock the Illusion ritual dialogue",
+    "objective": "Official unmodified Skyrim requirement: Illusion 100. Mark this when the ritual dialogue is available in the current game. Modded setups such as USSEP may lower the dialogue threshold.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Illusion_Ritual_Spell",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_gain_admission"
+      }
+    ],
+    "warning_text": "If the skill is later reset to Legendary and Skyrim temporarily blocks progress, use the existing Blocked state; completed historical milestones are not reset."
+  },
+  {
+    "id": "college_ritual_restoration_unlock",
+    "title": "Unlock the Restoration ritual dialogue",
+    "objective": "Official unmodified Skyrim requirement: Restoration 90. Mark this when the ritual dialogue is available in the current game.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Restoration_Ritual_Spell",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_good_intentions"
+      }
+    ],
+    "warning_text": "If the skill is later reset to Legendary and Skyrim temporarily blocks progress, use the existing Blocked state; completed historical milestones are not reset."
+  },
+  {
+    "id": "college_ritual_alteration_accept",
+    "title": "Begin the Alteration ritual",
+    "objective": "Ask Tolfdir about advanced Alteration research and agree to obtain dragon heartscales.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alteration_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_alteration_unlock"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_alteration_fang",
+    "title": "Recover Kahvozein's Fang from Skyrim's assigned dungeon",
+    "objective": "Obtain Kahvozein's Fang from the radiant dragon-priest dungeon Skyrim selected.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "MILESTONE",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alteration_Ritual_Spell",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_alteration_accept"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_alteration_scales",
+    "title": "Harvest dragon heartscales",
+    "objective": "Use Kahvozein's Fang to harvest heartscales from a suitable dragon corpse.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "GLOBAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alteration_Ritual_Spell",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_alteration_fang"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_alteration_dragonhide",
+    "title": "Receive Dragonhide",
+    "objective": "Return the heartscales to Tolfdir and receive the unique Dragonhide spell tome.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Alteration_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_alteration_scales"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_conjuration_accept",
+    "title": "Begin the Conjuration ritual",
+    "objective": "Speak with Phinis and receive the temporary Summon Unbound Dremora ritual spell.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Conjuration_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_conjuration_unlock"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_conjuration_sigil",
+    "title": "Obtain the Sigil Stone",
+    "objective": "Summon and defeat the Unbound Dremora as required, then command it to bring a Sigil Stone.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Conjuration_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_conjuration_accept"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_conjuration_flame_thrall",
+    "title": "Receive Flame Thrall",
+    "objective": "Deliver the Sigil Stone to Phinis and receive the unique Flame Thrall spell tome.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Conjuration_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_conjuration_sigil"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_destruction_book",
+    "title": "Receive Power of the Elements",
+    "objective": "Ask Faralda about advanced Destruction and receive the incomplete ritual book.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Destruction_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_destruction_unlock"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_destruction_windward",
+    "title": "Complete the fire pedestal",
+    "objective": "Place Power of the Elements at Windward Ruins and strike the pedestal with fire magic.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Destruction_Ritual_Spell",
+    "location_id": "windward_ruins",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_destruction_book"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_destruction_skybound",
+    "title": "Complete the frost pedestal",
+    "objective": "Take the altered book to North Skybound Watch and strike the pedestal with frost magic.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Destruction_Ritual_Spell",
+    "location_id": "north_skybound_watch",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_destruction_windward"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_destruction_fire_storm",
+    "title": "Acquire Fire Storm",
+    "objective": "Complete the shock pedestal at Four Skull Lookout and read the finished book to learn Fire Storm.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Destruction_Ritual_Spell",
+    "location_id": "four_skull_lookout",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_destruction_skybound"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_illusion_vision",
+    "title": "Receive Vision of the Tenth Eye",
+    "objective": "Speak with Drevis and receive the permanent unique Vision of the Tenth Eye spell.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Illusion_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_illusion_unlock"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_illusion_texts",
+    "title": "Find the four Master Illusion texts",
+    "objective": "Use Vision of the Tenth Eye to find all four hidden texts around the College and Midden.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Illusion_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_illusion_vision"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_illusion_hysteria",
+    "title": "Receive Hysteria",
+    "objective": "Return all four texts to Drevis and receive the unique Hysteria spell tome.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Illusion_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_illusion_texts"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_restoration_accept",
+    "title": "Begin the Restoration ritual",
+    "objective": "Ask Colette about advanced Restoration and receive directions to the Augur of Dunlain.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Restoration_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_restoration_unlock"
+      }
+    ]
+  },
+  {
+    "id": "college_ritual_restoration_bane",
+    "title": "Receive Bane of the Undead",
+    "objective": "Pass the Augur's Restoration trial in the Midden and receive Bane of the Undead.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Restoration_Ritual_Spell",
+    "location_id": "college_of_winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_ritual_restoration_accept"
+      }
+    ]
+  },
+  {
+    "id": "spell_equilibrium_labyrinthian",
+    "title": "Acquire Equilibrium",
+    "objective": "Collect the unique Equilibrium spell tome while exploring Labyrinthian.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Equilibrium",
+    "location_id": "labyrinthian",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "college_staff_magnus_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_chance_meet_brynjolf",
+    "title": "Speak with Brynjolf about joining the Guild",
+    "objective": "Speak with Brynjolf about joining the Guild.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Chance_Arrangement",
+    "location_id": "riften"
+  },
+  {
+    "id": "guild_chance_attempt",
+    "title": "Attempt Brynjolf's market scheme",
+    "objective": "Attempt Brynjolf's market scheme.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Chance_Arrangement",
+    "location_id": "riften",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_chance_meet_brynjolf"
+      }
+    ],
+    "outcome_options": {
+      "success": "Ring planted",
+      "failed": "Scheme failed; Brynjolf still offers the next job"
+    }
+  },
+  {
+    "id": "guild_business_accept",
+    "title": "Meet Brynjolf in the Ragged Flagon",
+    "objective": "Meet Brynjolf in the Ragged Flagon.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Taking_Care_of_Business",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_chance_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_business_keerava",
+    "title": "Collect Keerava's debt",
+    "objective": "Collect Keerava's debt.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Taking_Care_of_Business",
+    "location_id": "riften",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_business_bersi",
+    "title": "Collect Bersi's debt",
+    "objective": "Collect Bersi's debt.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Taking_Care_of_Business",
+    "location_id": "riften",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_business_haelga",
+    "title": "Collect Haelga's debt",
+    "objective": "Collect Haelga's debt.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Taking_Care_of_Business",
+    "location_id": "riften",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_business_report",
+    "title": "Return the debts to Brynjolf and join the Guild",
+    "objective": "Return the debts to Brynjolf and join the Guild.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Taking_Care_of_Business",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_keerava"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_bersi"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_haelga"
+      }
+    ]
+  },
+  {
+    "id": "guild_loud_accept",
+    "title": "Receive the Goldenglow assignment",
+    "objective": "Receive the Goldenglow assignment.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Loud_and_Clear",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_loud_burn_hives",
+    "title": "Burn exactly three Goldenglow beehives",
+    "objective": "Burn exactly three Goldenglow beehives.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Loud_and_Clear",
+    "location_id": "goldenglow_estate",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_loud_accept"
+      }
+    ],
+    "warning_text": "Burn only three hives to satisfy the Guild's assignment."
+  },
+  {
+    "id": "guild_loud_bill_sale",
+    "title": "Retrieve Goldenglow's bill of sale",
+    "objective": "Retrieve Goldenglow's bill of sale.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Loud_and_Clear",
+    "location_id": "goldenglow_estate",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_loud_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_loud_report",
+    "title": "Report Goldenglow's bill of sale to Brynjolf",
+    "objective": "Report Goldenglow's bill of sale to Brynjolf.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Loud_and_Clear",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_loud_burn_hives"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "guild_loud_bill_sale"
+      }
+    ]
+  },
+  {
+    "id": "guild_damp_maven",
+    "title": "Discuss Honningbrew with Maven",
+    "objective": "Discuss Honningbrew with Maven.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dampened_Spirits",
+    "location_id": "riften",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_loud_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_damp_mallus",
+    "title": "Coordinate with Mallus near Whiterun",
+    "objective": "Coordinate with Mallus near Whiterun.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dampened_Spirits",
+    "location_id": "whiterun",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_damp_maven"
+      }
+    ]
+  },
+  {
+    "id": "guild_damp_sabotage",
+    "title": "Sabotage Honningbrew's mead and pest problem",
+    "objective": "Sabotage Honningbrew's mead and pest problem.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dampened_Spirits",
+    "location_id": "honningbrew_meadery",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_damp_mallus"
+      }
+    ]
+  },
+  {
+    "id": "guild_damp_note",
+    "title": "Witness the tasting and take Sabjorn's promissory note",
+    "objective": "Witness the tasting and take Sabjorn's promissory note.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dampened_Spirits",
+    "location_id": "honningbrew_meadery",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_damp_sabotage"
+      }
+    ]
+  },
+  {
+    "id": "guild_damp_report",
+    "title": "Return the promissory note to Maven",
+    "objective": "Return the promissory note to Maven.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Dampened_Spirits",
+    "location_id": "riften",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_damp_note"
+      }
+    ]
+  },
+  {
+    "id": "guild_folly_mercer",
+    "title": "Ask Mercer about Gulum-Ei",
+    "objective": "Ask Mercer about Gulum-Ei.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Scoundrel's_Folly",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_damp_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_folly_gulum",
+    "title": "Confront Gulum-Ei in Solitude",
+    "objective": "Confront Gulum-Ei in Solitude.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Scoundrel's_Folly",
+    "location_id": "solitude",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_folly_mercer"
+      }
+    ]
+  },
+  {
+    "id": "guild_folly_follow",
+    "title": "Follow Gulum-Ei through the East Empire warehouse",
+    "objective": "Follow Gulum-Ei through the East Empire warehouse.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Scoundrel's_Folly",
+    "location_id": "east_empire_company_warehouse",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_folly_gulum"
+      }
+    ]
+  },
+  {
+    "id": "guild_folly_confront",
+    "title": "Extract Gulum-Ei's information",
+    "objective": "Extract Gulum-Ei's information.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Scoundrel's_Folly",
+    "location_id": "east_empire_company_warehouse",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_folly_follow"
+      }
+    ]
+  },
+  {
+    "id": "guild_folly_report",
+    "title": "Report Gulum-Ei's lead to Mercer",
+    "objective": "Report Gulum-Ei's lead to Mercer.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Scoundrel's_Folly",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_folly_confront"
+      }
+    ]
+  },
+  {
+    "id": "guild_snow_meet_mercer",
+    "title": "Meet Mercer outside Snow Veil Sanctum",
+    "objective": "Meet Mercer outside Snow Veil Sanctum.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Speaking_With_Silence",
+    "location_id": "snow_veil_sanctum",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_folly_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_snow_open",
+    "title": "Have Mercer open Snow Veil Sanctum",
+    "objective": "Have Mercer open Snow Veil Sanctum.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Speaking_With_Silence",
+    "location_id": "snow_veil_sanctum",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_snow_meet_mercer"
+      }
+    ]
+  },
+  {
+    "id": "guild_snow_karliah",
+    "title": "Reach Karliah and survive Mercer's betrayal",
+    "objective": "Reach Karliah and survive Mercer's betrayal.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Speaking_With_Silence",
+    "location_id": "snow_veil_sanctum",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_snow_open"
+      }
+    ],
+    "access_condition_ids": [
+      "access_snow_veil_sanctum"
+    ]
+  },
+  {
+    "id": "guild_hard_enthir",
+    "title": "Ask Enthir to identify Gallus's journal",
+    "objective": "Ask Enthir to identify Gallus's journal.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hard_Answers",
+    "location_id": "winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_snow_karliah"
+      }
+    ]
+  },
+  {
+    "id": "guild_hard_calcelmo",
+    "title": "Copy Calcelmo's Falmer translation",
+    "objective": "Copy Calcelmo's Falmer translation.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hard_Answers",
+    "location_id": "understone_keep",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_hard_enthir"
+      }
+    ]
+  },
+  {
+    "id": "guild_hard_report",
+    "title": "Return the translation to Enthir and Karliah",
+    "objective": "Return the translation to Enthir and Karliah.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Hard_Answers",
+    "location_id": "winterhold",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_hard_calcelmo"
+      }
+    ]
+  },
+  {
+    "id": "guild_pursuit_brynjolf",
+    "title": "Show Brynjolf the evidence against Mercer",
+    "objective": "Show Brynjolf the evidence against Mercer.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Pursuit",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_hard_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_pursuit_plans",
+    "title": "Recover Mercer's plans from Riftweald Manor",
+    "objective": "Recover Mercer's plans from Riftweald Manor.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Pursuit",
+    "location_id": "riftweald_manor",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_pursuit_brynjolf"
+      }
+    ]
+  },
+  {
+    "id": "guild_pursuit_report",
+    "title": "Bring Mercer's plans to Brynjolf",
+    "objective": "Bring Mercer's plans to Brynjolf.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Pursuit",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_pursuit_plans"
+      }
+    ]
+  },
+  {
+    "id": "guild_trinity_accept",
+    "title": "Agree to Karliah's Nightingale plan",
+    "objective": "Agree to Karliah's Nightingale plan.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Trinity_Restored",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_pursuit_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_trinity_armor",
+    "title": "Receive and equip Nightingale Armor",
+    "objective": "Receive and equip Nightingale Armor.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Trinity_Restored",
+    "location_id": "nightingale_hall",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_trinity_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_trinity_oath",
+    "title": "Take the Nightingale oath",
+    "objective": "Take the Nightingale oath.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Trinity_Restored",
+    "location_id": "nightingale_hall",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_trinity_armor"
+      }
+    ]
+  },
+  {
+    "id": "guild_trinity_finish",
+    "title": "Discuss leadership and Mercer's next move",
+    "objective": "Discuss leadership and Mercer's next move.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Trinity_Restored",
+    "location_id": "nightingale_hall",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_trinity_oath"
+      }
+    ]
+  },
+  {
+    "id": "guild_blind_enter",
+    "title": "Enter Irkngthand with Karliah and Brynjolf",
+    "objective": "Enter Irkngthand with Karliah and Brynjolf.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blindsighted",
+    "location_id": "irkngthand",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_trinity_finish"
+      }
+    ]
+  },
+  {
+    "id": "guild_blind_mercer",
+    "title": "Defeat Mercer Frey in Irkngthand",
+    "objective": "Defeat Mercer Frey in Irkngthand.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blindsighted",
+    "location_id": "irkngthand",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_blind_enter"
+      }
+    ]
+  },
+  {
+    "id": "guild_blind_escape",
+    "title": "Escape Irkngthand and speak with Karliah",
+    "objective": "Escape Irkngthand and speak with Karliah.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Blindsighted",
+    "location_id": "irkngthand",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "artifact_skeleton_key_acquire"
+      }
+    ]
+  },
+  {
+    "id": "guild_dark_enter",
+    "title": "Enter the Twilight Sepulcher",
+    "objective": "Enter the Twilight Sepulcher.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Darkness_Returns",
+    "location_id": "twilight_sepulcher",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_blind_escape"
+      }
+    ]
+  },
+  {
+    "id": "guild_dark_path",
+    "title": "Complete the Pilgrim's Path",
+    "objective": "Complete the Pilgrim's Path.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Darkness_Returns",
+    "location_id": "twilight_sepulcher",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_dark_enter"
+      }
+    ]
+  },
+  {
+    "id": "guild_dark_return_key",
+    "title": "Return the Skeleton Key to the Ebonmere",
+    "objective": "Return the Skeleton Key to the Ebonmere.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Darkness_Returns",
+    "location_id": "twilight_sepulcher",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_dark_path"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "artifact_skeleton_key_acquire"
+      }
+    ]
+  },
+  {
+    "id": "guild_dark_choose_role",
+    "title": "Choose an initial Nightingale role",
+    "objective": "Choose an initial Nightingale role.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Darkness_Returns",
+    "location_id": "twilight_sepulcher",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_dark_return_key"
+      }
+    ],
+    "outcome_options": {
+      "shadow": "Agent of Shadow",
+      "subterfuge": "Agent of Subterfuge",
+      "strife": "Agent of Strife"
+    }
+  },
+  {
+    "id": "guild_silver_accept",
+    "title": "Accept the Markarth special job from Delvin",
+    "objective": "Accept the Markarth special job from Delvin.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Silver_Lining",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_report"
+      },
+      {
+        "type": "finite_progress",
+        "finite_progress_id": "guild_influence_markarth"
+      }
+    ]
+  },
+  {
+    "id": "guild_silver_endon",
+    "title": "Speak with Endon about the stolen mold",
+    "objective": "Speak with Endon about the stolen mold.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Silver_Lining",
+    "location_id": "markarth",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_silver_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_silver_mold",
+    "title": "Recover the Curious Silver Mold",
+    "objective": "Recover the Curious Silver Mold.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Silver_Lining",
+    "location_id": "pinewatch",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_silver_endon"
+      }
+    ]
+  },
+  {
+    "id": "guild_silver_return",
+    "title": "Return the mold to Endon",
+    "objective": "Return the mold to Endon.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Silver_Lining",
+    "location_id": "markarth",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_silver_mold"
+      }
+    ]
+  },
+  {
+    "id": "guild_sload_accept",
+    "title": "Accept the Solitude special job from Delvin",
+    "objective": "Accept the Solitude special job from Delvin.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Dainty_Sload",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_report"
+      },
+      {
+        "type": "finite_progress",
+        "finite_progress_id": "guild_influence_solitude"
+      }
+    ]
+  },
+  {
+    "id": "guild_sload_erikur",
+    "title": "Speak with Erikur about the Dainty Sload",
+    "objective": "Speak with Erikur about the Dainty Sload.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Dainty_Sload",
+    "location_id": "solitude",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_sload_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_sload_blue",
+    "title": "Acquire Balmora Blue from Sabine",
+    "objective": "Acquire Balmora Blue from Sabine.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Dainty_Sload",
+    "location_id": "the_red_wave",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_sload_erikur"
+      }
+    ]
+  },
+  {
+    "id": "guild_sload_plant",
+    "title": "Plant Balmora Blue aboard the Dainty Sload",
+    "objective": "Plant Balmora Blue aboard the Dainty Sload.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Dainty_Sload",
+    "location_id": "dainty_sload",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_sload_blue"
+      }
+    ]
+  },
+  {
+    "id": "guild_sload_return",
+    "title": "Report success to Erikur",
+    "objective": "Report success to Erikur.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Dainty_Sload",
+    "location_id": "solitude",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_sload_plant"
+      }
+    ]
+  },
+  {
+    "id": "guild_amnesty_accept",
+    "title": "Accept the Whiterun special job from Delvin",
+    "objective": "Accept the Whiterun special job from Delvin.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Imitation_Amnesty",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_report"
+      },
+      {
+        "type": "finite_progress",
+        "finite_progress_id": "guild_influence_whiterun"
+      }
+    ]
+  },
+  {
+    "id": "guild_amnesty_olfrid",
+    "title": "Speak with Olfrid Battle-Born",
+    "objective": "Speak with Olfrid Battle-Born.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Imitation_Amnesty",
+    "location_id": "whiterun",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_amnesty_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_amnesty_records",
+    "title": "Alter the Dragonsreach prison registry",
+    "objective": "Alter the Dragonsreach prison registry.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Imitation_Amnesty",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_amnesty_letter"
+      }
+    ]
+  },
+  {
+    "id": "guild_amnesty_return",
+    "title": "Report the forged amnesty to Olfrid",
+    "objective": "Report the forged amnesty to Olfrid.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Imitation_Amnesty",
+    "location_id": "whiterun",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_amnesty_records"
+      }
+    ]
+  },
+  {
+    "id": "guild_shadows_accept",
+    "title": "Accept the Windhelm special job from Delvin",
+    "objective": "Accept the Windhelm special job from Delvin.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summerset_Shadows",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_report"
+      },
+      {
+        "type": "finite_progress",
+        "finite_progress_id": "guild_influence_windhelm"
+      }
+    ]
+  },
+  {
+    "id": "guild_shadows_torsten",
+    "title": "Speak with Torsten Cruel-Sea",
+    "objective": "Speak with Torsten Cruel-Sea.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summerset_Shadows",
+    "location_id": "windhelm",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_shadows_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_shadows_niranye",
+    "title": "Question Niranye about the rival thieves",
+    "objective": "Question Niranye about the rival thieves.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summerset_Shadows",
+    "location_id": "windhelm",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_shadows_torsten"
+      }
+    ]
+  },
+  {
+    "id": "guild_shadows_locket",
+    "title": "Defeat Linwe and recover Fjotli's locket",
+    "objective": "Defeat Linwe and recover Fjotli's locket.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summerset_Shadows",
+    "location_id": "uttering_hills_cave",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_shadows_niranye"
+      }
+    ]
+  },
+  {
+    "id": "guild_shadows_return",
+    "title": "Return the locket to Torsten",
+    "objective": "Return the locket to Torsten.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Summerset_Shadows",
+    "location_id": "windhelm",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_shadows_locket"
+      }
+    ]
+  },
+  {
+    "id": "guild_management_ceremony",
+    "title": "Attend the Guild Master ceremony",
+    "objective": "Attend the Guild Master ceremony.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Under_New_Management",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_dark_choose_role"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "guild_silver_return"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "guild_sload_return"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "guild_amnesty_return"
+      },
+      {
+        "type": "task_complete",
+        "task_id": "guild_shadows_return"
+      }
+    ]
+  },
+  {
+    "id": "guild_management_rewards",
+    "title": "Receive Guild Master's Armor and leadership rewards",
+    "objective": "Receive Guild Master's Armor and leadership rewards.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Under_New_Management",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_management_ceremony"
+      }
+    ]
+  },
+  {
+    "id": "guild_family_meet",
+    "title": "Meet Delvin and Vex",
+    "objective": "Meet Delvin and Vex.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Meet_the_Family",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_family_armor",
+    "title": "Receive Thieves Guild Armor from Tonilia",
+    "objective": "Receive Thieves Guild Armor from Tonilia.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Meet_the_Family",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_family_meet"
+      }
+    ]
+  },
+  {
+    "id": "guild_toying_accept",
+    "title": "Ask Vekel about Arondil's journals",
+    "objective": "Ask Vekel about Arondil's journals.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Toying_With_The_Dead",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_toying_journals",
+    "title": "Recover all four of Arondil's journals",
+    "objective": "Recover all four of Arondil's journals.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Toying_With_The_Dead",
+    "location_id": "yngvild",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_toying_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_toying_return",
+    "title": "Bring Arondil's journals to Vekel",
+    "objective": "Bring Arondil's journals to Vekel.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Toying_With_The_Dead",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_toying_journals"
+      }
+    ]
+  },
+  {
+    "id": "guild_caravan_accept",
+    "title": "Accept Tonilia's moon sugar delivery",
+    "objective": "Accept Tonilia's moon sugar delivery.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_Caravan_Fence_Quest",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_business_report"
+      }
+    ]
+  },
+  {
+    "id": "guild_caravan_deliver",
+    "title": "Find Ri'saad's caravan and deliver the moon sugar",
+    "objective": "Find Ri'saad outside Whiterun or Markarth, or on the route between them, and deliver Tonilia's moon sugar.",
+    "geography_type": "LOCATIONLESS",
+    "planner_behavior": "OPPORTUNISTIC",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_Caravan_Fence_Quest",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_caravan_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_caravan_report",
+    "title": "Report the delivery to Tonilia",
+    "objective": "Report the delivery to Tonilia.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_Caravan_Fence_Quest",
+    "location_id": "ragged_flagon",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_caravan_deliver"
+      }
+    ]
+  },
+  {
+    "id": "guild_vald_maven",
+    "title": "Ask Maven to clear Vald's debt",
+    "objective": "Ask Maven to clear Vald's debt.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Vald%27s_Debt",
+    "location_id": "riften",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_pursuit_brynjolf"
+      }
+    ],
+    "expires_after_task_id": "guild_pursuit_plans"
+  },
+  {
+    "id": "guild_vald_quill",
+    "title": "Recover the Quill of Gemination from Lake Honrich",
+    "objective": "Recover the Quill of Gemination from Lake Honrich.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Vald%27s_Debt",
+    "location_id": "lake_honrich_quill_wreck",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_vald_maven"
+      }
+    ],
+    "expires_after_task_id": "guild_pursuit_plans"
+  },
+  {
+    "id": "guild_vald_release",
+    "title": "Have Maven release Vald and obtain Mercer's house key",
+    "objective": "Have Maven release Vald and obtain Mercer's house key.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Vald%27s_Debt",
+    "location_id": "riften",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_vald_quill"
+      }
+    ],
+    "expires_after_task_id": "guild_pursuit_plans"
+  },
+  {
+    "id": "guild_litany_bee",
+    "title": "Acquire the Queen Bee Statue",
+    "objective": "Acquire the Queen Bee Statue.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Litany_of_Larceny",
+    "location_id": "goldenglow_estate",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_loud_accept"
+      }
+    ]
+  },
+  {
+    "id": "guild_litany_decanter",
+    "title": "Acquire the Honningbrew Decanter",
+    "objective": "Acquire the Honningbrew Decanter.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Litany_of_Larceny",
+    "location_id": "honningbrew_meadery",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_damp_mallus"
+      }
+    ]
+  },
+  {
+    "id": "guild_litany_map",
+    "title": "Acquire the East Empire Shipping Map",
+    "objective": "Acquire the East Empire Shipping Map.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Litany_of_Larceny",
+    "location_id": "east_empire_company_warehouse",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_folly_gulum"
+      }
+    ]
+  },
+  {
+    "id": "guild_litany_ship",
+    "title": "Acquire the Model Ship",
+    "objective": "Acquire the Model Ship.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Litany_of_Larceny",
+    "location_id": "snow_veil_sanctum",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_snow_open"
+      }
+    ],
+    "warning_text": "Before you leave: take the Model Ship. This unique Litany item can be easy to miss during the quest expedition."
+  },
+  {
+    "id": "guild_litany_cube",
+    "title": "Acquire the Dwemer Puzzle Cube",
+    "objective": "Acquire the Dwemer Puzzle Cube.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Litany_of_Larceny",
+    "location_id": "understone_keep",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_hard_enthir"
+      }
+    ]
+  },
+  {
+    "id": "guild_litany_bust",
+    "title": "Acquire the Bust of the Gray Fox",
+    "objective": "Acquire the Bust of the Gray Fox.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Litany_of_Larceny",
+    "location_id": "riftweald_manor",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_pursuit_brynjolf"
+      }
+    ]
+  },
+  {
+    "id": "guild_litany_eye",
+    "title": "Acquire the Left Eye of the Falmer",
+    "objective": "Acquire the Left Eye of the Falmer.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:The_Litany_of_Larceny",
+    "location_id": "irkngthand",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_blind_mercer"
+      }
+    ],
+    "warning_text": "Before you leave: take the Left Eye of the Falmer. This unique Litany item can be easy to miss during the quest expedition."
+  },
+  {
+    "id": "guild_chance_report",
+    "title": "Report the scheme's outcome to Brynjolf",
+    "objective": "Report the scheme's outcome to Brynjolf.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:A_Chance_Arrangement",
+    "location_id": "riften",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_chance_attempt"
+      }
+    ]
+  },
+  {
+    "id": "guild_amnesty_letter",
+    "title": "Steal the incriminating letter",
+    "objective": "Steal the incriminating letter.",
+    "geography_type": "PHYSICAL",
+    "planner_behavior": "REGIONAL_ACTION",
+    "source_url": "https://en.uesp.net/wiki/Skyrim:Imitation_Amnesty",
+    "location_id": "dragonsreach",
+    "prerequisites": [
+      {
+        "type": "task_complete",
+        "task_id": "guild_amnesty_olfrid"
+      }
+    ]
   }
 ]

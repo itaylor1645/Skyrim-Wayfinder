@@ -11,6 +11,7 @@ from .models import (
     CompletionDomain,
     ContentSource,
     GeographyType,
+    FiniteProgressDefinition,
     Location,
     LocationType,
     PlannerBehavior,
@@ -32,7 +33,7 @@ from .models import (
 __all__ = [
     "AccessCondition", "CanonicalContent", "Choice", "ChoiceOption", "Collection", "CollectibleCompletionRule",
     "CollectibleCredit", "CollectibleDefinition", "CompletionRole", "CompletionDomain",
-    "ContentSource", "GeographyType", "Location", "LocationType", "PlannerBehavior", "PlannerItem", "Prerequisite",
+    "ContentSource", "GeographyType", "FiniteProgressDefinition", "Location", "LocationType", "PlannerBehavior", "PlannerItem", "Prerequisite",
     "RegionType", "Story", "StoryClassification", "ShoutCredit", "ShoutDefinition", "Task", "TaskEvaluation", "TaskMembership",
     "TaskStatus", "TravelRegion", "VerificationStatus",
 ]

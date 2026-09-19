@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import QColor, QBrush
-from PySide6.QtWidgets import QCheckBox, QLabel, QTreeWidget, QTreeWidgetItem, QVBoxLayout, QWidget
+from PySide6.QtWidgets import QCheckBox, QHBoxLayout, QInputDialog, QLabel, QPushButton, QTreeWidget, QTreeWidgetItem, QVBoxLayout, QWidget
 
 from skyrim_wayfinder.domain import TaskStatus
 from skyrim_wayfinder.services import WayfinderService
@@ -30,6 +30,29 @@ class ExplorerView(QWidget):
         )
         self.hide_completed.toggled.connect(self._filter_changed)
         layout.addWidget(self.hide_completed)
+        self.guild_status = QLabel()
+        self.guild_status.setWordWrap(True)
+        layout.addWidget(self.guild_status)
+        self.guild_counters: dict[str, QLabel] = {}
+        if "thieves_guild" in service.content.collections:
+            for city in ("whiterun", "markarth", "solitude", "windhelm"):
+                progress_id = f"guild_influence_{city}"
+                row = QHBoxLayout()
+                label = QLabel()
+                self.guild_counters[progress_id] = label
+                row.addWidget(label, 1)
+                for text, delta in (("−", -1), ("+", 1)):
+                    button = QPushButton(text)
+                    button.setFixedWidth(32)
+                    button.clicked.connect(lambda _checked=False, key=progress_id, change=delta: self._adjust_progress(key, change))
+                    row.addWidget(button)
+                reset = QPushButton("Reset")
+                reset.clicked.connect(lambda _checked=False, key=progress_id: self._reset_progress(key))
+                row.addWidget(reset)
+                correct = QPushButton("Correct…")
+                correct.clicked.connect(lambda _checked=False, key=progress_id: self._correct_progress(key))
+                row.addWidget(correct)
+                layout.addLayout(row)
         self.tree = QTreeWidget()
         self.tree.setHeaderLabels(["Objective", "Status", "Region", "Location"])
         self.tree.setAlternatingRowColors(True)
@@ -38,6 +61,18 @@ class ExplorerView(QWidget):
         self.refresh()
 
     def refresh(self) -> None:
+        if "thieves_guild" in self.service.content.collections:
+            narrative, restored = self.service.thieves_guild_landmarks()
+            self.guild_status.setText(
+                "Thieves Guild — Mercer/Nightingale narrative: "
+                + ("Complete" if narrative else "Incomplete")
+                + "  ·  Guild restoration: "
+                + ("Complete" if restored else "Incomplete")
+                + "\nOnly successfully completed Whiterun, Markarth, Solitude, or Windhelm Delvin/Vex jobs count."
+            )
+            for key, label in self.guild_counters.items():
+                current, required = self.service.finite_progress(key)
+                label.setText(f"{self.service.content.finite_progress[key].display_name}: {current} / {required}")
         self.tree.clear()
         tree = self.service.explorer_tree()
         hide_completed = self.hide_completed.isChecked()
@@ -69,8 +104,12 @@ class ExplorerView(QWidget):
                 if not self._visible_entries(collection_entries, hide_completed):
                     continue
                 collection_done, collection_total = self.service.collection_progress(collection.id)
+                catalog_total = self.service.collection_catalog_total(collection.id)
+                progress_text = f"{collection_done} / {collection_total}"
+                if catalog_total != collection_total or collection.id == "daedric_artifacts":
+                    progress_text += f" achievable Â· {catalog_total} catalog"
                 collection_item = QTreeWidgetItem([
-                    f"{collection.display_name}  {collection_done} / {collection_total}"
+                    f"{collection.display_name}  {progress_text}"
                 ])
                 domain_item.addChild(collection_item)
                 for story in sorted(
@@ -128,6 +167,26 @@ class ExplorerView(QWidget):
     def _filter_changed(self, checked: bool) -> None:
         self.service.state.set_setting("hide_completed_objectives", "1" if checked else "0")
         self.refresh()
+
+    def _adjust_progress(self, progress_id: str, delta: int) -> None:
+        current, _required = self.service.finite_progress(progress_id)
+        self.service.set_finite_progress(progress_id, current + delta)
+        self._changed()
+
+    def _reset_progress(self, progress_id: str) -> None:
+        self.service.set_finite_progress(progress_id, 0)
+        self._changed()
+
+    def _correct_progress(self, progress_id: str) -> None:
+        current, required = self.service.finite_progress(progress_id)
+        label = self.service.content.finite_progress[progress_id].display_name
+        value, accepted = QInputDialog.getInt(
+            self, "Correct Guild influence", f"Successfully completed jobs toward {label}:",
+            current, 0, required,
+        )
+        if accepted:
+            self.service.set_finite_progress(progress_id, value)
+            self._changed()
 
     def _open_item(self, item: QTreeWidgetItem) -> None:
         task_id = item.data(0, Qt.ItemDataRole.UserRole)

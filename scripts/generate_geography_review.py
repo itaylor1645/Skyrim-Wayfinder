@@ -62,7 +62,7 @@ def render_review() -> str:
         "",
         "UESP is the primary practical source. Each canonical Location carries its narrowest useful factual "
         "source URL(s). Quest and collection overview pages in the coverage inventory establish why destinations "
-        "are required. Dynamically selected and radiant-only destinations do not expand the catalog.",
+        "are required. Finite radiant destinations expand the catalog only when Product explicitly approves them.",
         "",
         f"**Catalog totals:** {len(content.regions)} Travel Regions; {len(content.locations)} Locations; "
         f"{len(required_reviews)} Locations awaiting Product review.",
@@ -145,8 +145,8 @@ def render_review() -> str:
         "",
         "- The two-region Solstheim model is Product-approved.",
         "- All catalog Locations have verified Survival-planning assignments.",
-        "- The coverage inventory excludes radiant-only and Creation Club destination expansion.",
-        "- Bulk Task population remains a separate, subsequent increment.",
+        "- The approved six-location Logrolf radiant set is covered; uncontrolled radiant and Creation Club expansion remains excluded.",
+        "- The Geography Foundation preceded canonical Task population; subsequent approved increments reuse its verified Location assignments.",
         "",
     ]
     return "\n".join(lines)

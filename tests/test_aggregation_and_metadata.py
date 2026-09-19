@@ -69,7 +69,10 @@ def test_overall_completion_deduplicates_memberships(service):
     service.set_task_state("mask_morokei", TaskStatus.COMPLETE)
     complete, total = service.overall_completion()
     assert complete == 1
-    assert total == len(service.content.tasks) - 4  # inactive Season Unending is not achievable yet
+    assert total == sum(
+        service.evaluate(task_id).status is not TaskStatus.NOT_APPLICABLE
+        for task_id in service.content.tasks
+    )
     assert total < len(service.content.memberships)
 
 

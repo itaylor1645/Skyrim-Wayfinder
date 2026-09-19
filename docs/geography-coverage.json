@@ -4,101 +4,526 @@
   "domains": [
     {
       "name": "Skyrim Main Quest",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Main_Quest"],
-      "location_ids": ["helgen_keep","riverwood","sleeping_giant_inn","dragonsreach","bleak_falls_barrow","western_watchtower","kynesgrove","high_hrothgar","ustengrav","winking_skeever","katlas_farm","thalmor_embassy","reeking_cave","ratway","ragged_flagon","karthspire","sky_haven_temple","throat_of_the_world","alftand","blackreach","tower_of_mzark","skuldafn","sovngarde"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Main_Quest"
+      ],
+      "location_ids": [
+        "helgen_keep",
+        "riverwood",
+        "sleeping_giant_inn",
+        "dragonsreach",
+        "bleak_falls_barrow",
+        "western_watchtower",
+        "kynesgrove",
+        "high_hrothgar",
+        "ustengrav",
+        "winking_skeever",
+        "katlas_farm",
+        "thalmor_embassy",
+        "reeking_cave",
+        "ratway",
+        "ragged_flagon",
+        "karthspire",
+        "sky_haven_temple",
+        "throat_of_the_world",
+        "alftand",
+        "blackreach",
+        "tower_of_mzark",
+        "skuldafn",
+        "sovngarde"
+      ]
     },
     {
       "name": "Dragon Priest Masks",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Dragon_Priest_Mask"],
-      "location_ids": ["bromjunaar_sanctuary","labyrinthian","valthume","shearpoint","ragnvald","forelhost","high_gate_ruins","volskygge","skuldafn","kolbjorn_barrow","white_ridge_barrow","raven_rock_mine","apocrypha"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Dragon_Priest_Mask"
+      ],
+      "location_ids": [
+        "bromjunaar_sanctuary",
+        "labyrinthian",
+        "valthume",
+        "shearpoint",
+        "ragnvald",
+        "forelhost",
+        "high_gate_ruins",
+        "volskygge",
+        "skuldafn",
+        "kolbjorn_barrow",
+        "white_ridge_barrow",
+        "raven_rock_mine",
+        "apocrypha"
+      ]
     },
     {
       "name": "Shouts",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Dragon_Shouts"],
-      "location_ids": ["angarvunde","ancients_ascent","ysgramors_tomb","northwind_summit","valthume","volunruud","ironbind_barrow","lost_valley_redoubt","ustengrav","eldersblood_peak","silverdrift_lair","snow_veil_sanctum","dead_crone_rock","lost_tongue_overlook","shalidors_maze","dragontooth_crater","kilkreath_temple","shriekwind_bastion","dustmans_cairn","sunderstone_gorge","throat_of_the_world","bonestrewn_crest","folgunthur","skyborn_altar","frostmere_crypt","mount_anthor","saarthal","ragnvald","rannveigs_fast","shroud_hearth_barrow","autumnwatch_tower","dark_brotherhood_sanctuary","forsaken_cave","deepwood_redoubt","korvanjund","labyrinthian","forelhost","high_gate_ruins","skuldafn","shearpoint","bleak_falls_barrow","high_hrothgar","dragonsreach","sovngarde","dead_mens_respite","volskygge","arcwind_point","dimhollow_crypt","forgotten_vale","soul_cairn","vahloks_tomb","saerings_watch","apocrypha","benkongerike","kolbjorn_barrow","white_ridge_barrow","raven_rock_mine","temple_of_miraak"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Dragon_Shouts"
+      ],
+      "location_ids": [
+        "angarvunde",
+        "ancients_ascent",
+        "ysgramors_tomb",
+        "northwind_summit",
+        "valthume",
+        "volunruud",
+        "ironbind_barrow",
+        "lost_valley_redoubt",
+        "ustengrav",
+        "eldersblood_peak",
+        "silverdrift_lair",
+        "snow_veil_sanctum",
+        "dead_crone_rock",
+        "lost_tongue_overlook",
+        "shalidors_maze",
+        "dragontooth_crater",
+        "kilkreath_temple",
+        "shriekwind_bastion",
+        "dustmans_cairn",
+        "sunderstone_gorge",
+        "throat_of_the_world",
+        "bonestrewn_crest",
+        "folgunthur",
+        "skyborn_altar",
+        "frostmere_crypt",
+        "mount_anthor",
+        "saarthal",
+        "ragnvald",
+        "rannveigs_fast",
+        "shroud_hearth_barrow",
+        "autumnwatch_tower",
+        "dark_brotherhood_sanctuary",
+        "forsaken_cave",
+        "deepwood_redoubt",
+        "korvanjund",
+        "labyrinthian",
+        "forelhost",
+        "high_gate_ruins",
+        "skuldafn",
+        "shearpoint",
+        "bleak_falls_barrow",
+        "high_hrothgar",
+        "dragonsreach",
+        "sovngarde",
+        "dead_mens_respite",
+        "volskygge",
+        "arcwind_point",
+        "dimhollow_crypt",
+        "forgotten_vale",
+        "soul_cairn",
+        "vahloks_tomb",
+        "saerings_watch",
+        "apocrypha",
+        "benkongerike",
+        "kolbjorn_barrow",
+        "white_ridge_barrow",
+        "raven_rock_mine",
+        "temple_of_miraak"
+      ]
     },
     {
       "name": "Dragon Claws",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Puzzles"],
-      "location_ids": ["bleak_falls_barrow","riverwood_trader","yngol_barrow","skuldafn","korvanjund","reachwater_rock","forelhost","valthume","folgunthur","dead_mens_respite","shroud_hearth_barrow","vahloks_tomb"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Puzzles"
+      ],
+      "location_ids": [
+        "bleak_falls_barrow",
+        "riverwood_trader",
+        "yngol_barrow",
+        "skuldafn",
+        "korvanjund",
+        "reachwater_rock",
+        "forelhost",
+        "valthume",
+        "folgunthur",
+        "dead_mens_respite",
+        "shroud_hearth_barrow",
+        "vahloks_tomb"
+      ]
     },
     {
       "name": "Daedric Artifacts",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Daedric_Quests"],
-      "location_ids": ["shrine_of_azura","frozen_hearth","ilinaltas_deep","sacellum_of_boethiah","knifepoint_ridge","falkreath","falkreath_jail","haemars_shame","rimerock_burrow","septimus_signus_outpost","alftand","blackreach","tower_of_mzark","bloated_mans_grotto","largashbur","fallowstone_cave","mythic_dawn_museum","jorgens_house","dead_crone_rock","cracked_tusk_keep","shrine_of_mehrunes_dagon","dragonsreach","kilkreath_temple","abandoned_house_markarth","hall_of_the_dead_markarth","reachcliff_cave","shrine_to_peryite","bthardamz","rorikstead","whiterun","witchmist_grove","morvunskar","misty_grove","blue_palace","nightcaller_temple","windpeak_inn"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Daedric_Quests"
+      ],
+      "location_ids": [
+        "shrine_of_azura",
+        "frozen_hearth",
+        "ilinaltas_deep",
+        "sacellum_of_boethiah",
+        "knifepoint_ridge",
+        "falkreath",
+        "falkreath_jail",
+        "haemars_shame",
+        "rimerock_burrow",
+        "septimus_signus_outpost",
+        "alftand",
+        "blackreach",
+        "tower_of_mzark",
+        "bloated_mans_grotto",
+        "largashbur",
+        "fallowstone_cave",
+        "mythic_dawn_museum",
+        "jorgens_house",
+        "dead_crone_rock",
+        "cracked_tusk_keep",
+        "shrine_of_mehrunes_dagon",
+        "dragonsreach",
+        "kilkreath_temple",
+        "abandoned_house_markarth",
+        "hall_of_the_dead_markarth",
+        "reachcliff_cave",
+        "shrine_to_peryite",
+        "bthardamz",
+        "rorikstead",
+        "whiterun",
+        "witchmist_grove",
+        "morvunskar",
+        "misty_grove",
+        "blue_palace",
+        "nightcaller_temple",
+        "windpeak_inn",
+        "broken_tower_redoubt",
+        "brucas_leap_redoubt",
+        "deepwood_redoubt",
+        "druadach_redoubt",
+        "hag_rock_redoubt",
+        "red_eagle_redoubt"
+      ]
     },
     {
       "name": "College of Winterhold",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:College_of_Winterhold_(faction)"],
-      "location_ids": ["college_of_winterhold","winterhold","saarthal","fellglow_keep","mzulft","labyrinthian","frozen_hearth"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:College_of_Winterhold_(faction)"
+      ],
+      "location_ids": [
+        "college_of_winterhold",
+        "winterhold",
+        "saarthal",
+        "fellglow_keep",
+        "mzulft",
+        "labyrinthian",
+        "frozen_hearth",
+        "windward_ruins",
+        "north_skybound_watch",
+        "four_skull_lookout"
+      ]
     },
     {
       "name": "Companions",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Companions"],
-      "location_ids": ["whiterun","jorrvaskr","underforge","dustmans_cairn","gallows_rock","glenmoril_coven","driftshade_refuge","ysgramors_tomb"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Companions"
+      ],
+      "location_ids": [
+        "whiterun",
+        "jorrvaskr",
+        "skyforge",
+        "underforge",
+        "dustmans_cairn",
+        "gallows_rock",
+        "glenmoril_coven",
+        "driftshade_refuge",
+        "ysgramors_tomb"
+      ]
     },
     {
       "name": "Thieves Guild",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Thieves_Guild"],
-      "location_ids": ["riften","ratway","ragged_flagon","goldenglow_estate","honningbrew_meadery","east_empire_company_warehouse","snow_veil_sanctum","riftweald_manor","nightingale_hall","irkngthand","twilight_sepulcher","pinewatch","uttering_hills_cave","dragonsreach","dainty_sload","tolvalds_cave","hall_of_the_dead_whiterun","jorrvaskr","blue_palace","proudspire_manor","mistveil_keep","palace_of_the_kings","house_clan_shatter_shield","treasury_house","understone_keep","college_of_winterhold","dead_crone_rock","black_briar_lodge","ansilvund","stony_creek_cave","rannveigs_fast","fellglow_keep","sunderstone_gorge","yngvild","hobs_fall_cave","reeking_cave","dark_brotherhood_sanctuary"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Thieves_Guild"
+      ],
+      "location_ids": [
+        "riften",
+        "ratway",
+        "ragged_flagon",
+        "goldenglow_estate",
+        "honningbrew_meadery",
+        "east_empire_company_warehouse",
+        "snow_veil_sanctum",
+        "riftweald_manor",
+        "nightingale_hall",
+        "irkngthand",
+        "twilight_sepulcher",
+        "pinewatch",
+        "uttering_hills_cave",
+        "dragonsreach",
+        "dainty_sload",
+        "tolvalds_cave",
+        "hall_of_the_dead_whiterun",
+        "jorrvaskr",
+        "blue_palace",
+        "proudspire_manor",
+        "mistveil_keep",
+        "palace_of_the_kings",
+        "house_clan_shatter_shield",
+        "treasury_house",
+        "understone_keep",
+        "college_of_winterhold",
+        "dead_crone_rock",
+        "black_briar_lodge",
+        "ansilvund",
+        "stony_creek_cave",
+        "rannveigs_fast",
+        "fellglow_keep",
+        "sunderstone_gorge",
+        "yngvild",
+        "hobs_fall_cave",
+        "reeking_cave",
+        "dark_brotherhood_sanctuary",
+        "the_red_wave",
+        "lake_honrich_quill_wreck"
+      ]
     },
     {
       "name": "Dark Brotherhood",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"],
-      "location_ids": ["aretino_residence","honorhall_orphanage","abandoned_shack","dark_brotherhood_sanctuary","volunruud","hags_cure","raldbthar","dawnstar_sanctuary","nightgate_inn","temple_of_the_divines","penitus_oculatus_outpost","katariah","castle_dour","understone_keep","falkreath_jarl_longhouse","moorside_inn","half_moon_mill","helas_folly","fort_greymoor","angas_mill","winking_skeever","ivarstead","mzinchaleft","dragon_bridge"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"
+      ],
+      "location_ids": [
+        "aretino_residence",
+        "honorhall_orphanage",
+        "abandoned_shack",
+        "dark_brotherhood_sanctuary",
+        "volunruud",
+        "hags_cure",
+        "raldbthar",
+        "dawnstar_sanctuary",
+        "nightgate_inn",
+        "temple_of_the_divines",
+        "penitus_oculatus_outpost",
+        "katariah",
+        "castle_dour",
+        "understone_keep",
+        "falkreath_jarl_longhouse",
+        "moorside_inn",
+        "half_moon_mill",
+        "helas_folly",
+        "fort_greymoor",
+        "angas_mill",
+        "winking_skeever",
+        "ivarstead",
+        "mzinchaleft",
+        "dragon_bridge"
+      ]
     },
     {
       "name": "Civil War",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Civil_War"],
-      "location_ids": ["castle_dour","palace_of_the_kings","korvanjund","whiterun","dragonsreach","solitude","windhelm","fort_neugrad","fort_dunstad","fort_greenwall","fort_sungard","fort_kastav","fort_amol","fort_snowhawk","fort_hraggstad","falkreath_stormcloak_camp","reach_stormcloak_camp","reach_imperial_camp","hjaalmarch_stormcloak_camp","pale_imperial_camp","pale_stormcloak_camp","rift_imperial_camp","winterhold_imperial_camp","eastmarch_imperial_camp"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Civil_War"
+      ],
+      "location_ids": [
+        "castle_dour",
+        "palace_of_the_kings",
+        "korvanjund",
+        "whiterun",
+        "dragonsreach",
+        "solitude",
+        "windhelm",
+        "fort_neugrad",
+        "fort_dunstad",
+        "fort_greenwall",
+        "fort_sungard",
+        "fort_kastav",
+        "fort_amol",
+        "fort_snowhawk",
+        "fort_hraggstad",
+        "falkreath_stormcloak_camp",
+        "reach_stormcloak_camp",
+        "reach_imperial_camp",
+        "hjaalmarch_stormcloak_camp",
+        "pale_imperial_camp",
+        "pale_stormcloak_camp",
+        "rift_imperial_camp",
+        "winterhold_imperial_camp",
+        "eastmarch_imperial_camp"
+      ]
     },
     {
       "name": "Dawnguard",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Dawnguard_Quests"],
-      "location_ids": ["fort_dawnguard","dimhollow_crypt","castle_volkihar","dragon_bridge","forebears_holdout","ancestor_glade","darkfall_cave","forgotten_vale","forgotten_vale_inner_sanctum","soul_cairn","redwater_den","arkngthamz","deep_folk_crossing","raldbthar","mzulft","ruins_of_bthalft","aetherium_forge","arcwind_point"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Dawnguard_Quests"
+      ],
+      "location_ids": [
+        "fort_dawnguard",
+        "dimhollow_crypt",
+        "castle_volkihar",
+        "dragon_bridge",
+        "forebears_holdout",
+        "ancestor_glade",
+        "darkfall_cave",
+        "forgotten_vale",
+        "forgotten_vale_inner_sanctum",
+        "soul_cairn",
+        "redwater_den",
+        "arkngthamz",
+        "deep_folk_crossing",
+        "raldbthar",
+        "mzulft",
+        "ruins_of_bthalft",
+        "aetherium_forge",
+        "arcwind_point"
+      ]
     },
     {
       "name": "Dragonborn",
-      "source_urls": ["https://en.uesp.net/wiki/Dragonborn:Quests"],
-      "location_ids": ["raven_rock","severin_manor","raven_rock_mine","kolbjorn_barrow","tel_mithryn","nchardak","temple_of_miraak","earth_stone","water_stone","fort_frostmoth","ashfallow_citadel","skaal_village","saerings_watch","benkongerike","white_ridge_barrow","vahloks_tomb","wind_stone","beast_stone","sun_stone","tree_stone","thirsk_mead_hall","hrothmunds_barrow","apocrypha"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Dragonborn:Quests"
+      ],
+      "location_ids": [
+        "raven_rock",
+        "severin_manor",
+        "raven_rock_mine",
+        "kolbjorn_barrow",
+        "tel_mithryn",
+        "nchardak",
+        "temple_of_miraak",
+        "earth_stone",
+        "water_stone",
+        "fort_frostmoth",
+        "ashfallow_citadel",
+        "skaal_village",
+        "saerings_watch",
+        "benkongerike",
+        "white_ridge_barrow",
+        "vahloks_tomb",
+        "wind_stone",
+        "beast_stone",
+        "sun_stone",
+        "tree_stone",
+        "thirsk_mead_hall",
+        "hrothmunds_barrow",
+        "apocrypha"
+      ]
     },
     {
       "name": "Holds & Homes",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Houses","https://en.uesp.net/wiki/Skyrim:Thane"],
-      "location_ids": ["whiterun","dragonsreach","breezehome","falkreath","falkreath_jarl_longhouse","riften","mistveil_keep","honeyside","riften_fishery","riften_warehouse","cragslane_cavern","scorched_hammer","markarth","understone_keep","vlindrel_hall","morthal","highmoon_hall","burned_house_morthal","alvas_house","movarths_lair","solitude","blue_palace","proudspire_manor","wolfskull_cave","temple_of_the_divines","shrine_of_talos_whiterun","dawnstar","white_hall","windpeak_inn","nightcaller_temple","windhelm","palace_of_the_kings","hjerim","raven_rock","severin_manor","ashfallow_citadel"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Houses",
+        "https://en.uesp.net/wiki/Skyrim:Thane"
+      ],
+      "location_ids": [
+        "whiterun",
+        "dragonsreach",
+        "breezehome",
+        "falkreath",
+        "falkreath_jarl_longhouse",
+        "riften",
+        "mistveil_keep",
+        "honeyside",
+        "riften_fishery",
+        "riften_warehouse",
+        "cragslane_cavern",
+        "scorched_hammer",
+        "markarth",
+        "understone_keep",
+        "vlindrel_hall",
+        "morthal",
+        "highmoon_hall",
+        "burned_house_morthal",
+        "alvas_house",
+        "movarths_lair",
+        "solitude",
+        "blue_palace",
+        "proudspire_manor",
+        "wolfskull_cave",
+        "temple_of_the_divines",
+        "shrine_of_talos_whiterun",
+        "dawnstar",
+        "white_hall",
+        "windpeak_inn",
+        "nightcaller_temple",
+        "windhelm",
+        "palace_of_the_kings",
+        "hjerim",
+        "raven_rock",
+        "severin_manor",
+        "ashfallow_citadel"
+      ]
     },
     {
       "name": "Hearthfire Homesteads",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Hearthfire"],
-      "location_ids": ["lakeview_manor","windstad_manor","heljarchen_hall"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Hearthfire"
+      ],
+      "location_ids": [
+        "lakeview_manor",
+        "windstad_manor",
+        "heljarchen_hall"
+      ]
     },
     {
       "name": "Unique Spells & Powers",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Powers","https://en.uesp.net/wiki/Skyrim:Spells","https://en.uesp.net/wiki/Skyrim:Summoning_Karstaag"],
-      "location_ids": ["temple_of_dibella","temple_of_mara","bards_college","dead_mens_respite","frostflow_lighthouse","avanchnzel","blackreach","sinderions_field_laboratory","sarethi_farm","sky_haven_temple","throat_of_the_world","twilight_sepulcher","temple_of_the_divines","college_of_winterhold","halted_stream_camp","ansilvund","fort_amol","high_gate_ruins","labyrinthian","soul_cairn","raven_rock_mine","kolbjorn_barrow","benkongerike","white_ridge_barrow","tel_mithryn","nchardak","temple_of_miraak","apocrypha","bromjunaar_sanctuary","glacial_cave","castle_karstaag_ruins"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Powers",
+        "https://en.uesp.net/wiki/Skyrim:Spells",
+        "https://en.uesp.net/wiki/Skyrim:Summoning_Karstaag"
+      ],
+      "location_ids": [
+        "temple_of_dibella",
+        "temple_of_mara",
+        "bards_college",
+        "dead_mens_respite",
+        "frostflow_lighthouse",
+        "avanchnzel",
+        "blackreach",
+        "sinderions_field_laboratory",
+        "sarethi_farm",
+        "sky_haven_temple",
+        "throat_of_the_world",
+        "twilight_sepulcher",
+        "temple_of_the_divines",
+        "college_of_winterhold",
+        "halted_stream_camp",
+        "ansilvund",
+        "fort_amol",
+        "high_gate_ruins",
+        "labyrinthian",
+        "soul_cairn",
+        "raven_rock_mine",
+        "kolbjorn_barrow",
+        "benkongerike",
+        "white_ridge_barrow",
+        "tel_mithryn",
+        "nchardak",
+        "temple_of_miraak",
+        "apocrypha",
+        "bromjunaar_sanctuary",
+        "glacial_cave",
+        "castle_karstaag_ruins"
+      ]
     }
   ],
   "scope_decisions": [
     {
       "reward": "Summon Karstaag",
       "disposition": "Include acquisition in Unique Spells & Powers; do not track remaining uses.",
-      "location_ids": ["glacial_cave", "castle_karstaag_ruins"],
+      "location_ids": [
+        "glacial_cave",
+        "castle_karstaag_ruins"
+      ],
       "reason": "The power is a deliberately acquired unique reward tied to fixed official content; its three-use limit does not create separate completion states.",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Summoning_Karstaag"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Summoning_Karstaag"
+      ]
     },
     {
       "reward": "Equipment-bound powers such as Breath of Nchuak and Ahzidal's Genius",
       "disposition": "Exclude as separate Unique Spells & Powers completion rewards.",
-      "location_ids": ["nchardak", "kolbjorn_barrow"],
+      "location_ids": [
+        "nchardak",
+        "kolbjorn_barrow"
+      ],
       "reason": "These effects exist only while the associated collectible equipment is worn; their Locations are already present for Dragonborn content.",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Powers"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Powers"
+      ]
     },
     {
       "reward": "Detect Life and other ordinarily purchasable spells with fixed copies or quest rewards",
       "disposition": "Exclude from the focused Unique Spells & Powers domain.",
       "location_ids": [],
       "reason": "The Product boundary excludes ordinary purchasable spell tomes. Treva's Watch was removed from the catalog after this scope audit because it otherwise had no approved completion purpose.",
-      "source_urls": ["https://en.uesp.net/wiki/Skyrim:Detect_Life_(spell)"]
+      "source_urls": [
+        "https://en.uesp.net/wiki/Skyrim:Detect_Life_(spell)"
+      ]
     }
   ],
   "review_assignments": {}

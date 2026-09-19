@@ -16,7 +16,7 @@ def test_canonical_seed_load_is_reproducible(tmp_path):
 
 
 def test_stable_string_ids_and_references(content):
-    assert len(content.tasks) == 161
+    assert len(content.tasks) == 417
     assert all(isinstance(task_id, str) and " " not in task_id for task_id in content.tasks)
     assert content.tasks["college_staff_magnus"].location_id == "labyrinthian"
     assert content.locations["labyrinthian"].region_id == "labyrinthian"

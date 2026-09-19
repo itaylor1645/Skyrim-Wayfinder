@@ -18,9 +18,11 @@ def test_approved_collectible_scope_and_reuse(content):
     claws = [item for item in content.collectibles.values() if item.collection_id == "dragon_claws"]
     assert len(masks) == 14
     assert len(claws) == 11
-    assert len(content.collectible_credits) == 27
-    assert len({item.task_id for item in content.collectible_credits.values()}) == 27
-    assert REUSED <= {item.task_id for item in content.collectible_credits.values()}
+    ids = {item.id for item in (*masks, *claws)}
+    credits = [item for item in content.collectible_credits.values() if item.collectible_id in ids]
+    assert len(credits) == 27
+    assert len({item.task_id for item in credits}) == 27
+    assert REUSED <= {item.task_id for item in credits}
 
 
 def test_collection_progress_counts_identities_not_acquisition_tasks(service):
